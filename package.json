@@ -1,0 +1,30 @@
+{
+  "name": "Quench",
+  "version": "1.0.0",
+  "description": "A Gulp file and project generator.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Quench",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "2.6.5",
+    "gulp": "3.8.11",
+    "gulp-autoprefixer": "2.1.0",
+    "gulp-cache": "0.2.8",
+    "gulp-concat": "2.5.2",
+    "gulp-imagemin": "2.2.1",
+    "gulp-plumber": "1.0.0",
+    "gulp-rename": "1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "1.2.0"
+  },
+  "dependencies": {
+    "@ibm/plex": "^1.1.4",
+    "carbon-icons": "^7.0.7",
+    "foundation-sites": "^6.5.0-rc.2",
+    "svgxuse": "^1.2.6"
+  }
+}

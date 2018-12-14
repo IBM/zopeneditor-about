@@ -1,0 +1,129 @@
+---
+layout: landing
+home: true
+---
+<!-- Open container divs -->
+<div id="content-container" class="grid-container">
+	<div class="grid-x">
+		<div class="cell content-container-cell">
+			<!-- /Opening container divs -->
+			<section class="hero hero-home">
+				{% include masthead.html %}
+				<div class="hero-content">
+					<div class="grid-x">
+						<div class="cell medium-6">
+							<div class="hero-title">
+								A Web IDE for Z Open Development powered by Zowe
+							</div>
+							<div class="hero-title2">
+								Zero Client Install experience and fully functional, Language Server-based, modern, web-based IDE for COBOL
+							</div>
+							<div class="hero-cta-buttons">
+								<a href="https://epwt-www.mybluemix.net/software/support/trial/cst/programwebsite.wss?siteId=491&tabId=902&w=fe6y41d&p=ub7pnrpev" target="_blank">
+									<button class="bx--btn bx--btn--secondary" type="button">Get Started</button>
+								</a>
+								<!-- /.cta-buttons -->
+							</div>
+						</div>
+						<div class="hero-header-image cell hide-for-small-only medium-6">
+							<img src="./dist/images/cloud-devs.svg" />
+						</div>
+					</div>
+				</div>
+				<!-- /.hero-content -->
+			</section>
+
+			<!-- /.hero-home -->
+			<section class="videos">
+				<div class="video-text-header">About Wazi</div>
+				<div class="container">
+					<p>Wazi is a technology preview of a web based solution for Z Open Development. It utilizes and extends Zowe Open
+						Mainframe project providing a web based IDE solutions for mainframe development.
+					</p>
+				</div>
+				<div class="grid-container">
+					<div class="grid-x">
+						<div class="cell">
+							<div class="video_wrapper">
+
+								<div class="responsive-embed widescreen featured_video">
+									 <iframe width="560" height="315" src="https://www.youtube.com/embed/0XbfLBIoL0E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+									 allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<main>
+				<div class="features">
+					<div class="grid-container">
+						<div class="card" data-equalizer-watch>
+							<div class="card_content">
+								<div class="grid-x grid-padding-x">
+									<div class="cell medium-4">
+										<img src="dist/images/icon-cubes.svg" alt="icon-code-branch" class="card_icon">
+									</div>
+									<div class="cell medium-8">
+										<div class="card_title">Web-based experience – no installation required</div>
+										<p>Access a full modern editing experience with language-specific features and technology integrations, just
+											by navigating to a URL in your browser.</p>
+										<p>Wazi uses a Docker image to bring you an integrated development environment built upon the popular Theia
+											open source project.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-equalizer-watch>
+						<div class="card_content">
+							<div class="grid-x grid-padding-x">
+								<div class="cell medium-8 small-order-2 medium-order-1">
+									<div class="card_title">Advanced COBOL analysis, editing, and refactoring experience</div>
+									<p>Boost your productivity with a modern, language-sensitive editor.</p>
+									<p>Using the Language Server Protocol (LSP), Wazi supports COBOL outline view, syntax highlighting, code
+										completion, code templates, find all references, peek definition, search and rename refactoring across
+										multiple program files, and much more.</p>
+								</div>
+								<div class="cell medium-4 small-order-1 medium-order-2">
+									<img src="dist/images/icon-cobol.svg" alt="icon-cobol" class="card_icon">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-equalizer-watch>
+						<div class="card_content">
+							<div class="grid-x grid-padding-x">
+								<div class="cell medium-4">
+									<img src="dist/images/icon-code-branch.svg" alt="icon-code-branch" class="card_icon">
+								</div>
+								<div class="cell medium-8">
+									<div class="card_title">Integrated software configuration management (SCM)</div>
+									<p>Take control of your code with an SCM tool such as Git.</p>
+									<p>With SCM integration, Wazi gives you a range of code control capabilities that include snapshotting work at
+										any point in time, branching into alternative explorations, and reverting code.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card" data-equalizer-watch>
+						<div class="card_content">
+							<div class="grid-x grid-padding-x">
+								<div class="cell medium-8 small-order-2 medium-order-1">
+									<div class="card_title">Direct z/OS system interaction</div>
+									<p>Load and edit your files directly from z/OS or download them into your local workspace, and add them to Git
+										to control your changes.
+									</p>
+									<p>Wazi can connect to z/OS through APIs used by the Zowe Open Mainframe project, and comes with drag-and-drop
+										capabilities, as well as a built-in terminal for command line interactions.</p>
+								</div>
+								<div class="cell medium-4 small-order-1 medium-order-2">
+									<img src="dist/images/icon-z-os.svg" alt="icon-z-os" class="card_icon">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /.features -->
+			</main>

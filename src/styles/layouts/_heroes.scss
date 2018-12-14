@@ -1,0 +1,172 @@
+.hero {
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint(medium){
+        padding: 0 36px 36px 36px;
+    }
+
+    @include breakpoint(large){
+        height: 810px;
+    }
+}
+
+.hero-content {
+    @include breakpoint(small only){
+        padding: 0 36px 36px 36px;
+    }
+    
+    @include breakpoint(medium){
+        text-align: left;
+    }
+}
+
+.hero-title {
+    color: #fff;
+    font-weight: 300;
+    margin: 1rem 0;
+    font-size: 20px;
+
+    @include breakpoint(medium){
+        margin: 1rem 0 2rem 0;
+        max-width: 30ch;
+    }
+}
+
+.hero-title2 {
+    color: #fff;
+    font-weight: 200;
+    margin: 1rem 0;
+    font-size: 20px;
+
+    @include breakpoint(medium){
+        margin: 1rem 0 2rem 0;
+        max-width: 30ch;
+    }
+
+    @media (min-width: 641px) and (max-width: 720px){
+        font-size: 18px;
+    }
+
+    @media (min-width: 720px) and (max-width: 1024px){
+        font-size: 25px;
+    }
+
+    @include breakpoint(large){
+        font-size: 28px;
+    }
+
+    @include breakpoint(xlarge){
+        font-size: 34px;
+    }
+}
+
+.hero-subtitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+
+.hero-title,
+.hero-subtitle, {
+    @media (min-width: 641px) and (max-width: 720px){
+        font-size: 20px;
+    }
+
+    @media (min-width: 720px) and (max-width: 1024px){
+        font-size: 27px;
+    }
+
+    @include breakpoint(large){
+        font-size: 30px;
+    }
+
+    @include breakpoint(xlarge){
+        font-size: 36px;
+    }
+}
+
+.hero_headline {
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+
+}
+
+.hero-home {   
+    background-image: url('../images/hero-home.png');
+
+    @include breakpoint(medium) {
+        background-image: url('../images/hero-home.png');
+		background-size: cover;
+    }
+}
+
+.about {
+    .hero {
+        background-image: url('../images/hero-about-mobile.svg');
+
+        @include breakpoint(medium){
+            background-image: url('../images/hero-about.svg');
+            background-position: -185px -15px;
+        }
+
+        @media (min-width: 641px) and (max-width: 810px){
+            background-position: -315px -20px;
+        }
+
+        @include breakpoint(large){
+            background-position: -475px -45px;
+        }
+
+        @include breakpoint(xlarge){
+            background-position: -395px -45px;
+        }
+    }
+}
+
+.learn,
+.community {
+    .hero {
+        background-image: url('../images/hero-learn-mobile.svg'); 
+
+        @include breakpoint(medium){
+            background-image: url('../images/hero-learn.svg');
+            background-position: -80px -60px;
+        }
+
+        @media (min-width: 641px) and (max-width: 862px){
+            background-position: -190px -40px;
+        }
+
+        @include breakpoint(large){
+            background-position: -530px -100px
+        }
+
+        @include breakpoint(xlarge){
+            background-position: -320px -60px
+        }
+    }
+}
+
+.hero-cta-buttons {
+    a > button {
+        margin: 1rem;
+        margin-left: 0;
+    }
+}
+
+.bx--btn--secondary {
+    background-color: #f4f7fb;
+    color: #3d70b2;
+}
+
+.hero-header-image{
+    margin-top: 90px;
+    vertical-align: bottom;
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+}

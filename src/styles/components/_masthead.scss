@@ -1,0 +1,25 @@
+.masthead {
+    @include breakpoint(small) {
+        .nav-start-btn {
+            position:relative;
+        }
+    }
+
+    @include breakpoint(small only) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    @include breakpoint(medium){
+        padding: 36px 0;
+        .nav-start-btn {
+            top:-10px;
+        }
+    }
+
+    .logo {
+        @include breakpoint(small only) {
+            padding: 15px 0px;
+        }
+    }
+}

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://pages.github.com/IBM/wazi-about/sitemap.xml

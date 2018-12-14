@@ -1,0 +1,181 @@
+.main-nav {
+    @include breakpoint(small only) {
+        .menu.medium-horizontal {
+            width: 100%;
+        }
+    }
+
+    @include breakpoint(medium){
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 10px;
+
+        .menu.medium-horizontal {
+            flex-wrap: nowrap;
+            float:right;
+        }
+    }
+
+    @include breakpoint(large){
+        margin-top: 20px;
+    }
+
+    li{       
+        display: inline-block;
+
+        @include breakpoint(medium) {
+            margin-right: 0.9rem;
+        }
+        
+        @include breakpoint(large) {
+            margin-right: 1rem;
+        }
+
+        @include breakpoint(xlarge) {
+            margin-right: 2rem; 
+        }
+        
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    a {
+        color: #fff;
+        font-size: 20px;
+        padding: 0.25rem 0;
+
+        @include breakpoint(medium){
+            box-shadow: 0 0 0 0 #fff;
+            font-size: 13px;
+            transition: box-shadow .3s linear;
+        }
+
+        @include breakpoint(large){
+            font-size: 20px;
+        }
+
+        &:hover,
+        &.current-page {
+            @include breakpoint(medium){
+                box-shadow: 0 4px 0 0 #fff;
+            }
+        }
+    }
+}
+
+.sidebar {
+    background-color: #f0f3f6;
+    
+    @include breakpoint(medium){
+        padding-bottom: 240px; //240px only on tablet and above so that sidebar goes behind footer
+    }
+
+    nav {    
+        padding: 20px;
+
+        @include breakpoint(medium) {
+            padding: 30px;
+        }
+
+        @include breakpoint(large) {
+            padding: 50px;
+        }
+    }
+    
+    ul {        
+        list-style: none;
+        margin-left: 0;
+    }
+
+    li > ul {
+        margin-top: 1.25rem;
+        margin-left: 1.25rem;
+
+        a {
+            font-size: 14px;
+            font-weight: 400; // normal font-weight for doc sub nav links
+        }
+    }
+
+    li {
+        margin-bottom: 1rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        @include breakpoint(medium){
+            box-shadow: 0 0 0 0 #fff;
+            font-size: 16px;
+            transition: box-shadow .3s linear;
+        }
+
+        @include breakpoint(large){
+            font-size: 18px;
+        }
+    
+        &:hover,
+        &.current-page {
+            @include breakpoint(medium){
+                box-shadow: 0 4px 0 0 #fff;
+            }
+        }
+    }
+
+    .doc-category {
+        font-weight: 700; // normal font-weight for doc sub nav links
+    }
+}
+
+.title-bar-title {
+    display: inline-block;
+}
+
+@include breakpoint(small only){
+    .title-bar-title {
+        color: #00132e;
+    }
+
+    .mobile-nav-bar {
+        padding: 16px;
+    }
+
+    .main-nav-wrapper {
+        background: #fff;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+    }
+
+    .main-nav {
+        li {
+            padding: 0.5rem 0rem 0.5rem 36px;
+            border-bottom: 0.25px solid black;
+
+            &:hover {
+                background-color: #054ada;
+
+                a {
+                    color: #fff;
+                }
+            }
+            &:last-child {
+                //margin-bottom: 0;
+                background-color: #fff;
+            }
+        }
+
+        a {
+            color: #000;
+            font-weight: 600;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

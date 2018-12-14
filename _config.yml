@@ -1,0 +1,19 @@
+title: Wazi
+email: 
+description: IBM Wazi - A web-based IDE for Z Open Development powered by Zowe
+keywords: IBM, COBOL, IDE, LSP, language-server, Docker, zOS, z-software, Zowe, Mainframe, Theia, DevOps, Git, Open Source, Development
+baseurl: "/"
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+exclude: [node_modules]
+collections:
+  documentations:
+    output: true
+  news:
+    output: true

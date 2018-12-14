@@ -1,0 +1,56 @@
+.card_headline {
+    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #fff;
+}
+
+.card {
+    display: block;
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+
+    @include breakpoint(medium){
+        display: flex;
+        justify-content: space-evenly;
+        text-align: left;
+    }
+
+    &_icon {
+        max-width: 100%;
+        margin-bottom: 1rem;
+        margin-right: 1rem;
+        
+        @include breakpoint(large){
+            width: 60%;
+        }
+    }
+
+    &_title {
+        font-size: 30px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .button {
+        margin-bottom: 0;
+    }
+}
+
+/* specific card styles */
+
+.features {
+    .card {
+        @include breakpoint(medium){
+            text-align: left;
+        }
+    }
+}
+
+p {
+    color: #fff;
+    margin-top: 2em;
+}

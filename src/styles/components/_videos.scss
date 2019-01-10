@@ -15,6 +15,12 @@
 			}
 		}
 	}
+
+	@include breakpoint(small) {
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-bottom: 56px;
+	}
 	
 	.icon-play-button {
 		position: absolute;
@@ -98,10 +104,15 @@
     font-size: 40px;
 	text-align:center;
 	margin-bottom: 1rem;
+	margin-top: 1rem;
 
 	@include breakpoint(medium){
         margin: 6rem 0 2rem 0;
-    }
+	}
+	
+	@include breakpoint(small){
+		margin-top: 3rem;
+	}
 }
 
 .video-text {
@@ -110,7 +121,7 @@
 	font-size: 25px;
 	text-align: center;
 	display: inline-block;
-	margin: 1rem 0;;
+	margin: 1rem 0;
 	
 	@include breakpoint(medium){
         margin: 1rem 0 2rem 0;
@@ -118,14 +129,18 @@
 }
 
 .container{
-	width: 65%;
+	width: 95%;
 	margin: 25px auto;
 	position: relative;
+
+	@include breakpoint(large){
+		width: 65%;
+    }
 }
 
 .container p{
 	color: #000;
-    font-weight: 300;
+    font-weight: 200;
 	font-size: 25px;
 	margin: 0;
 	padding: 0;
@@ -133,6 +148,6 @@
 	position: relative;
 
 	@include breakpoint(small only){
-        font-size: 20px;
+		font-size: 1rem;
     }
 }

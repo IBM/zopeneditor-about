@@ -22,6 +22,12 @@ footer {
         text-align: center;
         margin-top:0;
         margin-bottom:0;
+
+
+        @include breakpoint (small only) {
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
     }
 }
 
@@ -37,10 +43,14 @@ footer {
 }
 
 .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     margin: 0 auto;
+    text-align: center;
+
+    @include breakpoint (medium) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
 
     @include breakpoint (large) {
         width: 70%;
@@ -52,7 +62,7 @@ footer {
 
     img {
         @include breakpoint (small only) {
-            width: 50%;
+            margin-top: 1rem;
         }
     }
 }
@@ -62,21 +72,22 @@ footer {
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 13px;
     font-weight: 100;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 2rem auto;
+    text-align: center;
 
     li {
         list-style-type: none;
         @include breakpoint (small only) {
-            margin: 0 0 10px 25px;
+            margin: 3rem 0;
         }
     }
 
     @include breakpoint (medium) {
         font-size: 18px;
         width: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 2rem auto;
     }
 }
 

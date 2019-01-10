@@ -15,16 +15,16 @@
                     <hr>
                     <div class="logo-slogan">
                         <ul class="logo-slogan">
-                            <li>
+                            <li class="medium-order-2 small-order-1">
+                                <p>Powered by</p>
+                                <a href="https://zowe.org/home/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/zowe-footer-logo.svg"
+                                        alt="Zowe logo"></a>
+                            </li>
+                            <li class="medium-order-1 small-order-2">
                                 <a href="#"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/wazi-footer-logo.svg"
                                         alt="Wazi logo">
                                 </a>
                                 <p>Copyright &copy; 2018 IBM</p>
-                            </li>
-                            <li>
-                                <p>Powered by</p>
-                                <a href="https://zowe.org/home/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/zowe-footer-logo.svg"
-                                        alt="Zowe logo"></a>
                             </li>
                         </ul>
                     </div>
@@ -44,4 +44,5 @@
 <!-- Compressed JavaScript -->
 <script src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/scripts/main.js"></script>
 </body>
+
 </html>

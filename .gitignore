@@ -8,3 +8,5 @@ _site
 *.css.map
 *.sass.map
 *.scss.map
+node_modules/
+.DS_Store

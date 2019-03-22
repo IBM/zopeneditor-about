@@ -10,7 +10,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "2.26.3",
-    "gulp": "4.0.0",
+    "gulp": "3.9.1",
     "gulp-autoprefixer": "6.0.0",
     "gulp-cache": "1.1.0",
     "gulp-concat": "2.6.1",
@@ -24,6 +24,7 @@
   "dependencies": {
     "@ibm/plex": "^1.1.4",
     "carbon-icons": "^7.0.7",
+    "del": "^4.0.0",
     "foundation-sites": "^6.5.0-rc.2",
     "svgxuse": "^1.2.6"
   }

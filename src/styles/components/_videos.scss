@@ -98,16 +98,35 @@
 }
 /* end video player popup */
 
+.video-text-header-top {
+    color: #054ADA;
+    font-weight: 700;
+    font-size: 40px;
+	text-align:center;
+	padding-top: 3rem;
+
+	@include breakpoint(medium){
+        margin: 6rem 0 2rem 0;
+	}
+	
+	@include breakpoint(small){
+		margin-top: 3rem;
+	}
+}
+
 .video-text-header {
     color: #054ADA;
     font-weight: 700;
     font-size: 40px;
 	text-align:center;
 	margin-bottom: 1rem;
-	margin-top: 1rem;
 
-	@include breakpoint(medium){
-        margin: 6rem 0 2rem 0;
+	@include breakpoint(large only){
+        margin: 0 0 2rem 0;
+	}
+
+	@include breakpoint(medium only){
+        margin: 3rem 0 2rem 0;
 	}
 	
 	@include breakpoint(small){

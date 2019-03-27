@@ -1,25 +1,90 @@
 .masthead {
-    @include breakpoint(small) {
-        .nav-start-btn {
-            position:relative;
-        }
+  @include breakpoint(small) {
+    .nav-start-btn {
+      position: relative;
     }
+  }
 
+  @include breakpoint(small only) {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 36px 0;
+    .nav-start-btn {
+      top: -10px;
+    }
+  }
+
+  .logo {
     @include breakpoint(small only) {
-        padding-left: 36px;
-        padding-right: 36px;
+      padding: 15px 0px;
+    }
+  }
+  
+  .nav_link a {
+    color: #fff;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    text-decoration: none;
+  }
+  
+   .nav_link a:hover {
+    background: #fff;
+    color: #054ADA;
+    transition: all 0.3s ease;
+  }
+  
+  .nav_link a:focus {
+    background: #C9DEFF;
+    color: #054ADA;
+    transition: all 0.3s ease;
+  }
+
+  .dropdown.menu>li>a {
+    padding-right:1.9rem;
+    padding-left:0rem;
+  }
+
+  .is-dropdown-submenu .js-dropdown-active{
+     margin-bottom: 0px;
+  }
+  .blog {
+    margin-right: 20px;
+    margin-top: -8.9px;
+  }
+
+  .nav_link{
+    background-color: #054ADA;
+    border: solid 1px #fff;
+    display: inline-block;
+    max-width: 350px;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.2);
+  }
+
+  .dropdown.menu>li.is-active>a {
+    background: none;
+    color: #ffffff;
+  }
+
+  .dropdown.menu>li.is-dropdown-submenu-parent>a::after{
+    border-color: #ffffff transparent;
+  }
+
+  .dropdown.menu>li.opens-right>.is-dropdown-submenu{
+    @include breakpoint(large) {
+      top: 55%;
     }
 
-    @include breakpoint(medium){
-        padding: 36px 0;
-        .nav-start-btn {
-            top:-10px;
-        }
+    @include breakpoint(medium only) {
+      top: 40%;
     }
+  }
 
-    .logo {
-        @include breakpoint(small only) {
-            padding: 15px 0px;
-        }
-    }
+  li.is-dropdown-submenu-parent.opens-right{
+    width: 100%;
+  }
 }

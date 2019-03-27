@@ -1,106 +1,122 @@
-footer { 
+footer {
+  background-color: #000;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .footer-content {
     background-color: #000;
-	background-position: top center;
-	background-repeat: no-repeat;
-    background-size: contain;
-    
-    .footer-content {
-        background-color: #000;
-        padding-bottom: 4rem;
+    padding-bottom: 4rem;
 
-        @include breakpoint (medium) {
-            padding-bottom: 6rem;
-        }
-
-        @include breakpoint (large) {
-            padding-bottom: 5rem;
-        }
+    @include breakpoint(medium) {
+      padding-bottom: 6rem;
     }
 
-    p {
-        color: #767676;
-        text-align: center;
-        margin-top:0;
-        margin-bottom:0;
-
-
-        @include breakpoint (small only) {
-            margin-top: 1rem;
-            margin-bottom: 0.5rem;
-        }
+    @include breakpoint(large) {
+      padding-bottom: 5rem;
     }
+  }
+
+  p {
+    color: #767676;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include breakpoint(small only) {
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+  }
 }
 
-.grid-container{
-    padding: 0rem;
-    margin: 0 auto;
-    max-width: 100%;
+.grid-container {
+  padding: 0rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .social-container {
-    background-color: #000;
-    padding: 3rem 0rem;
+  background-color: #000;
+  padding: 3rem 0rem;
 }
 
 .social {
-    margin: 0 auto;
-    text-align: center;
+  margin: 0 auto;
+  text-align: center;
 
-    @include breakpoint (medium) {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+  @include breakpoint(medium) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
-    @include breakpoint (large) {
-        width: 70%;
-    }
+  @include breakpoint(large) {
+    width: 70%;
+  }
 
-    li {
-        list-style-type: none;
-    }
+  li {
+    list-style-type: none;
+  }
 
-    img {
-        @include breakpoint (small only) {
-            margin-top: 1rem;
-        }
+  img {
+    @include breakpoint(small only) {
+      margin-top: 1rem;
     }
+  }
+}
+
+.logo-container{
+ padding-left: 10px;
+
+ @include breakpoint(small) {
+  padding-left: none;
+}
 }
 
 .logo-slogan {
-    color: #fdfffc;
-    font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
-    font-size: 13px;
-    font-weight: 100;
-    text-align: center;
+  color: #fdfffc;
+  font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 100;
+  text-align: center;
 
-    li {
-        list-style-type: none;
-        @include breakpoint (small only) {
-            margin: 3rem 0;
-        }
+  li {
+    list-style-type: none;
+    @include breakpoint(small only) {
+      margin: 2rem 0;
     }
+}
 
-    @include breakpoint (medium) {
-        font-size: 18px;
-        width: 600px;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        margin: 2rem auto;
-    }
+@include breakpoint(large) {
+   font-size: 18px;
+    width: 890px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+}
+
+  @include breakpoint(medium only) {
+    font-size: 18px;
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2rem auto;
+  }
 }
 
 h2 {
-    font-weight: 700;
-    color: white;
+  font-weight: 700;
+  color: white;
 }
 
-hr { 
-    border: 0;
-    height: 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid #767676;
-    width: 75%;
-    text-align:center;
+hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #767676;
+  width: 75%;
+  text-align: center;
 }

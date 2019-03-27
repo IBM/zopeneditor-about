@@ -38,13 +38,37 @@
     color: #fff;
     font-weight: 200;
     margin: 1rem 0;
-    font-size: 20px;
 
     @include breakpoint(medium){
         margin: 1rem 0 2rem 0;
         max-width: 30ch;
     }
 
+    @media (min-width: 641px) and (max-width: 720px){
+        font-size: 12px;
+    }
+
+    @media (min-width: 720px) and (max-width: 1024px){
+        font-size: 20px;
+    }
+
+    @include breakpoint(large){
+        font-size: 22px;
+    }
+
+    @include breakpoint(xlarge){
+        font-size: 28px;
+    }
+}
+
+.hero-subtitle {
+    font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 17px;
+}
+
+.hero-title,
+.hero-subtitle {
     @media (min-width: 641px) and (max-width: 720px){
         font-size: 18px;
     }
@@ -58,32 +82,7 @@
     }
 
     @include breakpoint(xlarge){
-        font-size: 34px;
-    }
-}
-
-.hero-subtitle {
-    font-weight: 700;
-    margin-bottom: 1rem;
-    font-size: 17px;
-}
-
-.hero-title,
-.hero-subtitle, {
-    @media (min-width: 641px) and (max-width: 720px){
-        font-size: 20px;
-    }
-
-    @media (min-width: 720px) and (max-width: 1024px){
-        font-size: 27px;
-    }
-
-    @include breakpoint(large){
-        font-size: 30px;
-    }
-
-    @include breakpoint(xlarge){
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 

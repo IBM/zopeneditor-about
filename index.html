@@ -14,11 +14,11 @@ home: true
           <div class="grid-x">
             <div class="cell medium-6">
               <div class="hero-title">
-                A Web IDE for Z Open Development powered by Zowe
+                  Next Gen Dev Experience for IBM Zowe
               </div>
               <div class="hero-title2">
-                Zero Client Install experience and fully functional, Language
-                Server-based, modern, web-based IDE for COBOL
+                  Welcome to Technology Preview 2 of Wazi, a fully functional, Language Server-based,
+                  modern IDE experience for z/OS COBOL.
               </div>
               <div class="hero-cta-buttons">
                 <a
@@ -42,56 +42,63 @@ home: true
 
       <!-- /.hero-home -->
       <section class="videos">
-        <div class="video-text-header-top">About Wazi</div>
-        <div class="container">
-          <p>
-            Wazi is a technology preview of a web based solution for Z Open
-            Development. It utilizes and extends Zowe Open Mainframe project
-            providing a web based IDE solutions for mainframe development.
-          </p>
-        </div>
-        <div class="grid-container">
-          <div class="grid-x">
-            <div class="cell">
-              <div class="video_wrapper">
-                <div class="responsive-embed widescreen featured_video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/0XbfLBIoL0E"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+          <div class="video-text-header-top">About Wazi</div>
+          <div class="container">
+            <p>
+                Wazi is a technology preview of several next generation capabilities for Z Open
+                Development. It utilizes and extends Zowe Open Mainframe project and integrates
+                with z/OS DevOps solutions such as IBM Dependency Based Build and IBM z/OS Debugger.
+                It contains two alternative IDE experiences: a Theia Web-based editor as well as
+                an extension to VS Code.
+            </p>
+          </div>
+          <div class="grid-container">
+            <div class="grid-x">
+              <div class="cell">
+                <div class="video_wrapper">
+                  <div class="responsive-embed widescreen featured_video">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/0XbfLBIoL0E"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="video-text-header">New Features</div>
-        <div class="container">
-          <p></p>
-        </div>
-        <div class="grid-container">
-          <div class="grid-x">
-            <div class="cell">
-              <div class="video_wrapper">
-                <div class="responsive-embed widescreen featured_video">
-                  <iframe
-                    width="560"
-                    height="315"
-                    src="https://www.youtube.com/embed/0XbfLBIoL0E"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen
-                  ></iframe>
+          <div class="video-text-header">What's new in Technology Preview 2</div>
+          <div class="container">
+            <p>
+                In technology Preview 2 we added various new integrations such as for Build using IBM Dependency
+                Based Build and a USS Explorer, as well as for Debug using IBM z/OS Debugger. We extended the COBOL
+                language server to visually present code metrics. Plus, we are now providing a Visual Studio Code
+                extension as an alternative editor client for Wazi. See a demo of the main new features in the video below.
+            </p>
+          </div>
+          <div class="grid-container">
+            <div class="grid-x">
+              <div class="cell">
+                <div class="video_wrapper">
+                  <div class="responsive-embed widescreen featured_video">
+                    <iframe
+                      width="560"
+                      height="315"
+                      src="https://www.youtube.com/embed/z_6uV2OlRIA"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
+        </section>
+      
       <main>
         <div class="features">
           <div class="grid-container">
@@ -115,9 +122,9 @@ home: true
                       just by navigating to a URL in your browser.
                     </p>
                     <p>
-                      Wazi uses a Docker image to bring you an integrated
-                      development environment built upon the popular Theia open
-                      source project.
+                        Wazi comes as a Docker image to run in the Cloud or on a desktop
+                        to bring you a fully integrated development environment built upon the
+                        popular Theia open source project.
                     </p>
                   </div>
                 </div>
@@ -190,9 +197,11 @@ home: true
                   </p>
                   <p>
                     Wazi can connect to z/OS through APIs used by the Zowe Open
-                    Mainframe project, and comes with drag-and-drop
-                    capabilities, as well as a built-in terminal for command
-                    line interactions.
+                    Mainframe project and provides interactive data sets and USS
+                    files explorers to open members and files. Use drag-and-drop
+                    to upload and download files. A built-in terminal expands on all
+                    of these capabilities with a large variety of features for command line
+                    interactions provided by the Zowe CLI.
                   </p>
                 </div>
                 <div class="cell medium-4 small-order-1 medium-order-2">
@@ -205,7 +214,6 @@ home: true
               </div>
             </div>
           </div>
-          <!--New features begins-->
           <div class="card" data-equalizer-watch>
             <div class="card_content">
               <div class="grid-x grid-padding-x">
@@ -213,7 +221,7 @@ home: true
                   <img
                     src="dist/images/pipeline.png"
                     alt="icon-code-branch"
-                    class="card_icon_top"
+                    class="card_icon"
                   />
                 </div>
                 <div class="cell medium-8">
@@ -221,13 +229,14 @@ home: true
                     Integration with IBM Dependency Based Build (DBB)
                   </div>
                   <p>
-                    Use Wazi to remotely build traditional z/OS applications
-                    such as COBOL and PL/I.
+                      Use the Wazi IDE to quickly build and test your personal branches and changes with DBB.
                   </p>
                   <p>
-                    Using Git, your code changes can be pushed from your local
-                    workspace to the z/OS host, allowing you to remotely compile
-                    and build applications.
+                      Wazi provides COBOL developers with new productivity tools for parallel
+                      development. Use a simple workflow of branching code in personal Git branches,
+                      making changes, pushing them to z/OS USS profiles for building and testing with
+                      Dependency Based Build. Then share your fully tested changes with the rest of your
+                      team.
                   </p>
                 </div>
               </div>
@@ -238,12 +247,11 @@ home: true
               <div class="grid-x grid-padding-x">
                 <div class="cell medium-8 small-order-2 medium-order-1">
                   <div class="card_title">
-                    IBM z/OS Debugger to set breakpoints and interactively
-                    examine your application.
+                      IBM z/OS Debugger integration
                   </div>
                   <p>
-                    Interactively examine your application with IBM z/OS
-                    Debugger
+                    Wazi's integrated z/OS Debugger helps you test programs and examine,
+                    monitor, and control the execution of COBOL programs on a z/OS system.
                   </p>
                   <p>
                     Set breakpoints, step through COBOL source listings and view
@@ -272,14 +280,11 @@ home: true
                 </div>
                 <div class="cell medium-8">
                   <div class="card_title">
-                    Expanded COBOL LSP capabilities such as Code Complexity
-                    Metrics
+                      Assess your COBOL program code complexity with metrics
                   </div>
-                  <p>View the metrics for your code as you develop.</p>
+                  <p>Wazi utilizes the power of the COBOL language server to compute powerful code metrics such as Halstead Complexity Measure.</p>
                   <p>
-                    Wazi has an integrated status bar, table and bar chart that
-                    displays metrics. Also you can define thresholds and get
-                    warnings when thresholds are violated.
+                      Observe the impact of your changes on your code as you type. Set thresholds on the metrics that you want to track and get notified.
                   </p>
                 </div>
               </div>
@@ -290,23 +295,19 @@ home: true
               <div class="grid-x grid-padding-x">
                 <div class="cell medium-8 small-order-2 medium-order-1">
                   <div class="card_title">
-                    VS Code extension for COBOL as an alternative IDE
+                    VS Code extension for COBOL
                   </div>
                   <p>
-                    Explore Wazi's capabilities in a familiar development
-                    environment.
+                      To demonstrate the power of IBM's vision for Bring-Your-Editor development scenarios, we also provide an alternative IDE experience built on top of the very popular Microsoft VS Code editor.
                   </p>
                   <p>
-                    This extension will be available separately as a download
-                    that you can configure in your exisiting VS code
-                    environment. Once configured, you will be able to leverage
-                    the LSP-based COBOL editor from your VS Code environment
-                    directly.
+                      Experience the exact same COBOL capabilities in two different
+                      editors. (Does not yet have all the other integrations mentioned above.)
                   </p>
                 </div>
                 <div class="cell medium-4 small-order-1 medium-order-2">
                   <img
-                    src="dist/images/vscode.png"
+                    src="dist/images/vscode.svg"
                     alt="icon-z-os"
                     class="card_icon"
                   />

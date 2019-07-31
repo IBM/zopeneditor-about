@@ -10,7 +10,7 @@ Start by cloning the `wazi-about` repo to your local machine
 
 - Navigate to the project's directory on your machine
 
-- After making changes to any .scss file, run the command: `gulp styles`
+- After making changes to any .scss file, run the command: `gulp styles`. Then, stop the local server, and restart it by running `bundle exec jekyll serve`.
 
 ### Jekyll: Static site generator
 

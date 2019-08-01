@@ -87,4 +87,21 @@
   li.is-dropdown-submenu-parent.opens-right{
     width: 100%;
   }
+
+  p {
+    font-size: 2rem;
+    margin-top: -0.2em;
+    font-weight: 700;
+
+    @include breakpoint(medium only){
+      font-size: 1.65rem;
+      margin-top: -0.6em;
+      font-weight: 600;
+    }
+    @include breakpoint(small only){
+      font-size: 1.1rem;
+      margin-top: 0.5em;
+      font-weight: 700;
+    }
+  }
 }

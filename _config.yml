@@ -1,7 +1,7 @@
-title: Wazi
+title: Z Open Editor for COBOL and PL/I
 email: 
-description: IBM Wazi - A web-based IDE for Z Open Development powered by Zowe
-keywords: IBM, COBOL, IDE, LSP, language-server, Docker, zOS, z-software, Zowe, Mainframe, Theia, DevOps, Git, Open Source, Development
+description: The Z Open Editor for COBOL and PL/I (v0.3.0) is an IBM Enterprise Language Extension for Visual Studio Code
+keywords: IBM, COBOL, PL/I, PLI, PL1, JCL, IDE, LSP, language-server, z/OS, zOS, Z Software, Zowe, Mainframe, Visual Studio Code, VS Code, Git, Open Source, Development, Extension
 baseurl: "/"
 twitter_username: jekyllrb
 github_username:  jekyll

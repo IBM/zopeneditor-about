@@ -10,19 +10,21 @@ var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync');
 
-gulp.task('browser-sync', function() {
+gulp.task('browser-sync', function(done) {
   browserSync({
     server: {
       baseDir: './'
     }
   });
+  done();
 });
 
-gulp.task('bs-reload', function() {
+gulp.task('bs-reload', function(done) {
   browserSync.reload();
+  done();
 });
 
-gulp.task('images', function() {
+gulp.task('images', function(done) {
   gulp
     .src(['src/images/**/*', 'src/images/hero-learn.svg'])
     .pipe(
@@ -31,9 +33,10 @@ gulp.task('images', function() {
       )
     )
     .pipe(gulp.dest('dist/images/'));
+    done();
 });
 
-gulp.task('styles', function() {
+gulp.task('styles', function(done) {
   gulp
     .src(['src/styles/**/*.scss'])
     .pipe(
@@ -55,6 +58,7 @@ gulp.task('styles', function() {
     .pipe(autoprefixer('last 2 versions'))
     .pipe(gulp.dest('dist/styles/'))
     .pipe(browserSync.reload({ stream: true }));
+    done();
 });
 
 gulp.task('scripts', function() {
@@ -76,8 +80,9 @@ gulp.task('scripts', function() {
     .pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('default', ['browser-sync'], function(){
+gulp.task('default', gulp.series('browser-sync'), function(done){
   gulp.watch("src/styles/**/*.scss", ['styles']);
   gulp.watch("src/scripts/**/*.js", ['scripts']);
   gulp.watch("*.html", ['bs-reload']);
+  done(); 
 });

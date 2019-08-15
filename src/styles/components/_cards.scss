@@ -27,6 +27,7 @@
         max-width: 100%;
         margin-bottom: 1rem;
         margin-right: 1rem;
+        margin-top: 0.75rem;
         
         @include breakpoint(large){
             width: 60%;
@@ -36,9 +37,12 @@
             margin-bottom: 2rem;
         }
         &_top{
+            max-width: 65%;
+            margin-top: 0.85rem;
+            
             @include breakpoint(small only){
             width: 35%;    
-            margin-top: 4rem;
+            margin-top: 7rem;
             margin-bottom: 2rem;
             }
         }

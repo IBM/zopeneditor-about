@@ -90,12 +90,12 @@
 
   p {
     font-size: 2rem;
-    margin-top: -0.2em;
+    margin-top: 0.2em;
     font-weight: 700;
 
     @include breakpoint(medium only){
       font-size: 1.65rem;
-      margin-top: -0.6em;
+      margin-top: -0.2rem;
       font-weight: 600;
     }
     @include breakpoint(small only){

@@ -9,10 +9,11 @@ It is realizing its languages support by implementing fully functional [language
 - Real-time syntax checking and highlighting while you type
 - Problems view with all syntax errors and (in COBOL) unreachable code
 - Outline view and outline search
-- Declaration hovers
-- Peek definition code lenses
-- Go to definition
-- Find all references for variables and paragraphs
+- For both variables and paragraphs:
+  - Declaration hovers
+  - Peek definition
+  - Go to definition
+  - Find all references
 - Code and variable completion
 - Code template snippets
 - Finding and navigating references
@@ -134,13 +135,13 @@ Searching for identifiers within the outline by pressing `Ctrl+Shift+O` (PC) or 
 
 ### Declaration hovers
 
-To see the working storage definition or DCL definition and the parent group of a variable name, move your mouse cursor over to the variable name.
+To see the working storage definition or DCL definition and the parent group of a variable or paragraph name, move your mouse cursor over to the variable or paragraph name.
 
 ![ ](readme/declaration-hover.gif)
 
 ### Peek definition
 
-Click on a variable, right-click for menu, and choose `Peek Definition`.  This opens a codelens box that shows where the variable was defined in the code. If you use the keyboard shortcut `Alt+F12` (Windows) or `Option+F12` (Mac), the variable is only clicked once before the keyboard shortcuts are pressed. Double-Click any result to go to that location in the file.
+Click on a variable or paragraph name, right-click for menu, and choose `Peek Definition`.  This opens a CodeLens box that shows where the variable or paragraph was defined in the code. If you use the keyboard shortcut `Alt+F12` (Windows) or `Option+F12` (Mac), the variable or paragraph name is only clicked once before the keyboard shortcuts are pressed. Double-Click any result to go to that location in the file.
 
 ![ ](readme/peek-definition.gif)
 
@@ -150,9 +151,9 @@ To preview the contents of a copybook or included file, move your mouse cursor o
 
 ![ ](readme/preview-cpy.gif)
 
-### Peek all references codelens
+### Peek references
 
-Select a variable or a paragraph, right-click for menu, and choose `Peek References` or use shortcut `Shift+F12` (Windows and Mac).  Double-click any result to go to that location in the file.
+Select a variable or a paragraph name, right-click for menu, and choose `Peek References` or use shortcut `Shift+F12` (Windows and Mac).  Double-click any result in the CodeLens box to go to that location in the file.
 
 ![ ](readme/peek-references.gif)
 

@@ -1,8 +1,8 @@
-# Wazi About
+# IBM Z® Open Editor About
 
 ## Example of build & static generation to preview page changes.
 
-Start by cloning the `wazi-about` repo to your local machine
+Start by cloning the `zopeneditor-about` repo to your local machine
 
 ### Gulp: Build tool
 

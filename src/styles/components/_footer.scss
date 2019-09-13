@@ -88,6 +88,14 @@ footer {
     }
 }
 
+.zopeneditor-logo {
+  width: 14rem;
+
+  @include breakpoint(small only) {
+  width: 12rem;
+  }
+}
+
 @include breakpoint(large) {
    font-size: 18px;
     width: 890px;
@@ -107,9 +115,10 @@ footer {
   }
 }
 
-h2 {
+.community-header {
   font-weight: 700;
   color: white;
+  margin-top: 1rem;
 }
 
 hr {
@@ -125,7 +134,7 @@ a {
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
-  
+
   @include breakpoint(small only) {
     font-size: 0.85rem;
   }
@@ -133,4 +142,8 @@ a {
 
 a:hover, a:focus {
   color: white;
+}
+
+.footer-logo {
+  margin-bottom: 0.5rem;
 }

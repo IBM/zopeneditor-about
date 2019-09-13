@@ -20,22 +20,24 @@
   .logo {
     @include breakpoint(small only) {
       padding: 15px 0px;
+      width: fit-content;
+      min-width: 235px;
     }
   }
-  
+
   .nav_link a {
     color: #fff;
     transition: all 0.3s ease;
     padding: 10px 20px;
     text-decoration: none;
   }
-  
+
    .nav_link a:hover {
     background: #fff;
     color: #054ADA;
     transition: all 0.3s ease;
   }
-  
+
   .nav_link a:focus {
     background: #C9DEFF;
     color: #054ADA;

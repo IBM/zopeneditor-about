@@ -6,7 +6,7 @@
                     <div class="social-container">
                         <ul class="social">
                             <li>
-                                <h2>Join Our Community</h2>
+                                <h2 class="community-header">Join Our Community</h2>
                             </li>
                             <li><a href="https://github.com/IBM/zopeneditor-about/issues" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/icon-logo-github.svg"
                                         alt="Github link"></a></li>
@@ -16,21 +16,23 @@
                     <div class="logo-container">
                         <ul class="logo-slogan">
                             <li class="medium-order-1 small-order-1">
-                                <a href="#">
-                                    IBM Z Open Editor
-                                </a>
                                 <p>Copyright &copy; 2018 IBM</p>
+                                <a href="#"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/zopeneditor-logo.svg"
+                                        alt="IBM Z Open Editor logo"
+                                        class="zopeneditor-logo">
+                                </a>
                             </li>
                             <li class="medium-order-2 small-order-2">
-                                    <p>Powered by</p>
+                                    <p class="footer-logo">Powered by</p>
                                     <a href="https://zowe.org/home/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/zowe-footer-logo.svg"
-                                            alt="Zowe logo"></a>
+                                            alt="Zowe logo">
+                                    </a>
                                 </li>
-                             <li class="medium-order-4 small-order-4">
+                             <li class="medium-order-3 small-order-3">
+                                    <p class="footer-logo">Visual Studio Code</p>
                                     <a href="https://code.visualstudio.com/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/vscode-footer-logo.svg"
-                                        alt="VSCode logo">
+                                        alt="Microsoft Visual Studio Code logo">
                                 </a>
-                                <p>Visual Studio Code</p>
                             </li>
                         </ul>
                     </div>

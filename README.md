@@ -24,7 +24,7 @@ It is realizing its languages support by implementing fully functional [language
 
 For the [Job Control Language (JCL)](https://www.ibm.com/support/knowledgecenter/zosbasics/com.ibm.zos.zconcepts/zconc_whatisjcl.htm) the extension provides simple syntax highlighting.
 
-To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://github.com/IBM/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-tutorial) provided on GitHub.
+To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-tutorial) provided on GitHub.
 
 To interact with z/OS, we recommend installing the [Zowe VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe). This extension can be used to edit COBOL and PL/I files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL and let you browse job spool files.
 

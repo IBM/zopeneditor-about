@@ -2,7 +2,7 @@
 
 **IBM Z Open Editor (v0.3.3) is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, and JCL languages.**
 
-This extension provides language support for the IBM Enterprise [COBOL 6.2](https://www.ibm.com/us-en/marketplace/ibm-cobol) and [PL/I 5.2](https://www.ibm.com/us-en/marketplace/pli-compiler-zos) programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.5, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
+This extension provides language support for the IBM Enterprise COBOL 6.2 and PL/I 5.2 programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.5, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
 It is realizing its languages support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable mainframe developers to utilize features such as:
 
@@ -22,7 +22,7 @@ It is realizing its languages support by implementing fully functional [language
 - Refactoring such as "rename symbol"
 - Search and replace refactoring across multiple program files
 
-For the [Job Control Language (JCL)](https://www.ibm.com/support/knowledgecenter/zosbasics/com.ibm.zos.zconcepts/zconc_whatisjcl.htm) the extension provides simple syntax highlighting.
+For the Job Control Language (JCL), the extension provides simple syntax highlighting.
 
 To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-tutorial) provided on GitHub.
 

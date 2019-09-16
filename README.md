@@ -1,6 +1,6 @@
 # IBM Z® Open Editor
 
-**IBM Z Open Editor (v0.3.3) is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, and JCL languages.**
+**IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, and JCL languages.**
 
 This extension provides language support for the IBM Enterprise COBOL 6.2 and PL/I 5.2 programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.5, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
@@ -24,7 +24,7 @@ IBM Z Open Editor realizes its language support by implementing fully functional
 
 For the Job Control Language (JCL), the extension provides simple syntax highlighting.
 
-To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-tutorial) provided on GitHub.
+To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
 To interact with z/OS, we recommend installing the [Zowe VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe). This extension can be used to edit COBOL and PL/I files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL and let you browse job spool files.
 
@@ -135,13 +135,13 @@ Searching for identifiers within the outline by pressing `Ctrl+Shift+O` (PC) or 
 
 ### Declaration hovers
 
-To see the working storage definition or DCL definition and the parent group of a variable or paragraph name, move your mouse cursor over to the variable or paragraph name.
+To see the working storage definition or DCL definition and the parent group of a variable or a paragraph name, move your mouse cursor over to the variable or paragraph name.
 
 ![ ](readme/declaration-hover.gif)
 
 ### Peek definition
 
-Click on a variable or paragraph name, right-click for menu, and choose `Peek Definition`.  This opens a CodeLens box that shows where the variable or paragraph was defined in the code. If you use the keyboard shortcut `Alt+F12` (Windows) or `Option+F12` (Mac), the variable or paragraph name is only clicked once before the keyboard shortcuts are pressed. Double-Click any result to go to that location in the file.
+Click on a variable or a paragraph name, right-click for menu, and choose `Peek Definition`.  This opens a CodeLens box that shows where the variable or paragraph was defined in the code. If you use the keyboard shortcut `Alt+F12` (Windows) or `Option+F12` (Mac), the variable or paragraph name is only clicked once before the keyboard shortcuts are pressed. Double-click any result to go to that location in the file.
 
 ![ ](readme/peek-definition.gif)
 

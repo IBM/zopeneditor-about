@@ -3,8 +3,6 @@ email:
 description: The IBM Z® Open Editor for COBOL and PL/I is an IBM Enterprise Language Extension for Visual Studio Code
 keywords: IBM, COBOL, PL/I, PLI, PL1, JCL, jesjcl, jesmsglg, jesysmsg, IDE, LSP, language-server, keybindings, snippet, z/OS, zOS, Z Software, Zowe, Mainframe, Visual Studio Code, VS Code, VSCode, Git, Open Source, Development, Extension, Theia, Che
 baseurl: "/"
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 markdown: kramdown

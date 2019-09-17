@@ -19,7 +19,6 @@
 
   .logo {
     @include breakpoint(small only) {
-      padding: 15px 0px;
       width: fit-content;
       min-width: 235px;
     }
@@ -104,6 +103,12 @@
       font-size: 1.1rem;
       margin-top: 0.5em;
       font-weight: 700;
+    }
+  }
+
+  .main-nav-wrapper {
+    @include breakpoint(small only) {
+      margin-top: 0.2rem;
     }
   }
 }

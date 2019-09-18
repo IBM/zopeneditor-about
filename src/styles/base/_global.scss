@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+*
+* Note to U.S. Government Users Restricted Rights:
+* Use, duplication or disclosure restricted by GSA ADP Schedule
+* Contract with IBM Corp.
+*******************************************************************************/
+
 body,
 p,
 a {
@@ -30,7 +39,7 @@ p {
 a {
     font-weight: 700;
     text-decoration: underline;
-    
+
     &:hover {
         text-decoration: none;
     }
@@ -63,7 +72,7 @@ main {
     @include breakpoint(xlarge){
         padding: 25% 40px 40px 40px;
     }
-    
+
     @include breakpoint(xxlarge){
         padding: 25% 60px 60px 60px;
     }

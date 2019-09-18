@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+*
+* Note to U.S. Government Users Restricted Rights:
+* Use, duplication or disclosure restricted by GSA ADP Schedule
+* Contract with IBM Corp.
+*******************************************************************************/
+
 .videos {
 	background-color: #fff;
 
@@ -21,7 +30,7 @@
 		margin-right: 30px;
 		margin-bottom: 56px;
 	}
-	
+
 	.icon-play-button {
 		position: absolute;
 		top: 25%;
@@ -108,7 +117,7 @@
 	@include breakpoint(medium){
         margin: 6rem 0 2rem 0;
 	}
-	
+
 	@include breakpoint(small){
 		margin-top: 3rem;
 	}
@@ -128,7 +137,7 @@
 	@include breakpoint(medium only){
         margin: 3rem 0 2rem 0;
 	}
-	
+
 	@include breakpoint(small){
 		margin-top: 3rem;
 	}
@@ -141,7 +150,7 @@
 	text-align: center;
 	display: inline-block;
 	margin: 1rem 0;
-	
+
 	@include breakpoint(medium){
         margin: 1rem 0 2rem 0;
     }

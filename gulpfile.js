@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+*
+* Note to U.S. Government Users Restricted Rights:
+* Use, duplication or disclosure restricted by GSA ADP Schedule
+* Contract with IBM Corp.
+*******************************************************************************/
+
 var gulp = require('gulp'),
   plumber = require('gulp-plumber'),
   rename = require('gulp-rename');
@@ -84,5 +93,5 @@ gulp.task('default', gulp.series('browser-sync'), function(done){
   gulp.watch("src/styles/**/*.scss", ['styles']);
   gulp.watch("src/scripts/**/*.js", ['scripts']);
   gulp.watch("*.html", ['bs-reload']);
-  done(); 
+  done();
 });

@@ -1,13 +1,9 @@
 {
   "name": "zopeneditor-about",
-  "version": "1.0.0",
-  "description": "A Gulp file and project generator.",
+  "description": "A Gulp file and project generator for the IBM Z® Open Editor About page.",
   "main": "gulpfile.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Quench",
-  "license": "ISC",
+  "author": "IBM",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "browser-sync": "2.26.7",
     "gulp": "4.0.2",
@@ -23,11 +19,7 @@
   },
   "dependencies": {
     "@ibm/plex": "^2.0.0",
-    "axios": "^0.19.0",
     "carbon-icons": "^7.0.7",
-    "del": "^4.1.1",
-    "foundation-sites": "^6.5.3",
-    "svgxuse": "^1.2.6",
-    "tar": "^4.4.10"
+    "foundation-sites": "^6.5.3"
   }
 }

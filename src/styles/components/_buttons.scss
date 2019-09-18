@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+*
+* Note to U.S. Government Users Restricted Rights:
+* Use, duplication or disclosure restricted by GSA ADP Schedule
+* Contract with IBM Corp.
+*******************************************************************************/
+
 .button {
     background-color: transparent;
     padding: 1rem 1.5rem;
@@ -21,12 +30,12 @@
     padding: 17px 35px;
     letter-spacing: 2px;
 
-    &:before, 
+    &:before,
     &:after {
         content: ' ';
         position: absolute;
         border-radius: 99px;
-    }    
+    }
 
     &:before {
         top: 0;
@@ -46,7 +55,7 @@
     }
 
     &:after {
-        top: 2px; 
+        top: 2px;
         bottom: 2px;
         left: 2px;
         right: 2px;
@@ -58,7 +67,7 @@
 
     &:hover{
         color: #fff;
-        
+
         &:after {
             opacity: 0;
         }

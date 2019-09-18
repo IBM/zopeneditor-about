@@ -1,3 +1,12 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+*
+* Note to U.S. Government Users Restricted Rights:
+* Use, duplication or disclosure restricted by GSA ADP Schedule
+* Contract with IBM Corp.
+*******************************************************************************/
+
 .card_headline {
     font-family: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
     font-size: 36px;
@@ -28,7 +37,7 @@
         margin-bottom: 1rem;
         margin-right: 1rem;
         margin-top: 0.75rem;
-        
+
         @include breakpoint(large){
             width: 60%;
         }
@@ -39,9 +48,9 @@
         &_top{
             max-width: 65%;
             margin-top: 0.85rem;
-            
+
             @include breakpoint(small only){
-            width: 35%;    
+            width: 35%;
             margin-top: 7rem;
             margin-bottom: 2rem;
             }

@@ -1,5 +1,5 @@
 {
-  "name": "ibmzopeneditor-about",
+  "name": "zopeneditor-about",
   "description": "A Gulp file and project generator for the IBM Z® Open Editor About page.",
   "main": "gulpfile.js",
   "author": "IBM",

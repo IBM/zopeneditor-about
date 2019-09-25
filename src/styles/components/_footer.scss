@@ -105,6 +105,23 @@ footer {
   }
 }
 
+.zowe-logo {
+
+  padding-right: 0.95rem;
+
+  @include breakpoint(small only) {
+  width: 5rem;
+  }
+}
+
+.vscode-footer-logo {
+  width: 13rem;
+
+  @include breakpoint(small only) {
+  width: 11rem;
+  }
+}
+
 @include breakpoint(large) {
    font-size: 18px;
     width: 890px;

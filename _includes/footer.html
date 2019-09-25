@@ -34,13 +34,15 @@ Contract with IBM Corp.
                             <li class="medium-order-2 small-order-2">
                                     <p class="footer-logo">Powered by</p>
                                     <a href="https://zowe.org/home/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/zowe-footer-logo.svg"
-                                            alt="Zowe logo">
+                                            alt="Zowe logo"
+                                            class="zowe-logo">
                                     </a>
                                 </li>
                              <li class="medium-order-3 small-order-3">
-                                    <p class="footer-logo">Visual Studio Code</p>
+                                    <p class="footer-logo">Extension available for</p>
                                     <a href="https://code.visualstudio.com/" target="_blank"><img src="{% if site.baseurl | size > 1 %}{{site.baseurl | append: '--@@' | remove: '/--@@' | remove: '--@@' }}{% endif %}/dist/images/vscode-footer-logo.svg"
-                                        alt="Microsoft Visual Studio Code logo">
+                                        alt="Microsoft Visual Studio Code logo"
+                                        class="vscode-footer-logo">
                                 </a>
                             </li>
                         </ul>

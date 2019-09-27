@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor 0.3
+IBM Z Open Editor 0.3.11
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -25,12 +25,9 @@ and all liability for errors and omissions or for any damages accruing
 from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
 
-
-
-
 =====================================================================
 
-Start of Notices for Z Open Editor 0.3
+Start of Notices for Z Open Editor 0.3.11
 
 =====================================================================
 
@@ -46,6 +43,8 @@ software may be components of other included software packages noted later
 in this file.  For more information on the Apache Software Foundation, please
 see http://www.apache.org.
 
+
+find-java-home		1.0.0
 commons-lang3	3.7
 commons-text	1.3
 google.guava	21.0.0.v20170206
@@ -1049,6 +1048,7 @@ cls-hooked	4.2.2
 continuation-local-storage	3.2.1
 emitter-listener	1.1.2
 shimmer	1.2.1
+winreg		1.2.4
 
 
 
@@ -1556,6 +1556,7 @@ uid-number	0.0.6
 unique-filename	1.1.0
 unique-slug	2.0.0
 validate-npm-package-name	3.0.0
+which	1.0.9
 which	1.3.1
 which-module	2.0.0
 wide-align	1.1.2
@@ -1632,9 +1633,10 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for Z Open Editor 0.3
+End of Notices for Z Open Editor 0.3.11
 =====================================================================
 
-L/N:  L-KMCW-BEY2TR
-D/N:  L-KMCW-BEY2TR
-P/N:  L-KMCW-BEY2TR
+
+L/N:  L-KMCW-BGEKL8
+D/N:  L-KMCW-BGEKL8
+P/N:  L-KMCW-BGEKL8

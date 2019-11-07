@@ -1,0 +1,44 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+#
+# Note to U.S. Government Users Restricted Rights:
+# Use, duplication or disclosure restricted by GSA ADP Schedule
+#Contract with IBM Corp.
+
+title: IBM Z® Open Editor
+description: IBM Z® Open Editor is an IBM Enterprise Language Extension for Visual Studio Code.
+keywords: IBM, COBOL, PL/I, PLI, PL1, JCL, jesjcl, jesmsglg, jesysmsg, IDE, LSP, language-server, keybindings, snippet, z/OS, zOS, Z Software, Zowe, Mainframe, Visual Studio Code, VS Code, VSCode, Git, Open Source, Development, Extension, Theia, Che
+
+# Your project's server will run on localhost:xxxx at this port
+PORT: 8000
+
+# Autoprefixer will make sure your CSS works with these browsers
+COMPATIBILITY:
+  - "last 2 versions"
+  - "ie >= 9"
+  - "ios >= 7"
+
+# UnCSS will use these settings
+UNCSS_OPTIONS:
+  html:
+    # Search for used CSS classes in generated HTML files
+    - "dist/**/*.html"
+  ignore:
+    - !!js/regexp .foundation-mq
+    - !!js/regexp ^\.is-.*
+
+# Gulp will reference these paths when it copies files
+PATHS:
+  # Path to dist folder
+  dist: "dist"
+  # Paths to static assets that aren't images, CSS, or JavaScript
+  assets:
+    - "src/assets/**/*"
+    - "!src/assets/{img,js,scss}/**/*"
+  # Paths to Sass libraries, which can then be loaded with @import
+  sass:
+    - "node_modules/foundation-sites/scss"
+    - "node_modules/motion-ui/src"
+  # Paths to JavaScript entry points for webpack to bundle modules
+  entries:
+    - "src/assets/js/app.js"

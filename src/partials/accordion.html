@@ -1,0 +1,37 @@
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+            <li class="accordion-item " data-accordion-item>
+              <!-- Accordion tab title -->
+              <a href="#" class="accordion-title">1. Prerequisites</a>
+              <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+              <div class="accordion-content animated fadeIn" data-tab-content>
+                <p>Review the <a href="legal.html" target=_blank rel="noreferrer noopener">IBM Z Open Editor License Agreement</a>, <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NOTICES.txt" target=_blank rel="noreferrer noopener">Third Party Notices</a>, and <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NON_IBM_LICENSE.txt" target=_blank rel="noreferrer noopener">terms and conditions for separately licensed code</a> before downloading.</p>
+                <p>Here are the prerequisites for installing this extension in Visual Studio Code:</p>
+                <ul>
+                  <li><p>IBM Java™ version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java runtime in order to start it successfully.</p>
+                  <ul>
+                    <li>The preferred Java SDK to use is <a href="https://developer.ibm.com/javasdk/downloads/sdk8" target=_blank rel="noreferrer noopener">IBM Java 8</a>.</li>
+                    <li>Alternatively, you can use <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target=_blank rel="noreferrer noopener">Oracle Java SDK 8</a> and any later version of Oracle Java or <a href="https://openjdk.java.net" target=_blank rel="noreferrer noopener">OpenJDK</a>.</li>
+                  </ul>
+                  <p>Various settings are provided to configure how the extension uses Java. See the <a href="#configuring-java" rel="noreferrer noopener">Configuring Java</a> section below for more details.</p>
+                </li>
+                <li><p>(Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <a href="https://git-scm.com" target=_blank rel="noreferrer noopener">https://git-scm.com</a>.</p>
+              </li>
+              <li><p>(Optional) Zowe CLI 2.22 and the Zowe VS Code extension 0.24.1 or later: To make use of <a href="https://zowe.org" target=_blank rel="noreferrer noopener">Zowe</a> to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html" target=_blank rel="noreferrer noopener">Installing Zowe CLI</a> and <a href="https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites" target=_blank rel="noreferrer noopener">VS Code Extension for Zowe</a>. Once installed, you must <a href="https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile" target=_blank rel="noreferrer noopener">create a Zowe CLI user profile</a> so that data sets can be found and accessed.</p>
+            </li>
+          </ul>
+          <p>If you are looking for some COBOL, PL/I, or JCL code that you can use to explore the editor features then you can use samples that we maintain on Github. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:</p>
+          <p><code>git clone https://github.com/IBM/zopeneditor-sample.git</code></p>
+          <p>Then once you finished installing the IBM Z® Open Editor extension open the directory <code>zopeneditor-sample</code> using the <code>File &gt; Open...</code> menu.</p>
+        </div>
+      </li>
+      <!-- ... -->
+      <li class="accordion-item" data-accordion-item>
+        <!-- Accordion tab title -->
+        <a href="#" class="accordion-title">2. Installing IBM Z Open Editor from the VS Code Marketplace</a>
+        <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+        <div class="accordion-content animated fadeIn" data-tab-content>
+          <p>When a Java runtime is installed, you can get the extension in any of the following ways:</p> <ul><li>Start VS Code, open the Extensions view by clicking the Extensions icon on the activity group or clicking the menu <code>File &gt; Preferences &gt; Extensions</code>, and search for <code>IBM Z Open Editor</code>.</li> <li>Go to the <a href="https://marketplace.visualstudio.com/items?itemName=ibm.zopeneditor" target="_blank" rel="noopener noreferrer">VS Code Marketplace website that hosts IBM Z Open Editor<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ul> <p>Then, click the <code>Install</code> button and wait for the installation to complete.</p>
+        </div>
+      </li>
+      <!-- ... -->
+    </ul>

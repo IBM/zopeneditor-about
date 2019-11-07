@@ -1,0 +1,173 @@
+a:focus {
+	outline: none;
+}
+.title {
+	padding: 20px;
+}
+// infographic
+.infographic-container {
+	background: #001140;
+}
+#infographic {
+	.tile {
+		border: solid 5px #001140;
+		text-align: center;
+		vertical-align: middle;
+		height: 100%;
+		transform: scale(1);
+		transition: all .5s ease-in-out;
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		z-index: 0;
+		color: #fff;
+	}
+	.tile:hover, .tile:focus {
+		border-color: #c9defe;
+		transform: scale(1.01);
+		z-index: 2;
+		-webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		transition: all .5s ease-in-out;
+	}
+	.tile:hover.title {
+		border: solid 5px #001140;
+		transform: scale(1);
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+	}
+	.full-height {
+		height: 100%;
+	}
+	.half-height {
+		height: 50%;
+	}
+	.tile-link {
+		width: 100%;
+		height: 100%;
+		display: inline-block;
+	}
+}
+div.tile:focus-within {
+	border-color: #FFF !important;
+	border-color: #fff;
+	-webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35)!important;
+	-moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35)!important;
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35)!important;
+	transition: all .5s ease-in-out;
+}
+#infographic_mobile {
+	.tile {
+		border: solid 4px #001140;
+		text-align: center;
+		vertical-align: middle;
+		height: 250px;
+		transition: all .5s ease-in-out;
+		-webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		-moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.75);
+		z-index: 0;
+		color: #fff;
+		padding: 15px;
+	}
+	@media only screen and (max-width: 600px) {
+		.tile {
+			border: solid 3px #001140;
+		}
+	}
+	.tile:hover {
+		border-color: #c9defe;
+		-webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		-moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+		transition: all .5s ease-in-out;
+	}
+	.theia {
+		height: 500px;
+	}
+	.about {
+		color: #fff;
+		padding: 20px;
+	}
+	@media only screen and (max-width: 600px) {
+		.tile {
+			padding: 0px;
+			height: 200px;
+		}
+		.theia {
+			height: 400px;
+		}
+	}
+}
+.title {
+	text-align: left !important;
+}
+.tile img {
+	vertical-align: middle;
+	max-width: 100%;
+	height: 100%;
+	max-height: 100%;
+	text-align: center;
+	padding: 15px;
+}
+@media only screen and (max-width: 1200px) {
+	.tile img {
+		padding: 10px;
+	}
+}
+.blue0 {
+	background: #001140;
+}
+.blue1 {
+	background: #001c6b;
+}
+.blue2 {
+	background: #012d9c;
+}
+.blue3 {
+	background: #0042ce;
+}
+.blue4 {
+	background: #0e61ff;
+}
+.blue5 {
+	background: #a6c7ff;
+}
+.blue6 {
+	background: #c9defe;
+}
+.container-info {
+	padding: 1px 0px;
+}
+@media only screen and (max-width: 600px) {
+	.container-info {
+		padding: 2px;
+	}
+}
+//infographic end
+//modal
+.modal-info {
+	color: #fff;
+	border: solid 1px #a6c7ff;
+	-webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.35);
+	padding: 30px 40px 25px;
+}
+h3 {
+	color: #a6c7ff;
+	font-weight: 500;
+	padding-bottom: 15px;
+}
+.modal-info img {
+	border: solid 1px #a6c7ff;
+}
+.close-button {
+	color: #fff;
+}
+.close-button:hover {
+	color: #a6c7ff;
+}
+//modal end

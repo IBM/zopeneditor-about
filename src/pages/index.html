@@ -1,0 +1,82 @@
+<div class="off-canvas-content" data-off-canvas-content>
+  <!-- Your page content lives here -->
+  <!-- Mobile Navigation Start -->
+  {{> sticky_nav_mobile}}
+  <!-- Mobile Navigation End -->
+  <div class="header-grad">
+    <div id="header-container">
+      <!-- Header Start -->
+      <div class="grid-container full" id="header">
+        <div class="grid-x grid-padding-x image-header">
+          <div class="large-6 title-header">
+            <img class="header-svg" src="assets/img/nav_title.svg"><br>
+            <h3>A free modern editing experience for IBM Z Enterprise languages.</h3>
+            <a href="#getting-started" data-smooth-scroll class="button header-button">GET STARTED</a>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+      <!-- Navigation Start -->
+      {{> sticky_nav}}
+      <!-- Navigation End -->
+    </div>
+  </div>
+  <!-- Content Start -->
+  <div id="about">
+    <div class="grid-container full" id="content-container">
+      <div class="grid-x">
+        <!-- display for large resolution -->
+        <div class="small-12 large-12 infographic-container show-for-large" id="infographic">
+          {{> infographic}}
+        </div>
+        <!-- display for large resolution end-->
+        <!-- display for mobile resolution -->
+        <div class="small-12 large-12 infographic-container hide-for-large" id="infographic_mobile">
+          {{> infographic_mobile}}
+        </div>
+        <!-- display for mobile resolution end-->
+      </div>
+    </div>
+    <div class="grid-container full" id="getting-started">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell small-12">
+          <h3>Getting Started</h3><br>
+          {{> accordion}}
+          <br>
+    <p class="light-text">For more detailed information about installation and prerequisites please visit our <a href="https://ibm.github.io/zopeneditor-about/Docs/introduction.html" target="_blank"><b>docs site.</b></a></p>
+  </div>
+</div>
+</div>
+<!-- Content End -->
+<!-- Footer Start -->
+<div class="grid-container full" id="footer">
+<div class="grid-x text-center grid-padding-x">
+  <div class="small-12 medium-12 text-center community">
+    <a href="https://github.com/IBM/zopeneditor-about/issues"><img class="github-logo" src="assets/img/icon-logo-github.svg"></a>
+    <a href="https://github.com/IBM/zopeneditor-about/issues"><h3>Join Our Community</h3></a></div>
+    <div class="cell small-12 medium-4 details">Copyright © 2018 IBM<br><img src="assets/img/nav_title.svg"></div>
+    <div class="cell small-12 medium-4 details">Powered by<br><img src="assets/img/zowe-footer-logo.svg"></div>
+    <div class="cell small-12 medium-4 details">Extension available for<br><img src="assets/img/vscode-footer-logo.svg"></div>
+  </div>
+</div>
+<!-- Footer End -->
+</div>
+<!-- modals -->
+{{> modalVScode}}
+{{> modalZowe}}
+{{> modalTheiaChe}}
+{{> modalExplorers}}
+{{> modalCopybook}}
+{{> modalShortcuts}}
+{{> modalGit}}
+{{> modalCobol}}
+{{> modalSyntax}}
+{{> modalOutline}}
+{{> modalCodelens}}
+{{> modalRefactor}}
+{{> modalSnipets}}
+{{> modalTerminal}}
+<!-- modals end -->
+<!-- off canvas mobile menu -->
+{{> off_canvas_menu}}
+<!-- off canvas mobile menu end-->

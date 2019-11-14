@@ -28,7 +28,7 @@
     "gulp-concat": "^2.5.2",
     "gulp-extname": "^0.2.0",
     "gulp-if": "^2.0.0",
-    "gulp-imagemin": "^4.1.0",
+    "gulp-imagemin": "^6.2.0",
     "gulp-load-plugins": "^1.1.0",
     "gulp-postcss": "^8.0.0",
     "gulp-sass": "^4.0.1",

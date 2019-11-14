@@ -11,12 +11,12 @@ h3 {
 .sticky {
     z-index: 5;
 }
-// nav 
+// nav
 #nav menu{
 	z-index:1000;
 }
 #nav .top-bar {
-	background-color: rgba(0, 17, 64, 0.5);
+	background-color: rgba(0, 17, 64, 0.7);
 	color: #fff;
 	text-align: left;
 	z-index: 1000;
@@ -56,9 +56,9 @@ h3 {
 	background: none;
 }
 #nav ul li:first-child {
-	
+
 	margin-right:20px;
-	
+
 }
 #nav .is-stuck ul li:first-child {
 	margin-right:0px;
@@ -258,7 +258,7 @@ h3 {
 	color:#fff;
 	font-size:1.75rem;
 }
-	
+
 }
 .title-header {
 	height: 335px;
@@ -531,7 +531,7 @@ code {
 //accordion end
 //gettign started end
 
-//footer 
+//footer
 #footer {
 	background-color: #000;
 	padding:0px 0px 20px;
@@ -579,7 +579,7 @@ box-shadow: 0px -8px 5px -3px rgba(0,0,0,0.53);
 	-webkit-box-shadow: inset 0px -10px 5px -3px rgba(0,0,0,0.3);
 -moz-box-shadow: inset 0px -10px 5px -3px rgba(0,0,0,0.3);
 box-shadow: inset 0px -10px 5px -3px rgba(0,0,0,0.3);
-	
+
 }
 @media only screen and (max-width: 1200px) {
 	.community {

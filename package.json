@@ -2,9 +2,11 @@
   "name": "zopeneditor-about",
   "description": "A Gulp file and project generator for the IBM Z® Open Editor About page.",
   "main": "gulpfile.babel.js",
+  "homepage": "https://pages.github.ibm.com/Zowe-Commercial/wazi-about/",
   "scripts": {
     "start": "gulp",
-    "build": "gulp build --production"
+    "build": "gulp build --production",
+    "deploy": "gh-pages -d dist"
   },
   "author": "IBM",
   "license": "SEE LICENSE IN LICENSE",

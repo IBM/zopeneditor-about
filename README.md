@@ -9,7 +9,7 @@
 
 ## Overview
 
-This extension provides language support for the IBM Enterprise COBOL 6.2 and PL/I 5.2 programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.5, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
+This extension provides language support for the IBM Enterprise COBOL 6.3 and PL/I 5.3 programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.4, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
 IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
 
@@ -22,18 +22,18 @@ IBM Z Open Editor realizes its language support by implementing fully functional
   - Go to definition
   - Find all references
 - Code and variable completion
-- Code template snippets
 - Finding and navigating references
 - Previewing of included copybooks and include files
 - Navigate to copybooks and include files
 - Refactoring such as "rename symbol"
+- Custom code snippet support and example code snippets out of the box
 - Search and replace refactoring across multiple program files
 
-For the Job Control Language (JCL), the extension provides simple syntax highlighting.
+For the Job Control Language (JCL), the extension provides syntax highlighting.
 
-To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [**full documentation**](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
+To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
-To interact with z/OS, we recommend installing the [Zowe VS Code Extension](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe). This extension can be used to edit COBOL and PL/I files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL and let you browse job spool files.
+To interact with z/OS, we recommend installing the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL and PL/I files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL and let you browse job spool files.
 
 ## Table of contents
 
@@ -71,13 +71,13 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
 
 - IBM Java™ version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java runtime in order to start it successfully.
   - The preferred Java SDK to use is [IBM Java 8](https://developer.ibm.com/javasdk/downloads/sdk8).
-  - Alternatively, you can use [Oracle Java SDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) and any later version of Oracle Java or [OpenJDK](https://openjdk.java.net).
+  - Alternatively, you can use [Oracle Java SDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or any later version of Oracle Java or [OpenJDK](https://openjdk.java.net). Note, you need the download and configure a JDK and not just the Oracle Client Runtime.
 
   Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
-- (Optional) Zowe CLI 2.22 and the Zowe VS Code extension 0.24.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
+- (Optional) Zowe CLI 2.23 and the Zowe Explorer VS Code extension v0.28.0 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
 
 If you are looking for some COBOL, PL/I, or JCL code that you can use to explore the editor features then you can use samples that we maintain on Github. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:
 
@@ -108,7 +108,7 @@ On Mac:
 On Windows:
 
 ```json
-"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_171"
+"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_181"
 ```
 
 ### Configuring the Java memory allocation

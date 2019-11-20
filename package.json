@@ -1,6 +1,9 @@
 {
   "name": "zopeneditor-about",
-  "description": "A Gulp file and project generator for the IBM Z® Open Editor About page.",
+  "description": "The IBM Z® Open Editor About page.",
+  "version": "0.4.1",
+  "author": "IBM",
+  "license": "SEE LICENSE IN LICENSE",
   "main": "gulpfile.babel.js",
   "homepage": "https://ibm.github.io/zopeneditor-about/",
   "scripts": {
@@ -8,8 +11,6 @@
     "build": "gulp build --production",
     "deploy": "gh-pages -d dist"
   },
-  "author": "IBM",
-  "license": "SEE LICENSE IN LICENSE",
   "dependencies": {
     "foundation-sites": "^6.5.1",
     "gh-pages": "^2.1.1",

@@ -14,8 +14,6 @@ projects:
     source:
       type: git
       location: "https://github.com/IBM/zopeneditor-sample.git"
-attributes:
-  persistVolumes: 'false'
 components:
   -
     type: chePlugin

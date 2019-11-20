@@ -19,11 +19,11 @@ attributes:
 components:
   -
     type: chePlugin
-    reference: https://raw.githubusercontent.com/PrasangAPrajapati/IBM-Z-Dev-Stack-Che/master/zopeneditor.yaml
+    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/add-che-dev/che/plugins/z-open-editor.yaml
     alias: ibm-z-open-editor
   -
     type: chePlugin
-    reference: https://raw.githubusercontent.com/PrasangAPrajapati/IBM-Z-Dev-Stack-Che/master/zowe.yaml
+    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/add-che-dev/che/plugins/zowe.yaml
     alias: zowe
   - 
     alias: ibm-z

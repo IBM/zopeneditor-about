@@ -1,7 +1,0 @@
-# Ignore everything in this directory
-*
-# Except these files
-!.gitignore
-!LICENSE
-!README.md
-!robots.txt

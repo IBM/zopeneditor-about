@@ -9,7 +9,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r git@github.ibm.com:phaumer/zopeneditor-about.git"
   },
   "dependencies": {
     "foundation-sites": "^6.5.1",

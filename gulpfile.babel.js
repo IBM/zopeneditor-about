@@ -50,7 +50,8 @@ gulp.task('default',
 // Delete the "dist" folder
 // This happens every time a build starts
 function clean(done) {
-  rimraf(PATHS.dist, done);
+  rimraf(PATHS.dist + '/assets', done);
+  rimraf(PATHS.dist + '/Docs', done);
 }
 
 // Copy files out of the assets folder
@@ -61,8 +62,10 @@ function copy() {
 }
 
 function copyDocs() {
-  return gulp.src('docs/**/*')
-    .pipe(gulp.dest(PATHS.dist));
+  gulp.src('../wazi-docs/zopeneditor-docs/.vuepress/dist/Docs/*')
+    .pipe(gulp.dest(PATHS.dist + '/Docs'));
+  return gulp.src('../wazi-docs/zopeneditor-docs/.vuepress/dist/assets/**/*')
+    .pipe(gulp.dest(PATHS.dist + '/assets'));
 }
 
 // Copy page templates into finished HTML files

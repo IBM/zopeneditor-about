@@ -1,0 +1,611 @@
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<base url="/zopeneditor-about">
+	<title>IBM Z® Open Editor</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="IBM Z® Open Editor is an IBM Enterprise Language Extension for Visual Studio Code.">
+	<meta name="keywords" content="IBM, COBOL, PL/I, PLI, PL1, JCL, jesjcl, jesmsglg, jesysmsg, IDE, LSP, language-server, keybindings, snippet, z/OS, zOS, Z Software, Zowe, Mainframe, Visual ..."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM Z Open Editor</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+  </head>
+<body>
+
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="off-canvas-content" data-off-canvas-content>
+  <!-- Your page content lives here -->
+  <!-- Mobile Navigation Start -->
+  <!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+  Note to U.S. Government Users Restricted Rights:
+  Use, duplication or disclosure restricted by GSA ADP Schedule
+  Contract with IBM Corp.
+  -->
+  
+  <!-- display for mobile resolution -->
+  <div class="grid-container full hide-for-large" id="nav-mobile">
+    <div class="grid-x">
+      <div class="cell small-12" data-sticky-container>
+        <div class="sticky" data-sticky data-sticky-on="small" data-margin-top="0" data-btm-anchor="footer:bottom">
+          <div class="top-bar topbar-sticky-shrink">
+            <ul class="menu">
+              <li class="menu-svg"><a href="#" class="" data-toggle="offCanvas"><img src="assets/img/menu_icon.svg" class="nav_title_svg"></a></li>
+              <li class="nav-svg"><a href="index.html" class=""><img src="assets/img/nav_title.svg" class="nav_title_svg"></a></li>
+             </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- display for mobile resolution end-->  <!-- Mobile Navigation End -->
+  <div class="header-grad">
+    <div id="header-container">
+      <!-- Header Start -->
+      <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" />
+      <div class="grid-container full" id="header">
+        <div class="grid-x grid-padding-x image-header">
+          <div class="large-6 title-header">
+            <img class="header-svg" src="assets/img/nav_title.svg"><br>
+            <h3>A free modern editing experience for IBM Z Enterprise languages</h3>
+            <a href="#getting-started" data-smooth-scroll class="button header-button">GET STARTED</a>
+          </div>
+        </div>
+      </div>
+      <!-- Header End -->
+      <!-- Navigation Start -->
+      <!--
+      Licensed Materials - Property of IBM
+      (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+      Note to U.S. Government Users Restricted Rights:
+      Use, duplication or disclosure restricted by GSA ADP Schedule
+      Contract with IBM Corp.
+      -->
+      
+      <!-- display for large resolution -->
+      <div class="grid-container full show-for-large" id="nav">
+      	<div class="grid-x">
+      		<div class="cell small-12 " data-sticky-container>
+      			<div class="sticky nav-container" data-margin-top="0" data-sticky="" data-top-anchor="header:bottom">
+      				<div class="top-bar topbar-sticky-shrink">
+      					 <ul class="dropdown menu" data-dropdown-menu data-options="hoverDelay:0; closingTime:5;
+           closeOnClick:true; forceFollow:true;" >
+      					 	<li class="nav-svg"><a href="index.html" class="brand"><img src="assets/img/nav_title.svg" class="nav_title_svg"></a></li>
+      					 	<li><a href="#about" data-smooth-scroll>About</a></li>
+      					 	<li><a href="./Docs/introduction.html" target="_blank">Docs</a></li>
+      					 	<li><a href="#">Blog</a>
+      							<ul class="menu submenu animated fadeIn">
+      								  <li><a href="https://developer.ibm.com/mainframe/2019/09/19/ibm-z-open-editor-brings-cobol-and-pl-i-language-support-to-microsoft-visual-studio-code/" target="_blank">Announcement</a></li>
+      								  <li><a href="https://ibmsystemsmag.com/IBM-Z/9/2019/ibm-z-open-editor" target="_blank">Systems Management Article</a></li>
+      							</ul>
+      						</li>
+      						<li class="feedback"><a href="#">Feedback</a>
+      							<ul class="menu submenu animated fadeIn" >
+      								<li><a href="http://ibm.biz/zopeneditor-survey" target="_blank">Survey</a></li>
+      								<li><a href="https://github.com/IBM/zopeneditor-about/issues" target="_blank">File an Issue</a></li>
+      								<li><a href="https://marketplace.visualstudio.com/items?itemName=IBM.zopeneditor&ssr=false#review-details" target="_blank">Submit a Review</a></li>
+      							</ul>
+      						</li>
+      					 	<li><a href="#getting-started" data-smooth-scroll>Get started</a></li>
+      					 </ul>
+      				</div>
+      			</div>
+      		</div>
+      	</div>
+      </div>
+      <!-- display for large resolution end-->
+      
+      <!-- Navigation End -->
+    </div>
+  </div>
+  <!-- Content Start -->
+  <div id="about">
+    <div class="grid-container full" id="content-container">
+      <div class="grid-x">
+        <!-- display for large resolution -->
+        <div class="small-12 large-12 infographic-container show-for-large" id="infographic">
+          <!--
+          Licensed Materials - Property of IBM
+          (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+          Note to U.S. Government Users Restricted Rights:
+          Use, duplication or disclosure restricted by GSA ADP Schedule
+          Contract with IBM Corp.
+          -->
+          
+          <div class="grid-y grid-frame container-info align-center-middle animated fadeIn" style="height:100vh;">
+              <div class="cell auto" style="max-height:50%;">
+                  <div class="grid-x full-height">
+                      <div class="cell small-3 full-height">
+                          <div class="grid-x full-height">
+                              <div class="cell small-5 tile blue0 title half-height about">
+                                  <h3>About</h3>
+                                  <p><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends Zowe Open Mainframe project.</p>
+          
+          
+                              </div>
+                              <div class="cell auto tile blue3 half-height">
+                                  <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
+                              </div>
+                              <div class="cell tile blue1 half-height" style="width:33.3%">
+                                  <a class="tile-link" data-open="modalZowe" href="#"><img alt="zowe" src="assets/img/zowe.svg" title="Powered by Zowe"></a>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="cell small-1 tile blue4">
+                          <a class="tile-link" data-open="modalTheiaChe" href="#"><img src="assets/img/theia_che.svg" title="Integrates with Theia and Eclipse Che"></a>
+                      </div>
+                      <div class="cell small-1 full-height">
+                          <div class="grid-x full-height">
+                              <div class="cell small-5 tile blue1" style="height:50%;">
+                                  <a class="tile-link" data-open="modalExplorers" href="#"><img alt="explorers" src="assets/img/explorers.svg" title="Explorers"></a>
+                              </div>
+                              <div class="cell small-5 tile blue3" style="height:50%;">
+                                  <a class="tile-link" data-open="modalCopybook" href="#"><img src="assets/img/copybook.svg" title="Preview remote copybooks"></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="cell auto" style="max-height:25%;">
+                  <div class="grid-x full-height infographic-row">
+                      <div class="cell small-1 tile blue4">
+                          <a class="tile-link" data-open="modalShortcuts" href="#"><img src="assets/img/shortcuts.svg" title="Custom shortcuts"></a>
+                      </div>
+                      <div class="cell small-1 tile blue2">
+                          <a class="tile-link" data-open="modalGit" href="#"><img src="assets/img/git.svg" title="Git SCM Integration"></a>
+                      </div>
+                      <div class="cell small-2 tile blue3">
+                          <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL and PL/I. JCL Syntax highlighting"></a>
+                      </div>
+                      <div class="cell small-1 tile blue2">
+                          <a class="tile-link" data-open="modalSyntax" href="#"><img src="assets/img/syntax.svg" title="Realtime syntax check"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="cell auto" style="max-height:25%;">
+                  <div class="grid-x full-height">
+                      <div class="cell small-1 tile blue1">
+                          <a class="tile-link" data-open="modalOutline" href="#"><img src="assets/img/outline.svg" title="Sortable and searchable Outline view"></a>
+                      </div>
+                      <div class="cell small-1 tile blue3">
+                          <a class="tile-link" data-open="modalCodelens" href="#"><img src="assets/img/codelens.svg" title="Declaration refrences, list, and Go to Definition using CodeLens"></a>
+                      </div>
+                      <div class="cell small-1 tile blue4">
+                          <a class="tile-link" data-open="modalRefactor" href="#"><img src="assets/img/refactor.svg" title="Refactoring"></a>
+                      </div>
+                      <div class="cell small-1 tile blue2">
+                          <a class="tile-link" data-open="modalSnipets" href="#"><img src="assets/img/snipets.svg" title="Code snippets"></a>
+                      </div>
+                      <div class="cell small-1 tile blue1">
+                          <a class="tile-link" data-open="modalTerminal" href="#"><img src="assets/img/terminal.svg" title="Terminal integration"></a>
+                      </div>
+                  </div>
+              </div>
+          </div>        </div>
+        <!-- display for large resolution end-->
+        <!-- display for mobile resolution -->
+        <div class="small-12 large-12 infographic-container hide-for-large" id="infographic_mobile">
+          <!--
+          Licensed Materials - Property of IBM
+          (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+          Note to U.S. Government Users Restricted Rights:
+          Use, duplication or disclosure restricted by GSA ADP Schedule
+          Contract with IBM Corp.
+          -->
+          
+          <div class="grid-x container-info align-center-middle animated fadeIn">
+              <div class="cell small-12 blue0 about">
+                  <h3>About</h3>
+                  <p>IBM Z Open Editor brings COBOL and PL/I language support to Microsoft Visual Studio Code. It is one of the several next generation capabilities for an open development experience for z/OS. It also uses and extends Zowe Open Mainframe project.</p>
+              </div>
+              <div class="cell small-12 tile blue3">
+                  <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
+              </div>
+              <div class="cell small-6 tile blue4 full-height theia">
+                  <a class="tile-link" data-open="modalTheiaChe" href="#"><img src="assets/img/theia_che.svg" title="Integrates with Theia and Eclipse Che"></a>
+              </div>
+              <div class="cell small-6">
+                  <div class="grid-x">
+                      <div class="cell small-12 tile blue1">
+                          <a class="tile-link" data-open="modalZowe" href="#"><img alt="zowe" src="assets/img/zowe.svg" title="Powered by Zowe"></a>
+                      </div>
+                      <div class="cell small-12 tile blue2">
+                          <a class="tile-link" data-open="modalGit" href="#"><img src="assets/img/git.svg" title="Git SCM Integration"></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="cell small-6 tile blue1">
+                  <a class="tile-link" data-open="modalExplorers" href="#"><img alt="explorers" src="assets/img/explorers.svg" title="Explorers"></a>
+              </div>
+              <div class="cell small-6 tile blue4">
+                  <a class="tile-link" data-open="modalShortcuts" href="#"><img src="assets/img/shortcuts.svg" title="Custom shortcuts"></a>
+              </div>
+              <div class="cell small-12 tile blue3">
+                  <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL and PL/I. JCL Syntax highlighting"></a>
+              </div>
+          
+              <div class="cell small-6 tile blue4">
+                  <a class="tile-link" data-open="modalRefactor" href="#"><img src="assets/img/refactor.svg" title="Refactoring"></a>
+              </div>
+              <div class="cell small-6 tile blue2">
+                  <a class="tile-link" data-open="modalSnipets" href="#"><img src="assets/img/snipets.svg" title="Code snippets"></a>
+              </div>
+              <div class="cell small-6 tile blue2">
+                  <a class="tile-link" data-open="modalSyntax" href="#"><img src="assets/img/syntax.svg" title="Realtime syntax check"></a>
+              </div>
+              <div class="cell small-6 tile blue1">
+                  <a class="tile-link" data-open="modalTerminal" href="#"><img src="assets/img/terminal.svg" title="Terminal integration"></a>
+              </div>
+              <div class="cell small-12 tile blue4">
+                      <a class="tile-link codelens" data-open="modalCodelens" href="#"><img src="assets/img/codelens_mobile.svg" title="Declaration references, list, and Go to Definition using CodeLens"></a>
+          
+              </div>
+              <div class="cell small-6 tile blue1">
+                  <a class="tile-link" data-open="modalOutline" href="#"><img src="assets/img/outline.svg" title="Sortable and searchable Outline view"></a>
+              </div>
+              <div class="cell small-6 tile blue3">
+                  <a class="tile-link" data-open="modalCopybook" href="#"><img src="assets/img/copybook.svg" title="Preview remote copybooks"></a>
+              </div>
+          </div>        </div>
+        <!-- display for mobile resolution end-->
+      </div>
+    </div>
+    <div class="grid-container full" id="getting-started">
+      <div class="grid-x grid-padding-x grid-padding-y">
+        <div class="cell small-12">
+          <h3>Getting Started</h3><br>
+          <!--
+          Licensed Materials - Property of IBM
+          (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+          Note to U.S. Government Users Restricted Rights:
+          Use, duplication or disclosure restricted by GSA ADP Schedule
+          Contract with IBM Corp.
+          -->
+          
+          <ul class="accordion" data-accordion data-allow-all-closed="true">
+                      <li class="accordion-item " data-accordion-item>
+                        <!-- Accordion tab title -->
+                        <a href="#" class="accordion-title">1. Prerequisites</a>
+                        <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                        <div class="accordion-content animated fadeIn" data-tab-content>
+                          <p>Review the <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/LICENSE.txt" target=_blank rel="noreferrer noopener">IBM Z Open Editor License Agreement</a>, <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NOTICES.txt" target=_blank rel="noreferrer noopener">Third Party Notices</a>, and <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NON_IBM_LICENSE.txt" target=_blank rel="noreferrer noopener">terms and conditions for separately licensed code</a> before downloading.</p>
+                          <p>Here are the prerequisites for installing this extension in VS Code:</p>
+                          <ul>
+                            <li><p>IBM Java™ version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java runtime in order to start it successfully.</p>
+                            <ul>
+                              <li>The preferred Java SDK to use is <a href="https://developer.ibm.com/javasdk/downloads/sdk8" target=_blank rel="noreferrer noopener">IBM Java 8</a>.</li>
+                              <li>Alternatively, you can use <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target=_blank rel="noreferrer noopener">Oracle Java SDK 8</a> and any later version of Oracle Java or <a href="https://openjdk.java.net" target=_blank rel="noreferrer noopener">OpenJDK</a>.</li>
+                            </ul>
+                            <p>Various settings are provided to configure how the extension uses Java. See the <a href="./Docs/getting_started.html#configuring-java-for-ibm-z-open-editor" target=_blank rel="noreferrer noopener">Configuring Java</a> section below for more details.</p>
+                          </li>
+                          <li><p>(Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <a href="https://git-scm.com" target=_blank rel="noreferrer noopener">https://git-scm.com</a>.</p>
+                        </li>
+                        <li><p>(Optional) Zowe CLI 2.22 and the Zowe VS Code extension 0.24.1 or later: To make use of <a href="https://zowe.org" target=_blank rel="noreferrer noopener">Zowe</a> to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see <a href="https://docs.zowe.org/stable/user-guide/cli-installcli.html" target=_blank rel="noreferrer noopener">Installing Zowe CLI</a> and <a href="https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites" target=_blank rel="noreferrer noopener">VS Code Extension for Zowe</a>. Once installed, you must <a href="./Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile" target=_blank rel="noreferrer noopener">create a Zowe CLI user profile</a> so that data sets can be found and accessed.</p>
+                      </li>
+                    </ul>
+                    <p>If you are looking for some COBOL, PL/I, or JCL code that you can use to explore the editor features then you can use samples that we maintain on GitHub. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:</p>
+                    <p><code>git clone https://github.com/IBM/zopeneditor-sample.git</code></p>
+                    <p>Then once you finished installing the IBM Z Open Editor extension open the directory <code>zopeneditor-sample</code> using the <code>File &gt; Open...</code> menu.</p>
+                  </div>
+                </li>
+                <!-- ... -->
+                <li class="accordion-item" data-accordion-item>
+                  <!-- Accordion tab title -->
+                  <a href="#" class="accordion-title">2. Installing IBM Z Open Editor from the VS Code Marketplace</a>
+                  <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                  <div class="accordion-content animated fadeIn" data-tab-content>
+                    <p>When a Java runtime is installed, you can get the extension in any of the following ways:</p> <ul><li>Start VS Code, open the Extensions view by clicking the Extensions icon on the activity group or clicking the menu <code>File &gt; Preferences &gt; Extensions</code>, and search for <code>IBM Z Open Editor</code>.</li> <li>Go to the <a href="https://marketplace.visualstudio.com/items?itemName=ibm.zopeneditor" target="_blank" rel="noopener noreferrer">VS Code Marketplace website that hosts IBM Z Open Editor<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a>.</li></ul> <p>Then, click the <code>Install</code> button and wait for the installation to complete.</p>
+                  </div>
+                </li>
+                <!-- ... -->
+              </ul>          <br>
+    <p class="light-text">For more detailed information about installation and prerequisites please visit our <a href="./Docs/introduction.html" target="_blank"><b>docs site.</b></a></p>
+  </div>
+</div>
+</div>
+<!-- Content End -->
+<!-- Footer Start -->
+<div class="grid-container full" id="footer">
+<div class="grid-x text-center grid-padding-x">
+  <div class="small-12 medium-12 text-center community">
+    <a href="https://github.com/IBM/zopeneditor-about/issues"><img class="github-logo" src="assets/img/icon-logo-github.svg"></a>
+    <a href="https://github.com/IBM/zopeneditor-about/issues"><h3>Join Our Community</h3></a></div>
+    <div class="cell small-12 medium-4 details">Copyright © 2018 IBM<br><a href="#"><img src="assets/img/nav_title.svg" alt="IBM Z Open Editor"></a></div>
+    <div class="cell small-12 medium-4 details">Powered by<br><a href="https://zowe.org/home/" target="_blank"><img src="assets/img/zowe-footer-logo.svg" alt="Zowe"></a></div>
+    <div class="cell small-12 medium-4 details">Extension available for<br><a href="https://code.visualstudio.com/" target="_blank"><img src="assets/img/vscode-footer-logo.svg" alt="Microsoft Visual Studio Code"></a></div>
+  </div>
+</div>
+<!-- Footer End -->
+</div>
+<!-- modals -->
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalVScode" data-reveal>
+  <h3>VS Code Extension</h3>
+  <p>IBM Z Open Editor is available as an extension for VS Code, which is becoming the most popular development environment according to recent surveys. With so many current and next generation developers having experience with VS Code, IBM<sup>®</sup> Enterprise language support in VS Code makes enterprise programming more attractive and productive by allowing developers to use this popular editor, with the option to integrate numerous other extensions from the VS Code Marketplace.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalZowe" data-reveal>
+  <h3>Integration with Zowe</h3>
+  <p>IBM Z Open Editor is designed to integrate seamlessly with the VS Code Extension for Zowe. The VS Code Extension for Zowe allows you to connect remotely to the IBM z/OS mainframe system, where you can manage your data sets, files, and jobs. IBM Z Open Editor allows you to efficiently and effectively edit your COBOL and PL/I applications.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalTheiaChe" data-reveal>
+  <h3>Integration with Theia and Eclipse Che</h3>
+  <p>IBM Z Open Editor has been tested to work in Cloud-based environments as well. Add it to any Eclipse Theia installation as a plug-in and it will automatically integrate its capabilities into that Browser-based editor. Alternatively, you can configure it as an editor plug-in in Eclipse Che to have a full COBOL and PL/I editing experience inside Che.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalExplorers" data-reveal>
+  <h3>MVS™, USS, and JES | Remote Explorers</h3>
+  <p>If you have z/OSMF configured, you can use Zowe CLI and the Zowe VS Code Extension to load and edit your files directly from z/OS or download them into your local workspace, add them to Git to control your changes, and then upload the changed files into the same or new data sets to compile and run your application. You can do all of these operations from IBM Z Open Editor directly with right-clicks and dialog interactions, and command-line operations using the VS Code Terminal view that integrates right below your editor, giving you one central view to everything.</p>
+
+<p>After configuration, IBM Z Open Editor can also take advantage of the Zowe CLI protocol for resolving dependencies over the network. For example, you can edit your COBOL programs locally, but resolve copybook dependencies directly out of MVS using the same Zowe connections.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalCopybook" data-reveal>
+  <h3>Preview Remote Copybooks</h3>
+  <img src="assets/img/preview-cpy.gif"><br><br>
+  <p>To preview the contents of a copybook, move your mouse cursor over the copybook name in a COPY statement. You can also open the copybook in a separate editor by pressing Ctrl+Click (Windows) or Cmd+Click (Mac). Resolving PL/I include files works similarly.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalShortcuts" data-reveal>
+  <h3>Custom Shortcuts</h3>
+  <p>Use VS Code's custom Keyboard Shortcut and Keymaps feature to define your own shortcuts and custom ways of navigating your programs in the editor the way you want.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalGit" data-reveal>
+  <h3>Git SCM Integration</h3>
+  <p>Use the built-in VS Code Git capabilities to quickly find and access recently edited code. Use colored bars highlighting recently changed lines in an open editor window. Clicking on the SCM (Git) view will reveal and provide access to files that have been recently modified. If you have the GitLens extension installed, then you can also view in-editor annotations to see the most recent commit modifying each line of code.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalCobol" data-reveal>
+  <h3>COBOL, Pl/I, and JCL</h3>
+  <p>Boost your productivity with a modern and language-sensitive editor.</p>
+
+<p>Using the Language Server Protocol (LSP), IBM Z Open Editor supports COBOL and PL/I outline view, syntax highlighting, code completion, code templates, find all references, peek definition, search and rename refactoring across multiple program files, and much more.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalSyntax" data-reveal>
+  <h3>Realtime Syntax Check</h3>
+  <p>You do not need to compile your COBOL or PL/I code anymore to find syntax errors. The editor will show them to you inside the editor as well as a dedicated Problems View just while you type.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalOutline" data-reveal>
+  <h3>Outline View</h3>
+  <img src="assets/img/outline-explorer.gif"><br><br>
+  <p>Explore and navigate your COBOL and PL/I code efficiently with a complete sortable and interactive table of contents for your code. Use the Outline View to quickly jump to any part of your code by clicking its section header, or search for identifiers within the outline. Icons next to each Outline View item make it easy to identify procedures, loops, and more.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalCodelens" data-reveal>
+  <h3>VS Code CodeLens</h3>
+  <img src="assets/img/peek-references.gif"><br><br>
+  <p>Experience a full integration of standard VS Code language feature such as CodeLens. These are mini-views that overlay the editor showing you content from another location. For example, right-click a variable or paragraph and select Peek References from the context menu, which opens a code lens showing all the places that reference the item. Then quickly review the code for each occurrence or navigate the editor to that location.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalRefactor" data-reveal>
+  <h3>Refactoring</h3>
+  <p>Utilize various refactoring operations such as Rename Symbol, which updates selected variable or paragraph name in the entire program as well as copybook or includes if it is attached to that symbol. Or, use Search-and-Replace operations with regular expressions to find and update and content over multiple files with a few mouse-clicks.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalSnipets" data-reveal>
+  <h3>Code Snippets</h3>
+  <p>Boost your productivity not only with code completion, but a curated list of larger COBOL and PL/I code snippets that ship with this extension. You can also create and manage your own code snippets that then integrate into the editing experience appearing just next to the pre-packaged snippets.</p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="reveal small blue1 modal-info animated fadeInUp" id="modalTerminal" data-reveal>
+  <h3>Terminal Integration</h3>
+  <p>VS Code integrates a full terminal directly into the editor, which allows you to execute commands and scripts against your files inside the editor experience. Use it to ssh to USS and combined with a Zowe CLI installation directly interact with z/OS from that terminal starting jobs, uploading, downloading files etc. </p>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<!-- modals end -->
+<!-- off canvas mobile menu -->
+<!--
+Licensed Materials - Property of IBM
+(C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
+Note to U.S. Government Users Restricted Rights:
+Use, duplication or disclosure restricted by GSA ADP Schedule
+Contract with IBM Corp.
+-->
+
+<div class="off-canvas position-left large" data-off-canvas="" data-transition="push" id="offCanvas">
+	<ul class="vertical menu">
+		<li class="section">
+			<a data-smooth-scroll="" data-toggle="offCanvas" href="#about">About</a>
+		</li>
+		<li class="section">
+			<a href="https://ibm.github.io/zopeneditor-about/Docs/introduction.html" target="_blank">Docs</a>
+		</li>
+		<li class="section">
+			<p class="section-title">Blog</p>
+			<ul class="vertical menu submenu">
+				<li>
+					<a href="https://developer.ibm.com/mainframe/2019/09/19/ibm-z-open-editor-brings-cobol-and-pl-i-language-support-to-microsoft-visual-studio-code/" target="_blank">Announcement</a>
+				</li>
+				<li>
+					<li><a href="https://ibmsystemsmag.com/IBM-Z/9/2019/ibm-z-open-editor" target="_blank">Systems Management Article</a></li>
+				</li>
+			</ul>
+		</li>
+		<li class="section">
+			<p class="section-title">Feedback</p>
+			<ul class="vertical menu submenu">
+				<li>
+					<a href="http://ibm.biz/zopeneditor-survey" target="_blank">Survey</a>
+				</li>
+				<li>
+					<a href="https://github.com/IBM/zopeneditor-about/issues" target="_blank">File an Issue</a>
+				</li>
+				<li>
+					<a href="https://marketplace.visualstudio.com/items?itemName=IBM.zopeneditor&ssr=false#review-details" target="_blank">Submit a Review</a>
+				</li>
+			</ul>
+		</li>
+		<li class="section">
+			<a href="#getting-started" data-smooth-scroll data-toggle="offCanvas">Get started</a>
+		</li>
+	</ul>
+</div><!-- off canvas mobile menu end-->
+
+<script src="assets/js/app.js"></script>
+<!-- Zowe -->
+<!-- Zowe End -->
+</body>
+</html>

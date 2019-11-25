@@ -1,6 +1,6 @@
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM Z Open Editor 0.3.11
+IBM Z Open Editor 0.4
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -25,7 +25,7 @@ spdx-exceptions 2.2.0
 
 =====================================================================
 
-Start of Separately Licensed Code Notices for IBM Z Open Editor 0.3.11
+Start of Separately Licensed Code Notices for IBM Z Open Editor 0.4
 
 =====================================================================
 
@@ -361,11 +361,11 @@ END OF CREATIVE COMMONS LEGAL NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Separately Licensed Code Notices for IBM Z Open Editor 0.3.11
+End of Separately Licensed Code Notices for IBM Z Open Editor 0.4
 
 =====================================================================
 
 
-L/N:  L-KMCW-BGEKL8
-D/N:  L-KMCW-BGEKL8
-P/N:  L-KMCW-BGEKL8
+L/N:  L-KMCW-BJ3JNW
+D/N:  L-KMCW-BJ3JNW
+P/N:  L-KMCW-BJ3JNW

@@ -6,7 +6,7 @@
 # Contract with IBM Corp.
 apiVersion: 1.0.0
 metadata:
-  name: IBM-Z-Developer-Experience-
+  name: IBM-Z-Open-Editor-
 components:
 projects:
   -

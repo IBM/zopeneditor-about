@@ -17,20 +17,20 @@ projects:
 components:
   -
     type: chePlugin
-    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/add-che-dev/che/plugins/z-open-editor.yaml
+    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
     alias: ibm-z-open-editor
   -
     type: chePlugin
-    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/add-che-dev/che/plugins/zowe.yaml
+    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/zowe.yaml
     alias: zowe
-  - 
+  -
     alias: ibm-z
     type: kubernetes
     mountSources: true
     referenceContent: |
          kind: List
          items:
-          - 
+          -
            apiVersion: v1
            kind: Pod
            metadata:
@@ -41,9 +41,9 @@ components:
                persistentVolumeClaim:
                  claimName: ibm-z-volumeClaim
             containers:
-             - 
+             -
               image: 'quay.io/eclipse/che-java11-gradle:nightly'
-              env: 
+              env:
               - name: THEIA_PLUGINS
                 value: local-dir:///plugins
               name: ibm-z

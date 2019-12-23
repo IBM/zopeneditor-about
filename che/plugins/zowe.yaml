@@ -22,4 +22,4 @@ spec:
     name: vscode-node-zowe
     memoryLimit: '512Mi'
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.1/Zowe.vscode-extension-for-zowe-0.29.0.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.3/Zowe.vscode-extension-for-zowe-1.0.1.vsix

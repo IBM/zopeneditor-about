@@ -1,66 +1,35 @@
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corporation 2019. All Rights Reserved.
+# (C) Copyright IBM Corporation 2019, 2020. All Rights Reserved.
 #
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
 # Contract with IBM Corp.
-apiVersion: 1.0.0
-metadata:
-  name: IBM-Z-Open-Editor-
-components:
-projects:
-  -
-    name: ibm-zopeneditor-sample
-    source:
-      type: git
-      location: "https://github.com/IBM/zopeneditor-sample.git"
-components:
-  -
-    type: chePlugin
-    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
-    alias: ibm-z-open-editor
-  -
-    type: chePlugin
-    reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/zowe.yaml
-    alias: zowe
-  -
-    alias: ibm-z
-    type: kubernetes
-    mountSources: true
-    referenceContent: |
-         kind: List
-         items:
-          -
-           apiVersion: v1
-           kind: Pod
-           metadata:
-            name: ibm-z
-           spec:
-            volumes:
-             - name: ibm-z
-               persistentVolumeClaim:
-                 claimName: ibm-z-volumeClaim
-            containers:
-             -
-              image: 'quay.io/eclipse/che-java11-gradle:nightly'
-              env:
-              - name: THEIA_PLUGINS
-                value: local-dir:///plugins
-              name: ibm-z
-              resources:
-               limits:
-                memory: 1024Mi
-              volumeMounts:
-               - mountPath: /projects
-                 name: projects
-          -
-           apiVersion: v1
-           kind: PersistentVolumeClaim
-           metadata:
-            name: ibm-z-volumeClaim
-           spec:
-            accessModes:
-             - ReadWriteOnce
-            resources:
-              requests:
-                storage: 128Mi
+---
+  apiVersion: 1.0.0
+  metadata:
+    generateName: IBM-Z-Open-Editor-
+  projects:
+    -
+      name: ibm-zopeneditor-sample
+      source:
+        type: git
+        location: "https://github.com/IBM/zopeneditor-sample.git"
+  components:
+    -
+      type: chePlugin
+      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/fix-zowe-dir/che/plugins/z-open-editor.yaml
+      alias: ibm-z-open-editor
+    -
+      type: chePlugin
+      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/fix-zowe-dir/che/plugins/zowe.yaml
+      alias: zowe
+    -
+      type: dockerimage
+      alias: ibmz
+      image: quay.io/eclipse/che-java11-gradle:nightly
+      memoryLimit: 512Mi
+      volumes:
+        - name: ibmz
+          containerPath: /home/user/.zowe
+      mountSources: true
+  

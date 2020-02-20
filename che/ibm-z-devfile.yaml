@@ -17,11 +17,11 @@
   components:
     -
       type: chePlugin
-      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/fix-zowe-dir/che/plugins/z-open-editor.yaml
+      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/master/che/plugins/z-open-editor.yaml
       alias: ibm-z-open-editor
     -
       type: chePlugin
-      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/fix-zowe-dir/che/plugins/zowe.yaml
+      reference: https://raw.githubusercontent.com/PrasangAPrajapati/zopeneditor-about/master/che/plugins/zowe.yaml
       alias: zowe
     -
       type: dockerimage

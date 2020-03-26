@@ -5,6 +5,7 @@
 ## License
 
 - The license for the IBM Z Open Editor can be found in the [product-licenses](./product-licenses/) folder in this repository. You can use this repository to file issues for the IBM Z Open Editor as well.
+- The license for the IBM RSE API Plug-in for Zowe CLI can be found in the [product-licenses/rse-api-plugin-for-zowe-cli](./product-licenses/rse-api-plugin-for-zowe-cli/) folder in this repository. You can use this repository to file issues for the IBM RSE API Plug-in for Zowe CLI as well.
 - The files managed in this repository contain files for presenting the <https://ibm.github.io/zopeneditor-about/> Web site as well as samples used for tutorials. The license for these files you can find in the file [LICENSE](./LICENSE).
 
 ## Overview
@@ -26,7 +27,7 @@ IBM Z Open Editor realizes its language support by implementing fully functional
 - Previewing of included copybooks and include files
 - Navigate to copybooks and include files
 - Refactoring such as "rename symbol"
-- Custom code snippet support and example code snippets out of the box
+- Custom code snippet support and more than 200 high value code snippets for COBOL, PL/I, and JCL out of the box
 - Search and replace refactoring across multiple program files
 
 For the Job Control Language (JCL), the extension provides syntax highlighting.
@@ -75,9 +76,9 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
 
   Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
 
-- (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
+- Zowe CLI 6.8.2 and the Zowe Explorer VS Code extension v1.3.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
 
-- (Optional) Zowe CLI 2.23 and the Zowe Explorer VS Code extension v0.28.0 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
+- (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
 If you are looking for some COBOL, PL/I, or JCL code that you can use to explore the editor features then you can use samples that we maintain on Github. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:
 

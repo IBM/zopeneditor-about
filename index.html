@@ -91,7 +91,7 @@ Contract with IBM Corp.
       					 <ul class="dropdown menu" data-dropdown-menu data-options="hoverDelay:0; closingTime:5;
            closeOnClick:true; forceFollow:true;" >
       					 	<li class="nav-svg"><a href="index.html" class="brand"><img src="assets/img/nav_title.svg" class="nav_title_svg"></a></li>
-      					 	<li><a href="#about" data-smooth-scroll>About</a></li>
+      					 	<li class="about-display"><a href="#about" data-smooth-scroll>About</a></li>
       					 	<li><a href="./Docs/introduction.html" target="_blank">Docs</a></li>
       					 	<li><a href="#">Blog</a>
       							<ul class="menu submenu animated fadeIn">
@@ -131,16 +131,31 @@ Contract with IBM Corp.
           Use, duplication or disclosure restricted by GSA ADP Schedule
           Contract with IBM Corp.
           -->
-          
+          <div class="grid-container full about-title" id="about">
+          <div class="grid-x">
+              <div class="cell small-5">
+                  <h3>About</h3>
+              </div>
+          </div>
+          </div>
           <div class="grid-y grid-frame container-info align-center-middle animated fadeIn" style="height:100vh;">
               <div class="cell auto" style="max-height:50%;">
                   <div class="grid-x full-height">
                       <div class="cell small-3 full-height">
                           <div class="grid-x full-height">
-                              <div class="cell small-5 tile blue0 title half-height about">
-                                  <p><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends Zowe Open Mainframe project.</p>
-                                   <a href="#callout" data-smooth-scroll class="button callout-button animated slideInLeft">Try IBM Z Open Editor with the new IBM Remote System Explorer API Beta!</a>
+                              <div class="cell small-5 title half-height about">
+                                   <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends Zowe Open Mainframe project.</p>
+                                    <p class="rse-beta"><span class="rse-callout"><b class="alert">NEW!</b> <b>IBM Remote System Explorer API Beta</b> for IBM Z Open Editor</span> <b class="learn-link"><a href="#callout" data-smooth-scroll>LEARN MORE</a></b></p>
                               </div>
+                              <!--<div class="cell small-5 tile blue0 title quarter-height about">
+                                  <div class="grid-x fluid">
+                                      <div class="cell medium-5 xlarge-shrink callout-header">
+                                          <p class="">
+                                              <b class="alert">NEW!</b> <b>IBM Remote System Explorer API Beta</b> for IBM Z Open Editor <b class="learn-link"><a href="#callout" data-smooth-scroll>LEARN MORE</a></b></p>
+                                      </div>
+                                      <div class=" cell medium-shrink large-shrink"><p><a href="#callout" data-smooth-scroll class="button callout-button animated slideInLeft">LEARN MORE</a></p></div>
+                                  </div>
+                              </div>-->
                               <div class="cell auto tile blue3 half-height">
                                   <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
                               </div>
@@ -210,11 +225,10 @@ Contract with IBM Corp.
           Use, duplication or disclosure restricted by GSA ADP Schedule
           Contract with IBM Corp.
           -->
-          
           <div class="grid-x container-info align-center-middle animated fadeIn">
-              <div class="cell small-12 blue0 about">
-                  <p><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends Zowe Open Mainframe project.</p>
-                  <a href="#callout" data-smooth-scroll class="button callout-button animated slideInLeft">Try IBM Z Open Editor with the new IBM Remote System Explorer API Beta!</a>
+              <div class="cell small-12 blue0 about about-mobile"><h3>About</h3><br>
+                  <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends Zowe Open Mainframe project.</p>
+                  <p class="rse-beta"><span class="rse-callout"><b class="alert">NEW!</b> <b>IBM Remote System Explorer API Beta</b> for IBM Z Open Editor</span> <b class="learn-link"><a href="#callout" data-smooth-scroll>LEARN MORE</a></b></p>
               </div>
               <div class="cell small-12 tile blue3">
                   <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
@@ -317,7 +331,7 @@ Contract with IBM Corp.
                 </li>
                 <!-- ... -->
               </ul>          <br>
-    <p class="light-text">For more detailed information about installation and prerequisites please visit our <a href="./Docs/introduction.html" target="_blank"><b>docs site.</b></a></p>
+          <p class="light-text">For more detailed information about installation and prerequisites please visit our <a href="./Docs/introduction.html" target="_blank"><b>docs site.</b></a></p>
         </div>
       </div>
     </div>
@@ -328,7 +342,7 @@ Contract with IBM Corp.
         </div>
         <div class="cell small-12 medium-8 large-10">
           <h3>Try IBM Remote System Explorer API Beta!</h3><br>
-          <p>You can now use Z Open Editor to connect to z/OS through IBM Remote System Explorer to work with z/OS resources. The combination of the new Remote System Explorer API beta in conjunction with IBM z/OS Explorer, IBM Z Open Editor, Zowe Explorer, and Zowe CLI offers you an alternative to z/OSMF for working with MVS files, JES jobs, and UNIX files. If you are interested, please click the button to learn more and give it a try.</p><a href="https://epwt-www.mybluemix.net/software/support/trial/cst/welcomepage.wss?siteId=536&tabId=1045&w=1&p=1&_ga=2.108910983.403655627.1584975487-2110257964.1580332105" data-smooth-scroll class="button header-button" target="_blank">TRY IT NOW</a>
+          <p>You can now use IBM Z Open Editor to connect to z/OS through IBM Remote System Explorer to work with z/OS resources. The combination of the new Remote System Explorer API beta in conjunction with IBM z/OS Explorer, IBM Z Open Editor, Zowe Explorer, and Zowe CLI offers you an alternative to z/OSMF for working with MVS files, JES jobs, and UNIX files. If you are interested, please click the button to learn more and give it a try.</p><a href="https://epwt-www.mybluemix.net/software/support/trial/cst/welcomepage.wss?siteId=536&tabId=1045&w=1&p=1&_ga=2.108910983.403655627.1584975487-2110257964.1580332105" data-smooth-scroll class="button header-button" target="_blank">TRY IT NOW</a>
         </div>
       </div>
     </div>

@@ -305,10 +305,15 @@ Contract with IBM Corp.
                           <p>Review the <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/LICENSE.txt" target=_blank rel="noreferrer noopener">IBM Z Open Editor License Agreement</a>, <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NOTICES.txt" target=_blank rel="noreferrer noopener">Third Party Notices</a>, and <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NON_IBM_LICENSE.txt" target=_blank rel="noreferrer noopener">terms and conditions for separately licensed code</a> before downloading.</p>
                           <p>Here are the prerequisites for installing this extension in VS Code:</p>
                           <ul>
-                            <li><p>IBM Java™ version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java runtime in order to start it successfully.</p>
+                            <li><p>Java SDK version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK in order to start it successfully.</p>
                             <ul>
-                              <li>The preferred Java SDK to use is <a href="https://developer.ibm.com/javasdk/downloads/sdk8" target=_blank rel="noreferrer noopener">IBM Java 8</a>.</li>
-                              <li>Alternatively, you can use <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target=_blank rel="noreferrer noopener">Oracle Java SDK 8</a> and any later version of Oracle Java or <a href="https://openjdk.java.net" target=_blank rel="noreferrer noopener">OpenJDK</a>. Note, you need to download and configure a JDK and not just the Oracle Client Runtime.</li>
+                              <li>
+                                  <p>You can use <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target=_blank rel="noreferrer noopener">Oracle Java SDK 8</a> or the LTS version 11 of Oracle Java. Alternatively, you can use version 8 or 11 of the <a href="https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=openj9" target=_blank rel="noreferrer noopener">OpenJDK</a>.
+                                  </p>
+                                  <p>
+                                      Note, in all cases, you need to download and configure a full JDK and not just a Client Runtime version of Java. The language servers will not work with only a Client Runtime version.
+                                  </p>
+                              </li>
                             </ul>
                             <p>Various settings are provided to configure how the extension uses Java. See the <a href="./Docs/getting_started.html#configuring-java-for-ibm-z-open-editor" target=_blank rel="noreferrer noopener">Configuring Java</a> section for more details.</p>
                           </li>

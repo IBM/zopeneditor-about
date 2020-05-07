@@ -70,11 +70,12 @@ Review the [IBM Z Open Editor License Agreement](https://github.com/IBM/zopenedi
 
 Here are the prerequisites for installing this extension in Visual Studio Code:
 
-- IBM Java™ version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java runtime in order to start it successfully.
-  - The preferred Java SDK to use is [IBM Java 8](https://developer.ibm.com/javasdk/downloads/sdk8).
-  - Alternatively, you can use [Oracle Java SDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or any later version of Oracle Java or [OpenJDK](https://openjdk.java.net). Note, you need the download and configure a JDK and not just the Oracle Client Runtime.
+- Java SDK version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK in order to start it successfully.
+  - You can use [Oracle Java SDK 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the LTS version 11 of Oracle Java. Alternatively, you can use version 8 or 11 of the [OpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=openj9).
 
-  Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
+    Note, in all cases, you need to download and configure a full JDK and not just a Client Runtime version of Java. The language servers will not work with only a Client Runtime version.
+
+    Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
 
 - Zowe CLI 6.8.2 and the Zowe Explorer VS Code extension v1.3.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
 

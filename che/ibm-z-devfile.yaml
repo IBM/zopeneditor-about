@@ -29,6 +29,6 @@
       image: quay.io/eclipse/che-java11-gradle:nightly
       memoryLimit: 512Mi
       volumes:
-        - name: ibmz
+        - name: ibmzowe
           containerPath: /home/user/.zowe
       mountSources: true

@@ -25,4 +25,4 @@ spec:
     - mountPath: "/home/theia/.m2"
       name: m2
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.7/zopeneditor-0.4.7.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.9/zopeneditor-0.4.9.vsix

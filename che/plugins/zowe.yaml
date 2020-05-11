@@ -18,11 +18,11 @@ category: Other
 firstPublicationDate: "2019-10-03"
 spec:
   containers:
-    - image: "quay.io/eclipse/che-sidecar-node:10-0cb5d78"
-      name: vscode-zowe
-      memoryLimit: "1500Mi"
-      volumes:
-      - mountPath: "/home/theia/.zowe"
-        name: ibmz
+  - image: "quay.io/crw/stacks-node-rhel8:2.1"
+    name: vscode-node-zowe
+    memoryLimit: '512Mi'
+    volumes:
+    - mountPath: "/home/theia/.zowe"
+      name: ibmzowe
   extensions:
-    - https://github.com/IBM/zopeneditor-about/releases/download/0.4.7/Zowe.vscode-extension-for-zowe-1.3.1.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.7/Zowe.vscode-extension-for-zowe-1.3.1.vsix

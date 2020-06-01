@@ -1,0 +1,28 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corporation 2019, 2020. All Rights Reserved.
+#
+# Note to U.S. Government Users Restricted Rights:
+# Use, duplication or disclosure restricted by GSA ADP Schedule
+# Contract with IBM Corp.
+apiVersion: v2
+publisher: IBM
+name: zowe
+version: latest
+type: VS Code extension
+displayName: Zowe
+title: Zowe VS Code extension, powered by Zowe CLI
+description: VS Code extension, powered by Zowe CLI, that streamlines interaction with mainframe data sets, USS files, and jobs.
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/zowe/vscode-extension-for-zowe.git
+category: Other
+firstPublicationDate: "2019-10-03"
+spec:
+  containers:
+  - image: "quay.io/crw/stacks-node-rhel8:2.1"
+    name: vscode-node-zowe
+    memoryLimit: '512Mi'
+    volumes:
+    - mountPath: "/home/theia/.zowe"
+      name: ibmzowe
+  extensions:
+  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.9/Zowe.vscode-extension-for-zowe-1.5.1.vsix

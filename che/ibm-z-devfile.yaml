@@ -1,0 +1,34 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corporation 2019, 2020. All Rights Reserved.
+#
+# Note to U.S. Government Users Restricted Rights:
+# Use, duplication or disclosure restricted by GSA ADP Schedule
+# Contract with IBM Corp.
+---
+  apiVersion: 1.0.0
+  metadata:
+    generateName: IBM-Z-Open-Editor-
+  projects:
+    -
+      name: ibm-zopeneditor-sample
+      source:
+        type: git
+        location: "https://github.com/IBM/zopeneditor-sample.git"
+  components:
+    -
+      type: chePlugin
+      reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/z-open-editor.yaml
+      alias: ibm-z-open-editor
+    -
+      type: chePlugin
+      reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/zowe.yaml
+      alias: zowe
+    -
+      type: dockerimage
+      alias: ibmz
+      image: quay.io/eclipse/che-java11-gradle:nightly
+      memoryLimit: 512Mi
+      volumes:
+        - name: ibmzowe
+          containerPath: /home/user/.zowe
+      mountSources: true

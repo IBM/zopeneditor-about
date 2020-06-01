@@ -9,9 +9,10 @@ about: Create a bug report that describes a problem, regression, or faulty behav
 
 Before filing a bug check here if this is already a documented or known issue:
 
-- Check the documentation's Known Issues and Troubleshooting pages: <https://ibm.github.io/zopeneditor-about/Docs/knownissues.html>
+- Check the documentation's [Known Issues and Troubleshooting](https://ibm.github.io/zopeneditor-about/Docs/knownissues.html) pages.
 - Check the [Open](https://github.com/IBM/zopeneditor-about/issues) and [Closed](https://github.com/IBM/zopeneditor-about/issues?q=is%3Aissue+is%3Aclosed) issues list in this GitHub repository.
-- If this is a problem with Zowe Explorer then check and file a bug here, please: <https://github.com/zowe/vscode-extension-for-zowe/issues>
+- If this is a problem with Zowe Explorer then check and file a bug here, please:\
+  <https://github.com/zowe/vscode-extension-for-zowe/issues>
 
 <!-- Describe your envionment and the bug. -->
 

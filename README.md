@@ -7,7 +7,6 @@
 ## License
 
 - The license for the IBM Z Open Editor can be found in the [product-licenses](./product-licenses/) folder in this repository. You can use this repository to file issues for the IBM Z Open Editor as well.
-- The license for the IBM RSE API Plug-in for Zowe CLI can be found in the [product-licenses/rse-api-plugin-for-zowe-cli](./product-licenses/rse-api-plugin-for-zowe-cli/) folder in this repository. You can use this repository to file issues for the IBM RSE API Plug-in for Zowe CLI as well.
 - The files managed in this repository contain files for presenting the <https://ibm.github.io/zopeneditor-about/> Web site as well as samples used for tutorials. The license for these files you can find in the file [LICENSE](./LICENSE).
 
 ## Overview

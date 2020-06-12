@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor 0.4.7
+IBM Z Open Editor V0.5.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for Z Open Editor 0.4.7
+Start of Notices for IBM Z Open Editor 0.5.0
 
 =====================================================================
 
@@ -45,27 +45,47 @@ in this file.  For more information on the Apache Software Foundation, please
 see http://www.apache.org.
 
 
-apache.batik.css	1.9.1.v20180313
-apache.batik.i18n	1.9.1.v20180227
-apache.xmlgraphics	2.2.0.v20180410
-commons-lang3	3.7
-commons-text	1.3
-find-java-home	1.0.0
-google.gson	2.7.0.v20170129
-google.guava	21.0.0.v20170206
-javax.inject	1.0.0.v20091030
-log4js	6.1.0
-org.apache.commons.io	2.2.0.v20140521
-org.apache.commons.jxpath	1.3.0.v20091105
-org.apache.commons.logging	1.1.1.v20110121
-org.apache.felix.scr	2.0.14.v20180117
-org.w3c.dom.events	3.0.0
-org.w3c.dom.smil	1.0.1.v20090309
-org.w3c.dom.svg	1.1.0.v20101104
-walker          1.0.7
 
+commons-lang3	3.x
+commons-text	1.x
+find-java-home	1.x
+log4js	6.x
 
-
+@xtuc/long v4.2.2
+atob v2.1.2
+aws-sign2 v0.7.0
+caseless v0.12.0
+forever-agent v0.6.1
+detect-libc v1.0.3
+didyoumean v1.2.1
+copyright (c) 2013 Dave Porter.
+oauth-sign v0.9.0
+request v2.88.0
+tslib v1.10.0
+tslint v5.9.1
+tunnel-agent v0.6.0
+typescript v3.4.5
+validate-npm-package-license v3.0.1
+spdx-correct v1.0.2
+typescript v3.5.1
+validate-npm-package-license v3.0.4
+@carbon/icon-helpers v10.4.0
+@carbon/icons-react v10.9.0
+@carbon/icon-helpers v10.6.0
+@cnakazawa/watch v1.0.3
+ansi-html v0.0.7
+bser v2.1.0
+carbon-components v10.10.3
+carbon-components-react v7.6.4
+@carbon/icons-react v10.6.1
+carbon-icons v7.0.7
+fb-watchman v2.0.0
+detect-libc v1.0.3
+faye-websocket v0.11.3
+true-case-path v1.0.3
+walker v1.0.7
+websocket-driver v0.7.3
+xml-name-validator v3.0.0
 
 Apache License
 Version 2.0, January 2004
@@ -282,169 +302,199 @@ START OF MIT LICENSE NOTICES AND INFORMATION
 MIT LICENSE CODE.  The Program includes all or portions of the following
 software which is available under the MIT License.
 
-@my-scope/package-a v0.0.0
-@my-scope/package-b v0.0.0
-@types/color-name   v1.1.1 Copyright (c) Microsoft Corporation. All rights reserved.
-@types/lodash v4.14.149	Copyright (c) Microsoft Corporation. All rights reserved.
-@types/lodash-deep v2.0.0	Copyright (c) Microsoft Corporation. All rights reserved.
-@types/yargs v13.0.4	Copyright (c) Microsoft Corporation. All rights reserved.
-@types/yargs-parser v15.0.0  Copyright (c) Microsoft Corporation. All rights reserved.
-ansi-regex v3.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-ansi-regex v5.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-ansi-styles v3.2.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-ansi-styles v4.2.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-applicationinsights v1.4.0	Copyright Â© Microsoft Corporation
-argparse v1.0.10	Copyright (C) 2012 by Vitaly Puzrin
-array-uniq 1.0.3   Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-array-union 1.0.2  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-asn1 v0.2.4	Copyright (c) 2011 Mark Cavage, All rights reserved.
-async 2.6.3 Copyright (c) 2010-2018 Caolan McMahon
-async-hook-jl v1.7.6	Copyright (c) 2015 Andreas Madsen
-balanced-match v1.0.0	Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
-brace-expansion v1.1.11	Copyright (c) 2013 Julian Gruber (julian@juliangruber.com)
-camelcase v5.3.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-chalk v2.4.2	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-cli-table3 v0.5.1	Copyright (c) 2014 James Talmage (james.talmage@jrtechnical.com)
-color-convert v1.9.3	Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
-color-convert v2.0.1	Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
-color-name v1.1.3	Copyright (c) 2015 Dmitry Ivanov
-color-name v1.1.4	Copyright (c) 2015 Dmitry Ivanov
-colors v1.4.0	Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-commander v2.20.3 Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
-concat-map v0.0.1
+@types/color-name   v1.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/lodash v4.14.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/lodash-deep v2.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/yargs v13.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/yargs-parser  v15.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+ansi-regex v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ansi-regex v5.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ansi-styles v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ansi-styles v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+applicationinsights v1.x
+Copyright Â© Microsoft Corporation
+argparse v1.x
+Copyright (C) 2012 by Vitaly Puzrin
+asn1 v0.x
+Copyright (c) 2011 Mark Cavage, All rights reserved.
+async-hook-jl v1.x
+Copyright (c) 2015 Andreas Madsen
+balanced-match v1.x
+Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+brace-expansion v1.x
+Copyright (c) 2013 Julian Gruber (julian@juliangruber.com)
+camelcase v5.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+chalk v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+cli-table3 v0.x
+Copyright (c) 2014 James Talmage (james.talmage@jrtechnical.com)
+color-convert v1.x
+Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
+color-convert v2.x
+Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
+color-name v1.x
+Copyright (c) 2015 Dmitry Ivanov
+colors v1.x
+Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+concat-map v0.x
 core-util-is v1.0.2	Copyright Node.js contributors. All rights reserved.
-dataobject-parser v1.2.1	Copyright (c) 2014 Gigzolo Inc.
-date-format v2.1.0	Copyright (c) 2013 Gareth Jones
-date-format v3.0.0	Copyright (c) 2013 Gareth Jones
-debug v3.2.6	Copyright (c) 2014 TJ Holowaychuk (tj@vision-media.ca)
-debug v4.1.1	Copyright (c) 2014 TJ Holowaychuk (tj@vision-media.ca)
-decamelize v1.2.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-deepmerge v3.0.0	Copyright (c) 2012 Nicholas Fisher
-define-properties v1.1.3	Copyright (C) 2015 Jordan Harband
-diagnostic-channel v0.2.0	Copyright (c) Microsoft Corporation. All rights reserved.
-diagnostic-channel-publishers v0.3.3	Copyright (c) Microsoft Corporation. All rights reserved.
-email-addresses v3.1.0 Copyright (c) 2013 Fog Creek Software
-emoji-regex v8.0.0 Copyright Mathias Bynens <https://mathiasbynens.be/>
-es-abstract v1.17.0	Copyright (C) 2015 Jordan Harband
-escape-string-regexp v1.0.5	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-es-to-primitive v1.2.1	Copyright (c) 2015 Jordan Harband
-filename-reserved-regex 1.0.0 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-filenamify 1.2.1 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-filenamify-url 1.0.0 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-find-up v2.1.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-find-up v4.1.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-foundation-sites 6.5.3 Copyright (c) 2011-2019 ZURB, Inc.
-fs-extra v7.0.1 Copyright (c) 2011-2017 JP Richardson
-fs-extra v8.1.0	Copyright (c) 2011-2017 JP Richardson
-function-bind v1.1.1	Copyright (c) 2013 Raynos.
-get-stdin   v7.0.0  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-gh-pages v2.1.1 Copyright (c) 2014 Tim Schaub
-globby v6.1.0 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-has v1.0.3	Copyright (c) 2013 Thiago de Arruda
-has-flag v3.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-has-symbols v1.0.1	Copyright (c) 2016 Jordan Harband
-humanize-url v1.0.1 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-iconv-lite v0.5.1	Copyright (c) 2011 Alexander Shtuchkin
-isarray v1.0.0	Copyright (c) 2013 Julian Gruber (julian@juliangruber.com)
-is-callable v1.1.5	Copyright (c) 2015 Jordan Harband
-is-date-object v1.0.2	Copyright (c) 2015 Jordan Harband
-is-fullwidth-code-point v2.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-is-fullwidth-code-point v3.0.0  Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-is-plain-obj 1.1.0  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-is-regex v1.0.5	Copyright (c) 2014 Jordan Harband
-is-stream v1.1.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-is-symbol v1.0.3	Copyright (c) 2015 Jordan Harband
-jsonc-parser v2.2.1	Copyright (c) Microsoft
-jsonfile v4.0.0	Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
-jsonschema v1.1.1	Copyright (C) 2012-2015 Tom de Grunt (tom@degrunt.nl)
-js-yaml v3.13.1	Copyright (C) 2011-2015 by Vitaly Puzrin
-jquery v3.4.1 Copyright JS Foundation and other contributors, https://js.foundation/
-locate-path v2.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-locate-path v5.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-lodash v4.17.15	Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0. Sample
-lodash-deep v2.0.0	Copyright (c) 2014-2016 Mark Lagendijk
-marked v0.8.0  Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)
-minimist v0.0.8
-minimist v1.2.0
-mkdirp v0.5.1	Copyright 2010 James Halliday (mail@substack.net)
-moment v2.20.1	Copyright (c) JS Foundation and other contributors
-monorepo-symlink-test v0.0.0
-motion-ui 2.0.3  Copyright (c) 2013-2017 ZURB, inc.
-ms v2.1.2	Copyright (c) 2016 Zeit, Inc.
-mustache v2.3.0	Copyright (c) 2009 Chris Wanstrath (Ruby)	Copyright (c) 2010-2014 Jan Lehnardt (JavaScript)	Copyright (c) 2010-2015 The mustache.js community
-normalize-url v1.9.1 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-npm-run-path v2.0.2	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-object.assign v4.1.0    Copyright (c) 2014 Jordan Harband
-object.getownpropertydescriptors v2.1.0	Copyright (c) 2015 Jordan Harband
-object-assign v4.1.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-object-inspect v1.7.0	Copyright (c) 2013 James Halliday
-object-keys v1.1.1	Copyright (C) 2013 Jordan Harband
-opener v1.5.1 Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
-path-exists v3.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-path-exists v4.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-path-is-absolute v1.0.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-path-key v2.0.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-path-parse v1.0.6	Copyright (c) 2015 Javier Blanco
-p-finally v1.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-pify v2.3.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-pinkie 2.0.4  Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
-pinkie-promise v2.0.1  Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
-p-limit v1.3.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-p-limit v2.2.2	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-p-locate v2.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-p-locate v4.1.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-prepend-http v1.0.4 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-prettyjson v1.2.1	Copyright (c) 2011 Rafael de Oleza (rafeca@gmail.com)
-process-nextick-args v2.0.1	Copyright (c) 2015 Calvin Metcalf
-progress v2.0.3	Copyright (c) 2017 TJ Holowaychuk (tj@vision-media.ca)
-pkg-up   2.0.0  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-p-try v1.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-p-try v2.2.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-query-string 4.3.4  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-readable-stream v2.3.7	Copyright Node.js contributors. All rights reserved.	Copyright Joyent, Inc. and other Node contributors. All rights reserved.
-readline-sync v1.4.10 Copyright (c) 2019 anseki
-require-directory v2.1.1	Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
-resolve v1.14.2	Copyright (c) 2012 James Halliday
-rfdc v1.1.4	Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
-safe-buffer v5.1.2	Copyright (c) Feross Aboukhadijeh
-safer-buffer v2.1.2	Copyright (c) 2018 Nikita Skovoroda (chalkerx@gmail.com)
-shebang-command v1.2.0	Copyright (c) Kevin Martensson (kevinmartensson@gmail.com) (github.com/kevva)
-shebang-regex v1.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-sort-keys v1.1.2 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-ssh2 v0.8.7   Copyright Brian White. All rights reserved.
-ssh2-streams v0.4.9 Copyright 2014 Brian White. All rights reserved.
-stack-chain v1.3.7	Copyright (c) 2012 Andreas Madsen
-stack-trace v0.0.10	Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
-streamroller v2.2.3	Copyright (c) 2013 Gareth Jones
-streamsearch v0.1.2 Copyright Brian White. All rights reserved.
-strict-uri-encode v1.1.0 Copyright (c) Kevin Mårtensson <kevinmartensson@gmail.com> (github.com/kevva)
-string.prototype.trimleft v2.1.1	Copyright (c) 2015 Jordan Harband
-string.prototype.trimright v2.1.1	Copyright (c) 2015 Jordan Harband
-string_decoder v1.1.1	Copyright Node.js contributors. All rights reserved.	Copyright Joyent, Inc. and other Node contributors. All rights reserved.
-string-width v2.1.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-string-width v4.2.0 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-ansi v4.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-ansi v6.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-eof v1.0.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-outer 1.0.1  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-strip-url-auth 1.0.1 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-supports-color v5.5.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-trim-repeated 1.0.0  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-universalify v0.1.2	Copyright (c) 2017, Ryan Zimmerman (opensrc@ryanzim.com)
-util.promisify v1.0.0	Copyright (c) 2017 Jordan Harband
-util-deprecate v1.0.2	Copyright (c) 2014 Nathan Rajlich (nathan@tootallnate.net)
-vscode-extension-telemetry v0.1.2	Copyright (c) Microsoft Corporation
-vscode-jsonrpc v5.0.1	Copyright (c) Microsoft Corporation
-vscode-languageclient v6.1.1	Copyright (c) Microsoft Corporation
-vscode-languageserver-protocol v3.15.3	Copyright (c) Microsoft Corporation
-vscode-languageserver-types v3.15.1	Copyright (c) Microsoft Corporation
-what-input 5.2.6 Copyright (c) 2016 Jeremy Fields
-wrap-ansi v3.0.1	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-wrap-ansi v6.2.0	Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-xml2js v0.4.23	Copyright 2010, 2011, 2012, 2013. All rights reserved.
-xmlbuilder v11.0.1	Copyright (c) 2013 Ozgur Ozcitak
-yamljs v0.3.0	Copyright (c) 2010 Jeremy Faivre
-yargs v15.1.0	Copyright 2010 James Halliday (mail@substack.net) Modified work Copyright 2014 Contributors (ben@npmjs.com)
+dataobject-parser v1.x
+Copyright (c) 2014 Gigzolo Inc.
+date-format v2.x
+Copyright (c) 2013 Gareth Jones
+date-format v3.x
+Copyright (c) 2013 Gareth Jones
+debug v4.x
+Copyright (c) 2014 TJ Holowaychuk (tj@vision-media.ca)
+decamelize v1.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+deepmerge v3.x
+Copyright (c) 2012 Nicholas Fisher
+diagnostic-channel v0.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+diagnostic-channel-publishers v0.3.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+emoji-regex v8.x
+Copyright Mathias Bynens <https://mathiasbynens.be/>
+escape-string-regexp v1.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+find-up v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+find-up v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+fs-extra v8.x
+Copyright (c) 2011-2017 JP Richardson
+get-stdin   v7.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+has-flag v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+iconv-lite v0.x
+Copyright (c) 2011 Alexander Shtuchkin
+is-fullwidth-code-point v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+is-fullwidth-code-point v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+jsonc-parser v2.x
+Copyright (c) Microsoft
+jsonfile v4.x
+Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
+jsonschema v1.x
+Copyright (C) 2012-2015 Tom de Grunt (tom@degrunt.nl)
+js-yaml v3.x
+Copyright (C) 2011-2015 by Vitaly Puzrin
+locate-path v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+locate-path v5.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+lodash v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0. Sample
+lodash-deep v2.x
+Copyright (c) 2014-2016 Mark Lagendijk
+marked v0.x
+Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)
+minimist v1.x
+moment v2.x
+Copyright (c) JS Foundation and other contributors
+ms v2.x
+Copyright (c) 2016 Zeit, Inc.
+mustache v2.x
+Copyright (c) 2009 Chris Wanstrath (Ruby)	Copyright (c) 2010-2014 Jan Lehnardt (JavaScript)	Copyright (c) 2010-2015 The mustache.js community
+object-assign v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+opener v1.x
+Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
+path-exists v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+path-exists v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+path-is-absolute v1.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+p-limit v1.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+p-limit v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+p-locate v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+p-locate v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+prettyjson v1.x
+Copyright (c) 2011 Rafael de Oleza (rafeca@gmail.com)
+promise-queue V2.x
+Copyright (c) 2013 Mikhail Davydov and other contributors
+progress v2.x
+Copyright (c) 2017 TJ Holowaychuk (tj@vision-media.ca)
+pkg-up   2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+p-try v1.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+p-try v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+readline-sync v1.x
+Copyright (c) 2019 anseki
+require-directory v2.x
+Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
+rfdc v1.x
+Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
+safer-buffer v2.x
+Copyright (c) 2018 Nikita Skovoroda (chalkerx@gmail.com)
+ssh2 v0.x
+Copyright Brian White. All rights reserved.
+ssh2-streams v0.4.x
+Copyright 2014 Brian White. All rights reserved.
+stack-chain v1.x
+Copyright (c) 2012 Andreas Madsen
+stack-trace v0.x
+Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
+streamroller v2.x
+Copyright (c) 2013 Gareth Jones
+streamsearch v0.x
+Copyright Brian White. All rights reserved.
+string-width v2.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+string-width v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+strip-ansi v4.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+strip-ansi v6.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+supports-color v5.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+universalify v0.x
+Copyright (c) 2017, Ryan Zimmerman (opensrc@ryanzim.com)
+vscode-extension-telemetry v0.x
+Copyright (c) Microsoft Corporation
+vscode-jsonrpc v5.x
+Copyright (c) Microsoft Corporation
+vscode-languageclient v6.x
+Copyright (c) Microsoft Corporation
+vscode-languageserver-protocol v3.x
+Copyright (c) Microsoft Corporation
+vscode-languageserver-types v3.x
+Copyright (c) Microsoft Corporation
+vscode-nls 4.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+wrap-ansi v3.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+wrap-ansi v6.x
+Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+xml2js v0.x
+Copyright 2010, 2011, 2012, 2013. All rights reserved.
+xmlbuilder v11.x
+Copyright (c) 2013 Ozgur Ozcitak
+yamljs v0.x
+Copyright (c) 2010 Jeremy Faivre
+yargs v15.x
+Copyright 2010 James Halliday (mail@substack.net) Modified work Copyright 2014 Contributors (ben@npmjs.com)
 
 
 
@@ -479,116 +529,31 @@ START OF ECLIPSE PUBLIC LICENSE V1 LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 ECLIPSE PUBLIC LICENSE CODE.  The Program includes all or portions of the following
-software which is available under the EPL License.
+software which is available under the EPL-1.0 License.
 
-antsupportlib
-clientserver
-eclipse.emf.common	2.14.0.v20180527
-eclipse.emf.ecore	2.14.0.v20180529
-eclipse.emf.ecore.change	2.12.0.v20180125
-eclipse.emf.ecore.xmi	2.14.0.v20180129
-eclipse.rse.core	3.3.100.201603
-eclipse.rse.files.ui	3.2.200.201507
-eclipse.rse.services	3.3.0.201506
-eclipse.rse.subsystems.files.core	3.3.1.201403
-eclipse.rse.subsystems.shells.core	3.1.300.201403
-eclipse.rse.ui	3.3.400.201704
-javax.annotation	1.2.0.v20160209
-org.eclipse.ant.core	3.5.100.v20180512
-org.eclipse.compare	3.7.200.v20180418
-org.eclipse.compare.core	3.6.200.v20180312
-org.eclipse.core.commands	3.9.100.v20180404
-org.eclipse.core.contenttype	3.7.0.v20180426
-org.eclipse.core.databinding	1.6.200.v20180509
-org.eclipse.core.databinding.observable	1.6.200.v20180424
-org.eclipse.core.databinding.property	1.6.200.v20180403
-org.eclipse.core.expressions	3.6.100.v20180426
-org.eclipse.core.filebuffers	3.6.200.v20180512
-org.eclipse.core.filesystem	1.7.100.v20180304
-org.eclipse.core.jobs	3.10.0.v20180427
-org.eclipse.core.net	1.3.200.v20180515
-org.eclipse.core.net.win32.x86	1.1.100.v20180515
-org.eclipse.core.resources	3.13.0.v20180512
-org.eclipse.core.runtime	3.14.0.v20180417
-org.eclipse.core.variables	3.4.100.v20180509
-org.eclipse.debug.core	3.12.0.v20180509
-org.eclipse.e4.core.commands	0.12.200.v20180427
-org.eclipse.e4.core.contexts	1.7.0.v20180514
-org.eclipse.e4.core.di	1.7.0.v20180427
-org.eclipse.e4.core.di.annotations	1.6.100.v20180427
-org.eclipse.e4.core.di.extensions	0.15.100.v20180403
-org.eclipse.e4.core.di.extensions.supplier	0.15.100.v20180427
-org.eclipse.e4.core.services	2.1.100.v20180427
-org.eclipse.e4.emf.xpath	0.2.100.v20180403
-org.eclipse.e4.ui.bindings	0.12.100.v20180509
-org.eclipse.e4.ui.css.core	0.12.200.v20180417
-org.eclipse.e4.ui.css.swt	0.13.100.v20180515
-org.eclipse.e4.ui.css.swt.theme	0.12.0.v20180403
-org.eclipse.e4.ui.di	1.2.200.v20180403
-org.eclipse.e4.ui.model.workbench	2.1.0.v20180429
-org.eclipse.e4.ui.services	1.3.100.v20180403
-org.eclipse.e4.ui.widgets	1.2.100.v20180403
-org.eclipse.e4.ui.workbench	1.6.0.v20180516
-org.eclipse.e4.ui.workbench.addons.swt	1.3.100.v20180516
-org.eclipse.e4.ui.workbench.renderers.swt	0.14.200.v20180516
-org.eclipse.e4.ui.workbench.swt	0.14.200.v20180516
-org.eclipse.e4.ui.workbench3	0.14.100.v20180403
-org.eclipse.equinox.app	1.3.500.v20171221
-org.eclipse.equinox.bidi	1.1.100.v20171221
-org.eclipse.equinox.common	3.10.0.v20180412
-org.eclipse.equinox.ds	1.5.100.v20171221
-org.eclipse.equinox.event	1.4.200.v20180426
-org.eclipse.equinox.executable	3.8.0.v20180518
-org.eclipse.equinox.launcher	1.5.0.v20180512
-org.eclipse.equinox.launcher.cocoa.macosx.x86_64	1.1.700.v20180518
-org.eclipse.equinox.launcher.gtk.linux.x86	1.1.700.v20180518
-org.eclipse.equinox.launcher.gtk.linux.x86_64	1.1.700.v20180518
-org.eclipse.equinox.launcher.win32.win32.x86	1.1.700.v20180518
-org.eclipse.equinox.launcher.win32.win32.x86_64	1.1.700.v20180518
-org.eclipse.equinox.p2.core	2.5.0.v20180512
-org.eclipse.equinox.p2.engine	2.6.0.v20180409
-org.eclipse.equinox.p2.metadata	2.4.0.v20180320
-org.eclipse.equinox.p2.metadata.repository	1.3.0.v20180302
-org.eclipse.equinox.p2.repository	2.4.0.v20180512
-org.eclipse.equinox.preferences	3.7.100.v20180510
-org.eclipse.equinox.registry	3.8.0.v20180426
-org.eclipse.equinox.security	1.2.400.v20171221
-org.eclipse.equinox.security.win32.x86	1.1.0.v20171221
-org.eclipse.equinox.security.win32.x86_64	1.1.0.v20171221
-org.eclipse.help	3.8.100.v20180512
-org.eclipse.jface	3.14.0.v20180423
-org.eclipse.jface.databinding	1.8.200.v20180403
-org.eclipse.jface.text	3.13.0.v20180527
-org.eclipse.lsp4j	0.5.0.v20180822
-org.eclipse.lsp4j.jsonrpc	0.5.0.v20180822
-org.eclipse.ltk.core.refactoring	3.9.0.v20180220
-org.eclipse.ltk.ui.refactoring	3.9.100.v20180425
-org.eclipse.osgi	3.13.0.v20180409
-org.eclipse.osgi.compatibility.state	1.1.100.v20180331
-org.eclipse.osgi.services	3.7.0.v20180223
-org.eclipse.osgi.util	3.5.0.v20180219
-org.eclipse.search	3.11.200.v20180503
-org.eclipse.swt	3.107.0.v20180611
-org.eclipse.swt.cocoa.macosx.x86_64	3.107.0.v20180611
-org.eclipse.swt.gtk.linux.x86	3.107.0.v20180611
-org.eclipse.swt.gtk.linux.x86_64	3.107.0.v20180611
-org.eclipse.swt.win32.win32.x86	3.107.0.v20180611
-org.eclipse.swt.win32.win32.x86_64	3.107.0.v20180611
-org.eclipse.team.core	3.8.200.v20180309
-org.eclipse.team.ui	3.8.100.v20180418
-org.eclipse.text	3.6.300.v20180430
-org.eclipse.ui	3.109.100.v20180426
-org.eclipse.ui.editors	3.11.100.v20180512
-org.eclipse.ui.forms	3.7.200.v20180512
-org.eclipse.ui.ide	3.14.0.v20180517
-org.eclipse.ui.navigator	3.7.100.v20180524
-org.eclipse.ui.views	3.9.100.v20180427
-org.eclipse.ui.workbench	3.111.0.v20180524
-org.eclipse.ui.workbench.texteditor	3.11.0.v20180419
-org.eclipse.xtext.xbase.lib	2.14.0.v20180522
-org.w3c.css.sac	1.3.1.v20090309
-resources-ant	unknown
-tukaani.xz	1.8.0.v20180207
+The Program contains open source software obtained from the Eclipse Foundation (herein collectively referred to as "Eclipse Code"). Notices and important information, including instructions for obtaining source code, for the Eclipse Code may be found in associated "about.html" files ("About Files") that accompany the Eclipse Code. These About Files are provided for informational purposes only, and notwithstanding anything to the contrary therein, your use of such Eclipse Code shall be governed by the terms of the IBM end user license agreement.
+
+apache.commons.io	2.x
+apache.commons.logging	1.x
+apache.batik.css	1.x
+apache.xmlgraphics	2.x
+google.gson	2.x
+google.guava      27.x
+javax.annotation	1.2.x
+ibm.icu       64.x
+org.apache.commons.jxpath	1.x
+org.apache.felix.scr	2.x
+org.eclipse.lsp4j	0.x
+org.eclipse.lsp4j.jsonrpc	0.x
+org.eclipse.swt.cocoa.macosx.x86_64	3.x
+org.eclipse.swt.gtk.linux.x86_64	3.x
+org.eclipse.swt.win32.win32.x86_64	3.x
+org.eclipse.xtext.xbase.lib	2.x
+org.w3c.css.sac	1.x
+org.w3c.dom.events	3.x
+org.w3c.dom.smil	1.x
+org.w3c.dom.svg	1.x
+tukaani.xz	1.x
 
 
 Eclipse Public License - v 1.0
@@ -802,6 +767,227 @@ END OF ECLIPSE PUBLIC LICENSE V1 LICENSE NOTICES AND INFORMATION
 
 
 =====================================================================
+START OF ECLIPSE PUBLIC LICENSE V2 LICENSE NOTICES AND INFORMATION
+=====================================================================
+The Program includes some or all of the following that IBM obtained under the Eclipse Public License - v 2.0 Clause:
+
+
+
+The Program contains open source software obtained from the Eclipse Foundation (herein collectively referred to as "Eclipse Code"). Notices and important information, including instructions for obtaining source code, for the Eclipse Code may be found in associated "about.html" files ("About Files") that accompany the Eclipse Code. These About Files are provided for informational purposes only, and notwithstanding anything to the contrary therein, your use of such Eclipse Code shall be governed by the terms of the IBM end user license agreement.
+
+@Zowe/cli		v6.13
+@zowe/imperative  v4.6.2
+@zowe/perf-timing v1.0.7
+antsupportlib
+clientserver
+eclipse.dstore.core   4.x
+eclipse.dstore.extra   4.x
+eclipse.emf.common	2.x
+eclipse.emf.ecore	2.x
+eclipse.emf.ecore.change	2.x
+eclipse.emf.ecore.xmi	2.x
+eclipse.rse.connectorservice.dstore  4.x
+eclipse.rse.connectorservice.local  4.x
+eclipse.rse.core	4.x
+eclipse.rse.services	4.x
+eclipse.rse.services.dstore  4.x
+eclipse.rse.services.local   4.x
+eclipse.rse.subsystems.files.core	4.x
+eclipse.rse.subsystems.files.local   4.x
+eclipse.rse.subsystems.shells.core	4.x
+eclipse.rse.ui	4.x
+javax.inject	1.0.x
+jdi
+jdimodel
+jdtCompilerAdapter
+launchingsupport
+org.eclipse.compare	3.x
+org.eclipse.compare.core	3.x
+org.eclipse.core.commands   V3.9.x
+org.eclipse.core.contenttype	V3.7.x
+org.eclipse.core.databinding	1.x
+org.eclipse.core.databinding.observable	1.x
+org.eclipse.core.databinding.property	1.x
+org.eclipse.core.filebuffers	3.x
+org.eclipse.core.jobs	3.x
+org.eclipse.core.net	1.x
+org.eclipse.core.net.linux.x86_64    1.x
+org.eclipse.core.net.win32.x86_64    1.x
+org.eclipse.core.expressions	3.6.x
+org.eclipse.core.filesystem	1.7.x
+org.eclipse.core.resources	3.13.x
+org.eclipse.core.runtime	3.x
+org.eclipse.e4.ui.dialogs   1.x
+org.eclipse.e4.ui.ide    3.x
+org.eclipse.equinox.security.linux.x86_64      1.x
+org.eclipse.equinox.security.macosx        1.x
+org.eclipse.jdt.core.manipulation       1.x
+org.eclipse.jdt.debug       3.x
+org.eclipse.jdt.launching    3.x
+org.eclipse.ui.console   3.x
+org.eclipse.ui.navigator.resources    3.x
+org.eclipse.ui.views.properties.tabbed   3.x
+org.eclipse.equinox.app	1.4.x
+org.eclipse.equinox.common	3.11.x
+org.eclipse.equinox.preferences	3.7.x
+org.eclipse.equinox.registry	3.8.x
+org.eclipse.osgi	3.15.x
+org.eclipse.core.variables	3.x
+org.eclipse.debug.core	3.x
+org.eclipse.debug.ui  3.x
+org.eclipse.e4.core.commands	0.x
+org.eclipse.e4.core.contexts	1.x
+org.eclipse.e4.core.di	1.x
+org.eclipse.e4.core.di.annotations	1.x
+org.eclipse.e4.core.di.extensions	0.x
+org.eclipse.e4.core.di.extensions.supplier	0.x
+org.eclipse.e4.core.services	2.x
+org.eclipse.e4.emf.xpath	0.x
+org.eclipse.e4.ui.bindings	0.x
+org.eclipse.e4.ui.css.core	0.x
+org.eclipse.e4.ui.css.swt	0.x
+org.eclipse.e4.ui.css.swt.theme	0.x
+org.eclipse.e4.ui.di	1.x
+org.eclipse.e4.ui.model.workbench	2.x
+org.eclipse.e4.ui.services	1.x
+org.eclipse.e4.ui.widgets	1.x
+org.eclipse.e4.ui.workbench	1.x
+org.eclipse.e4.ui.workbench.addons.swt	1.x
+org.eclipse.e4.ui.workbench.renderers.swt	0.x
+org.eclipse.e4.ui.workbench.swt	  0.x
+org.eclipse.e4.ui.workbench3	0.x
+org.eclipse.equinox.bidi	1.x
+org.eclipse.equinox.launcher	1.x
+org.eclipse.equinox.launcher.cocoa.macosx.x86_64	1.x
+org.eclipse.equinox.launcher.gtk.linux.x86_64	1.x
+org.eclipse.equinox.launcher.win32.win32.x86_64	1.x
+org.eclipse.equinox.p2.core	2.x
+org.eclipse.equinox.p2.engine	2.x
+org.eclipse.equinox.p2.metadata	2.x
+org.eclipse.equinox.p2.metadata.repository	1.x
+org.eclipse.equinox.p2.repository	2.x
+org.eclipse.equinox.security	1.x
+org.eclipse.equinox.security.win32.x86_64	1.x
+org.eclipse.jdt.core     3.x
+org.eclipse.jface	3.x
+org.eclipse.jface.databinding	1.x
+org.eclipse.jface.text	3.x
+org.eclipse.ltk.core.refactoring	3.x
+org.eclipse.ltk.ui.refactoring	3.x
+org.eclipse.osgi.compatibility.state	1.x
+org.eclipse.osgi.services	3.x
+org.eclipse.osgi.util	3.x
+org.eclipse.search	3.x
+org.eclipse.team.core     3.x
+org.eclipse.team.ui	3.x
+org.eclipse.text	3.x
+org.eclipse.ui	3.x
+org.eclipse.ui.editors	3.x
+org.eclipse.ui.forms	3.x
+org.eclipse.ui.ide	3.x
+org.eclipse.ui.navigator	3.x
+org.eclipse.ui.views	3.x
+org.eclipse.ui.workbench	3.x
+org.eclipse.ui.workbench.texteditor	3.x
+eclipse.jdt.launching.javaagent      3.x
+org.eclipse.ant.core	3.x
+org.eclipse.equinox.executable	3.x
+org.eclipse.help	3.x
+org.eclipse.jdt.ui    3.x
+org.eclipse.swt	3.x
+resources-ant
+
+
+
+Eclipse Public License - v 2.0
+
+THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
+
+    1. DEFINITIONS
+
+    "Contribution" means:
+        a) in the case of the initial Contributor, the initial content Distributed under this Agreement, and
+        b) in the case of each subsequent Contributor:
+            i) changes to the Program, and
+            ii) additions to the Program;
+
+        where such changes and/or additions to the Program originate from and are Distributed by that particular Contributor. A Contribution "originates" from a Contributor if it was added to the Program by such Contributor itself or anyone acting on such Contributor's behalf. Contributions do not include changes or additions to the Program that are not Modified Works.
+
+    "Contributor" means any person or entity that Distributes the Program.
+
+    "Licensed Patents" mean patent claims licensable by a Contributor which are necessarily infringed by the use or sale of its Contribution alone or when combined with the Program.
+
+    "Program" means the Contributions Distributed in accordance with this Agreement.
+
+    "Recipient" means anyone who receives the Program under this Agreement or any Secondary License (as applicable), including Contributors.
+
+    "Derivative Works" shall mean any work, whether in Source Code or other form, that is based on (or derived from) the Program and for which the editorial revisions, annotations, elaborations, or other modifications represent, as a whole, an original work of authorship.
+
+    "Modified Works" shall mean any work in Source Code or other form that results from an addition to, deletion from, or modification of the contents of the Program, including, for purposes of clarity any new file in Source Code form that contains any contents of the Program. Modified Works shall not include works that contain only declarations, interfaces, types, classes, structures, or files of the Program solely in each case in order to link to, bind by name, or subclass the Program or Modified Works thereof.
+
+    "Distribute" means the acts of a) distributing or b) making available in any manner that enables the transfer of a copy.
+
+    "Source Code" means the form of a Program preferred for making modifications, including but not limited to software source code, documentation source, and configuration files.
+
+    "Secondary License" means either the GNU General Public License, Version 2.0, or any later versions of that license, including any exceptions or additional permissions as identified by the initial Contributor.
+    2. GRANT OF RIGHTS
+        a) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free copyright license to reproduce, prepare Derivative Works of, publicly display, publicly perform, Distribute and sublicense the Contribution of such Contributor, if any, and such Derivative Works.
+        b) Subject to the terms of this Agreement, each Contributor hereby grants Recipient a non-exclusive, worldwide, royalty-free patent license under Licensed Patents to make, use, sell, offer to sell, import and otherwise transfer the Contribution of such Contributor, if any, in Source Code or other form. This patent license shall apply to the combination of the Contribution and the Program if, at the time the Contribution is added by the Contributor, such addition of the Contribution causes such combination to be covered by the Licensed Patents. The patent license shall not apply to any other combinations which include the Contribution. No hardware per se is licensed hereunder.
+        c) Recipient understands that although each Contributor grants the licenses to its Contributions set forth herein, no assurances are provided by any Contributor that the Program does not infringe the patent or other intellectual property rights of any other entity. Each Contributor disclaims any liability to Recipient for claims brought by any other entity based on infringement of intellectual property rights or otherwise. As a condition to exercising the rights and licenses granted hereunder, each Recipient hereby assumes sole responsibility to secure any other intellectual property rights needed, if any. For example, if a third party patent license is required to allow Recipient to Distribute the Program, it is Recipient's responsibility to acquire that license before distributing the Program.
+        d) Each Contributor represents that to its knowledge it has sufficient copyright rights in its Contribution, if any, to grant the copyright license set forth in this Agreement.
+        e) Notwithstanding the terms of any Secondary License, no Contributor makes additional grants to any Recipient (other than those set forth in this Agreement) as a result of such Recipient's receipt of the Program under the terms of a Secondary License (if permitted under the terms of Section 3).
+    3. REQUIREMENTS
+        3.1 If a Contributor Distributes the Program in any form, then:
+            a) the Program must also be made available as Source Code, in accordance with section 3.2, and the Contributor must accompany the Program with a statement that the Source Code for the Program is available under this Agreement, and informs Recipients how to obtain it in a reasonable manner on or through a medium customarily used for software exchange; and
+            b) the Contributor may Distribute the Program under a license different than this Agreement, provided that such license:
+                i) effectively disclaims on behalf of all other Contributors all warranties and conditions, express and implied, including warranties or conditions of title and non-infringement, and implied warranties or conditions of merchantability and fitness for a particular purpose;
+                ii) effectively excludes on behalf of all other Contributors all liability for damages, including direct, indirect, special, incidental and consequential damages, such as lost profits;
+                iii) does not attempt to limit or alter the recipients' rights in the Source Code under section 3.2; and
+                iv) requires any subsequent distribution of the Program by any party to be under a license that satisfies the requirements of this section 3.
+        3.2 When the Program is Distributed as Source Code:
+            a) it must be made available under this Agreement, or if the Program (i) is combined with other material in a separate file or files made available under a Secondary License, and (ii) the initial Contributor attached to the Source Code the notice described in Exhibit A of this Agreement, then the Program may be made available under the terms of such Secondary Licenses, and
+            b) a copy of this Agreement must be included with each copy of the Program.
+        3.3 Contributors may not remove or alter any copyright, patent, trademark, attribution notices, disclaimers of warranty, or limitations of liability ("notices") contained within the Program from any copy of the Program which they Distribute, provided that Contributors may add their own appropriate notices.
+    4. COMMERCIAL DISTRIBUTION
+
+    Commercial distributors of software may accept certain responsibilities with respect to end users, business partners and the like. While this license is intended to facilitate the commercial use of the Program, the Contributor who includes the Program in a commercial product offering should do so in a manner which does not create potential liability for other Contributors. Therefore, if a Contributor includes the Program in a commercial product offering, such Contributor ("Commercial Contributor") hereby agrees to defend and indemnify every other Contributor ("Indemnified Contributor") against any losses, damages and costs (collectively "Losses") arising from claims, lawsuits and other legal actions brought by a third party against the Indemnified Contributor to the extent caused by the acts or omissions of such Commercial Contributor in connection with its distribution of the Program in a commercial product offering. The obligations in this section do not apply to any claims or Losses relating to any actual or alleged intellectual property infringement. In order to qualify, an Indemnified Contributor must: a) promptly notify the Commercial Contributor in writing of such claim, and b) allow the Commercial Contributor to control, and cooperate with the Commercial Contributor in, the defense and any related settlement negotiations. The Indemnified Contributor may participate in any such claim at its own expense.
+
+    For example, a Contributor might include the Program in a commercial product offering, Product X. That Contributor is then a Commercial Contributor. If that Commercial Contributor then makes performance claims, or offers warranties related to Product X, those performance claims and warranties are such Commercial Contributor's responsibility alone. Under this section, the Commercial Contributor would have to defend claims against the other Contributors related to those performance claims and warranties, and if a court requires any other Contributor to pay any damages as a result, the Commercial Contributor must pay those damages.
+    5. NO WARRANTY
+
+    EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE PROGRAM IS PROVIDED ON AN "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE. Each Recipient is solely responsible for determining the appropriateness of using and distributing the Program and assumes all risks associated with its exercise of rights under this Agreement, including but not limited to the risks and costs of program errors, compliance with applicable laws, damage to or loss of data, programs or equipment, and unavailability or interruption of operations.
+    6. DISCLAIMER OF LIABILITY
+
+    EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT PERMITTED BY APPLICABLE LAW, NEITHER RECIPIENT NOR ANY CONTRIBUTORS SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+    7. GENERAL
+
+    If any provision of this Agreement is invalid or unenforceable under applicable law, it shall not affect the validity or enforceability of the remainder of the terms of this Agreement, and without further action by the parties hereto, such provision shall be reformed to the minimum extent necessary to make such provision valid and enforceable.
+
+    If Recipient institutes patent litigation against any entity (including a cross-claim or counterclaim in a lawsuit) alleging that the Program itself (excluding combinations of the Program with other software or hardware) infringes such Recipient's patent(s), then such Recipient's rights granted under Section 2(b) shall terminate as of the date such litigation is filed.
+
+    All Recipient's rights under this Agreement shall terminate if it fails to comply with any of the material terms or conditions of this Agreement and does not cure such failure in a reasonable period of time after becoming aware of such noncompliance. If all Recipient's rights under this Agreement terminate, Recipient agrees to cease use and distribution of the Program as soon as reasonably practicable. However, Recipient's obligations under this Agreement and any licenses granted by Recipient relating to the Program shall continue and survive.
+
+    Everyone is permitted to copy and distribute copies of this Agreement, but in order to avoid inconsistency the Agreement is copyrighted and may only be modified in the following manner. The Agreement Steward reserves the right to publish new versions (including revisions) of this Agreement from time to time. No one other than the Agreement Steward has the right to modify this Agreement. The Eclipse Foundation is the initial Agreement Steward. The Eclipse Foundation may assign the responsibility to serve as the Agreement Steward to a suitable separate entity. Each new version of the Agreement will be given a distinguishing version number. The Program (including Contributions) may always be Distributed subject to the version of the Agreement under which it was received. In addition, after a new version of the Agreement is published, Contributor may elect to Distribute the Program (including its Contributions) under the new version.
+
+    Except as expressly stated in Sections 2(a) and 2(b) above, Recipient receives no rights or licenses to the intellectual property of any Contributor under this Agreement, whether expressly, by implication, estoppel or otherwise. All rights in the Program not expressly granted under this Agreement are reserved. Nothing in this Agreement is intended to be enforceable by any entity that is not a Contributor or Recipient. No third-party beneficiary rights are created under this Agreement.
+    Exhibit A - Form of Secondary Licenses Notice
+
+    "This Source Code may also be made available under the following Secondary Licenses when the conditions for such availability set forth in the Eclipse Public License, v. 2.0 are satisfied: {name license(s), version(s), and exceptions or additional permissions here}."
+
+    Simply including a copy of this Agreement, including this Exhibit A is not sufficient to license the Source Code under Secondary Licenses.
+
+    If it is not possible or desirable to put the notice in a particular file, then You may include the notice in a location (such as a LICENSE file in a relevant directory) where a recipient would be likely to look for such a notice.
+
+    You may add additional accurate notices of copyright ownership.
+
+=====================================================================
+END OF ECLIPSE PUBLIC LICENSE V2 LICENSE NOTICES AND INFORMATION
+=====================================================================
+
+
+
+
+=====================================================================
 START OF BSD-2-CLAUSE LICENSE NOTICES AND INFORMATION
 =====================================================================
 
@@ -809,17 +995,24 @@ BSD-2-Clause
 
 The Program includes some or all of the following that IBM obtained under the BSD-2-Clause License:
 
-async-listener	0.6.10
-cls-hooked	4.2.2
-continuation-local-storage	3.2.1
-emitter-listener	1.1.2
-esprima	4.0.1
-shimmer	1.2.1
-winreg	1.2.4
+async-listener	0.x
+Copyright (c) 2013-2017, Forrest L Norvell. All rights reserved.
+cls-hooked	4.x
+Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights reserved.
+continuation-local-storage	3.x
+Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights reserved.
+emitter-listener	1.x
+esprima	4.x
+Copyright JS Foundation and other contributors, https://js.foundation/
+shimmer	1.x
+Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
+winreg	1.x
+Copyright (c) 2016, Paul Bottin All rights reserved.
 
 
+BSD-2-CLAUSE LICENSE
 
-Copyright <YEAR> <COPYRIGHT HOLDER>
+
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
 2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
@@ -837,16 +1030,18 @@ START OF BSD-3-CLAUSE LICENSE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the BSD-3-Clause License:
 
-bcrypt-pbkdf	1.0.2
-makeerror   v1.0.11
+bcrypt-pbkdf	1.x
+Copyright 1997 Niels Provos <provos@physnet.uni-hamburg.de> All rights reserved. Implementation advice by David Mazieres <dm@lcs.mit.edu>
+Copyright (c) 2013 Ted Unangst (tedu@openbsd.org)
+Copyright 2016, Joyent Inc
+
 sprintf-js	1.0.3
-tmpl v1.0.4
+Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
 
 
 
 BSD-3 License
 
-Copyright <YEAR> <COPYRIGHT HOLDER>
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -878,333 +1073,55 @@ END OF BSD-3-CLAUSE LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 
-
-=====================================================================
-START OF ECLIPSE PUBLIC LICENSE V2.0 NOTICES AND INFORMATION
-=====================================================================
-
-The Program includes some or all of the following that IBM obtained under the Eclipse Public License - v 2.0 Clause:
-
-@Zowe/cli		v6.8.2
-@zowe/imperative  v4.5.0
-@zowe/perf-timing v1.0.6
-
-Eclipse Public License - v 2.0
-
-
-    THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE
-    PUBLIC LICENSE ("AGREEMENT"). ANY USE, REPRODUCTION OR DISTRIBUTION
-    OF THE PROGRAM CONSTITUTES RECIPIENT'S ACCEPTANCE OF THIS AGREEMENT.
-
-1. DEFINITIONS
-
-"Contribution" means:
-
-  a) in the case of the initial Contributor, the initial content
-     Distributed under this Agreement, and
-
-  b) in the case of each subsequent Contributor:
-     i) changes to the Program, and
-     ii) additions to the Program;
-  where such changes and/or additions to the Program originate from
-  and are Distributed by that particular Contributor. A Contribution
-  "originates" from a Contributor if it was added to the Program by
-  such Contributor itself or anyone acting on such Contributor's behalf.
-  Contributions do not include changes or additions to the Program that
-  are not Modified Works.
-
-"Contributor" means any person or entity that Distributes the Program.
-
-"Licensed Patents" mean patent claims licensable by a Contributor which
-are necessarily infringed by the use or sale of its Contribution alone
-or when combined with the Program.
-
-"Program" means the Contributions Distributed in accordance with this
-Agreement.
-
-"Recipient" means anyone who receives the Program under this Agreement
-or any Secondary License (as applicable), including Contributors.
-
-"Derivative Works" shall mean any work, whether in Source Code or other
-form, that is based on (or derived from) the Program and for which the
-editorial revisions, annotations, elaborations, or other modifications
-represent, as a whole, an original work of authorship.
-
-"Modified Works" shall mean any work in Source Code or other form that
-results from an addition to, deletion from, or modification of the
-contents of the Program, including, for purposes of clarity any new file
-in Source Code form that contains any contents of the Program. Modified
-Works shall not include works that contain only declarations,
-interfaces, types, classes, structures, or files of the Program solely
-in each case in order to link to, bind by name, or subclass the Program
-or Modified Works thereof.
-
-"Distribute" means the acts of a) distributing or b) making available
-in any manner that enables the transfer of a copy.
-
-"Source Code" means the form of a Program preferred for making
-modifications, including but not limited to software source code,
-documentation source, and configuration files.
-
-"Secondary License" means either the GNU General Public License,
-Version 2.0, or any later versions of that license, including any
-exceptions or additional permissions as identified by the initial
-Contributor.
-
-2. GRANT OF RIGHTS
-
-  a) Subject to the terms of this Agreement, each Contributor hereby
-  grants Recipient a non-exclusive, worldwide, royalty-free copyright
-  license to reproduce, prepare Derivative Works of, publicly display,
-  publicly perform, Distribute and sublicense the Contribution of such
-  Contributor, if any, and such Derivative Works.
-
-  b) Subject to the terms of this Agreement, each Contributor hereby
-  grants Recipient a non-exclusive, worldwide, royalty-free patent
-  license under Licensed Patents to make, use, sell, offer to sell,
-  import and otherwise transfer the Contribution of such Contributor,
-  if any, in Source Code or other form. This patent license shall
-  apply to the combination of the Contribution and the Program if, at
-  the time the Contribution is added by the Contributor, such addition
-  of the Contribution causes such combination to be covered by the
-  Licensed Patents. The patent license shall not apply to any other
-  combinations which include the Contribution. No hardware per se is
-  licensed hereunder.
-
-  c) Recipient understands that although each Contributor grants the
-  licenses to its Contributions set forth herein, no assurances are
-  provided by any Contributor that the Program does not infringe the
-  patent or other intellectual property rights of any other entity.
-  Each Contributor disclaims any liability to Recipient for claims
-  brought by any other entity based on infringement of intellectual
-  property rights or otherwise. As a condition to exercising the
-  rights and licenses granted hereunder, each Recipient hereby
-  assumes sole responsibility to secure any other intellectual
-  property rights needed, if any. For example, if a third party
-  patent license is required to allow Recipient to Distribute the
-  Program, it is Recipient's responsibility to acquire that license
-  before distributing the Program.
-
-  d) Each Contributor represents that to its knowledge it has
-  sufficient copyright rights in its Contribution, if any, to grant
-  the copyright license set forth in this Agreement.
-
-  e) Notwithstanding the terms of any Secondary License, no
-  Contributor makes additional grants to any Recipient (other than
-  those set forth in this Agreement) as a result of such Recipient's
-  receipt of the Program under the terms of a Secondary License
-  (if permitted under the terms of Section 3).
-
-3. REQUIREMENTS
-
-3.1 If a Contributor Distributes the Program in any form, then:
-
-  a) the Program must also be made available as Source Code, in
-  accordance with section 3.2, and the Contributor must accompany
-  the Program with a statement that the Source Code for the Program
-  is available under this Agreement, and informs Recipients how to
-  obtain it in a reasonable manner on or through a medium customarily
-  used for software exchange; and
-
-  b) the Contributor may Distribute the Program under a license
-  different than this Agreement, provided that such license:
-     i) effectively disclaims on behalf of all other Contributors all
-     warranties and conditions, express and implied, including
-     warranties or conditions of title and non-infringement, and
-     implied warranties or conditions of merchantability and fitness
-     for a particular purpose;
-
-     ii) effectively excludes on behalf of all other Contributors all
-     liability for damages, including direct, indirect, special,
-     incidental and consequential damages, such as lost profits;
-
-     iii) does not attempt to limit or alter the recipients' rights
-     in the Source Code under section 3.2; and
-
-     iv) requires any subsequent distribution of the Program by any
-     party to be under a license that satisfies the requirements
-     of this section 3.
-
-3.2 When the Program is Distributed as Source Code:
-
-  a) it must be made available under this Agreement, or if the
-  Program (i) is combined with other material in a separate file or
-  files made available under a Secondary License, and (ii) the initial
-  Contributor attached to the Source Code the notice described in
-  Exhibit A of this Agreement, then the Program may be made available
-  under the terms of such Secondary Licenses, and
-
-  b) a copy of this Agreement must be included with each copy of
-  the Program.
-
-3.3 Contributors may not remove or alter any copyright, patent,
-trademark, attribution notices, disclaimers of warranty, or limitations
-of liability ("notices") contained within the Program from any copy of
-the Program which they Distribute, provided that Contributors may add
-their own appropriate notices.
-
-4. COMMERCIAL DISTRIBUTION
-
-Commercial distributors of software may accept certain responsibilities
-with respect to end users, business partners and the like. While this
-license is intended to facilitate the commercial use of the Program,
-the Contributor who includes the Program in a commercial product
-offering should do so in a manner which does not create potential
-liability for other Contributors. Therefore, if a Contributor includes
-the Program in a commercial product offering, such Contributor
-("Commercial Contributor") hereby agrees to defend and indemnify every
-other Contributor ("Indemnified Contributor") against any losses,
-damages and costs (collectively "Losses") arising from claims, lawsuits
-and other legal actions brought by a third party against the Indemnified
-Contributor to the extent caused by the acts or omissions of such
-Commercial Contributor in connection with its distribution of the Program
-in a commercial product offering. The obligations in this section do not
-apply to any claims or Losses relating to any actual or alleged
-intellectual property infringement. In order to qualify, an Indemnified
-Contributor must: a) promptly notify the Commercial Contributor in
-writing of such claim, and b) allow the Commercial Contributor to control,
-and cooperate with the Commercial Contributor in, the defense and any
-related settlement negotiations. The Indemnified Contributor may
-participate in any such claim at its own expense.
-
-For example, a Contributor might include the Program in a commercial
-product offering, Product X. That Contributor is then a Commercial
-Contributor. If that Commercial Contributor then makes performance
-claims, or offers warranties related to Product X, those performance
-claims and warranties are such Commercial Contributor's responsibility
-alone. Under this section, the Commercial Contributor would have to
-defend claims against the other Contributors related to those performance
-claims and warranties, and if a court requires any other Contributor to
-pay any damages as a result, the Commercial Contributor must pay
-those damages.
-
-5. NO WARRANTY
-
-EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
-PERMITTED BY APPLICABLE LAW, THE PROGRAM IS PROVIDED ON AN "AS IS"
-BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, EITHER EXPRESS OR
-IMPLIED INCLUDING, WITHOUT LIMITATION, ANY WARRANTIES OR CONDITIONS OF
-TITLE, NON-INFRINGEMENT, MERCHANTABILITY OR FITNESS FOR A PARTICULAR
-PURPOSE. Each Recipient is solely responsible for determining the
-appropriateness of using and distributing the Program and assumes all
-risks associated with its exercise of rights under this Agreement,
-including but not limited to the risks and costs of program errors,
-compliance with applicable laws, damage to or loss of data, programs
-or equipment, and unavailability or interruption of operations.
-
-6. DISCLAIMER OF LIABILITY
-
-EXCEPT AS EXPRESSLY SET FORTH IN THIS AGREEMENT, AND TO THE EXTENT
-PERMITTED BY APPLICABLE LAW, NEITHER RECIPIENT NOR ANY CONTRIBUTORS
-SHALL HAVE ANY LIABILITY FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING WITHOUT LIMITATION LOST
-PROFITS), HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
-CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
-ARISING IN ANY WAY OUT OF THE USE OR DISTRIBUTION OF THE PROGRAM OR THE
-EXERCISE OF ANY RIGHTS GRANTED HEREUNDER, EVEN IF ADVISED OF THE
-POSSIBILITY OF SUCH DAMAGES.
-
-7. GENERAL
-
-If any provision of this Agreement is invalid or unenforceable under
-applicable law, it shall not affect the validity or enforceability of
-the remainder of the terms of this Agreement, and without further
-action by the parties hereto, such provision shall be reformed to the
-minimum extent necessary to make such provision valid and enforceable.
-
-If Recipient institutes patent litigation against any entity
-(including a cross-claim or counterclaim in a lawsuit) alleging that the
-Program itself (excluding combinations of the Program with other software
-or hardware) infringes such Recipient's patent(s), then such Recipient's
-rights granted under Section 2(b) shall terminate as of the date such
-litigation is filed.
-
-All Recipient's rights under this Agreement shall terminate if it
-fails to comply with any of the material terms or conditions of this
-Agreement and does not cure such failure in a reasonable period of
-time after becoming aware of such noncompliance. If all Recipient's
-rights under this Agreement terminate, Recipient agrees to cease use
-and distribution of the Program as soon as reasonably practicable.
-However, Recipient's obligations under this Agreement and any licenses
-granted by Recipient relating to the Program shall continue and survive.
-
-Everyone is permitted to copy and distribute copies of this Agreement,
-but in order to avoid inconsistency the Agreement is copyrighted and
-may only be modified in the following manner. The Agreement Steward
-reserves the right to publish new versions (including revisions) of
-this Agreement from time to time. No one other than the Agreement
-Steward has the right to modify this Agreement. The Eclipse Foundation
-is the initial Agreement Steward. The Eclipse Foundation may assign the
-responsibility to serve as the Agreement Steward to a suitable separate
-entity. Each new version of the Agreement will be given a distinguishing
-version number. The Program (including Contributions) may always be
-Distributed subject to the version of the Agreement under which it was
-received. In addition, after a new version of the Agreement is published,
-Contributor may elect to Distribute the Program (including its
-Contributions) under the new version.
-
-Except as expressly stated in Sections 2(a) and 2(b) above, Recipient
-receives no rights or licenses to the intellectual property of any
-Contributor under this Agreement, whether expressly, by implication,
-estoppel or otherwise. All rights in the Program not expressly granted
-under this Agreement are reserved. Nothing in this Agreement is intended
-to be enforceable by any entity that is not a Contributor or Recipient.
-No third-party beneficiary rights are created under this Agreement.
-
-Exhibit A - Form of Secondary Licenses Notice
-
-"This Source Code may also be made available under the following
-Secondary Licenses when the conditions for such availability set forth
-in the Eclipse Public License, v. 2.0 are satisfied: {name license(s),
-version(s), and exceptions or additional permissions here}."
-
-  Simply including a copy of this Agreement, including this Exhibit A
-  is not sufficient to license the Source Code under Secondary Licenses.
-
-  If it is not possible or desirable to put the notice in a particular
-  file, then You may include the notice in a location (such as a LICENSE
-  file in a relevant directory) where a recipient would be likely to
-  look for such a notice.
-
-  You may add additional accurate notices of copyright ownership.
-
-=====================================================================
-END OF ECLIPSE PUBLIC LICENSE V2.0 NOTICES AND INFORMATION
-=====================================================================
-
-
 =====================================================================
 START OF ISC LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 The Program includes some or all of the following that IBM obtained under the ISC License:
 
-cliui  6.0.0
-which	1.0.9
-flatted 2.0.1
-fs.realpath	1.0.0
-get-caller-file	2.0.5
-glob	7.1.6
-graceful-fs	4.2.3
-inflight	1.0.6
-inherits	2.0.4
-isexe	2.0.0
-minimatch	3.0.4
-once	1.4.0
-require-main-filename  2.0.0
-mylib	0.0.0
-rimraf	2.6.3
-rimraf  2.7.1
-sax	1.2.4
-semver	5.7.0
-semver  6.3.0
-set-blocking	2.0.0
-signal-exit	3.0.2
-which-module	2.0.0
-wrappy	1.0.2
-y18n    4.0.0
-yargs-parser	16.1.0
-
+cliui  6.x
+Copyright (c) 2015, Contributors
+which	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+flatted 2.x
+Copyright (c) 2018, Andrea Giammarchi, @WebReflection
+fs.realpath	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+Copyright Joyent, Inc. and other Node contributors
+get-caller-file	2.x
+Copyright 2018 Stefan Penner
+glob	7.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+graceful-fs	4.x
+Copyright (c) Isaac Z. Schlueter, Ben Noordhuis, and Contributors
+inflight	1.x
+Copyright (c) Isaac Z. Schlueter
+inherits	2.x
+Copyright (c) Isaac Z. Schlueter
+minimatch	3.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+once	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+require-main-filename  2.x
+Copyright (c) 2016, Contributors
+rimraf	2.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+sax	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+semver	5.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+semver  6.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+set-blocking	2.x
+Copyright (c) 2016, Contributors
+which-module	2.x
+Copyright (c) 2016, Contributors
+wrappy	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+y18n    4.x
+Copyright (c) 2015, Contributors
+yargs-parser   18.x
+Copyright (c) 2016, Contributors
 
 The ISC License
 
@@ -1266,9 +1183,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for Z Open Editor 0.4.7
+End of Notices for IBM Z Open Editor 0.5.0
 =====================================================================
 
-L/N:  L-JYZG-BLSR8B
-D/N:  L-JYZG-BLSR8B
-P/N:  L-JYZG-BLSR8B
+L/N:  L-JYZG-BQ2657
+D/N:  L-JYZG-BQ2657
+P/N:  L-JYZG-BQ2657

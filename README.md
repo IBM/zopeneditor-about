@@ -2,6 +2,8 @@
 
 **IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, and JCL languages.**
 
+> Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) online.
+
 ## License
 
 - The license for the IBM Z Open Editor can be found in the [product-licenses](./product-licenses/) folder in this repository. You can use this repository to file issues for the IBM Z Open Editor as well.
@@ -10,7 +12,7 @@
 
 ## Overview
 
-This extension provides language support for the IBM Enterprise COBOL 6.3 and PL/I 5.3 programming languages for z/OS®. This also includes capabilities for embedded statements for CICS 5.4, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
+This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL 6.3, and PL/I 5.3. This also includes capabilities for embedded statements for CICS 5.6, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
 IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
 
@@ -34,7 +36,7 @@ For the Job Control Language (JCL), the extension provides syntax highlighting.
 
 To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
-To interact with z/OS, we recommend installing the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL and PL/I files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL and let you browse job spool files.
+To interact with z/OS, this extension also automatically coinstalls the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
 ## Table of contents
 
@@ -61,6 +63,7 @@ Each such event is logged with the following information:
 - Operating system and version
 - Country or region
 - Anonymous user and session ID
+- The type of editor VS Code or Eclipse Theia
 - Version numbers of Microsoft VS Code and IBM Z Open Editor
 - Z programming language used
 
@@ -75,9 +78,9 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
 
     Note, in all cases, you need to download and configure a full JDK and not just a Client Runtime version of Java. The language servers will not work with only a Client Runtime version.
 
-    Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
+  Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
 
-- Zowe CLI 6.8.2 and the Zowe Explorer VS Code extension v1.3.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
+- Zowe CLI 6.13 and the Zowe Explorer VS Code extension v1.5.2 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
@@ -123,9 +126,9 @@ By default, the language server clients that start the language servers for COBO
 
 ## COBOL and PL/I Language Server Protocol capability examples
 
-### Outline view
+The following animations just give you glimpse of the capabilities available in IBM Z Open Editor. We are showing you different examples using different programming languages, but most of the features shown here are available for COBOL and PL/I.
 
-#### Outline view explorer
+### Outline view explorer
 
 You can use this view to:
 
@@ -136,11 +139,18 @@ You can use this view to:
 
 ![ ](readme/outline-explorer.gif)
 
-#### Outline view search
+### Outline view search
 
 Searching for identifiers within the outline by pressing `Ctrl+Shift+O` (PC) or `Cmd+Shift+O` (Mac) within the Editor window.
 
 ![ ](readme/outline-search.gif)
+
+### Code and variable completion
+
+When you start typing a command, a selection list of commands and code snippets are displayed automatically or by typing `Ctrl+Space` depending on your preferences settings.
+This feature also works for variable names defined in the program.
+
+![ ](readme/code-complete.gif)
 
 ### Declaration hovers
 
@@ -165,13 +175,6 @@ To preview the contents of a copybook or included file, move your mouse cursor o
 Select a variable or a paragraph name, right-click for menu, and choose `Peek References` or use shortcut `Shift+F12` (Windows and Mac).  Double-click any result in the CodeLens box to go to that location in the file.
 
 ![ ](readme/peek-references.gif)
-
-### Code and variable completion
-
-When you start typing a command, a selection list of commands and code snippets are displayed automatically or by typing `Ctrl+Space` depending on your preferences settings.
-This feature also works for variable names defined in the program.
-
-![ ](readme/code-complete.gif)
 
 ## Summary of keyboard shortcuts
 

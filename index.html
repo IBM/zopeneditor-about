@@ -135,7 +135,7 @@ Contract with IBM Corp.
                         <div class="grid-x">
                             <div class="small-3 cell">
                                 <h3>About</h3>
-                                <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends
+                                <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL, PL/I, and High-Level Assembler (HLASM) language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends
                                     Zowe Open Mainframe project.</p>
                             </div>
                         </div>
@@ -147,7 +147,6 @@ Contract with IBM Corp.
                                     <div class="grid-x full-height">
                                         <div class="cell small-5 title half-height about">
                                             <p class="announcement"><span class="announcement-text"><b class="alert">ANNOUNCEMENT!</b> IBM Z Open Editor is part of <b>IBM Wazi for Red Hat CodeReady Workspaces</b></span> <b class="learn-link"><a href="https://www.ibm.com/products/wazi-for-red-hat-codeready-workspaces" target="_blank">LEARN MORE</a></b></p>
-                                            <p class="announcement"><span class="announcement-text"><b class="alert">NEW!</b> <b>IBM Remote System Explorer API Beta</b> for IBM Z Open Editor</span> <b class="learn-link"><a href="#callout" data-smooth-scroll>LEARN MORE</a></b></p>
                                         </div>
                                         <div class="cell auto tile blue3 half-height">
                                             <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
@@ -181,7 +180,7 @@ Contract with IBM Corp.
                                     <a class="tile-link" data-open="modalGit" href="#"><img src="assets/img/git.svg" title="Git SCM Integration"></a>
                                 </div>
                                 <div class="cell small-2 tile blue3">
-                                    <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL and PL/I. JCL Syntax highlighting"></a>
+                                    <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL, PL/I and HLASM. JCL Syntax highlighting"></a>
                                 </div>
                                 <div class="cell small-1 tile blue2">
                                     <a class="tile-link" data-open="modalSyntax" href="#"><img src="assets/img/syntax.svg" title="Realtime syntax check"></a>
@@ -221,10 +220,9 @@ Contract with IBM Corp.
                     <div class="grid-x container-info align-center-middle animated fadeIn">
                         <div class="cell small-12 blue0 about about-mobile">
                             <h3>About</h3><br>
-                            <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL and PL/I language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends
+                            <p class="about-editor"><b>IBM Z Open Editor</b> brings COBOL, PL/I, and High-Level Assembler (HLASM) language support to Microsoft Visual Studio Code (VS Code). It is one of the several next generation capabilities for an open development experience for z/OS<sup>®</sup>. It also uses and extends
                                 Zowe Open Mainframe project.</p>
                             <p class="announcement"><span class="announcement-text"><b class="alert">ANNOUNCEMENT!</b> IBM Z Open Editor is part of <b>IBM Wazi for Red Hat CodeReady Workspaces</b></span> <b class="learn-link"><a href="https://www.ibm.com/products/wazi-for-red-hat-codeready-workspaces" target="_blank">LEARN MORE</a></b></p>
-                            <p class="announcement"><span class="announcement-text"><b class="alert">NEW!</b> <b>IBM Remote System Explorer API Beta</b> for IBM Z Open Editor</span> <b class="learn-link"><a href="#callout" data-smooth-scroll>LEARN MORE</a></b></p>
                         </div>
                         <div class="cell small-12 tile blue3">
                             <a class="tile-link" data-open="modalVScode" href="#"><img alt="vs code" src="assets/img/vscode.svg" title="VS Code Extensions"></a>
@@ -249,7 +247,7 @@ Contract with IBM Corp.
                             <a class="tile-link" data-open="modalShortcuts" href="#"><img src="assets/img/shortcuts.svg" title="Custom shortcuts"></a>
                         </div>
                         <div class="cell small-12 tile blue3">
-                            <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL and PL/I. JCL Syntax highlighting"></a>
+                            <a class="tile-link" data-open="modalCobol" href="#"><img src="assets/img/cobol_pl1.svg" title="Advance language servers, COBOL, PL/I, and HLASM. JCL Syntax highlighting"></a>
                         </div>
                     
                         <div class="cell small-6 tile blue4">
@@ -298,7 +296,7 @@ Contract with IBM Corp.
                 <p>Review the <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/LICENSE.txt" target=_blank rel="noreferrer noopener">IBM Z Open Editor License Agreement</a>, <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NOTICES.txt" target=_blank rel="noreferrer noopener">Third Party Notices</a>, and <a href="https://github.com/IBM/zopeneditor-about/raw/master/product-licenses/NON_IBM_LICENSE.txt" target=_blank rel="noreferrer noopener">terms and conditions for separately licensed code</a> before downloading.</p>
                 <p>Here are the prerequisites for installing this extension in VS Code:</p>
                 <ul>
-                  <li><p>Java SDK version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK in order to start it successfully.</p>
+                  <li><p>Java SDK version 8 or later - 64 bit: The COBOL, PL/I, and HLASM language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK in order to start it successfully.</p>
                   <ul>
                     <li>
                         <p>You can use <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target=_blank rel="noreferrer noopener">Oracle Java SDK 8</a> or the LTS version 11 of Oracle Java. Alternatively, you can use version 8 or 11 of the <a href="https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=openj9" target=_blank rel="noreferrer noopener">OpenJDK</a>.
@@ -315,7 +313,7 @@ Contract with IBM Corp.
                   </ul>
                 </li>
                 </ul>
-          <p>If you are looking for some COBOL, PL/I, or JCL code that you can use to explore the editor features then you can use samples that we maintain on GitHub. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:</p>
+          <p>If you are looking for some COBOL, PL/I, HLASM or JCL code that you can use to explore the editor features then you can use samples that we maintain on GitHub. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:</p>
           <p><code>git clone https://github.com/IBM/zopeneditor-sample.git</code></p>
           <p>Then once you finished installing the IBM Z Open Editor extension open the directory <code>zopeneditor-sample</code> using the <code>File &gt; Open...</code> menu.</p>
         </div>
@@ -342,9 +340,9 @@ Contract with IBM Corp.
                     <img alt="vs callout-img" src="assets/img/callout.png">
                 </div>
                 <div class="cell small-12 medium-8 large-10">
-                    <h3>Try IBM Remote System Explorer API Beta!</h3><br>
-                    <p>You can now use IBM Z Open Editor to connect to z/OS through IBM Remote System Explorer to work with z/OS resources. The combination of the new Remote System Explorer API beta in conjunction with IBM z/OS Explorer, IBM Z Open Editor,
-                        Zowe Explorer, and Zowe CLI offers you an alternative to z/OSMF for working with MVS files, JES jobs, and UNIX files. If you are interested, please click the button to learn more and give it a try.</p><a href="https://epwt-www.mybluemix.net/software/support/trial/cst/welcomepage.wss?siteId=536&tabId=1045&w=1&p=1&_ga=2.108910983.403655627.1584975487-2110257964.1580332105"
+                    <h3>Try IBM Remote System Explorer API!</h3><br>
+                    <p>You can now use IBM Z Open Editor to connect to z/OS through IBM Remote System Explorer to work with z/OS resources. The combination of the new Remote System Explorer API in conjunction with IBM z/OS Explorer, IBM Z Open Editor,
+                        Zowe Explorer, and Zowe CLI offers you an alternative to z/OSMF for working with MVS files, JES jobs, and UNIX files. If you are interested, please click the button to learn more and give it a try.</p><a href="https://developer.ibm.com/mainframe/products/downloads/#zowe"
                         data-smooth-scroll class="button header-button" target="_blank">TRY IT NOW</a>
                 </div>
             </div>
@@ -386,6 +384,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalVScode" data-reveal>
   <h3>VS Code Extension</h3>
   <p>IBM Z Open Editor is available as an extension for VS Code, which is becoming the most popular development environment according to recent surveys. With so many current and next generation developers having experience with VS Code, IBM<sup>®</sup> Enterprise language support in VS Code makes enterprise programming more attractive and productive by allowing developers to use this popular editor, with the option to integrate numerous other extensions from the VS Code Marketplace.</p>
+  <p>
+    <a href="https://marketplace.visualstudio.com/items?itemName=ibm.zopeneditor" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -400,7 +401,10 @@ Contract with IBM Corp.
 
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalZowe" data-reveal>
   <h3>Integration with Zowe</h3>
-  <p>IBM Z Open Editor is designed to integrate seamlessly with the VS Code Extension for Zowe. The VS Code Extension for Zowe allows you to connect remotely to the IBM z/OS mainframe system, where you can manage your data sets, files, and jobs. IBM Z Open Editor allows you to efficiently and effectively edit your COBOL and PL/I applications.</p>
+  <p>IBM Z Open Editor is designed to integrate seamlessly with Zowe Explorer, a Zowe VS Code extension. Zowe Explorer allows you to connect remotely to the IBM z/OS mainframe system, where you can manage your data sets, files, and jobs. IBM Z Open Editor allows you to efficiently and effectively edit your COBOL, PL/I, and HLASM applications.</p>
+  <p>
+    <a href="./Docs/interact_zos_zowe_explorer.html" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -414,8 +418,18 @@ Contract with IBM Corp.
 -->
 
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalTheiaChe" data-reveal>
-  <h3>Integration with Theia and Eclipse Che</h3>
-  <p>IBM Z Open Editor has been tested to work in Cloud-based environments as well. Add it to any Eclipse Theia installation as a plug-in and it will automatically integrate its capabilities into that Browser-based editor. Alternatively, you can configure it as an editor plug-in in Eclipse Che to have a full COBOL and PL/I editing experience inside Che.</p>
+  <h3>Integration with Theia, Eclipse Che and IBM Wazi for Red Hat CodeReady Workspaces</h3>
+  <p>IBM Z Open Editor has been tested to work in Cloud-based environments as well. Add it to any Eclipse Theia installation as a plug-in and it will automatically integrate its capabilities into that Browser-based editor. Alternatively, you can configure it as an editor plug-in in Eclipse Che to have a full COBOL, PL/I, and HLASM editing experience inside Che.
+    For a full, productive development environment that can be used to develop hybrid applications, IBM Wazi for Red Hat CodeReady Workspaces integrates into almost any enterprise-wide DevOps pipeline with standard and open toolsets.
+  </p>
+  <p>
+    <b>LEARN MORE</b>
+    <ul>
+      <li><a href="./Blog/web-based-with-theia.html" target="blank" class="launch-link">Theia<img src="assets/img/trans.svg" class="launch-icon"></a></li>
+      <li><a href="./Blog/in-the-cloud-with-che.html" target="blank" class="launch-link">Eclipse Che<img src="assets/img/trans.svg" class="launch-icon"></a></li>
+      <li><a href="https://www.ibm.com/products/wazi-for-red-hat-codeready-workspaces" target="blank" class="launch-link">IBM Wazi for Red Hat CodeReady Workspaces<img src="assets/img/trans.svg" class="launch-icon"></a></li>
+    </ul>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -432,9 +446,12 @@ Contract with IBM Corp.
   <h3>MVS™, USS, and JES | Remote Explorers</h3>
   <p>If you have z/OSMF configured, you can use Zowe CLI and the Zowe VS Code Extension to load and edit your files directly from z/OS or download them into your local workspace, add them to Git to control your changes, and then upload the changed files into the same or new data sets to compile and run your application. You can do all of these operations from IBM Z Open Editor directly with right-clicks and dialog interactions, and command-line operations using the VS Code Terminal view that integrates right below your editor, giving you one central view to everything.</p>
 
-<p>After configuration, IBM Z Open Editor can also take advantage of the Zowe CLI protocol for resolving dependencies over the network. For example, you can edit your COBOL programs locally, but resolve copybook dependencies directly out of MVS using the same Zowe connections.</p>
+  <p>After configuration, IBM Z Open Editor can also take advantage of the Zowe CLI protocol for resolving dependencies over the network. For example, you can edit your COBOL programs locally, but resolve copybook dependencies directly out of MVS using the same Zowe connections.</p>
+  <p>
+    <a href="./Docs/interact_zos_zowe_explorer.html#using-the-zowe-explorer-views" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
+      <span aria-hidden="true">&times;</span>
   </button>
 </div>
  <!--
@@ -449,6 +466,9 @@ Contract with IBM Corp.
   <h3>Preview Remote Copybooks</h3>
   <img src="assets/img/preview-cpy.gif"><br><br>
   <p>To preview the contents of a copybook, move your mouse cursor over the copybook name in a COPY statement. You can also open the copybook in a separate editor by pressing Ctrl+Click (Windows) or Cmd+Click (Mac). Resolving PL/I include files works similarly.</p>
+  <p>
+    <a href="./Docs/editor_codechanges.html#previewing-copybooks-and-include-files" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -464,6 +484,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalShortcuts" data-reveal>
   <h3>Custom Shortcuts</h3>
   <p>Use VS Code's custom Keyboard Shortcut and Keymaps feature to define your own shortcuts and custom ways of navigating your programs in the editor the way you want.</p>
+  <p>
+    <a href="./Docs/shortcut.html" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -479,6 +502,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalGit" data-reveal>
   <h3>Git SCM Integration</h3>
   <p>Use the built-in VS Code Git capabilities to quickly find and access recently edited code. Use colored bars highlighting recently changed lines in an open editor window. Clicking on the SCM (Git) view will reveal and provide access to files that have been recently modified. If you have the GitLens extension installed, then you can also view in-editor annotations to see the most recent commit modifying each line of code.</p>
+  <p>
+    <a href="./Docs/git_integration.html" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -492,15 +518,18 @@ Contract with IBM Corp.
 -->
 
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalCobol" data-reveal>
-  <h3>COBOL, Pl/I, and JCL</h3>
-  <p>Boost your productivity with a modern and language-sensitive editor.</p>
+    <h3>COBOL, Pl/I, HLASM, and JCL</h3>
+    <p>Boost your productivity with a modern and language-sensitive editor.</p>
 
-<p>Using the Language Server Protocol (LSP), IBM Z Open Editor supports COBOL and PL/I outline view, syntax highlighting, code completion, code templates, find all references, peek definition, search and rename refactoring across multiple program files, and much more.</p>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <p>Using the Language Server Protocol (LSP), IBM Z Open Editor supports COBOL, PL/I, and HLASM outline view, syntax highlighting, code completion, code templates, find all references, peek definition, search and rename refactoring across multiple program files,
+        and much more.</p>
+    <p>
+        <a href="./Docs/introduction.html#key-capabilities" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+    </p>
+    <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>
- <!--
+</div> <!--
 Licensed Materials - Property of IBM
 (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
 Note to U.S. Government Users Restricted Rights:
@@ -511,6 +540,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalSyntax" data-reveal>
   <h3>Realtime Syntax Check</h3>
   <p>You do not need to compile your COBOL or PL/I code anymore to find syntax errors. The editor will show them to you inside the editor as well as a dedicated Problems View just while you type.</p>
+  <p>
+    <a href="./Docs/editor_codechanges.html#syntax-checking" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -526,12 +558,15 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalOutline" data-reveal>
   <h3>Outline View</h3>
   <img src="assets/img/outline-explorer.gif"><br><br>
-  <p>Explore and navigate your COBOL and PL/I code efficiently with a complete sortable and interactive table of contents for your code. Use the Outline View to quickly jump to any part of your code by clicking its section header, or search for identifiers within the outline. Icons next to each Outline View item make it easy to identify procedures, loops, and more.</p>
+  <p>Explore and navigate your COBOL, PL/I, and HLASM code efficiently with a complete sortable and interactive table of contents for your code. Use the Outline View to quickly jump to any part of your code by clicking its section header, or search for identifiers
+      within the outline. Icons next to each Outline View item make it easy to identify procedures, loops, and more.</p>
+  <p>
+    <a href="./Docs/editor_codechanges.html#browsing-code-by-using-the-outline-view" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
+  <span aria-hidden="true">&times;</span>
   </button>
-</div>
- <!--
+</div> <!--
 Licensed Materials - Property of IBM
 (C) Copyright IBM Corporation 2018-2019. All Rights Reserved.
 Note to U.S. Government Users Restricted Rights:
@@ -543,6 +578,9 @@ Contract with IBM Corp.
   <h3>VS Code CodeLens</h3>
   <img src="assets/img/peek-references.gif"><br><br>
   <p>Experience a full integration of standard VS Code language feature such as CodeLens. These are mini-views that overlay the editor showing you content from another location. For example, right-click a variable or paragraph and select Peek References from the context menu, which opens a code lens showing all the places that reference the item. Then quickly review the code for each occurrence or navigate the editor to that location.</p>
+  <p>
+    <a href="./Docs/editor_codechanges.html#operations-on-variable-and-paragraph-names" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -558,6 +596,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalRefactor" data-reveal>
   <h3>Refactoring</h3>
   <p>Utilize various refactoring operations such as Rename Symbol, which updates selected variable or paragraph name in the entire program as well as copybook or includes if it is attached to that symbol. Or, use Search-and-Replace operations with regular expressions to find and update and content over multiple files with a few mouse-clicks.</p>
+  <p>
+    <a href="./Docs/editor_codechanges.html#operations-on-variable-and-paragraph-names" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -572,7 +613,10 @@ Contract with IBM Corp.
 
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalSnipets" data-reveal>
   <h3>Code Snippets</h3>
-  <p>Boost your productivity not only with code completion, but a curated list of larger COBOL and PL/I code snippets that ship with this extension. You can also create and manage your own code snippets that then integrate into the editing experience appearing just next to the pre-packaged snippets.</p>
+  <p>Boost your productivity not only with code completion, but a curated list of larger COBOL, PL/I, and HLASM code snippets that ship with this extension. You can also create and manage your own code snippets that then integrate into the editing experience appearing just next to the pre-packaged snippets.</p>
+  <p>
+    <a href="./Docs/snippets.html" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -588,6 +632,9 @@ Contract with IBM Corp.
 <div class="reveal small blue1 modal-info animated fadeInUp" id="modalTerminal" data-reveal>
   <h3>Terminal Integration</h3>
   <p>VS Code integrates a full terminal directly into the editor, which allows you to execute commands and scripts against your files inside the editor experience. Use it to ssh to USS and combined with a Zowe CLI installation directly interact with z/OS from that terminal starting jobs, uploading, downloading files etc. </p>
+  <p>
+    <a href="./Docs/interact_zos_cli.html" target="blank" class="launch-link">LEARN MORE<img src="assets/img/trans.svg" class="launch-icon"></a>
+  </p>
   <button class="close-button" data-close aria-label="Close modal" type="button">
     <span aria-hidden="true">&times;</span>
   </button>
@@ -640,7 +687,7 @@ Contract with IBM Corp.
 			<a href="#getting-started" data-smooth-scroll data-toggle="offCanvas" id="mobilelink">Get started</a>
 		</li>
 		<li class="section">
-			<a href="#callout" data-smooth-scroll data-toggle="offCanvas" class="mobile-menu-callout">Try IBM Remote System Explorer API Beta!</a>
+			<a href="#callout" data-smooth-scroll data-toggle="offCanvas" class="mobile-menu-callout">Try IBM Remote System Explorer API!</a>
 		</li>
 	</ul>
 </div><!-- off canvas mobile menu end-->

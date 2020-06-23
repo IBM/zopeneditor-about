@@ -33,10 +33,10 @@ Detailed steps for reproducing the problem:
 
 1. First step
 
-Observed behavior:
+### Observed behavior
 
 -
 
-Designed behavior:
+### Expected behavior
 
 -

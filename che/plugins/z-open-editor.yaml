@@ -18,11 +18,18 @@ category: Language
 firstPublicationDate: "2019-10-03"
 spec:
   containers:
-  - image: "docker.io/eclipse/che-remote-plugin-runner-java11:7.3.0"
-    name: vscode-ibm-zopeneditor
-    memoryLimit: "1500Mi"
+  - image: docker.io/ibmcom/wazi-code-codeready:latest
+    name: ibm-wazi
+    memoryLimit: "3000Mi"
+    args:
+      - sh
+      - -c
+      - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
     volumes:
-    - mountPath: "/home/theia/.m2"
+    - mountPath: "/home/wazi/.zowe"
+      name: wazi
+    - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/0.4.9/zopeneditor-0.4.9.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.0.2/zopeneditor-1.0.2.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.0.2/Zowe.vscode-extension-for-zowe-1.6.0.vsix

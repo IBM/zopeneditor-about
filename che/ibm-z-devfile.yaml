@@ -7,7 +7,7 @@
 ---
   apiVersion: 1.0.0
   metadata:
-    generateName: IBM-Z-Open-Editor-
+      generateName: IBM-Z-Open-Editor-
   projects:
     -
       name: ibm-zopeneditor-sample
@@ -17,18 +17,17 @@
   components:
     -
       type: chePlugin
-      reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/z-open-editor.yaml
+      reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
       alias: ibm-z-open-editor
     -
-      type: chePlugin
-      reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/zowe.yaml
-      alias: zowe
-    -
       type: dockerimage
-      alias: ibmz
-      image: quay.io/eclipse/che-java11-gradle:nightly
+      alias: wazi
+      image: docker.io/ibmcom/wazi-code-codeready:latest
       memoryLimit: 512Mi
       volumes:
-        - name: ibmzowe
-          containerPath: /home/user/.zowe
+        - name: wazi
+          containerPath: /home/wazi/.zowe
+        - name: m2
+          containerPath: /home/wazi/.m2
       mountSources: true
+  

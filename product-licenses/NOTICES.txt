@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.0.2
+IBM Z Open Editor V1.0.3
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 1.0.2
+Start of Notices for IBM Z Open Editor 1.0.3
 
 =====================================================================
 
@@ -1413,9 +1413,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 1.0.2
+End of Notices for IBM Z Open Editor 1.0.3
 =====================================================================
 
-L/N:  L-JYZG-BQUPR4
-D/N:  L-JYZG-BQUPR4
-P/N:  L-JYZG-BQUPR4
+L/N:  L-JYZG-BS86M4
+D/N:  L-JYZG-BS86M4
+P/N:  L-JYZG-BS86M4

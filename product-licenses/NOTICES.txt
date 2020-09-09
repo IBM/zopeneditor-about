@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.0.3
+IBM Z Open Editor V1.0.4
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -54,6 +54,7 @@ commons-text	1.x
 find-java-home	1.x
 google.gson	2.x
 google.guava      27.x
+google.guava      29.x
 javax.inject	1.0.x
 log4js	6.x
 org.apache.commons.jxpath	1.x
@@ -285,6 +286,105 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 Copyright (c) Microsoft Corporation. All rights reserved.
 @types/yargs-parser  v15.x
 Copyright (c) Microsoft Corporation. All rights reserved.
+
+acorn v6.x
+Copyright (C) 2012-2018 by various contributors (see name list below)
+Adam Walsh
+Adrian Heine
+Adrian Rakovsky
+Alistair Braidwood
+Amila Welihinda
+Andres Suarez
+Angelo
+Aparajita Fishman
+Arian Stolwijk
+Artem Govorov
+Ben Page
+Boopesh Mahendran
+Bradley Heinz
+Brandon Mills
+Brian Donovan
+Charles Hughes
+Charmander
+Chris McKnight
+Conrad Irwin
+Cyril Auburtin
+Daniel Tschinder
+David Bonnet
+dnalborczyk
+Domenico Matteo
+ehmicky
+Eugene Obrezkov
+Fabien LOISON
+Felix Maier
+Forbes Lindesay
+Gilad Peleg
+Huáng Jùnliàng
+impinball
+Ingvar Stepanyan
+Jackson Ray Hamilton
+Jesse McCarthy
+Jiaxing Wang
+Joe Krump
+Joel Kemp
+Johannes Herr
+John-David Dalton
+Jordan Gensler
+Jordan Klassen
+Jürg Lehni
+Kai Cataldo
+keeyipchan
+Keheliya Gallaba
+Kevin Irish
+Kevin Kwok
+krator
+kyranet
+laosb
+luckyzeng
+Marek
+Marijn Haverbeke
+Martin Carlberg
+Mat Garcia
+Mathias Bynens
+Mathieu 'p01' Henri
+Matthew Bastien
+Max Schaefer
+Max Zerzouri
+Mihai Bazon
+Mike Rennie
+naoh
+Nicholas C. Zakas
+Nick Fitzgerald
+Olivier Thomann
+Oskar Schöldström
+Paul Harper
+Peter Rust
+piotr
+PlNG
+Praveen N
+Prayag Verma
+ReadmeCritic
+r-e-d
+Renée Kooi
+Richard Gibson
+Rich Harris
+Sebastian McKenzie
+Shahar Soel
+Sheel Bedi
+Simen Bekkhus
+susiwen
+susiwen8
+Teddy Katz
+Timothy Gu
+Tim van der Lippe
+Toru Nagashima
+tuesmiddt
+Victor Homyakov
+Vladislav Tupikin
+Wexpo Lyu
+zsjforcn
+龙腾道
+
 ansi-regex v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-regex v5.x
@@ -357,6 +457,8 @@ is-fullwidth-code-point v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 is-fullwidth-code-point v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+java-petitparser v2.x
+Copyright (c) 2006-2019 Lukas Renggli
 jsonc-parser v2.x
 Copyright (c) Microsoft
 jsonfile v4.x
@@ -420,6 +522,8 @@ rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
 Copyright (c) 2018 Nikita Skovoroda (chalkerx@gmail.com)
+spgennard/vscode_cobol  v3.9.8
+Copyright (c) 2015-2019 spgennard
 ssh2 v0.x
 Copyright Brian White. All rights reserved.
 ssh2-streams v0.4.x
@@ -1019,7 +1123,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS�? AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1413,7 +1517,7 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 1.0.3
+End of Notices for IBM Z Open Editor 1.0.4
 =====================================================================
 
 L/N:  L-JYZG-BS86M4

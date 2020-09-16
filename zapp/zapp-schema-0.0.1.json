@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IBM Zapp Document",
+  "description": "JSON schema for zapp.json and zapp.yaml files. Version 0.0.1 -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2020. All Rights Reserved.",
+  "type": "object",
+  "definitions": {
+    "coreProperties": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "description": "The name of the Z Project.",
+          "type": "string",
+          "maxLength": 214,
+          "minLength": 1,
+          "pattern": "^([a-zA-Z_$@][a-zA-Z\\d\\s-_$]*)$"
+        },
+        "description": {
+          "description": "This helps people understand your project as it would be used by tools.",
+          "type": "string"
+        },
+        "version": {
+          "description": "Version is a string and it must be parsable for managing dependencies.",
+          "type": "string",
+          "default": "0.0.1"
+        },
+        "group-id": {
+          "description": "Defines a group name that is shared for each application part in case of applications composed of multiple parts. Allows to uniquely identify the parts by concatenating with the artifact id. For example an group-id `com.ibm.wazi` with and artifact-id `service` would create the unique application identifier `com.ibm.wazi.service`.",
+          "type": "string",
+          "examples": ["com.ibm.wazi", "payments"]
+        },
+        "artifact-id": {
+          "description": "Define id of the application artifact. Use it in combination with a group-id for multi-part applications.",
+          "type": "string",
+          "default": "",
+          "examples": ["sam"]
+        },
+        "parent-id": {
+          "description": "In case of a multi-part application defines the name of the parent application part. This zapp will inherit properties such as property-groups defined in the parent.",
+          "type": "string",
+          "default": "",
+          "examples": ["com.ibm.wazi.parent"]
+        },
+        "keywords": {
+          "description": "This helps people discover your project.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homepage": {
+          "description": "The url to the project homepage.",
+          "type": "string",
+          "oneOf": [
+            {
+              "format": "uri"
+            },
+            {
+              "enum": ["."]
+            }
+          ]
+        },
+        "license": {
+          "type": "string",
+          "description": "You should specify a license for your package so that people know how they are permitted to use it, and any restrictions you're placing on it."
+        },
+        "author": {
+          "$ref": "#/definitions/person"
+        },
+        "contributors": {
+          "description": "A list of people who contributed to this package.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/person"
+          }
+        },
+        "maintainers": {
+          "description": "A list of people who maintains this package.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/person"
+          }
+        },
+        "property-groups": {
+          "description": "A list properties defining path names for resolving dependencies.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/property-group-item"
+          }
+        },
+        "profiles": {
+          "description": "Profiles are additional groups of properties that should only should become valid under specific conditions such as running in a build job or as part of a debug session.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/profile"
+          }
+        }
+      }
+    },
+    "property-group-item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the property group, which is used in hovers and error messages.",
+          "examples": ["sample-local"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["uss", "mvs", "local"],
+          "description": "The type of the property group defining where dependencies should be located. Allowed values are 'local' for using a local workspace, 'mvs' for dependencies located in MVS Datasets and 'uss' for dependencies located in USS UNIX System Files.",
+          "default": "local",
+          "examples": ["local", "mvs", "uss"]
+        },
+        "language": {
+          "type": "string",
+          "enum": ["cobol", "pl1", "hlams", "jcl"],
+          "description": "Limits the property group to one specific language."
+        },
+        "compilerOptions": {
+          "type": "string",
+          "description": "Global compiler options separated by comma that impact the parsing of the programs for the editor. Requires that you specify a language. If there are multiple Property Groups for a language with compiler option then they will be concatenated."
+        },
+        "system": {
+          "type": "string",
+          "description": "The of the z/OS system against which the mvs or uss entries should be matched. This could be a url or parts of a URL that is used by some remote connection technology such as Wazi's Remote System Explorer connections.",
+          "examples": ["zos1001.example.com"]
+        },
+        "syslib": {
+          "type": "array",
+          "description": "An array of locations to locate dependencies for programs. Allowed values are absolute or relative file path names, if the type is 'local', or MVS Dataset Names, if the type is 'mvs', USS Unix System File Absolute Path is type is 'uss'.",
+          "items": {
+            "type": "string"
+          },
+          "examples": ["${workspace}/${application}/copybook", "USER1.SAMPLE.COPYBOOK"]
+        },
+        "libraries": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["name", "locations"],
+              "properties": {
+                "name": {
+                  "type": "string",
+                  "description": "Name of the Library"
+                },
+                "locations": {
+                  "type": "array",
+                  "description": "An array of locations to locate dependencies for the library. Allowed values are file path names, if the type is 'local', or MVS Dataset Names, if the type is 'mvs', USS Unix System File Absolute Path is type is 'uss'."
+                }
+              }
+            }
+          ],
+          "description": "A Library name and an array of locations to locate dependencies for library references. Allowed values are file path names for that Library, if the type is 'local', or MVS Dataset Names, if the type is 'mvs' or USS Unix System File Absolute Path is type is 'uss'."
+        }
+      }
+    },
+    "person": {
+      "description": "A person who has been involved in creating or maintaining this package",
+      "type": ["object", "string"],
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "description": "Profiles are additional groups of properties that should only should become valid under specific conditions such as running in a build job or as part of a debug session.",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the profile.",
+          "examples": ["dbb-build"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["dbb", "debug"],
+          "description": "The type of the profile.",
+          "default": "dbb",
+          "examples": ["dbb", "debug"]
+        },
+        "property-groups": {
+          "description": "A list properties defining path names for resolving dependencies.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/property-group-item"
+          }
+        },
+        "settings": {
+          "description": "Settings objects specific to the type specified for the profile.",
+          "type": "object"
+        }
+      },
+      "anyOf": [
+        {
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string" },
+            "type": { "const": "dbb", "type": "string" },
+            "property-groups": { "type": "array" },
+            "settings": {
+              "$ref": "#/definitions/dbb-settings-item"
+            }
+          }
+        },
+        {
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string" },
+            "type": { "const": "debug", "type": "string" },
+            "settings": {
+              "$ref": "#/definitions/debug-settings-item"
+            }
+          }
+        }
+      ]
+    },
+    "dbb-settings-item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command"],
+      "description": "DBB build script properties for running User Build on remote host.",
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "Command that build script is executed with."
+        },
+        "buildScriptArgs": {
+          "type": "array",
+          "description": "Parameters for build script."
+        },
+        "buildScriptPath": {
+          "type": "string",
+          "description": "The full path of build script on remote host."
+        },
+        "additionalDependencies": {
+          "type": "array",
+          "description": "Additional build dependencies from local host."
+        }
+      }
+    },
+    "debug-settings-item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["unavailable"],
+      "description": "Debug properties for running a Debug session on a remote host.",
+      "properties": {
+        "unavailable": {
+          "type": "string",
+          "description": "Debug is not yet supported by ZAPP."
+        }
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/definitions/coreProperties"
+    }
+  ]
+}

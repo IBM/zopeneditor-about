@@ -116,7 +116,7 @@
         },
         "language": {
           "type": "string",
-          "enum": ["cobol", "pl1", "hlams", "jcl"],
+          "enum": ["cobol", "pl1", "hlasm", "jcl"],
           "description": "Limits the property group to one specific language."
         },
         "compilerOptions": {

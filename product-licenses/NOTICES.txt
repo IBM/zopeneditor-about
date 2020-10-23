@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.0.4
+IBM Z Open Editor V1.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 1.0.3
+Start of Notices for IBM Z Open Editor 1.1
 
 =====================================================================
 
@@ -45,10 +45,14 @@ in this file.  For more information on the Apache Software Foundation, please
 see http://www.apache.org.
 
 
+@carbon/icon-helpers  10.x
+@carbon/icons-react   10.x
 apache.commons.io	2.x
 apache.commons.logging	1.x
 apache.batik.css	1.x
 apache.xmlgraphics	2.x
+carbon-components  10.x
+carbon-components-react  7.x
 commons-lang3	3.x
 commons-text	1.x
 find-java-home	1.x
@@ -276,6 +280,8 @@ START OF MIT LICENSE NOTICES AND INFORMATION
 MIT LICENSE CODE.  The Program includes all or portions of the following
 software which is available under the MIT License.
 
+@babel/runtime    v7.x
+Copyright (c) 2014-present Sebastian McKenzie and other contributors
 @types/color-name   v1.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 @types/lodash v4.14.x
@@ -383,8 +389,10 @@ Victor Homyakov
 Vladislav Tupikin
 Wexpo Lyu
 zsjforcn
-龙腾道
+龙腾�?�
 
+ajv    v6.x
+Copyright (c) 2015-2017 Evgeny Poberezkin
 ansi-regex v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-regex v5.x
@@ -419,6 +427,8 @@ color-name v1.x
 Copyright (c) 2015 Dmitry Ivanov
 colors v1.x
 Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+compute-scroll-into-view v1.x
+Copyright (c) 2018 Cody Olsen
 concat-map v0.x
 core-util-is v1.0.2	Copyright Node.js contributors. All rights reserved.
 dataobject-parser v1.x
@@ -437,14 +447,23 @@ diagnostic-channel v0.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 diagnostic-channel-publishers v0.3.x
 Copyright (c) Microsoft Corporation. All rights reserved.
+downshift   v5.x
+Copyright (c) 2017 PayPal
 emoji-regex v8.x
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 escape-string-regexp v1.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+fast-deep-equal v3.x
+Copyright (c) 2017 Evgeny Poberezkin
+fast-json-stable-stringify v2.x
+Copyright (c) 2017 Evgeny Poberezkin
+Copyright (c) 2013 James Halliday
 find-up v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 find-up v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+flatpickr   v4.x
+Copyright (c) 2017 Gregory Petrosyan
 fs-extra v8.x
 Copyright (c) 2011-2017 JP Richardson
 get-stdin   v7.x
@@ -453,6 +472,8 @@ has-flag v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 iconv-lite v0.x
 Copyright (c) 2011 Alexander Shtuchkin
+invariant  v2.x
+Copyright (c) 2013-present, Facebook, Inc.
 is-fullwidth-code-point v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 is-fullwidth-code-point v3.x
@@ -465,6 +486,10 @@ jsonfile v4.x
 Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
 jsonschema v1.x
 Copyright (C) 2012-2015 Tom de Grunt (tom@degrunt.nl)
+json-schema-traverse   v0.x
+Copyright (c) 2017 Evgeny Poberezkin
+js-tokens   v4.x
+Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell
 js-yaml v3.x
 Copyright (C) 2011-2015 by Vitaly Puzrin
 locate-path v2.x
@@ -472,9 +497,21 @@ Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 locate-path v5.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 lodash v4.x
-Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0. Sample
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
+lodash.debounce v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
+lodash.findlast v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
+lodash.isequal v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
+lodash.omit v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
+lodash.throttle v4.x
+Copyright OpenJS Foundation and other contributors (https://openjsf.org/)	Copyright and related rights for sample code are waived via CC0.
 lodash-deep v2.x
 Copyright (c) 2014-2016 Mark Lagendijk
+loose-envify   v1.x
+Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
 marked v0.x
 Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)
 minimist v1.x
@@ -508,20 +545,34 @@ promise-queue V2.x
 Copyright (c) 2013 Mikhail Davydov and other contributors
 progress v2.x
 Copyright (c) 2017 TJ Holowaychuk (tj@vision-media.ca)
+prop-types  v15.x
+Copyright (c) 2013-present, Facebook, Inc.
+punycode v2.x
+Copyright Mathias Bynens <https://mathiasbynens.be/>
 pkg-up   2.x
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 p-try v1.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 p-try v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+react   v16.x
+Copyright (c) Facebook, Inc. and its affiliates.
+react-dom  v16.x
+Copyright (c) Facebook, Inc. and its affiliates.
+react-is  v16.x
+Copyright (c) Facebook, Inc. and its affiliates.
 readline-sync v1.x
 Copyright (c) 2019 anseki
+regenerator-runtime v0.x
+Copyright (c) 2014-present, Facebook, Inc.
 require-directory v2.x
 Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
 rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
 Copyright (c) 2018 Nikita Skovoroda (chalkerx@gmail.com)
+scheduler   v0.x
+Copyright (c) Facebook, Inc. and its affiliates.
 spgennard/vscode_cobol  v3.9.8
 Copyright (c) 2015-2019 spgennard
 ssh2 v0.x
@@ -548,6 +599,8 @@ supports-color v5.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 universalify v0.x
 Copyright (c) 2017, Ryan Zimmerman (opensrc@ryanzim.com)
+use-resize-observer v6.x
+Copyright 2018 Viktor Hubert <rpgmorpheus@gmail.com>
 vscode-extension-telemetry v0.x
 Copyright (c) Microsoft Corporation
 vscode-jsonrpc v5.x
@@ -568,11 +621,14 @@ xml2js v0.x
 Copyright 2010, 2011, 2012, 2013. All rights reserved.
 xmlbuilder v11.x
 Copyright (c) 2013 Ozgur Ozcitak
-yamljs v0.x
+window-or-global   v1.x
+Copyright (c) Purpose Industries
+yamljs v0.x   Copyright (c) Purpose Industries
 Copyright (c) 2010 Jeremy Faivre
 yargs v15.x
 Copyright 2010 James Halliday (mail@substack.net) Modified work Copyright 2014 Contributors (ben@npmjs.com)
-
+yawn-yaml   v1.x
+Copyright (c) 2015 Mohsen Azimi
 
 
 
@@ -842,8 +898,8 @@ The Program includes some or all of the following that IBM obtained under the Ec
 
 The Program contains open source software obtained from the Eclipse Foundation (herein collectively referred to as "Eclipse Code"). Notices and important information, including instructions for obtaining source code, for the Eclipse Code may be found in associated "about.html" files ("About Files") that accompany the Eclipse Code. These About Files are provided for informational purposes only, and notwithstanding anything to the contrary therein, your use of such Eclipse Code shall be governed by the terms of the IBM end user license agreement.
 
-@Zowe/cli		v6.13       (https://github.com/zowe)
-@zowe/imperative  v4.6.2    (https://github.com/zowe)
+@Zowe/cli		v6.x       (https://github.com/zowe)
+@zowe/imperative  v4.x    (https://github.com/zowe)
 @zowe/perf-timing v1.0.7    (https://github.com/zowe)
 antsupportlib    http://www.eclipse.org
 clientserver     http://www.eclipse.org
@@ -1072,6 +1128,8 @@ esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
+uri-js  4.x
+Copyright 2011 Gary Court. All rights reserved.
 winreg	1.x
 Copyright (c) 2016, Paul Bottin All rights reserved.
 
@@ -1103,6 +1161,8 @@ Copyright 2016, Joyent Inc
 
 sprintf-js	1.0.3
 Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
+warning 3.x
+Copyright (c) 2013-2015, Facebook, Inc. All rights reserved.
 
 
 
@@ -1123,7 +1183,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS�? AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1170,6 +1230,8 @@ once	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 require-main-filename  2.x
 Copyright (c) 2016, Contributors
+resize-observer-polyfill  v1.x
+Copyright (c) 2016 Denis Rul
 rimraf	2.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 sax	1.x
@@ -1477,6 +1539,42 @@ END OF W3C SOFTWARE LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 =====================================================================
+START OF WTFPL LICENSE NOTICES AND INFORMATION
+=====================================================================
+
+WTFPL LICENSE
+
+The Program includes some or all of the following that IBM obtained
+under the WTFPL License:
+
+yaml-js 0.x
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+
+WTFPL LICENSE
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+Version 2, December 2004
+
+Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+Everyone is permitted to copy and distribute verbatim or modified copies of this
+license document, and changing it is allowed as long as the name is changed.
+
+DO WHAT THE FUCK YOU WANT TO PUBLIC LICENSE
+TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+    0. You just DO WHAT THE FUCK YOU WANT TO.
+
+Standard License Header
+
+There is no standard license header for the license
+
+=====================================================================
+END OF WTFPL LICENSE NOTICES AND INFORMATION
+=====================================================================
+
+=====================================================================
 START OF UNLICENSE NOTICES AND INFORMATION
 =====================================================================
 
@@ -1517,9 +1615,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 1.0.4
+End of Notices for IBM Z Open Editor 1.1
 =====================================================================
 
-L/N:  L-JYZG-BS86M4
-D/N:  L-JYZG-BS86M4
-P/N:  L-JYZG-BS86M4
+L/N:  L-JYZG-BTP7BX
+D/N:  L-JYZG-BTP7BX
+P/N:  L-JYZG-BTP7BX

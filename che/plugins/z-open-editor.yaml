@@ -1,5 +1,5 @@
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corporation 2019, 2020. All Rights Reserved.
+# (C) Copyright IBM Corporation 2019, 2021. All Rights Reserved.
 #
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
@@ -31,5 +31,5 @@ spec:
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/1.1.2/zopeneditor-1.1.2.vsix
-  - https://github.com/IBM/zopeneditor-about/releases/download/1.1.2/Zowe.vscode-extension-for-zowe-1.10.1.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.0/zopeneditor-1.2.0.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.0/Zowe.vscode-extension-for-zowe-1.13.0.vsix

@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.1
+IBM Z Open Editor V1.2
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -53,6 +53,7 @@ apache.batik.css	1.x
 apache.xmlgraphics	2.x
 carbon-components  10.x
 carbon-components-react  7.x
+carbon-icons    7.x
 commons-lang3	3.x
 commons-text	1.x
 find-java-home	1.x
@@ -391,8 +392,10 @@ Wexpo Lyu
 zsjforcn
 龙腾�?�
 
-ajv    v6.x
+ajv    v7.x
 Copyright (c) 2015-2017 Evgeny Poberezkin
+ajv-formats    v1.x
+Copyright (c) 2020 Evgeny Poberezkin
 ansi-regex v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-regex v5.x
@@ -417,6 +420,8 @@ camelcase v5.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 chalk v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+classnames v2.x
+Copyright (c) 2017 Jed Watson
 cli-table3 v0.x
 Copyright (c) 2014 James Talmage (james.talmage@jrtechnical.com)
 color-convert v1.x
@@ -472,6 +477,8 @@ has-flag v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 iconv-lite v0.x
 Copyright (c) 2011 Alexander Shtuchkin
+ignore  v5.x
+Copyright (c) 2013 Kael Zhang <i@kael.me>, contributors http://kael.me/
 invariant  v2.x
 Copyright (c) 2013-present, Facebook, Inc.
 is-fullwidth-code-point v2.x
@@ -486,7 +493,7 @@ jsonfile v4.x
 Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
 jsonschema v1.x
 Copyright (C) 2012-2015 Tom de Grunt (tom@degrunt.nl)
-json-schema-traverse   v0.x
+json-schema-traverse   v1.x
 Copyright (c) 2017 Evgeny Poberezkin
 js-tokens   v4.x
 Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell
@@ -512,7 +519,7 @@ lodash-deep v2.x
 Copyright (c) 2014-2016 Mark Lagendijk
 loose-envify   v1.x
 Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
-marked v0.x
+marked v2.x
 Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)
 minimist v1.x
 moment v2.x
@@ -567,6 +574,8 @@ regenerator-runtime v0.x
 Copyright (c) 2014-present, Facebook, Inc.
 require-directory v2.x
 Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
+require-from-string  v2.x
+Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
 rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
@@ -901,6 +910,7 @@ The Program contains open source software obtained from the Eclipse Foundation (
 @Zowe/cli		v6.x       (https://github.com/zowe)
 @zowe/imperative  v4.x    (https://github.com/zowe)
 @zowe/perf-timing v1.0.7    (https://github.com/zowe)
+@zowe/zowe-explorer-api  v1.x    (https://github.com/zowe)
 antsupportlib    http://www.eclipse.org
 clientserver     http://www.eclipse.org
 eclipse.dstore.core   4.x   http://www.eclipse.org
@@ -1158,6 +1168,10 @@ bcrypt-pbkdf	1.x
 Copyright 1997 Niels Provos <provos@physnet.uni-hamburg.de> All rights reserved. Implementation advice by David Mazieres <dm@lcs.mit.edu>
 Copyright (c) 2013 Ted Unangst (tedu@openbsd.org)
 Copyright 2016, Joyent Inc
+
+Rexx grammar   1.0.0-SNAPSHOT
+Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
+
 
 sprintf-js	1.0.3
 Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
@@ -1618,6 +1632,6 @@ END OF UNLICENSE NOTICES AND INFORMATION
 End of Notices for IBM Z Open Editor 1.1
 =====================================================================
 
-L/N:  L-JYZG-BTP7BX
-D/N:  L-JYZG-BTP7BX
-P/N:  L-JYZG-BTP7BX
+L/N:  L-JYZG-BY4UCB
+D/N:  L-JYZG-BY4UCB
+P/N:  L-JYZG-BY4UCB

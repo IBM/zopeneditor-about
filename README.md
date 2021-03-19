@@ -1,6 +1,6 @@
 # IBM Z® Open Editor
 
-**IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, and JCL languages.**
+**IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, HLASM, REXX, and JCL languages.**
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) online.
 
@@ -11,7 +11,7 @@
 
 ## Overview
 
-This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL 6.3, PL/I 5.3, and High Level Assembler for z/OS 2.4. This also includes capabilities for embedded statements for CICS 5.6, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
+This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL 6.3, PL/I 5.3, and High Level Assembler for z/OS 2.4 and TSO/E REXX. This also includes capabilities for embedded statements in COBOL and PL/I for CICS 5.6, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
 IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
 
@@ -31,11 +31,11 @@ IBM Z Open Editor realizes its language support by implementing fully functional
 - Custom code snippet support and more than 200 high value code snippets for COBOL, PL/I, and JCL out of the box
 - Search and replace refactoring across multiple program files
 
-Note, that this initial release for HLASM only supports a subset of the capabilities available for COBOL and PL/I. For the Job Control Language (JCL), the extension provides syntax highlighting.
+Note, that the current early releases for HLASM and REXX only support a subset of the capabilities available for COBOL and PL/I. For the Job Control Language (JCL), the extension only provides syntax highlighting.
 
 To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
-To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
+To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, REXX, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
 ## Table of contents
 
@@ -53,13 +53,13 @@ This editor uses [Microsoft VS Code's Telemetry](https://code.visualstudio.com/d
 This current release of IBM Z Open Editor will collect anonymous data for the following events:
 
 - Activation of this VS Code extension
-- Opening and closing files of a specific language such as COBOL, PL/I, HLASM, JCL
+- Opening and closing files of a specific language such as COBOL, PL/I, HLASM, REXX, JCL
 - Resolving of include files and assembler macros: success or failure
 - Using common language server operations such as code completion, references, definition, rename
 - Starting a user build
 - Deactivation of this VS Code extension
 
-Each such event is logged with the following information:
+Such events are logged with the following information:
 
 - Event time
 - Operating system and version
@@ -67,6 +67,7 @@ Each such event is logged with the following information:
 - Anonymous user and session ID
 - The type of editor VS Code or Eclipse Theia
 - Version numbers of Microsoft VS Code and IBM Z Open Editor
+- The major Java version used by the language servers
 - The name of the Z programming language used
 - The name of the operation performed
 
@@ -78,16 +79,16 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
 
 - Microsoft VS Code version 1.44.0 or later: We recommend using always the latest VS Code version available. However, although the required minimal version is 1.44.0 we recommend to use at least 1.45.1, which includes fixes in VS Code User Settings that can impact Z Open Editor. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
 
-- Java SDK or JRE version 8 or later - 64 bit: The COBOL and PL/I language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
+- Java SDK or JRE version 8 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
   - You can use [Oracle Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the LTS versions 11 of Oracle Java.
   - Alternatively, you can use version 8 or 11 of the [OpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=openj9). If you are using version 1.1 or newer of Z Open Editor you can also use just a Java Runtime Environments (JRE) as well.
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 8 and 11.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 6.22 and the Zowe Explorer VS Code extension v1.10.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
+- Zowe CLI 6.23 and the Zowe Explorer VS Code extension v1.12.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
-If you are looking for some COBOL, PL/I, HLASM, or JCL code that you can use to explore the editor features then you can use samples that we maintain on Github. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:
+If you are looking for some COBOL, PL/I, HLASM, REXX or JCL sample code that you can use to explore the editor features then you can use samples that we maintain on Github. Assuming that you have Git installed, create a work directory somewhere on your machine and clone the sample repository:
 
 ```bash
 git clone https://github.com/IBM/zopeneditor-sample.git
@@ -97,7 +98,7 @@ Then once you finished installing the IBM Z® Open Editor extension open the dir
 
 ## Configuring Java
 
-The COBOL, PL/I, and HLASM language servers utilized by IBM Z Open Editor were implemented using the Java programming language. Therefore, a Java Runtime is required to be available via settings or the program path to start in VS Code. The IBM Z Open Editor extension utilizes VS Code Settings properties, which can be added to VS Code user settings, to configure which and how Java should be used. These settings allow you to select the specific installation of Java to pick, in case you have several installations, as well as set parameters such as how much memory you want the extension to use.
+The COBOL, PL/I, HLASM, and REXX language servers utilized by IBM Z Open Editor were implemented using the Java programming language. Therefore, a Java Runtime is required to be available via settings or the program path to start in VS Code. The IBM Z Open Editor extension utilizes VS Code Settings properties, which can be added to VS Code user settings, to configure which and how Java should be used. These settings allow you to select the specific installation of Java to pick, in case you have several installations, as well as set parameters such as how much memory you want the extension to use.
 
 ### Selecting the Java installation to use
 
@@ -118,26 +119,26 @@ To define a user setting use the Preferences > Settings menu and either locate t
 On Mac:
 
 ```json
-"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home"
+"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk1.8.0_281.jdk/Contents/Home"
 ```
 
 On Windows:
 
 ```json
-"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_181"
+"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk1.8.0_281"
 ```
 
 ### Configuring the Java memory allocation
 
-By default, the language server clients that start the language servers for COBOL, PL/I, HLASM allocate a maximum of 512 MB of memory for each. In other words, they start using much less memory in the beginning, but you might run out of memory when working on large program files; or your computer might not support such a large amount of memory in the first place. To have more flexibility in how much memory the language servers are allowed to allocate, the following VS Code Setting is provided to specify the maximum value. When you use both COBOL and PL/I, you need to double the amount specified.
+By default, the language server clients that start the language servers for COBOL, PL/I, HLASM, and REXX allocate a maximum of 512 MB of memory for each. In other words, they start using much less memory in the beginning, but you might run out of memory when working on large program files; or your computer might not support such a large amount of memory in the first place. To have more flexibility in how much memory the language servers are allowed to allocate, the following VS Code Setting is provided to specify the maximum value. When you use both COBOL and PL/I, you need to double the amount specified.
 
 ```json
 "zopeneditor.server.memoryAllocation": 1024
 ```
 
-## COBOL and PL/I Language Server Protocol capability examples
+## Language Server Protocol capability examples
 
-The following animations just give you glimpse of the capabilities available in IBM Z Open Editor. We are showing you different examples using different programming languages, but most of the features shown here are available for all three languages: COBOL, PL/I, as well as HLASM.
+The following animations just give you glimpse of the capabilities available in IBM Z Open Editor. We are showing you different examples using different programming languages, but most of the features shown here are available for all four languages: COBOL, PL/I, HLASM, as well as REXX.
 
 ### Outline view explorer
 

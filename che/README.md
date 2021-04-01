@@ -24,3 +24,5 @@ Go to this article to learn in detail about how to use these files for running I
 2. Or, append this url fragment onto your own cluster's Eclipse Che or CodeReady Workspaces installation (replace `/dashboard/#/workspaces`):
 
        /f?url=https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/ibm-z-devfile.yaml
+
+![screenshot of the above devfile loaded in Developer Sandbox](images/quick-start-devsandbox.png)

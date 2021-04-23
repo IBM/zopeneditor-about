@@ -20,17 +20,17 @@ Before filing a bug check here if this is already a documented or known issue:
 - Z Open Editor version:
 - Editor Platform
   - [ ] Visual Studio Code
-  - [ ] CodeReady Workspaces
+  - [ ] Red Hat CodeReady Workspaces
   - [ ] Eclipse Che
   - [ ] Standalone Theia
 - Editor Platform Version:
 - Operating System (on which VS Code runs such as Windows 10 2004, otherwise name and version of platform such as OpenShift v4.3):
-- Java Version (when using VS Code or Theia, extecute `java -version` and paste the details here):
+- Java Version (when using VS Code or Theia, execute `java -version` and paste the details here):
 - [ ] Related to RSE API?
   - RSE API Plugin version:
   - Zowe CLI version:
   - Node.js version:
-- Logs attached (see [here](https://ibm.github.io/zopeneditor-about/Docs/knownissues.html) how to get them): yes/no
+- Logs attached (see [here](https://ibm.github.io/zopeneditor-about/Docs/locating_local_client_logs.html) how to get them): yes/no
 
 ## Problem Description
 

@@ -10,7 +10,7 @@
       generateName: IBM-Z-Open-Editor-
   projects:
     -
-      name: ibm-zopeneditor-sample
+      name: zopeneditor-sample
       source:
         type: git
         location: "https://github.com/IBM/zopeneditor-sample.git"
@@ -18,10 +18,15 @@
     -
       type: chePlugin
       reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
-      alias: ibm-z-open-editor
+      alias: wazi-developer
+      preferences:
+        Zowe-Temp-Folder-Location: '{"folderPath": "/projects"}'
+        zopeneditor.propertygroups: '[{"name":"SAM-Copybooks","type":"local","syslib":["**/COPYBOOK","**/INCLUDES","**/ASMCOPY"],"libraries":[{"name":"MYFILE","locations":["**/COPYLIB","**/INCLUDELIB"]}]},{"name":"MVS-Cobol-lib","type":"mvs","language":"cobol","syslib":["IBMUSER.SAMPLE.COBCOPY"],"libraries":[{"name":"MYLIB","locations":["IBMUSER.SAMPLE.COPYLIB"]}]},{"name":"MVS-PL1-lib","type":"mvs","language":"pl1","syslib":["IBMUSER.SAMPLE.PLINC"],"libraries":[{"name":"MYLIB","locations":["IBMUSER.SAMPLE.PLI.INCLLIB"]}]}]'
+        zopeneditor.userbuild.workspaceSettings: '{"dbb":{"command":"$DBB_HOME/bin/groovyz -DBB_PERSONAL_DAEMON","commandArgs":[],"buildScriptPath":"${zopeneditor.userbuild.userSettings.dbbWorkspace}/dbb-zappbuild/build.groovy","buildScriptArgs":["--userBuild","--workspace ${zopeneditor.userbuild.userSettings.dbbWorkspace}","--application zopeneditor-sample","--hlq ${zopeneditor.userbuild.userSettings.dbbHlq}","--outDir ${zopeneditor.userbuild.userSettings.dbbWorkspace}/zopeneditor-sample/logs"],"additionalDependencies":["application-conf"]}}'
+        zopeneditor.userbuild.userSettings: '{"dbbWorkspace":"/u/ibmuser/projects","dbbHlq":"IBMUSER.DBB","dbbLogDir":"/u/ibmuser/projects/zopeneditor-sample/logs","localWorkspacePath":"/projects/zopeneditor-sample"}'
     -
       type: dockerimage
-      alias: wazi
+      alias: wazi-terminal
       image: docker.io/ibmcom/wazi-code-codeready:latest
       memoryLimit: 512Mi
       volumes:

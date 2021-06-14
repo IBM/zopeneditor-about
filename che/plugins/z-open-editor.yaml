@@ -5,21 +5,21 @@
 # Use, duplication or disclosure restricted by GSA ADP Schedule
 # Contract with IBM Corp.
 apiVersion: v2
-publisher: IBM
-name: zopeneditor
-version: latest
+publisher: ibm
+name: wazi-developer
+version: 1.2.1
 type: VS Code extension
 displayName: IBM Z Open Editor
-title: IBM Z Open Editor with Language Support for COBOL, PL/I, and HLASM
-description: Provides COBOL, PL/I, and HLASM language servers as well as tools for IBM Z development.
-icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+title: COBOL, PL/I, HLASM, REXX stack for IBM Z Open Editor, Zowe Explorer, Zowe CLI
+description: Provides COBOL, PL/I, HLASM, and REXX language servers as well as tools for IBM Z development.
+icon: /v3/images/wazi-developer-icon.png
 repository: https://github.com/IBM/zopeneditor-about.git
 category: Language
-firstPublicationDate: "2019-10-03"
+firstPublicationDate: "2021-06-18"
 spec:
   containers:
   - image: docker.io/ibmcom/wazi-code-codeready:latest
-    name: ibm-wazi
+    name: wazi-plugins
     memoryLimit: "3000Mi"
     args:
       - sh
@@ -27,7 +27,7 @@ spec:
       - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
     volumes:
     - mountPath: "/home/wazi/.zowe"
-      name: wazi
+      name: zowe
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:

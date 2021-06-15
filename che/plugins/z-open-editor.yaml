@@ -10,7 +10,7 @@ name: wazi-developer
 version: 1.2.5
 type: VS Code extension
 displayName: IBM Z Open Editor
-title: COBOL, PL/I, HLASM, REXX stack for IBM Z Open Editor 1.2.5, Zowe Explorer 1.15.0, Zowe CLI 6.30
+title: COBOL, PL/I, HLASM, REXX stack for IBM Z Open Editor 1.2.5, Zowe Explorer 1.15.1, Zowe CLI 6.30
 description: Provides COBOL, PL/I, HLASM, and REXX language servers as well as tools for IBM Z development.
 icon: /v3/images/wazi-developer-icon.png
 repository: https://github.com/IBM/zopeneditor-about.git

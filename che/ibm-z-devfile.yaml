@@ -30,7 +30,7 @@
       image: docker.io/ibmcom/wazi-code-codeready:latest
       memoryLimit: 512Mi
       volumes:
-        - name: wazi
+        - name: zowe
           containerPath: /home/wazi/.zowe
         - name: m2
           containerPath: /home/wazi/.m2

@@ -26,6 +26,5 @@ The `f` parameter in this URL provides a url to a devfile that contains all the 
 ## Explore the editor
 
 10. Che will start with the Z Open Editor workspace and sample files.
-11. In the File Explorer create a top-level directory called `.theia` and drag the file `ibm-zopeneditor-sample/.vscode/settings.json` into that new directory.
-12. Now you can open the sample programs and try the editor.
+12. You can open the sample programs in your preferred language and try the editor.
 13. Find the full editor documentation [here](https://ibm.github.io/zopeneditor-about/Docs/introduction.html).

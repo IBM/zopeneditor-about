@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.2.x
+IBM Z Open Editor V1.2.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -24,6 +24,7 @@ website referenced in this NOTICES file is accurate. IBM disclaims any
 and all liability for errors and omissions or for any damages accruing
 from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
+
 
 =====================================================================
 
@@ -50,20 +51,26 @@ apache.commons.io	2.x
 apache.commons.logging	1.x
 apache.batik.css	1.x
 apache.xmlgraphics	2.x
+aws-sign2
 carbon-components  10.x
 carbon-components-react  7.x
 carbon-icons    7.x
+caseless
 commons-lang3	3.x
 commons-text	1.x
 find-java-home	1.x
+forever-agent
 google.gson	2.x
 google.guava      27.x
 google.guava      29.x
 javax.inject	1.0.x
 log4js	6.x
+oauth-sign
 org.apache.batik.constants   1.x
 org.apache.commons.jxpath	1.x
 org.apache.felix.scr	2.x
+request
+tunnel-agent
 
 
 Apache License
@@ -283,6 +290,11 @@ software which is available under the MIT License.
 
 @babel/runtime    v7.x
 Copyright (c) 2014-present Sebastian McKenzie and other contributors
+@npmcli/move-file
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+Copyright (c) npm, Inc.
+@tootallnate/once
+Copyright (c) 2020 Nathan Rajlich
 @types/color-name   v1.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 @types/lodash v4.14.x
@@ -294,6 +306,8 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 @types/yargs-parser  v15.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 
+abbrev 1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
 acorn v6.x
 Copyright (C) 2012-2018 by various contributors (see name list below)
 Adam Walsh
@@ -390,16 +404,18 @@ Victor Homyakov
 Vladislav Tupikin
 Wexpo Lyu
 zsjforcn
-龙腾道
+龙腾�?�
 
-ajv    v7.x
+agent-base Copyright (c) 2013 Nathan Rajlich
+agentkeepalive
+Copyright(c) node-modules and other contributors.
+Copyright(c) 2012 - 2015 fengmk2 <fengmk2@gmail.com>
+aggregate-error Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+ajv
 Copyright (c) 2015-2017 Evgeny Poberezkin
 ajv-formats    v1.x
 Copyright (c) 2020 Evgeny Poberezkin
-ansi-regex v3.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-ansi-regex v5.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ansi-regex Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v4.x
@@ -410,32 +426,43 @@ argparse v1.x
 Copyright (C) 2012 by Vitaly Puzrin
 asn1 v0.x
 Copyright (c) 2011 Mark Cavage, All rights reserved.
+assert-plus Copyright (c) 2012 Mark Cavage
 async-hook-jl v1.x
 Copyright (c) 2015 Andreas Madsen
+asynckit Copyright (c) 2016 Alex Indigo
+aws4 Copyright 2013 Michael Hart (michael.hart.au@gmail.com)
 balanced-match v1.x
 Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
 brace-expansion v1.x
 Copyright (c) 2013 Julian Gruber (julian@juliangruber.com)
+builtins Copyright (c) 2015 Julian Gruber <julian@juliangruber.com>
 camelcase v5.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 chalk v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 classnames v2.x
 Copyright (c) 2017 Jed Watson
+clean-stack Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 cli-table3 v0.x
 Copyright (c) 2014 James Talmage (james.talmage@jrtechnical.com)
+code-point-at Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 color-convert v1.x
 Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
 color-convert v2.x
 Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
 color-name v1.x
 Copyright (c) 2015 Dmitry Ivanov
+colorette Copyright © Jorge Bucaran <<https://jorgebucaran.com>>
 colors v1.x
+combined-stream Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
 Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 compute-scroll-into-view v1.x
 Copyright (c) 2018 Cody Olsen
 concat-map v0.x
-core-util-is v1.0.2	Copyright Node.js contributors. All rights reserved.
+core-util-is	Copyright Node.js contributors. All rights reserved.
+dashdash
+Copyright (c) 2013 Trent Mick. All rights reserved.
+Copyright (c) 2013 Joyent Inc. All rights reserved.
 dataobject-parser v1.x
 Copyright (c) 2014 Gigzolo Inc.
 date-format v2.x
@@ -446,18 +473,28 @@ debug v4.x
 Copyright (c) 2014 TJ Holowaychuk (tj@vision-media.ca)
 decamelize v1.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-deepmerge v3.x
-Copyright (c) 2012 Nicholas Fisher
+deepmerge  Copyright (c) 2012 Nicholas Fisher
+delayed-stream Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
+delegates   Copyright (c) 2015 TJ Holowaychuk <tj@vision-media.ca>
+depd Copyright (c) 2014-2017 Douglas Christopher Wilson
 diagnostic-channel v0.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 diagnostic-channel-publishers v0.3.x
 Copyright (c) Microsoft Corporation. All rights reserved.
+dom-serializer
+Copyright (c) 2014 The cheeriojs contributors
 downshift   v5.x
 Copyright (c) 2017 PayPal
+ecc-jsbn
+Copyright (c) 2014 Jeremie Miller
 emoji-regex v8.x
 Copyright Mathias Bynens <https://mathiasbynens.be/>
-escape-string-regexp v1.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+encoding Copyright (c) 2012-2014 Andris Reinman
+env-paths Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+err-code
+escape-string-regexp   Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+extend       Copyright (c) 2014 Stefan Thomas
+extsprintf   Copyright (c) 2012, Joyent, Inc. All rights reserved.
 fast-deep-equal v3.x
 Copyright (c) 2017 Evgeny Poberezkin
 fast-json-stable-stringify v2.x
@@ -469,38 +506,55 @@ find-up v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 flatpickr   v4.x
 Copyright (c) 2017 Gregory Petrosyan
+form-data Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors
 fs-extra v8.x
 Copyright (c) 2011-2017 JP Richardson
 get-stdin   v7.x
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+getpass Copyright Joyent, Inc. All rights reserved.
 has-flag v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+har-validator Copyright (c) 2018 Ahmad Nassri <ahmad@ahmadnassri.com>
+htmlparser2 Copyright 2010, 2011, Chris Winberry <chris@winberry.net>
+http-proxy-agent Copyright (c) 2013 Nathan Rajlich
+http-signature Copyright Joyent, Inc. All rights reserved.
+humanize-ms
 iconv-lite v0.x
 Copyright (c) 2011 Alexander Shtuchkin
 ignore  v5.x
 Copyright (c) 2013 Kael Zhang <i@kael.me>, contributors http://kael.me/
+imurmurhash  Copyright (c) 2013 Gary Court, Jens Taylor
+indent-string  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 invariant  v2.x
 Copyright (c) 2013-present, Facebook, Inc.
-is-fullwidth-code-point v2.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-is-fullwidth-code-point v3.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ip  Copyright Fedor Indutny, 2012.
+is-fullwidth-code-point Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+is-lambda  Copyright (c) 2016-2017 Thomas Watson Steen
+is-plain-object  Copyright (c) 2014-2017, Jon Schlinkert.
+is-typedarray
 java-petitparser v2.x
 Copyright (c) 2006-2019 Lukas Renggli
+isarray  Copyright (c) 2013 Julian Gruber
+isstream  Copyright (c) 2015 Rod Vagg
+jsbn
+Copyright (c) 2003-2005 Tom Wu
 jsonc-parser v2.x
 Copyright (c) Microsoft
+json-parse-even-better-errors
+Copyright 2017 Kat Marchán, Copyright npm, Inc.
 jsonfile v4.x
 Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
+jsonparse  Copyright (c) 2012 Tim Caswell
 jsonschema v1.x
 Copyright (C) 2012-2015 Tom de Grunt (tom@degrunt.nl)
-json-schema-traverse   v1.x
+json-schema-traverse
 Copyright (c) 2017 Evgeny Poberezkin
 js-tokens   v4.x
 Copyright (c) 2014, 2015, 2016, 2017, 2018 Simon Lydell
-js-yaml v3.x
-Copyright (C) 2011-2015 by Vitaly Puzrin
-js-yaml v4.x
-Copyright (C) 2011-2015 by Vitaly Puzrin
+js-yaml Copyright (C) 2011-2015 by Vitaly Puzrin
+jsprim  Copyright (c) 2012, Joyent, Inc. All rights reserved.
+klona  Copyright (c) Luke Edwards <luke.edwards05@gmail.com> (lukeed.com)
+linkify-it  Copyright (c) 2015 Vitaly Puzrin.
 locate-path v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 locate-path v5.x
@@ -521,19 +575,41 @@ lodash-deep v2.x
 Copyright (c) 2014-2016 Mark Lagendijk
 loose-envify   v1.x
 Copyright (c) 2015 Andres Suarez <zertosh@gmail.com>
+markdown-it  Copyright (c) 2014 Vitaly Puzrin, Alex Kocharin.
 marked v2.x
 Copyright (c) 2011-2018, Christopher Jeffrey (https://github.com/chjj/)
+mdurl
+Copyright (c) 2015 Vitaly Puzrin, Alex Kocharin.
+mime-db   Copyright (c) 2014 Jonathan Ong me@jongleberry.com
 minimist v1.x
+minipass-fetch
+Copyright (c) Isaac Z. Schlueter and Contributors
+Copyright (c) 2016 David Frank
+minipass-json-stream
+Copyright (c) Isaac Z. Schlueter and Contributors
+Copyright (c) 2011 Dominic Tarr
+mime-types  Copyright (c) 2014 Jonathan Ong <me@jongleberry.com>
+Copyright (c) 2015 Douglas Christopher Wilson <doug@somethingdoug.com>
+minizlib
+Copyright Isaac Z. Schlueter and Contributors
+Copyright Node.js contributors. All rights reserved.
+Copyright Joyent, Inc. and other Node contributors. All rights reserved.
+mkdirp
+Copyright James Halliday (mail@substack.net) and Isaac Z. Schlueter (i@izs.me)
 moment v2.x
 Copyright (c) JS Foundation and other contributors
 ms v2.x
 Copyright (c) 2016 Zeit, Inc.
 mustache v2.x
 Copyright (c) 2009 Chris Wanstrath (Ruby)	Copyright (c) 2010-2014 Jan Lehnardt (JavaScript)	Copyright (c) 2010-2015 The mustache.js community
+nanoid  Copyright 2017 Andrey Sitnik <andrey@sitnik.ru>
+node-gyp  Copyright (c) 2012 Nathan Rajlich <nathan@tootallnate.net>
+number-is-nan  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
 object-assign v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 opener v1.x
 Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
+parse-srcset   Copyright (c) 2014 Alex Bell
 path-exists v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 path-exists v4.x
@@ -548,8 +624,11 @@ p-locate v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 p-locate v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+performance-now  Copyright (c) 2013 Braveg1rl
+postcss  Copyright 2013 Andrey Sitnik <andrey@sitnik.ru>
 prettyjson v1.x
 Copyright (c) 2011 Rafael de Oleza (rafeca@gmail.com)
+process-nextick-args  # Copyright (c) 2015 Calvin Metcalf
 promise-queue V2.x
 Copyright (c) 2013 Mikhail Davydov and other contributors
 progress v2.x
@@ -560,16 +639,21 @@ punycode v2.x
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 pkg-up   2.x
 Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+p-map  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
 p-try v1.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 p-try v2.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+promise-retry  Copyright (c) 2014 IndigoUnited
+psl  Copyright (c) 2017 Lupo Montero lupomontero@gmail.com
 react   v16.x
 Copyright (c) Facebook, Inc. and its affiliates.
 react-dom  v16.x
 Copyright (c) Facebook, Inc. and its affiliates.
 react-is  v16.x
 Copyright (c) Facebook, Inc. and its affiliates.
+readable-stream
+Copyright Node.js contributors. All rights reserved.
 readline-sync v1.x
 Copyright (c) 2019 anseki
 regenerator-runtime v0.x
@@ -578,18 +662,26 @@ require-directory v2.x
 Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
 require-from-string  v2.x
 Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
+retry
+Copyright (c) 2011: Tim Koschützki (tim@debuggable.com), Felix Geisendörfer (felix@debuggable.com)
 rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
+safe-buffer  Copyright (c) Feross Aboukhadijeh
 Copyright (c) 2018 Nikita Skovoroda (chalkerx@gmail.com)
+sanitize-html  Copyright (c) 2013, 2014, 2015 P'unk Avenue LLC
 scheduler   v0.x
 Copyright (c) Facebook, Inc. and its affiliates.
+smart-buffer  Copyright (c) 2013-2017 Josh Glazebrook
+socks  Copyright (c) 2013 Josh Glazebrook
+socks-proxy-agent  Copyright (c) 2013 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
 spgennard/vscode_cobol  v3.9.8
 Copyright (c) 2015-2019 spgennard
 ssh2 v0.x
 Copyright Brian White. All rights reserved.
 ssh2-streams v0.4.x
 Copyright 2014 Brian White. All rights reserved.
+sshpk  Copyright Joyent, Inc. All rights reserved.
 stack-chain v1.x
 Copyright (c) 2012 Andreas Madsen
 stack-trace v0.x
@@ -598,20 +690,20 @@ streamroller v2.x
 Copyright (c) 2013 Gareth Jones
 streamsearch v0.x
 Copyright Brian White. All rights reserved.
-string-width v2.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-string-width v4.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-ansi v4.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-strip-ansi v6.x
-Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+string_decoder
+Copyright Node.js contributors. All rights reserved.
+string-width   Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+strip-ansi Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 supports-color v5.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+uc.micro  Copyright Mathias Bynens <https://mathiasbynens.be/>
 universalify v0.x
 Copyright (c) 2017, Ryan Zimmerman (opensrc@ryanzim.com)
 use-resize-observer v6.x
 Copyright 2018 Viktor Hubert <rpgmorpheus@gmail.com>
+util-deprecate  Copyright (c) 2014 Nathan Rajlich <nathan@tootallnate.net>
+uuid  Copyright (c) 2010-2016 Robert Kieffer and other contributors
+verror  Copyright (c) 2016, Joyent, Inc. All rights reserved.
 vscode-extension-telemetry v0.x
 Copyright (c) Microsoft Corporation
 vscode-jsonrpc v5.x
@@ -1199,9 +1291,18 @@ The Program includes some or all of the following that IBM obtained under the Ec
 The Program contains open source software obtained from the Eclipse Foundation (herein collectively referred to as "Eclipse Code"). Notices and important information, including instructions for obtaining source code, for the Eclipse Code may be found in associated "about.html" files ("About Files") that accompany the Eclipse Code. These About Files are provided for informational purposes only, and notwithstanding anything to the contrary therein, your use of such Eclipse Code shall be governed by the terms of the IBM end user license agreement.
 
 @Zowe/cli		v6.x       (https://github.com/zowe)
+@zowe/core-for-zowe-sdk   (https://github.com/zowe)
 @zowe/imperative  v4.x    (https://github.com/zowe)
 @zowe/perf-timing v1.0.7    (https://github.com/zowe)
 @zowe/zowe-explorer-api  v1.x    (https://github.com/zowe)
+@zowe/provisioning-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-console-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-files-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-jobs-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-tso-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-uss-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-workflows-for-zowe-sdk (https://github.com/zowe)
+@zowe/zosmf-for-zowe-sdk (https://github.com/zowe)
 antsupportlib    http://www.eclipse.org
 clientserver     http://www.eclipse.org
 eclipse.dstore.core   4.x   http://www.eclipse.org
@@ -1426,8 +1527,14 @@ Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights rese
 continuation-local-storage	3.x
 Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights reserved.
 emitter-listener	1.x
+domelementtype Copyright (c) Felix Böhm
+domhandler Copyright (c) Felix Böhm
+domutils Copyright (c) Felix Böhm
+entities Copyright (c) Felix Böhm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
+http-cache-semantics Copyright 2016-2018 Kornel Lesiński
+npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
 uri-js  4.x
@@ -1461,15 +1568,33 @@ Copyright 1997 Niels Provos <provos@physnet.uni-hamburg.de> All rights reserved.
 Copyright (c) 2013 Ted Unangst (tedu@openbsd.org)
 Copyright 2016, Joyent Inc
 
+gyp
+Copyright (c) 2020 Node.js contributors. All rights reserved.
+Copyright (c) 2009 Google Inc. All rights reserved.
+
+
+json-schema
+Copyright (c) 2005-2015, The Dojo Foundation
+
+
 org.antlr.antlr4-runtime 4.x
 Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
+
+qs Copyright (c) 2014 Nathan LaFreniere and other contributors.
+
 
 Rexx grammar   1.0.0-SNAPSHOT
 Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
 
+source-map Copyright (c) 2009-2011, Mozilla Foundation and contributors
+
+
 
 sprintf-js	1.0.3
 Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
+
+tough-cookie  Copyright (c) 2015, Salesforce.com, Inc.
+
 warning 3.x
 Copyright (c) 2013-2015, Facebook, Inc. All rights reserved.
 
@@ -1492,7 +1617,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS�? AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1514,49 +1639,92 @@ START OF ISC LICENSE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the ISC License:
 
+@npmcli/ci-detect
+@npmcli/git Copyright (c) npm, Inc.
+@npmcli/installed-package-contents Copyright (c) npm, Inc.
+@npmcli/node-gyp Copyright (c) npm, Inc.
+@npmcli/promise-spawn Copyright (c) npm, Inc.
+@npmcli/run-script Copyright (c) npm, Inc.
+are-we-there-yet Copyright (c) 2015, Rebecca Turner
+aproba Copyright (c) 2015, Rebecca Turner <me@re-becca.org>
+cacache Copyright (c) npm, Inc.
 cliui  6.x
 Copyright (c) 2015, Contributors
+chownr Copyright (c) Isaac Z. Schlueter and Contributors
+console-control-strings Copyright (c) 2014, Rebecca Turner <me@re-becca.org>
 which	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 flatted 2.x
 Copyright (c) 2018, Andrea Giammarchi, @WebReflection
+fs-minipass Copyright (c) Isaac Z. Schlueter and Contributors
 fs.realpath	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 Copyright Joyent, Inc. and other Node contributors
+gauge Copyright (c) 2014, Rebecca Turner <me@re-becca.org>
 get-caller-file	2.x
 Copyright 2018 Stefan Penner
 glob	7.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 graceful-fs	4.x
 Copyright (c) Isaac Z. Schlueter, Ben Noordhuis, and Contributors
+har-schema Copyright (c) 2015, Ahmad Nassri <ahmad@ahmadnassri.com>
+has-unicode Copyright (c) 2014, Rebecca Turner <me@re-becca.org>
+hosted-git-info Copyright (c) 2015, Rebecca Turner
+ignore-walk Copyright (c) Isaac Z. Schlueter and Contributors
+infer-owner  Copyright (c) npm, Inc. and Contributors
 inflight	1.x
 Copyright (c) Isaac Z. Schlueter
 inherits	2.x
 Copyright (c) Isaac Z. Schlueter
+isexe  Copyright (c) Isaac Z. Schlueter and Contributors
+json-stringify-safe  Copyright (c) Isaac Z. Schlueter and Contributors
+lru-cache   Copyright (c) Isaac Z. Schlueter and Contributors
+make-fetch-happen  Copyright (c) npm, Inc.
 minimatch	3.x
 Copyright (c) Isaac Z. Schlueter and Contributors
+minipass   Copyright (c) npm, Inc. and Contributors
+minipass-collect  Copyright (c) Isaac Z. Schlueter and Contributors
+minipass-flush  Copyright (c) Isaac Z. Schlueter and Contributors
+minipass-pipeline Copyright (c) Isaac Z. Schlueter and Contributors
+minipass-sized Copyright (c) Isaac Z. Schlueter and Contributors
+nopt  Copyright (c) Isaac Z. Schlueter and Contributors
+npm-bundled  Copyright (c) npm, Inc. and Contributors
+npm-normalize-package-bin  Copyright (c) npm, Inc.
+npm-package-arg  Copyright (c) npm, Inc.
+npm-packlist   Copyright (c) Isaac Z. Schlueter and Contributors
+npm-pick-manifest  Copyright (c) npm, Inc.
+npm-registry-fetch   Copyright (c) npm, Inc.
+npmlog  Copyright (c) Isaac Z. Schlueter and Contributors
 once	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
+pacote   	Copyright (c) Isaac Z. Schlueter, Kat Marchán, npm, Inc., and Contributors
+promise-inflight  Copyright (c) 2017, Rebecca Turner <me@re-becca.org>
+read-package-json-fast  Copyright (c) npm, Inc. and Contributors
 require-main-filename  2.x
 Copyright (c) 2016, Contributors
 resize-observer-polyfill  v1.x
 Copyright (c) 2016 Denis Rul
-rimraf	2.x
-Copyright (c) Isaac Z. Schlueter and Contributors
+rimraf  Copyright (c) Isaac Z. Schlueter and Contributors
 sax	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
-semver	5.x
-Copyright (c) Isaac Z. Schlueter and Contributors
-semver  6.x
-Copyright (c) Isaac Z. Schlueter and Contributors
+semver  Copyright (c) Isaac Z. Schlueter and Contributors
 set-blocking	2.x
 Copyright (c) 2016, Contributors
+signal-exit   Copyright (c) 2015, Contributors
+ssri  Copyright (c) npm, Inc.
+tar  Copyright (c) Isaac Z. Schlueter and Contributors
+unique-filename  Copyright npm, Inc
+unique-slug  Copyright npm, Inc
+validate-npm-package-name   Copyright (c) 2015, npm, Inc
+which  Copyright (c) Isaac Z. Schlueter and Contributors
 which-module	2.x
 Copyright (c) 2016, Contributors
+wide-align  Copyright (c) 2015, Rebecca Turner <me@re-becca.org>
 wrappy	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 y18n    4.x
 Copyright (c) 2015, Contributors
+yallist  Copyright (c) Isaac Z. Schlueter and Contributors
 yargs-parser   18.x
 Copyright (c) 2016, Contributors
 
@@ -1926,3 +2094,7 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 End of Notices for IBM Z Open Editor 1.2.x
 =====================================================================
+
+L/N:  L-JYZG-C3NU9R
+D/N:  L-JYZG-C3NU9R
+P/N:  L-JYZG-C3NU9R

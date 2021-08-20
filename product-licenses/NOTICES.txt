@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.2.5
+IBM Z Open Editor V1.2.6
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -2095,6 +2095,6 @@ END OF UNLICENSE NOTICES AND INFORMATION
 End of Notices for IBM Z Open Editor 1.2.x
 =====================================================================
 
-L/N:  L-JYZG-C3NU9R
-D/N:  L-JYZG-C3NU9R
-P/N:  L-JYZG-C3NU9R
+L/N:  L-JYZG-C5YQKW
+D/N:  L-JYZG-C5YQKW
+P/N:  L-JYZG-C5YQKW

@@ -31,5 +31,5 @@ spec:
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.5/zopeneditor-1.2.5.vsix
-  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.5/Zowe.vscode-extension-for-zowe-1.15.1.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.6/zopeneditor-1.2.6.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/1.2.6/Zowe.vscode-extension-for-zowe-1.18.0.vsix

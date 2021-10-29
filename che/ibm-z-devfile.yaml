@@ -9,25 +9,21 @@
   metadata:
       generateName: IBM-Z-Open-Editor-
   projects:
-    -
-      name: zopeneditor-sample
+    - name: zopeneditor-sample
       source:
         type: git
         location: "https://github.com/IBM/zopeneditor-sample.git"
+
   components:
-    -
-      type: chePlugin
+    - type: chePlugin
       reference: https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/plugins/z-open-editor.yaml
       alias: wazi-developer
       preferences:
         Zowe-Temp-Folder-Location: '{"folderPath": "/projects"}'
-        zopeneditor.propertygroups: '[{"name":"SAM-Copybooks","type":"local","syslib":["**/COPYBOOK","**/INCLUDES","**/ASMCOPY"],"libraries":[{"name":"MYFILE","locations":["**/COPYLIB","**/INCLUDELIB"]}]},{"name":"MVS-Cobol-lib","type":"mvs","language":"cobol","syslib":["IBMUSER.SAMPLE.COBCOPY"],"libraries":[{"name":"MYLIB","locations":["IBMUSER.SAMPLE.COPYLIB"]}]},{"name":"MVS-PL1-lib","type":"mvs","language":"pl1","syslib":["IBMUSER.SAMPLE.PLINC"],"libraries":[{"name":"MYLIB","locations":["IBMUSER.SAMPLE.PLI.INCLLIB"]}]}]'
-        zopeneditor.userbuild.workspaceSettings: '{"dbb":{"command":"$DBB_HOME/bin/groovyz -DBB_PERSONAL_DAEMON","commandArgs":[],"buildScriptPath":"${zopeneditor.userbuild.userSettings.dbbWorkspace}/dbb-zappbuild/build.groovy","buildScriptArgs":["--userBuild","--workspace ${zopeneditor.userbuild.userSettings.dbbWorkspace}","--application zopeneditor-sample","--hlq ${zopeneditor.userbuild.userSettings.dbbHlq}","--outDir ${zopeneditor.userbuild.userSettings.dbbWorkspace}/zopeneditor-sample/logs"],"additionalDependencies":["application-conf"]}}'
-        zopeneditor.userbuild.userSettings: '{"dbbWorkspace":"/u/ibmuser/projects","dbbHlq":"IBMUSER.DBB","dbbLogDir":"/u/ibmuser/projects/zopeneditor-sample/logs","localWorkspacePath":"/projects/zopeneditor-sample"}'
-    -
-      type: dockerimage
+        zopeneditor.zapp.useDefaultOnlineZappSchema: true
+    - type: dockerimage
       alias: wazi-terminal
-      image: docker.io/ibmcom/wazi-code-codeready:latest
+      image: icr.io/wazi-code/ibm-wazi-developer-for-workspaces-codeready@sha256:28beb27a2c9d6441cc8e16d19192e004d14701f31e0b9ffdf21cd9b5f0e8f0aa
       memoryLimit: 512Mi
       volumes:
         - name: zowe

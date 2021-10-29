@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.2.6
+IBM Z Open Editor V1.4
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 1.2.x
+Start of Notices for IBM Z Open Editor 1.4.x
 
 =====================================================================
 
@@ -71,6 +71,7 @@ org.apache.commons.jxpath	1.x
 org.apache.felix.scr	2.x
 request
 tunnel-agent
+
 
 
 Apache License
@@ -340,7 +341,7 @@ Fabien LOISON
 Felix Maier
 Forbes Lindesay
 Gilad Peleg
-Huáng Jùnliàng
+HuÃ¡ng JÃ¹nliÃ ng
 impinball
 Ingvar Stepanyan
 Jackson Ray Hamilton
@@ -352,7 +353,7 @@ Johannes Herr
 John-David Dalton
 Jordan Gensler
 Jordan Klassen
-Jürg Lehni
+JÃ¼rg Lehni
 Kai Cataldo
 keeyipchan
 Keheliya Gallaba
@@ -377,7 +378,7 @@ naoh
 Nicholas C. Zakas
 Nick Fitzgerald
 Olivier Thomann
-Oskar Schöldström
+Oskar SchÃ¶ldstrÃ¶m
 Paul Harper
 Peter Rust
 piotr
@@ -386,7 +387,7 @@ Praveen N
 Prayag Verma
 ReadmeCritic
 r-e-d
-Renée Kooi
+RenÃ©e Kooi
 Richard Gibson
 Rich Harris
 Sebastian McKenzie
@@ -404,7 +405,7 @@ Victor Homyakov
 Vladislav Tupikin
 Wexpo Lyu
 zsjforcn
-龙腾�?�
+é¾™è…¾é�“
 
 agent-base Copyright (c) 2013 Nathan Rajlich
 agentkeepalive
@@ -421,7 +422,7 @@ Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 applicationinsights v1.x
-Copyright Â© Microsoft Corporation
+Copyright Ã‚Â© Microsoft Corporation
 argparse v1.x
 Copyright (C) 2012 by Vitaly Puzrin
 asn1 v0.x
@@ -452,7 +453,7 @@ color-convert v2.x
 Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
 color-name v1.x
 Copyright (c) 2015 Dmitry Ivanov
-colorette Copyright © Jorge Bucaran <<https://jorgebucaran.com>>
+colorette Copyright Â© Jorge Bucaran <<https://jorgebucaran.com>>
 colors v1.x
 combined-stream Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
 Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -506,7 +507,7 @@ find-up v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 flatpickr   v4.x
 Copyright (c) 2017 Gregory Petrosyan
-form-data Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors
+form-data Copyright (c) 2012 Felix GeisendÃ¶rfer (felix@debuggable.com) and contributors
 fs-extra v8.x
 Copyright (c) 2011-2017 JP Richardson
 get-stdin   v7.x
@@ -541,7 +542,7 @@ Copyright (c) 2003-2005 Tom Wu
 jsonc-parser v2.x
 Copyright (c) Microsoft
 json-parse-even-better-errors
-Copyright 2017 Kat Marchán, Copyright npm, Inc.
+Copyright 2017 Kat MarchÃ¡n, Copyright npm, Inc.
 jsonfile v4.x
 Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
 jsonparse  Copyright (c) 2012 Tim Caswell
@@ -608,7 +609,7 @@ number-is-nan  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhu
 object-assign v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 opener v1.x
-Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
+Copyright Â© 2012â€“2018 Domenic Denicola <d@domenic.me>
 parse-srcset   Copyright (c) 2014 Alex Bell
 path-exists v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
@@ -663,7 +664,7 @@ Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
 require-from-string  v2.x
 Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
 retry
-Copyright (c) 2011: Tim Koschützki (tim@debuggable.com), Felix Geisendörfer (felix@debuggable.com)
+Copyright (c) 2011: Tim KoschÃ¼tzki (tim@debuggable.com), Felix GeisendÃ¶rfer (felix@debuggable.com)
 rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
@@ -685,7 +686,7 @@ sshpk  Copyright Joyent, Inc. All rights reserved.
 stack-chain v1.x
 Copyright (c) 2012 Andreas Madsen
 stack-trace v0.x
-Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
+Copyright (c) 2011 Felix GeisendÃƒÂ¶rfer (felix@debuggable.com)
 streamroller v2.x
 Copyright (c) 2013 Gareth Jones
 streamsearch v0.x
@@ -1067,6 +1068,7 @@ org.eclipse.swt.cocoa.macosx.x86_64	3.x     http://www.eclipse.org
 org.eclipse.swt.gtk.linux.x86_64	3.x        http://www.eclipse.org
 org.eclipse.swt.win32.win32.x86_64	3.x          http://www.eclipse.org
 org.eclipse.xtext.xbase.lib	2.x       http://www.eclipse.org
+
 
 
 
@@ -1527,13 +1529,13 @@ Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights rese
 continuation-local-storage	3.x
 Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights reserved.
 emitter-listener	1.x
-domelementtype Copyright (c) Felix Böhm
-domhandler Copyright (c) Felix Böhm
-domutils Copyright (c) Felix Böhm
-entities Copyright (c) Felix Böhm
+domelementtype Copyright (c) Felix BÃ¶hm
+domhandler Copyright (c) Felix BÃ¶hm
+domutils Copyright (c) Felix BÃ¶hm
+entities Copyright (c) Felix BÃ¶hm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
-http-cache-semantics Copyright 2016-2018 Kornel Lesiński
+http-cache-semantics Copyright 2016-2018 Kornel LesiÅ„ski
 npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
@@ -1617,7 +1619,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS�? AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS â€œAS ISâ€� AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1697,7 +1699,7 @@ npm-registry-fetch   Copyright (c) npm, Inc.
 npmlog  Copyright (c) Isaac Z. Schlueter and Contributors
 once	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
-pacote   	Copyright (c) Isaac Z. Schlueter, Kat Marchán, npm, Inc., and Contributors
+pacote   	Copyright (c) Isaac Z. Schlueter, Kat MarchÃ¡n, npm, Inc., and Contributors
 promise-inflight  Copyright (c) 2017, Rebecca Turner <me@re-becca.org>
 read-package-json-fast  Copyright (c) npm, Inc. and Contributors
 require-main-filename  2.x
@@ -1712,7 +1714,7 @@ set-blocking	2.x
 Copyright (c) 2016, Contributors
 signal-exit   Copyright (c) 2015, Contributors
 ssri  Copyright (c) npm, Inc.
-tar  Copyright (c) Isaac Z. Schlueter and Contributors
+tar   Copyright (c) Isaac Z. Schlueter and Contributors
 unique-filename  Copyright npm, Inc
 unique-slug  Copyright npm, Inc
 validate-npm-package-name   Copyright (c) 2015, npm, Inc
@@ -1989,8 +1991,8 @@ org.w3c.dom.events	3.x
 org.w3c.dom.smil	1.x
 org.w3c.dom.svg	1.x
 
-W3C® SOFTWARE NOTICE AND LICENSE
-Copyright © 1994-2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/
+W3CÂ® SOFTWARE NOTICE AND LICENSE
+Copyright Â© 1994-2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/
 
 This W3C work (including software, documents, or other related items) is being provided by the copyright holders under the following license. By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:
 
@@ -1998,7 +2000,7 @@ Permission to use, copy, modify, and distribute this software and its documentat
 
 1. The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
 
-2. Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
+2. Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright Â© [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
 
 3. Notice of any changes or modifications to the W3C files, including the date changes were made. (We recommend you provide URIs to the location from which the code is derived.)
 
@@ -2092,9 +2094,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 1.2.x
+End of Notices for IBM Z Open Editor 1.4.x
 =====================================================================
 
-L/N:  L-JYZG-C5YQKW
-D/N:  L-JYZG-C5YQKW
-P/N:  L-JYZG-C5YQKW
+L/N:  L-JYZG-C7QTQ7
+D/N:  L-JYZG-C7QTQ7
+P/N:  L-JYZG-C7QTQ7

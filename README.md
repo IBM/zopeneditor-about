@@ -67,7 +67,7 @@ Such events are logged with the following information:
 - Anonymous user and session ID
 - The type of editor VS Code or Eclipse Theia
 - Version numbers of Microsoft VS Code and IBM Z Open Editor
-- The major Java version used by the language servers
+- The major Java version and vendor used by the language servers
 - The name of the Z programming language used
 - The name of the operation performed
 
@@ -81,10 +81,10 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
 
 - Java SDK or JRE version 8 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
   - You can use [Oracle Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the LTS versions 11 of Oracle Java.
-  - Alternatively, you can use version 8 or 11 of the [OpenJDK](https://adoptopenjdk.net/releases.html?variant=openjdk8&jvmVariant=openj9). If you are using version 1.1 or newer of Z Open Editor you can also use just a Java Runtime Environments (JRE) as well.
+  - Alternatively, you can use version 8, 11, or 17 of the [OpenJDK](https://adoptium.net/index.html?variant=openjdk8&jvmVariant=hotspot). If you are using version 1.1 or newer of Z Open Editor you can also use just a Java Runtime Environments (JRE) as well.
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 8 and 11.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 6.23 and the Zowe Explorer VS Code extension v1.12.1 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli.html) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/zowe_interactwithzos.html#creating-a-zowe-cli-profile) so that data sets can be found and accessed.
+- Zowe CLI 6.33.3 and the Zowe Explorer VS Code extension v1.19.0 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
@@ -133,7 +133,7 @@ On Windows:
 By default, the language server clients that start the language servers for COBOL, PL/I, HLASM, and REXX allocate a maximum of 512 MB of memory for each. In other words, they start using much less memory in the beginning, but you might run out of memory when working on large program files; or your computer might not support such a large amount of memory in the first place. To have more flexibility in how much memory the language servers are allowed to allocate, the following VS Code Setting is provided to specify the maximum value. When you use both COBOL and PL/I, you need to double the amount specified.
 
 ```json
-"zopeneditor.server.memoryAllocation": 1024
+"zopeneditor.server.memoryAllocation": 640
 ```
 
 ## Language Server Protocol capability examples

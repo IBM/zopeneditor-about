@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM Z Open Editor V1.4 (Plug-in)
+IBM Z Open Editor V1.4.1 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -11,14 +11,14 @@ Privacy
 
 Licensee acknowledges and agrees that IBM may use cookie and tracking technologies to collect personal information in gathering product usage statistics and information designed to help improve user experience and/or to tailor interactions with users in accordance with the IBM Online Privacy Policy, available at http://www.ibm.com/privacy/.
 
-L/N:  L-JYZG-C7QTQ7
-D/N:  L-JYZG-C7QTQ7
-P/N:  L-JYZG-C7QTQ7
+L/N:  L-DMIR-C8PJRH
+D/N:  L-DMIR-C8PJRH
+P/N:  L-DMIR-C8PJRH
 
 
 International License Agreement for Non-Warranted Programs
 
-Part 1 – General Terms
+Part 1 - General Terms
 
 BY DOWNLOADING, INSTALLING, COPYING, ACCESSING, CLICKING ON AN "ACCEPT" BUTTON, OR OTHERWISE USING THE PROGRAM, LICENSEE AGREES TO THE TERMS OF THIS AGREEMENT. IF YOU ARE ACCEPTING THESE TERMS ON BEHALF OF LICENSEE, YOU REPRESENT THAT YOU HAVE FULL AUTHORITY TO BIND LICENSEE TO THESE TERMS.
 
@@ -130,7 +130,7 @@ j. No right or cause of action for any third party is created by the Agreement. 
 
 k. IBM may use personnel and resources in locations worldwide, including third party contractors to support the delivery of Programs and Program support. Licensee's use of Programs may result in the transfer of Content, including personally identifiable information, across country borders to provide Program support as described in the IBM Software Support Guide.
 
-Part 2 – Country Required Terms
+Part 2 - Country Required Terms
 
 For licenses acquired in the countries specified below, the following terms replace or modify the referenced terms of this ILAN. Terms not changed by these amendments remain unchanged and in effect.
 
@@ -454,7 +454,7 @@ In Spain: the courts of Madrid.
 
 In Switzerland: the commercial court of the canton of Zurich.
 
-In Turkey: the Istanbul Central (Çağlayan) Courts and Execution Directorates of Istanbul, the Republic of Turkey.
+In Turkey: the Istanbul Central (Caglayan) Courts and Execution Directorates of Istanbul, the Republic of Turkey.
 
 In Netherlands: The Parties waive their rights under Title 7.1 ('Koop') and clause 7:401 and 402 of the Dutch Civil Code, and their rights to invoke a full or partial dissolution ('gehele of partiele ontbinding') of this Agreement under section 6:265 of the Dutch Civil Code.
 

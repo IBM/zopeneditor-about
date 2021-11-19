@@ -23,7 +23,7 @@
         zopeneditor.zapp.useDefaultOnlineZappSchema: true
     - type: dockerimage
       alias: wazi-terminal
-      image: icr.io/wazi-code/ibm-wazi-developer-for-workspaces-codeready@sha256:28beb27a2c9d6441cc8e16d19192e004d14701f31e0b9ffdf21cd9b5f0e8f0aa
+      image: icr.io/ibm/wazi-code/ibm-wazi-developer-for-workspaces-codeready@sha256:6a032f2ebdf19f6b491832a8d897a97351636fef33cd29fc57f1bf36b8e6cba3
       memoryLimit: 512Mi
       volumes:
         - name: zowe

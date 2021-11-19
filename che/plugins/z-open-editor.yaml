@@ -18,7 +18,7 @@ category: Language
 firstPublicationDate: "2021-06-18"
 spec:
   containers:
-  - image: icr.io/ibm/wazi-code/ibm-wazi-developer-for-workspaces-codeready@sha256:6a032f2ebdf19f6b491832a8d897a97351636fef33cd29fc57f1bf36b8e6cba3
+  - image: icr.io/wazi-code/ibm-wazi-developer-for-workspaces-codeready@sha256:6a032f2ebdf19f6b491832a8d897a97351636fef33cd29fc57f1bf36b8e6cba3
     name: wazi-plugins
     memoryLimit: "3000Mi"
     args:

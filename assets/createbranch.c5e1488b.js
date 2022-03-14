@@ -1,1 +1,1 @@
-var e="/Zowe-Commercial/zopeneditor-about/assets/createbranch.f011f971.jpg";export{e as _};
+var a="/zopeneditor-about/assets/createbranch.f011f971.jpg";export{a as _};

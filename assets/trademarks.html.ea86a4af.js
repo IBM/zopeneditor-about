@@ -1,0 +1,1 @@
+const e={key:"v-7982067c",path:"/Docs/trademarks.html",title:"Trademarks",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:1,title:"Trademarks",slug:"trademarks",children:[]}],git:{updatedTime:1567047324e3,contributors:[{name:"Min Huang",email:"minhsh@cn.ibm.com",commits:2}]},filePathRelative:"Docs/trademarks.md"};export{e as data};

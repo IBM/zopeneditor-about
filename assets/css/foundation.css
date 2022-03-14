@@ -222,7 +222,6 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background: #fefefe;
     font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
     line-height: 1.5;
@@ -855,7 +854,6 @@ screen and (min-width: 40em) {
 
 a {
     line-height: inherit;
-    color: #1779ba;
     text-decoration: none;
     cursor: pointer;
 }
@@ -6752,7 +6750,7 @@ thead,
 tbody,
 tfoot {
     border: 1px solid #f1f1f1;
-    background-color: #fefefe;
+    background-color: var(--c-table-bgc);
 }
 
 caption {
@@ -6761,13 +6759,13 @@ caption {
 }
 
 thead {
-    background: #f8f8f8;
-    color: #0a0a0a;
+    background: var(--c-table-bgc);
+    color: var(--c-text);
 }
 
 tfoot {
-    background: #f1f1f1;
-    color: #0a0a0a;
+    background: var(--c-table-bgc);
+    color: var(--c-text);
 }
 
 thead tr,
@@ -6791,17 +6789,17 @@ tbody td {
 
 tbody tr:nth-child(even) {
     border-bottom: 0;
-    background-color: #f1f1f1;
+    background-color: var(--c-table-bgc);
 }
 
 table.unstriped tbody {
-    background-color: #fefefe;
+    background-color: var(--c-table-bgc);
 }
 
 table.unstriped tbody tr {
     border-bottom: 0;
     border-bottom: 1px solid #f1f1f1;
-    background-color: #fefefe;
+    background-color: var(--c-table-bgc);
 }
 
 @media print,

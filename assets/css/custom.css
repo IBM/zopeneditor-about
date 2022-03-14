@@ -1,8 +1,8 @@
 body {
-  background: #fff;
   font-family: "IBM Plex Sans", sans-serif !important;
   margin: 0 !important;
   font-size: 1rem;
+  color: var(--c-text) !important;
 }
 /*h2 {
                         margin-top: 3.5rem !important;
@@ -175,7 +175,6 @@ h2 {
 }
 
 a {
-  color: #0043ce;
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
 }
@@ -557,7 +556,7 @@ a:focus {
 }
 
 #news .news-tile {
-  background-color: #f2f4f8;
+  background-color: var(--c-table-bgc);
   min-height: 200px;
   border: solid 1px #dde1e6;
   position: relative;
@@ -576,14 +575,14 @@ a:focus {
 #news .news-title-heading {
   font-weight: 600;
   font-size: 1.15rem;
-  color: #2c3e50;
+  color: var(--c-text);
 }
 
 #news .news-title-content {
   padding: 0 0 3rem;
   line-height: 1.3rem;
   font-weight: 400;
-  color: #2c3e50;
+  color: var(--c-text);
 }
 
 #news .news-title-link {
@@ -614,7 +613,7 @@ a:focus {
 
 #news .news-title-date {
   font-size: 0.8rem;
-  color: #4d5358;
+  color: var(--c-text);
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   margin-bottom: 0.75rem;
@@ -680,7 +679,7 @@ a.button:hover {
 }
 
 #start .start-tile {
-  background-color: #f2f4f8;
+  background-color: var(--c-table-bgc);
   min-height: 260px;
   border: solid 1px #dde1e6;
   position: relative;
@@ -689,7 +688,7 @@ a.button:hover {
 }
 
 #start .start-title-heading {
-  color: #2c3e50;
+  color: var(--c-text);
 }
 
 #start .start-title-content {
@@ -697,7 +696,7 @@ a.button:hover {
   line-height: 1.3rem;
   font-weight: 400;
   transition: all 0.25s ease;
-  color: #2c3e50;
+  color: var(--c-text);
 }
 
 #start .start-title-link {
@@ -763,8 +762,8 @@ a.button:hover {
   font-size: 1.5rem;
   font-weight: 800;
   transition: all 0.25s ease;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: var(--c-tile-box-shadow);
+  box-shadow: var(--c-tile-box-shadow);
 }
 
 #start .start-tile:hover .start-title-content,
@@ -789,12 +788,12 @@ a.button:hover {
 #tutorial {
   margin-top: 2rem;
   margin-bottom: 8rem;
-  -webkit-box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 5px 5px rgba(255, 255, 255, 1);
+  -webkit-box-shadow: var(--c-tile-box-shadow);
+  box-shadow: var(--c-tile-box-shadow);
 }
 
 #tutorial .tutorial-tile {
-  background-color: #f2f4f8;
+  background-color: var(--c-table-bgc);
   min-height: 260px;
   border: solid 1px #dde1e6;
   position: relative;
@@ -803,7 +802,7 @@ a.button:hover {
 }
 
 #tutorial .tutorial-title-heading {
-  color: #2c3e50;
+  color: var(--c-text);
   font-size: 1.15rem;
   min-height: 3.5rem;
 }
@@ -813,7 +812,7 @@ a.button:hover {
   line-height: 1.3rem;
   font-weight: 400;
   transition: all 0.25s ease;
-  color: #2c3e50;
+  color: var(--c-text);
 }
 
 #tutorial .tutorial-title-link {
@@ -873,7 +872,7 @@ a.button:hover {
 /* Tutorial Section End */
 
 #full-bar {
-  background: #f2f4f8;
+  background: var(--c-bg);
   padding: 2rem 0rem 4rem;
 }
 /* Feeback Section Start */
@@ -984,4 +983,25 @@ a.button:hover {
   .zowe img {
     margin-bottom: 1rem;
   }
+}
+
+.DocSearch-Input,
+.DocSearch-Input:focus {
+  margin: 0;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: none;
+  height: 90%;
+}
+
+.sidebar-item-children
+  .sidebar-item-children
+  .sidebar-item:not(.sidebar-heading) {
+  color: #9da7b1;
+}
+
+.sidebar-item-children
+  .sidebar-item-children
+  .sidebar-item:not(.sidebar-heading).active {
+  color: #2c3e50;
 }

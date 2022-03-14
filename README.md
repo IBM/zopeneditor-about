@@ -1,5 +1,10 @@
 # IBM Z® Open Editor
 
+[![version](https://vsmarketplacebadge.apphb.com/version-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/version-short/IBM.zopeneditor.png)
+[![rating](https://vsmarketplacebadge.apphb.com/rating-star/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/rating-star/IBM.zopeneditor.png)
+[![installs](https://vsmarketplacebadge.apphb.com/installs-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/installs-short/IBM.zopeneditor.png)
+[![downloads](https://vsmarketplacebadge.apphb.com/downloads-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/downloads-short/IBM.zopeneditor.png)
+
 **IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, HLASM, REXX, and JCL languages.**
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) online.
@@ -77,14 +82,16 @@ Review the [IBM Z Open Editor License Agreement](https://github.com/IBM/zopenedi
 
 Here are the prerequisites for installing this extension in Visual Studio Code:
 
-- Microsoft VS Code version 1.44.0 or later: We recommend using always the latest VS Code version available. However, although the required minimal version is 1.44.0 we recommend to use at least 1.45.1, which includes fixes in VS Code User Settings that can impact Z Open Editor. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
+- Microsoft VS Code version 1.53.2 or later: We recommend using always the latest VS Code version available. However, the required minimal version since v2 of Z Open Editor is now 1.53.2; it was 1.44.0 in v1. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
 
 - Java SDK or JRE version 8 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
-  - You can use [Oracle Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the LTS versions 11 of Oracle Java.
-  - Alternatively, you can use version 8, 11, or 17 of the [OpenJDK](https://adoptium.net/index.html?variant=openjdk8&jvmVariant=hotspot). If you are using version 1.1 or newer of Z Open Editor you can also use just a Java Runtime Environments (JRE) as well.
+  - You can use versions 8, 11, or 17 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
+  - You can use [Oracle Java 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or the LTS versions 11 or 17 of Oracle Java.
+  - You can also use version 8, 11, or 17 of the [OpenJDK](https://adoptium.net/index.html?variant=openjdk8&jvmVariant=hotspot).
+  - If you are using version 1.1 or newer of Z Open Editor you can also use just a Java Runtime Environments (JRE) as well.
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 8 and 11.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 6.33.3 and the Zowe Explorer VS Code extension v1.19.0 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
+- Zowe CLI 6.33.3 and the Zowe Explorer VS Code extension v1.20.0 or later: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI user profile](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 

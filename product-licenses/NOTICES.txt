@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V1.4.1
+IBM Z Open Editor V2.0.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 1.4.x
+Start of Notices for IBM Z Open Editor 2.0.x
 
 =====================================================================
 
@@ -2094,9 +2094,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 1.4.x
+End of Notices for IBM Z Open Editor 2.0.x
 =====================================================================
 
-L/N:  L-DMIR-C8PJRH
-D/N:  L-DMIR-C8PJRH
-P/N:  L-DMIR-C8PJRH
+L/N:  L-DMIR-CBMNJS
+D/N:  L-DMIR-CBMNJS
+P/N:  L-DMIR-CBMNJS

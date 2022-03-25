@@ -507,7 +507,7 @@ a:focus {
 .navbar {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-  border-bottom: 1px solid #eaecef !important;
+  border-bottom: 1px solid var(--c-border)!important;
 }
 /* About Section Start */
 
@@ -654,6 +654,7 @@ a.button {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   font-size: 1.15rem !important;
+  color:#fff;
 }
 
 a.button:hover {
@@ -775,7 +776,9 @@ a.button:hover {
 #start .start-tile .badge-radius {
   border-radius: 0;
 }
-
+.badge {
+  line-height:inherit;
+}
 #start .start-title-arrow {
   position: absolute;
   top: 1.4rem;
@@ -787,7 +790,7 @@ a.button:hover {
 
 #tutorial {
   margin-top: 2rem;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
   -webkit-box-shadow: var(--c-tile-box-shadow);
   box-shadow: var(--c-tile-box-shadow);
 }
@@ -881,46 +884,30 @@ a.button:hover {
   margin-bottom: 1rem;
 }
 
-#feedback .github-link img,
-#feedback .wazi-community-link img {
-  max-height: 120px;
-  min-height: 80px;
-  transition: all 0.25s ease;
-}
-
 #feedback .github-link img {
   max-height: 120px;
-  transition: all 0.25s ease;
   vertical-align: bottom;
   padding-top: 1rem;
   padding-bottom: 0rem;
-}
-
-#feedback .feedback-link:hover .github-link img,
-#feedback .feedback-link:hover .wazi-community-link img,
-#feedback .feedback-link:focus .github-link img,
-#feedback .feedback-link:focus .wazi-community-link img,
-#feedback .feedback-link:hover .survey-link img,
-#feedback .feedback-link:focus .survey-link img {
-  padding-top: 0rem;
-  padding-bottom: 0.5rem;
+  transition: all 0.25s ease;
 }
 
 #feedback .survey-link img {
   max-height: 120px;
-  transition: all 0.25s ease;
   vertical-align: bottom;
   padding-top: 1rem;
   padding-bottom: 0rem;
+  transition: all 0.25s ease;
 }
 
 #feedback .wazi-community-link img {
   max-height: 120px;
-  transition: all 0.25s ease;
   vertical-align: bottom;
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+  transition: all 0.25s ease;
 }
+
 
 #feedback a.feedback-link {
   display: block;
@@ -928,6 +915,16 @@ a.button:hover {
 
 #feedback .link-label {
   text-decoration: none;
+}
+#feedback .feedback-link:hover .github-link img,
+#feedback .feedback-link:hover .wazi-community-link img,
+#feedback .feedback-link:hover .survey-link img,
+#feedback .feedback-link:focus .github-link img,
+#feedback .feedback-link:focus .wazi-community-link img,
+#feedback .feedback-link:focus .survey-link img {
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+  transition: all 0.25s ease;
 }
 
 #feedback .feedback-link:hover .link-label,
@@ -1005,3 +1002,37 @@ a.button:hover {
   .sidebar-item:not(.sidebar-heading).active {
   color: #2c3e50;
 }
+
+/** dark themes **/
+
+.dark .section-title h3 {
+  color:#f2f2f2;
+}
+.dark #news .news-tile, .dark #tutorial .tutorial-tile, .dark #start .start-tile {
+  border: solid 1px #a3a7ab;
+}
+.dark .blue6 {
+  background: #515151;
+}
+.dark .sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
+  color: #e3eefa;
+}
+.dark .DocSearch {
+  --docsearch-searchbox-focus-background: #fff;
+}
+.dark .DocSearch-Button:active, .dark .DocSearch-Button:focus, .dark .DocSearch-Button:hover {
+  background: #515151;
+}
+.dark code {
+  background-color: #1b1f24;
+}
+.dark a {
+  color:#78a9ff;
+}
+.dark a:hover {
+  color:#a6c8ff;
+}
+.dark a.button {
+  color:#fff;
+}
+

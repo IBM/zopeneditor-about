@@ -507,7 +507,7 @@ a:focus {
 .navbar {
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
-  border-bottom: 1px solid var(--c-border)!important;
+  border-bottom: 1px solid var(--c-border) !important;
 }
 /* About Section Start */
 
@@ -654,7 +654,7 @@ a.button {
   -webkit-transition: all 0.25s ease;
   transition: all 0.25s ease;
   font-size: 1.15rem !important;
-  color:#fff;
+  color: #fff;
 }
 
 a.button:hover {
@@ -777,7 +777,7 @@ a.button:hover {
   border-radius: 0;
 }
 .badge {
-  line-height:inherit;
+  line-height: inherit;
 }
 #start .start-title-arrow {
   position: absolute;
@@ -908,7 +908,6 @@ a.button:hover {
   transition: all 0.25s ease;
 }
 
-
 #feedback a.feedback-link {
   display: block;
 }
@@ -1006,33 +1005,39 @@ a.button:hover {
 /** dark themes **/
 
 .dark .section-title h3 {
-  color:#f2f2f2;
+  color: #f2f2f2;
 }
-.dark #news .news-tile, .dark #tutorial .tutorial-tile, .dark #start .start-tile {
+.dark #news .news-tile,
+.dark #tutorial .tutorial-tile,
+.dark #start .start-tile {
   border: solid 1px #a3a7ab;
 }
 .dark .blue6 {
   background: #515151;
 }
-.dark .sidebar-item-children .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
+.dark
+  .sidebar-item-children
+  .sidebar-item-children
+  .sidebar-item:not(.sidebar-heading).active {
   color: #e3eefa;
 }
 .dark .DocSearch {
   --docsearch-searchbox-focus-background: #fff;
 }
-.dark .DocSearch-Button:active, .dark .DocSearch-Button:focus, .dark .DocSearch-Button:hover {
+.dark .DocSearch-Button:active,
+.dark .DocSearch-Button:focus,
+.dark .DocSearch-Button:hover {
   background: #515151;
 }
 .dark code {
   background-color: #1b1f24;
 }
 .dark a {
-  color:#78a9ff;
+  color: #78a9ff;
 }
 .dark a:hover {
-  color:#a6c8ff;
+  color: #a6c8ff;
 }
 .dark a.button {
-  color:#fff;
+  color: #fff;
 }
-

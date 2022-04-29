@@ -1,1 +1,0 @@
-const e={key:"v-065bea79",path:"/Docs/notices.html",title:"Notices",lang:"en-US",frontmatter:{},excerpt:"",headers:[{level:1,title:"Notices",slug:"notices",children:[]}],git:{updatedTime:1615997441e3,contributors:[{name:"Min Huang",email:"minhsh@cn.ibm.com",commits:1},{name:"enzi",email:"enzi@ca.ibm.com",commits:1}]},filePathRelative:"Docs/notices.md"};export{e as data};

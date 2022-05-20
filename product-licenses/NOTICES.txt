@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V2.0.0
+IBM Z Open Editor V2.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -71,6 +71,9 @@ org.apache.commons.jxpath	1.x
 org.apache.felix.scr	2.x
 request
 tunnel-agent
+@carbon/telemetry 0.x
+detect-libc  2.x
+
 
 
 
@@ -341,7 +344,7 @@ Fabien LOISON
 Felix Maier
 Forbes Lindesay
 Gilad Peleg
-HuÃ¡ng JÃ¹nliÃ ng
+Huáng Jùnliàng
 impinball
 Ingvar Stepanyan
 Jackson Ray Hamilton
@@ -353,7 +356,7 @@ Johannes Herr
 John-David Dalton
 Jordan Gensler
 Jordan Klassen
-JÃ¼rg Lehni
+Jürg Lehni
 Kai Cataldo
 keeyipchan
 Keheliya Gallaba
@@ -378,7 +381,7 @@ naoh
 Nicholas C. Zakas
 Nick Fitzgerald
 Olivier Thomann
-Oskar SchÃ¶ldstrÃ¶m
+Oskar Schöldström
 Paul Harper
 Peter Rust
 piotr
@@ -387,7 +390,7 @@ Praveen N
 Prayag Verma
 ReadmeCritic
 r-e-d
-RenÃ©e Kooi
+Renée Kooi
 Richard Gibson
 Rich Harris
 Sebastian McKenzie
@@ -405,7 +408,7 @@ Victor Homyakov
 Vladislav Tupikin
 Wexpo Lyu
 zsjforcn
-é¾™è…¾é�“
+龙腾道
 
 agent-base Copyright (c) 2013 Nathan Rajlich
 agentkeepalive
@@ -422,7 +425,7 @@ Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 applicationinsights v1.x
-Copyright Ã‚Â© Microsoft Corporation
+Copyright Â© Microsoft Corporation
 argparse v1.x
 Copyright (C) 2012 by Vitaly Puzrin
 asn1 v0.x
@@ -453,7 +456,7 @@ color-convert v2.x
 Copyright (c) 2011-2016 Heather Arthur (fayearthur@gmail.com)
 color-name v1.x
 Copyright (c) 2015 Dmitry Ivanov
-colorette Copyright Â© Jorge Bucaran <<https://jorgebucaran.com>>
+colorette Copyright © Jorge Bucaran <<https://jorgebucaran.com>>
 colors v1.x
 combined-stream Copyright (c) 2011 Debuggable Limited <felix@debuggable.com>
 Copyright (c) Marak Squires	Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
@@ -466,9 +469,9 @@ Copyright (c) 2013 Trent Mick. All rights reserved.
 Copyright (c) 2013 Joyent Inc. All rights reserved.
 dataobject-parser v1.x
 Copyright (c) 2014 Gigzolo Inc.
-date-format v2.x
+date-format v4.x
 Copyright (c) 2013 Gareth Jones
-date-format v3.x
+date-format v2.x
 Copyright (c) 2013 Gareth Jones
 debug v4.x
 Copyright (c) 2014 TJ Holowaychuk (tj@vision-media.ca)
@@ -507,7 +510,7 @@ find-up v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 flatpickr   v4.x
 Copyright (c) 2017 Gregory Petrosyan
-form-data Copyright (c) 2012 Felix GeisendÃ¶rfer (felix@debuggable.com) and contributors
+form-data Copyright (c) 2012 Felix Geisendörfer (felix@debuggable.com) and contributors
 fs-extra v8.x
 Copyright (c) 2011-2017 JP Richardson
 get-stdin   v7.x
@@ -542,7 +545,7 @@ Copyright (c) 2003-2005 Tom Wu
 jsonc-parser v2.x
 Copyright (c) Microsoft
 json-parse-even-better-errors
-Copyright 2017 Kat MarchÃ¡n, Copyright npm, Inc.
+Copyright 2017 Kat Marchán, Copyright npm, Inc.
 jsonfile v4.x
 Copyright (c) 2012-2015, JP Richardson (jprichardson@gmail.com)
 jsonparse  Copyright (c) 2012 Tim Caswell
@@ -609,7 +612,7 @@ number-is-nan  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhu
 object-assign v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 opener v1.x
-Copyright Â© 2012â€“2018 Domenic Denicola <d@domenic.me>
+Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
 parse-srcset   Copyright (c) 2014 Alex Bell
 path-exists v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
@@ -664,7 +667,7 @@ Copyright (c) 2011 Troy Goode (troygoode@gmail.com)
 require-from-string  v2.x
 Copyright (c) Vsevolod Strukchinsky <floatdrop@gmail.com> (github.com/floatdrop)
 retry
-Copyright (c) 2011: Tim KoschÃ¼tzki (tim@debuggable.com), Felix GeisendÃ¶rfer (felix@debuggable.com)
+Copyright (c) 2011: Tim Koschützki (tim@debuggable.com), Felix Geisendörfer (felix@debuggable.com)
 rfdc v1.x
 Copyright 2019 "David Mark Clements (david.mark.clements@gmail.com)"
 safer-buffer v2.x
@@ -686,8 +689,8 @@ sshpk  Copyright Joyent, Inc. All rights reserved.
 stack-chain v1.x
 Copyright (c) 2012 Andreas Madsen
 stack-trace v0.x
-Copyright (c) 2011 Felix GeisendÃƒÂ¶rfer (felix@debuggable.com)
-streamroller v2.x
+Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
+streamroller v3.x
 Copyright (c) 2013 Gareth Jones
 streamsearch v0.x
 Copyright Brian White. All rights reserved.
@@ -719,7 +722,7 @@ vscode-nls 4.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 wrap-ansi v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
-wrap-ansi v6.x
+wrap-ansi v7.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 xml2js v0.x
 Copyright 2010, 2011, 2012, 2013. All rights reserved.
@@ -734,6 +737,237 @@ yargs v15.x
 Copyright 2010 James Halliday (mail@substack.net) Modified work Copyright 2014 Contributors (ben@npmjs.com)
 yawn-yaml   v1.x
 Copyright (c) 2015 Mohsen Azimi
+err-code	1.x
+lodash-deep	2.x
+Copyright (c) 2014-2016 Mark Lagendijk
+yaml.js	0.x
+Copyright (c) 2010 Jeremy Faivre
+yawn-yaml	1.x
+Copyright (c) 2015 Mohsen Azimi
+@babel/code-frame	7.1x
+@babel/generator	7.x
+@babel/helper-function-name	7.x
+@babel/helper-get-function-arity	7.x
+@babel/helper-hoist-variables	7.x
+@babel/helper-split-export-declaration	7.x
+@babel/helper-validator-identifier	7.x
+@babel/highlight	7.x
+@babel/parser	7.x
+@babel/template	7.x
+@babel/traverse	7.x
+@babel/types	7.x
+fast-glob	3.x
+Copyright (c) Denis Malinochkin
+fs-extra	9.x
+Copyright (c) 2011-2017 JP Richardson
+jsonfile	6.x
+Copyright (c) 2012-2015, JP Richardson <jprichardson@gmail.com>
+universalify	2.x
+Copyright (c) 2017, Ryan Zimmerman <opensrc@ryanzim.com>
+yargs	16.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@dabh/diagnostics	2.x
+@gar/promisify	1.x
+@jest/types	27.x
+Copyright (c) Facebook, Inc. and its affiliates
+@types/yargs	16.x
+@nodelib/fs.scandir	2.x
+@nodelib/fs.stat	2.x
+@nodelib/fs.walk	1.x
+@sindresorhus/is	4.x
+@szmarczak/http-timer	4.x
+@types/cacheable-request	6.x
+@types/http-cache-semantics	4.x
+@types/istanbul-lib-coverage	2.x
+Copyright (c) Microsoft Corporation.
+@types/istanbul-lib-report	3.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/istanbul-reports	3.x
+Copyright (c) Microsoft Corporation. All rights reserved.
+@types/keyv	3.x
+@types/node	15.x
+@types/responselike	1.x
+ms	2.x
+Copyright (c) 2020 Vercel, Inc.
+safe-buffer	5.x
+Copyright (c) Feross Aboukhadijeh
+string_decoder	1.x
+Copyright Node.js contributors. All rights reserved.
+array-timsort	1.x
+async	3.x
+base64-js	1.x
+bl	4.x
+Copyright (c) 2013-2019 bl contributors
+braces	3.x
+Copyright (c) 2014-2018, Jon Schlinkert.
+buffer	5.x
+Copyright (c) Feross Aboukhadijeh, and other contributors.
+cacheable-lookup	5.x
+cacheable-request	7.x
+get-stream	5.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+ci-info	2.x
+clone-response	1.x
+mimic-response	1.x
+color	3.x
+color-string	1.x
+colorspace	1.x
+commander	5.x
+Copyright (c) 2011 TJ Holowaychuk <tj@vision-media.ca>
+comment-json	4.x
+Copyright (c) 2013 kaelzhang <>, contributors
+http://kael.me/
+
+crypto-random-string	2.x
+decompress-response	6.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+deep-extend	0.6.0
+Copyright (c) 2013-2018, Viacheslav Lotsmanov
+defer-to-connect	2.x
+diff-sequences	27.x
+Copyright (c) Facebook, Inc. and its affiliates.
+dot-prop	5.x
+enabled	2.x
+end-of-stream	1.x
+Copyright (c) 2014 Mathias Buus
+escalade	3.x
+fast-glob	3.x
+Copyright (c) Denis Malinochkin
+fast-safe-stringify	2.x
+fecha	4.x
+fill-range	7.x
+Copyright (c) 2014-present, Jon Schlinkert.
+find-process	1.x
+chalk	4.x
+has-flag	4.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+supports-color	7.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+fn.name	1.x
+fs-constants	1.x
+Copyright (c) 2018 Mathias Buus
+get-stream	6.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+github-from-package	0.x
+globals	11.x
+got	11.x
+has-own-prop	2.x
+http2-wrapper	1.x
+is-arrayish	0.x
+is-extglob	2.x
+Copyright (c) 2014-2016, Jon Schlinkert
+is-glob	4.x
+Copyright (c) 2014-2017, Jon Schlinkert.
+is-number	7.x
+Copyright (c) 2014-present, Jon Schlinkert.
+is-obj	2.x
+is-stream	2.x
+jest-diff	27.x
+Copyright (c) Facebook, Inc. and its affiliates.
+jest-get-type	27.x
+Copyright (c) Facebook, Inc. and its affiliates.
+jsesc	2.x
+json-buffer	3.x
+keytar	7.x
+Copyright (c) 2013 Github
+keyv	4.x
+kuler	2.x
+logform	2.x
+lowercase-keys	2.x
+make-dir	3.x
+err-code	2.x
+minipass-fetch	1.x
+promise-retry	1.x
+Copyright (c) 2014 IndigoUnited
+retry	0.x
+Copyright (c) 2011:
+Tim Koschützki (tim@debuggable.com)
+Felix Geisendörfer (felix@debuggable.com)
+merge2	1.x
+Copyright (c) 2014-2020 Teambition
+micromatch	4.x
+mimic-response	3.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (https://sindresorhus.com)
+mkdirp-classic	0.x
+Copyright (c) 2020 James Halliday (mail@substack.net) and Mathias Buus
+napi-build-utils	1.x
+Copyright (c) 2018 inspiredware
+node-abi	3.x
+Copyright (c) 2016 Lukas Geiger
+node-addon-api	4.x
+Copyright (c) 2017 Node.js API Collaborators
+normalize-url	6.x
+one-time	1.x
+p-cancelable	2.x
+picomatch	2.x
+Copyright (c) 2017-present, Jon Schlinkert.
+find-up	2.x
+locate-path	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+p-limit	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+p-locate	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+p-try	1.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+path-exists	4.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+prebuild-install	7.x
+Copyright (c) 2015 Mathias Buus
+pretty-format	27.x
+Copyright (c) Facebook, Inc. and its affiliates.
+ansi-styles	5.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+pump	3.x
+Copyright (c) 2014 Mathias Buus
+queue-microtask	1.x
+quick-lru	5.x
+repeat-string	1.x
+Copyright (c) 2014-2016, Jon Schlinkert
+resolve-alpn	1.x
+responselike	2.x
+reusify	1.x
+Copyright (c) 2015 Matteo Collina
+run-parallel	1.x
+Copyright (c) Feross Aboukhadijeh
+simple-concat	1.x
+Copyright (c) Feross Aboukhadijeh
+simple-get	4.x
+Copyright (c) Feross Aboukhadijeh
+simple-swizzle	0.x
+strip-json-comments	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+tar-fs	2.x
+Copyright (c) 2014 Mathias Buus
+tar-stream	2.x
+Copyright (c) 2014 Mathias Buus
+text-hex	1.x
+to-fast-properties	2.x
+to-regex-range	5.x
+Copyright (c) 2015-present, Jon Schlinkert.
+triple-beam	1.x
+typedarray-to-buffer	3.x
+unique-string	2.x
+vscode-jsonrpc	5.x
+vscode-languageclient	6.x
+vscode-languageserver-protocol	3.x
+vscode-languageserver-types	3.x
+vscode-nls	4.x
+is-fullwidth-code-point	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+string-width	2.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+strip-ansi	4.x
+Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+winston	3.x
+winston-transport	4.x
+xdg-basedir	4.x
+react-is	17.x
+Copyright (c) Facebook, Inc. and its affiliates.
+readable-stream	3.x
+Copyright Node.js contributors. All rights reserved.
+
+
 
 
 
@@ -770,6 +1004,8 @@ The Program includes some or all of the following that IBM obtained under the Py
 
 
 argparse   2.x
+
+
 
 
 
@@ -1073,6 +1309,8 @@ org.eclipse.xtext.xbase.lib	2.x       http://www.eclipse.org
 
 
 
+
+
 Eclipse Public License - v 1.0
 
 THE ACCOMPANYING PROGRAM IS PROVIDED UNDER THE TERMS OF THIS ECLIPSE PUBLIC
@@ -1292,19 +1530,20 @@ The Program includes some or all of the following that IBM obtained under the Ec
 
 The Program contains open source software obtained from the Eclipse Foundation (herein collectively referred to as "Eclipse Code"). Notices and important information, including instructions for obtaining source code, for the Eclipse Code may be found in associated "about.html" files ("About Files") that accompany the Eclipse Code. These About Files are provided for informational purposes only, and notwithstanding anything to the contrary therein, your use of such Eclipse Code shall be governed by the terms of the IBM end user license agreement.
 
-@Zowe/cli		v6.x       (https://github.com/zowe)
-@zowe/core-for-zowe-sdk   (https://github.com/zowe)
-@zowe/imperative  v4.x    (https://github.com/zowe)
+@Zowe/cli		v7.x       (https://github.com/zowe)
+@zowe/core-for-zowe-sdk. v7.x   (https://github.com/zowe)
+@zowe/imperative  v5.x    (https://github.com/zowe)
 @zowe/perf-timing v1.0.7    (https://github.com/zowe)
 @zowe/zowe-explorer-api  v1.x    (https://github.com/zowe)
-@zowe/provisioning-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-console-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-files-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-jobs-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-tso-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-uss-for-zowe-sdk (https://github.com/zowe)
-@zowe/zos-workflows-for-zowe-sdk (https://github.com/zowe)
+@zowe/provisioning-for-zowe-sdk. v7.x (https://github.com/zowe)
+@zowe/zos-console-for-zowe-sdk. V7.x (https://github.com/zowe)
+@zowe/zos-files-for-zowe-sdk. v7.x (https://github.com/zowe)
+@zowe/zos-jobs-for-zowe-sdk v7.x (https://github.com/zowe)
+@zowe/zos-tso-for-zowe-sdk v7.x (https://github.com/zowe)
+@zowe/zos-uss-for-zowe-sdk. v7.x (https://github.com/zowe)
+@zowe/zos-workflows-for-zowe-sdk v7.x (https://github.com/zowe)
 @zowe/zosmf-for-zowe-sdk (https://github.com/zowe)
+@zowe/zos-logs-for-zowe-sdk. V7.x (https://github.com/zowe)
 antsupportlib    http://www.eclipse.org
 clientserver     http://www.eclipse.org
 eclipse.dstore.core   4.x   http://www.eclipse.org
@@ -1327,102 +1566,29 @@ jdi    http://www.eclipse.org
 jdimodel    http://www.eclipse.org
 jdtCompilerAdapter    http://www.eclipse.org
 launchingsupport     http://www.eclipse.org
-org.eclipse.compare	3.x    http://www.eclipse.org
-org.eclipse.compare.core	3.x     http://www.eclipse.org
-org.eclipse.core.commands   V3.9.x    http://www.eclipse.org
-org.eclipse.core.contenttype	V3.7.x     http://www.eclipse.org
-org.eclipse.core.databinding	1.x     http://www.eclipse.org
-org.eclipse.core.databinding.observable	1.x        http://www.eclipse.org
-org.eclipse.core.databinding.property	1.x    http://www.eclipse.org
-org.eclipse.core.filebuffers	3.x       http://www.eclipse.org
-org.eclipse.core.jobs	3.x       http://www.eclipse.org
-org.eclipse.core.net	1.x    http://www.eclipse.org
-org.eclipse.core.net.linux.x86_64    1.x   http://www.eclipse.org
-org.eclipse.core.net.win32.x86_64    1.x   http://www.eclipse.org
-org.eclipse.core.expressions	3.6.x     http://www.eclipse.org
-org.eclipse.core.filesystem	1.7.x      http://www.eclipse.org
-org.eclipse.core.resources	3.13.x   http://www.eclipse.org
-org.eclipse.core.runtime	3.x      http://www.eclipse.org
-org.eclipse.e4.ui.dialogs   1.x     http://www.eclipse.org
-org.eclipse.e4.ui.ide    3.x    http://www.eclipse.org
-org.eclipse.equinox.security.linux.x86_64      1.x   http://www.eclipse.org
-org.eclipse.equinox.security.macosx        1.x   http://www.eclipse.org
-org.eclipse.jdt.core.manipulation       1.x   http://www.eclipse.org
-org.eclipse.jdt.debug       3.x    http://www.eclipse.org
-org.eclipse.jdt.launching    3.x   http://www.eclipse.org
-org.eclipse.ui.console   3.x   http://www.eclipse.org
-org.eclipse.ui.navigator.resources    3.x  http://www.eclipse.org
-org.eclipse.ui.views.properties.tabbed   3.x  http://www.eclipse.org
-org.eclipse.equinox.app	1.4.x     http://www.eclipse.org
-org.eclipse.equinox.common	3.11.x    http://www.eclipse.org
-org.eclipse.equinox.event 1.x      http://www.eclipse.org
-org.eclipse.equinox.preferences	3.7.x  http://www.eclipse.org
-org.eclipse.equinox.registry	3.8.x   http://www.eclipse.org
-org.eclipse.osgi	3.15.x    http://www.eclipse.org
-org.eclipse.core.variables	3.x      http://www.eclipse.org
-org.eclipse.debug.core	3.x    http://www.eclipse.org
-org.eclipse.debug.ui  3.x   http://www.eclipse.org
-org.eclipse.e4.core.commands	0.x      http://www.eclipse.org
-org.eclipse.e4.core.contexts	1.x         http://www.eclipse.org
-org.eclipse.e4.core.di	1.x                      http://www.eclipse.org
-org.eclipse.e4.core.di.annotations	1.x               http://www.eclipse.org
-org.eclipse.e4.core.di.extensions	0.x                http://www.eclipse.org
-org.eclipse.e4.core.di.extensions.supplier	0.x           http://www.eclipse.org
-org.eclipse.e4.core.services	2.x        http://www.eclipse.org
-org.eclipse.e4.emf.xpath	0.x      http://www.eclipse.org
-org.eclipse.e4.ui.bindings	0.x       http://www.eclipse.org
-org.eclipse.e4.ui.css.core	0.x     http://www.eclipse.org
-org.eclipse.e4.ui.css.swt	0.x       http://www.eclipse.org
-org.eclipse.e4.ui.css.swt.theme	0.x     http://www.eclipse.org
-org.eclipse.e4.ui.di	1.x    http://www.eclipse.org
-org.eclipse.e4.ui.model.workbench	2.x            http://www.eclipse.org
-org.eclipse.e4.ui.services	1.x               http://www.eclipse.org
-org.eclipse.e4.ui.widgets	1.x                  http://www.eclipse.org
-org.eclipse.e4.ui.workbench	1.x                     http://www.eclipse.org
-org.eclipse.e4.ui.workbench.addons.swt	1.x             http://www.eclipse.org
-org.eclipse.e4.ui.workbench.renderers.swt	0.x             http://www.eclipse.org
-org.eclipse.e4.ui.workbench.swt	  0.x                  http://www.eclipse.org
-org.eclipse.e4.ui.workbench3	0.x             http://www.eclipse.org
-org.eclipse.equinox.bidi	1.x           http://www.eclipse.org
-org.eclipse.equinox.launcher	1.x                http://www.eclipse.org
-org.eclipse.equinox.launcher.cocoa.macosx.x86_64	1.x         http://www.eclipse.org
-org.eclipse.equinox.launcher.gtk.linux.x86_64	1.x    http://www.eclipse.org
-org.eclipse.equinox.launcher.win32.win32.x86_64	1.x      http://www.eclipse.org
-org.eclipse.equinox.p2.core	2.x            http://www.eclipse.org
-org.eclipse.equinox.p2.engine	2.x           http://www.eclipse.org
-org.eclipse.equinox.p2.metadata	2.x          http://www.eclipse.org
-org.eclipse.equinox.p2.metadata.repository	1.x    http://www.eclipse.org
-org.eclipse.equinox.p2.repository	2.x        http://www.eclipse.org
-org.eclipse.equinox.security	1.x      http://www.eclipse.org
-org.eclipse.equinox.security.win32.x86_64	1.x    http://www.eclipse.org
-org.eclipse.jdt.core     3.x    http://www.eclipse.org
-org.eclipse.jface	3.x           http://www.eclipse.org
-org.eclipse.jface.databinding	1.x          http://www.eclipse.org
-org.eclipse.jface.text	3.x     http://www.eclipse.org
-org.eclipse.ltk.core.refactoring	3.x         http://www.eclipse.org
-org.eclipse.ltk.ui.refactoring	3.x                          http://www.eclipse.org
-org.eclipse.osgi.compatibility.state	1.x     http://www.eclipse.org
-org.eclipse.osgi.services	3.x    http://www.eclipse.org
-org.eclipse.osgi.util	3.x          http://www.eclipse.org
-org.eclipse.search	3.x                    http://www.eclipse.org
-org.eclipse.team.core     3.x     http://www.eclipse.org
-org.eclipse.team.ui	3.x                 http://www.eclipse.org
-org.eclipse.text	3.x                    http://www.eclipse.org
-org.eclipse.ui	3.x                          http://www.eclipse.org
-org.eclipse.ui.editors	3.x               http://www.eclipse.org
-org.eclipse.ui.forms	3.x                http://www.eclipse.org
-org.eclipse.ui.ide	3.x                 http://www.eclipse.org
-org.eclipse.ui.navigator	3.x                     http://www.eclipse.org
-org.eclipse.ui.views	3.x        http://www.eclipse.org
-org.eclipse.ui.workbench	3.x      http://www.eclipse.org
-org.eclipse.ui.workbench.texteditor	3.x      http://www.eclipse.org
-eclipse.jdt.launching.javaagent      3.x   http://www.eclipse.org
-org.eclipse.ant.core	3.x         http://www.eclipse.org
-org.eclipse.equinox.executable	3.x   http://www.eclipse.org
-org.eclipse.help	3.x    http://www.eclipse.org
-org.eclipse.jdt.ui    3.x    http://www.eclipse.org
-org.eclipse.swt	3.x     	http://www.eclipse.org
-resources-ant    http://www.eclipse.org
+antsupportlib
+org.eclipse.compare.core. 3.x  http://www.eclipse.org
+org.eclipse.core.commands 3.x   http://www.eclipse.org
+org.eclipse.core.contenttype 3.x   http://www.eclipse.org
+org.eclipse.core.expressions 3.x  http://www.eclipse.org
+org.eclipse.core.filebuffers 3.x  http://www.eclipse.org
+org.eclipse.core.filesystem 1.x  http://www.eclipse.org
+org.eclipse.core.jobs 3.x  http://www.eclipse.org
+org.eclipse.core.net 1.x.   http://www.eclipse.org
+org.eclipse.core.resources 3.x  http://www.eclipse.org
+resources-ant.   http://www.eclipse.org
+org.eclipse.core.runtime 3.x    http://www.eclipse.org
+org.eclipse.core.variables 3.x   http://www.eclipse.org
+org.eclipse.debug.core 3.x   http://www.eclipse.org
+org.eclipse.equinox.common 3.x  http://www.eclipse.org
+org.eclipse.equinox.launcher.cocoa.macosx.x86_64 1.x   http://www.eclipse.org
+org.eclipse.equinox.launcher.gtk.linux.x86_64 1.x   http://www.eclipse.org
+org.eclipse.equinox.launcher.win32.win32.x86_64 1.x     http://www.eclipse.org
+org.eclipse.equinox.launcher 1.x   http://www.eclipse.org
+org.eclipse.equinox.security 1.x http://www.eclipse.org
+org.eclipse.osgi.compatibility.state 1.x http://www.eclipse.org
+org.eclipse.text 3.x http://www.eclipse.org
+
 
 
 
@@ -1529,13 +1695,13 @@ Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights rese
 continuation-local-storage	3.x
 Copyright (c) 2013-2016, Forrest L Norvell <ogd@aoaioxxysz.net>. All rights reserved.
 emitter-listener	1.x
-domelementtype Copyright (c) Felix BÃ¶hm
-domhandler Copyright (c) Felix BÃ¶hm
-domutils Copyright (c) Felix BÃ¶hm
-entities Copyright (c) Felix BÃ¶hm
+domelementtype Copyright (c) Felix Böhm
+domhandler Copyright (c) Felix Böhm
+domutils Copyright (c) Felix Böhm
+entities Copyright (c) Felix Böhm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
-http-cache-semantics Copyright 2016-2018 Kornel LesiÅ„ski
+http-cache-semantics Copyright 2016-2018 Kornel Lesiński
 npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
@@ -1543,6 +1709,9 @@ uri-js  4.x
 Copyright 2011 Gary Court. All rights reserved.
 winreg	1.x
 Copyright (c) 2016, Paul Bottin All rights reserved.
+configstore. 5.x
+
+
 
 
 BSD-2-CLAUSE LICENSE
@@ -1600,7 +1769,8 @@ tough-cookie  Copyright (c) 2015, Salesforce.com, Inc.
 warning 3.x
 Copyright (c) 2013-2015, Facebook, Inc. All rights reserved.
 
-
+ieee754 1.x
+Copyright 2008 Fair Oaks Labs, Inc.
 
 BSD-3 License
 
@@ -1619,7 +1789,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS â€œAS ISâ€� AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1656,7 +1826,7 @@ chownr Copyright (c) Isaac Z. Schlueter and Contributors
 console-control-strings Copyright (c) 2014, Rebecca Turner <me@re-becca.org>
 which	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
-flatted 2.x
+flatted 3.x
 Copyright (c) 2018, Andrea Giammarchi, @WebReflection
 fs-minipass Copyright (c) Isaac Z. Schlueter and Contributors
 fs.realpath	1.x
@@ -1699,7 +1869,7 @@ npm-registry-fetch   Copyright (c) npm, Inc.
 npmlog  Copyright (c) Isaac Z. Schlueter and Contributors
 once	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
-pacote   	Copyright (c) Isaac Z. Schlueter, Kat MarchÃ¡n, npm, Inc., and Contributors
+pacote   	Copyright (c) Isaac Z. Schlueter, Kat Marchán, npm, Inc., and Contributors
 promise-inflight  Copyright (c) 2017, Rebecca Turner <me@re-becca.org>
 read-package-json-fast  Copyright (c) npm, Inc. and Contributors
 require-main-filename  2.x
@@ -1729,6 +1899,41 @@ Copyright (c) 2015, Contributors
 yallist  Copyright (c) Isaac Z. Schlueter and Contributors
 yargs-parser   18.x
 Copyright (c) 2016, Contributors
+lru-cache	5.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+cliui	7.x
+Copyright (c) 2015, Contributors
+yargs-parser	20.x
+Copyright (c) 2016, Contributors
+@npmcli/fs	1.x
+Copyright (c) npm, Inc. and Contributors
+at-least-node	1.x
+glob	7.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+fastq	1.x
+Copyright (c) 2015-2020, Matteo Collina <matteo.collina@gmail.com>
+glob-parent	5.x
+Copyright (c) 2015, 2019 Elan Shanker
+ini	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+cacache	15.x
+Copyright (c) npm, Inc
+mute-stream	0.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+chownr	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+minipass	3.x
+Copyright (c) npm, Inc. and Contributors
+rimraf	2.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+yallist	3.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+read	1.x
+Copyright (c) Isaac Z. Schlueter and Contributors
+write-file-atomic	3.x
+semver	7.x
+
+
 
 The ISC License
 
@@ -1754,6 +1959,8 @@ START OF CDDL LICENSE NOTICES AND INFORMATION
 The Program includes some or all of the following that IBM obtained under the Common Development and Distribution License (source code available via the indicated URL):
 
 javax.annotation	1.2.x                https://github.com/javaee/javax.annotation
+
+
 
 
 
@@ -1991,8 +2198,10 @@ org.w3c.dom.events	3.x
 org.w3c.dom.smil	1.x
 org.w3c.dom.svg	1.x
 
-W3CÂ® SOFTWARE NOTICE AND LICENSE
-Copyright Â© 1994-2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/
+
+
+W3C® SOFTWARE NOTICE AND LICENSE
+Copyright © 1994-2001 World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/
 
 This W3C work (including software, documents, or other related items) is being provided by the copyright holders under the following license. By obtaining, using and/or copying this work, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions:
 
@@ -2000,7 +2209,7 @@ Permission to use, copy, modify, and distribute this software and its documentat
 
 1. The full text of this NOTICE in a location viewable to users of the redistributed or derivative work.
 
-2. Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright Â© [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
+2. Any pre-existing intellectual property disclaimers, notices, or terms and conditions. If none exist, a short notice of the following form (hypertext is preferred, text is permitted) should be used within the body of any redistributed or derivative code: "Copyright © [$date-of-software] World Wide Web Consortium, (Massachusetts Institute of Technology, Institut National de Recherche en Informatique et en Automatique, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/"
 
 3. Notice of any changes or modifications to the W3C files, including the date changes were made. (We recommend you provide URIs to the location from which the code is derived.)
 
@@ -2028,6 +2237,8 @@ under the WTFPL License:
 
 yaml-js 0.x
 Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
+
+expand-template. 2.x
 
 
 WTFPL LICENSE
@@ -2097,6 +2308,6 @@ END OF UNLICENSE NOTICES AND INFORMATION
 End of Notices for IBM Z Open Editor 2.0.x
 =====================================================================
 
-L/N:  L-DMIR-CBMNJS
-D/N:  L-DMIR-CBMNJS
-P/N:  L-DMIR-CBMNJS
+L/N:  L-DMIR-CDPMTL
+D/N:  L-DMIR-CDPMTL
+P/N:  L-DMIR-CDPMTL

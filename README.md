@@ -16,7 +16,7 @@
 
 ## Overview
 
-This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL 6.3, PL/I 5.3, and High Level Assembler for z/OS 2.4 and TSO/E REXX. This also includes capabilities for embedded statements in COBOL and PL/I for CICS 5.6, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
+This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, and High Level Assembler for z/OS 2.5 and TSO/E REXX. This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.1, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work.
 
 IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
 
@@ -63,6 +63,7 @@ This current release of IBM Z Open Editor will collect anonymous data for the fo
 - Using common language server operations such as code completion, references, definition, rename
 - Starting a user build
 - Deactivation of this VS Code extension
+- Responding to the feedback dialog
 
 Such events are logged with the following information:
 

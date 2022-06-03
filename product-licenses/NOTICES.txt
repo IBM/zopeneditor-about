@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V2.0
+IBM Z Open Editor V2.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 2.0.x
+Start of Notices for IBM Z Open Editor 2.1.x
 
 =====================================================================
 
@@ -971,6 +971,9 @@ Copyright Node.js contributors. All rights reserved.
 
 
 
+
+
+
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -1789,7 +1792,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -2305,9 +2308,10 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 2.0.x
+End of Notices for IBM Z Open Editor 2.1.x
 =====================================================================
 
-L/N:  L-DMIR-CDPMTL
-D/N:  L-DMIR-CDPMTL
-P/N:  L-DMIR-CDPMTL
+
+L/N:  L-DMIR-CEJS6X
+D/N:  L-DMIR-CEJS6X
+P/N:  L-DMIR-CEJS6X

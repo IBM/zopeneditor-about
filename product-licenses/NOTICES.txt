@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V2.1
+IBM Z Open Editor V2.2
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 2.1.x
+Start of Notices for IBM Z Open Editor 2.2.x
 
 =====================================================================
 
@@ -73,6 +73,7 @@ request
 tunnel-agent
 @carbon/telemetry 0.x
 detect-libc  2.x
+org.eclipse.equinox.executable v3.8.0
 
 
 
@@ -425,7 +426,7 @@ Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 applicationinsights v1.x
-Copyright Â© Microsoft Corporation
+Copyright © Microsoft Corporation
 argparse v1.x
 Copyright (C) 2012 by Vitaly Puzrin
 asn1 v0.x
@@ -612,7 +613,7 @@ number-is-nan  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhu
 object-assign v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 opener v1.x
-Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
+Copyright © 2012-2018 Domenic Denicola <d@domenic.me>
 parse-srcset   Copyright (c) 2014 Alex Bell
 path-exists v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
@@ -689,7 +690,7 @@ sshpk  Copyright Joyent, Inc. All rights reserved.
 stack-chain v1.x
 Copyright (c) 2012 Andreas Madsen
 stack-trace v0.x
-Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
+Copyright (c) 2011 Felix Geisendörfer (felix@debuggable.com)
 streamroller v3.x
 Copyright (c) 2013 Gareth Jones
 streamsearch v0.x
@@ -1306,7 +1307,8 @@ org.eclipse.lsp4j.jsonrpc	0.x          http://www.eclipse.org
 org.eclipse.swt.cocoa.macosx.x86_64	3.x     http://www.eclipse.org
 org.eclipse.swt.gtk.linux.x86_64	3.x        http://www.eclipse.org
 org.eclipse.swt.win32.win32.x86_64	3.x          http://www.eclipse.org
-org.eclipse.xtext.xbase.lib	2.x       http://www.eclipse.org
+org.eclipse.xtext.xbase.lib	2.x                 http://www.eclipse.org
+org.eclipse.equinox.executable v3.8.0
 
 
 
@@ -1704,7 +1706,7 @@ domutils Copyright (c) Felix Böhm
 entities Copyright (c) Felix Böhm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
-http-cache-semantics Copyright 2016-2018 Kornel Lesiński
+http-cache-semantics Copyright 2016-2018 Kornel  Lesiński
 npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
@@ -1749,6 +1751,8 @@ Copyright (c) 2009 Google Inc. All rights reserved.
 
 json-schema
 Copyright (c) 2005-2015, The Dojo Foundation
+
+antlr4-runtime	4.x.x
 
 
 org.antlr.antlr4-runtime 4.x
@@ -2308,10 +2312,10 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 2.1.x
+End of Notices for IBM Z Open Editor 2.2.x
 =====================================================================
 
 
-L/N:  L-DMIR-CEJS6X
-D/N:  L-DMIR-CEJS6X
-P/N:  L-DMIR-CEJS6X
+L/N:  L-DMIR-CJ8583
+D/N:  L-DMIR-CJ8583
+P/N:  L-DMIR-CJ8583

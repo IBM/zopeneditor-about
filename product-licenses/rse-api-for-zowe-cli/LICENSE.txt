@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM RSE API Plug-in for Zowe CLI V2.2 (Plug-in)
+IBM RSE API Plug-in for Zowe CLI V3.0 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -11,10 +11,10 @@ Modifiable Third Party Code
 
 To the extent, if any, in the NOTICES file IBM identifies third party code as "Modifiable Third Party Code," IBM authorizes Licensee to 1) modify the Modifiable Third Party Code and 2) reverse engineer the Program modules that directly interface with the Modifiable Third Party Code provided that it is only for the purpose of debugging Licensee's modifications to such third party code. IBM's service and support obligations, if any, apply only to the unmodified Program.
 
-L/N:  L-DMIR-CJ855Q
-D/N:  L-DMIR-CJ855Q
-P/N:  L-DMIR-CJ855Q
 
+L/N: L-PVBE-5UF2H9
+D/N: L-PVBE-5UF2H9
+P/N: L-PVBE-5UF2H9
 
 International License Agreement for Non-Warranted Programs
 
@@ -148,7 +148,7 @@ In Mexico: In the third sentence, delete the words "to an account specified by I
 
 In Mexico: Add the following new sentence after the third sentence:
 
-Payments will be made through electronic transfer of funds to an account specified by IBM or in IBM´s domicile which is located in Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
+Payments will be made through electronic transfer of funds to an account specified by IBM or in IBM's domicile which is located in Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
 
 Add at the end of paragraph c the following sentence:
 
@@ -503,3 +503,4 @@ In Czech Republic: Licensee expressly accepts the terms of this agreement which 
 In Romania: The Licensee expressly accepts, the following standard clauses that may be deemed 'unusual clauses' as per the provisions of article 1203 Romanian Civil Code: clauses 2, 4, 5, 8j. The Licensee hereby acknowledges that it was sufficiently informed of all the provisions of this Agreement, including the clauses mentioned above, it properly analyzed and understood such provisions and had the opportunity to negotiate the terms of each clause.
 
 i125-5589-06 (10-2021)
+

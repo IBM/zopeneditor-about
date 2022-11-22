@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V2.2
+IBM Z Open Editor V3.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 2.2.x
+Start of Notices for IBM Z Open Editor 3.0.x
 
 =====================================================================
 
@@ -437,7 +437,7 @@ Copyright (c) 2015 Andreas Madsen
 asynckit Copyright (c) 2016 Alex Indigo
 aws4 Copyright 2013 Michael Hart (michael.hart.au@gmail.com)
 balanced-match v1.x
-Copyright (c) 2013 Julian Gruber &lt;julian@juliangruber.com&gt;
+Copyright (c) 2013 Julian Gruber <julian@juliangruber.com>
 brace-expansion v1.x
 Copyright (c) 2013 Julian Gruber (julian@juliangruber.com)
 builtins Copyright (c) 2015 Julian Gruber <julian@juliangruber.com>
@@ -679,7 +679,7 @@ scheduler   v0.x
 Copyright (c) Facebook, Inc. and its affiliates.
 smart-buffer  Copyright (c) 2013-2017 Josh Glazebrook
 socks  Copyright (c) 2013 Josh Glazebrook
-socks-proxy-agent  Copyright (c) 2013 Nathan Rajlich &lt;nathan@tootallnate.net&gt;
+socks-proxy-agent  Copyright (c) 2013 Nathan Rajlich <nathan@tootallnate.net>
 spgennard/vscode_cobol  v3.9.8
 Copyright (c) 2015-2019 spgennard
 ssh2 v0.x
@@ -1706,7 +1706,7 @@ domutils Copyright (c) Felix Böhm
 entities Copyright (c) Felix Böhm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
-http-cache-semantics Copyright 2016-2018 Kornel  Lesiński
+http-cache-semantics Copyright 2016-2018 Kornel Lesiński
 npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
@@ -2312,10 +2312,10 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 2.2.x
+End of Notices for IBM Z Open Editor 3.0.x
 =====================================================================
 
 
-L/N:  L-DMIR-CJ8583
-D/N:  L-DMIR-CJ8583
-P/N:  L-DMIR-CJ8583
+L/N: L-NTRM-98EW8H
+D/N: L-NTRM-98EW8H
+P/N: L-NTRM-98EW8H

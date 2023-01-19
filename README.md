@@ -1,10 +1,5 @@
 # IBM Z® Open Editor
 
-[![version](https://vsmarketplacebadge.apphb.com/version-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/version-short/IBM.zopeneditor.png)
-[![rating](https://vsmarketplacebadge.apphb.com/rating-star/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/rating-star/IBM.zopeneditor.png)
-[![installs](https://vsmarketplacebadge.apphb.com/installs-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/installs-short/IBM.zopeneditor.png)
-[![downloads](https://vsmarketplacebadge.apphb.com/downloads-short/IBM.zopeneditor.png)](https://vsmarketplacebadge.apphb.com/downloads-short/IBM.zopeneditor.png)
-
 **IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, HLASM, REXX, and JCL languages.**
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html?utm_source=vscode&utm_medium=referral&utm_campaign=vscode_marketplace) online.

@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V3.0
+IBM Z Open Editor V3.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -26,9 +26,10 @@ from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
 
 
+
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 3.0.x
+Start of Notices for IBM Z Open Editor 3.1.x
 
 =====================================================================
 
@@ -55,6 +56,7 @@ aws-sign2
 carbon-components  10.x
 carbon-components-react  7.x
 carbon-icons    7.x
+Detect-libc 2.x
 caseless
 commons-lang3	3.x
 commons-text	1.x
@@ -308,7 +310,7 @@ Copyright (c) Microsoft Corporation. All rights reserved.
 Copyright (c) Microsoft Corporation. All rights reserved.
 @types/yargs v13.x
 Copyright (c) Microsoft Corporation. All rights reserved.
-@types/yargs-parser  v15.x
+@types/yargs-parser  v21.x
 Copyright (c) Microsoft Corporation. All rights reserved.
 
 abbrev 1.x
@@ -411,20 +413,22 @@ Wexpo Lyu
 zsjforcn
 龙腾道
 
-agent-base Copyright (c) 2013 Nathan Rajlich
-agentkeepalive
+agent-base 6.x
+ Copyright (c) 2013 Nathan Rajlich
+agentkeepalive 4.x
 Copyright(c) node-modules and other contributors.
 Copyright(c) 2012 - 2015 fengmk2 <fengmk2@gmail.com>
-aggregate-error Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-ajv
+aggregate-error 3.x Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
+ajv 7.x
 Copyright (c) 2015-2017 Evgeny Poberezkin
 ajv-formats    v1.x
 Copyright (c) 2020 Evgeny Poberezkin
-ansi-regex Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+ansi-regex 5.x Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 ansi-styles v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
+array-timsort 1.x
 applicationinsights v1.x
 Copyright © Microsoft Corporation
 argparse v1.x
@@ -496,7 +500,7 @@ emoji-regex v8.x
 Copyright Mathias Bynens <https://mathiasbynens.be/>
 encoding Copyright (c) 2012-2014 Andris Reinman
 env-paths Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhus.com)
-err-code
+err-code v1.x
 escape-string-regexp   Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 extend       Copyright (c) 2014 Stefan Thomas
 extsprintf   Copyright (c) 2012, Joyent, Inc. All rights reserved.
@@ -1706,8 +1710,7 @@ domutils Copyright (c) Felix Böhm
 entities Copyright (c) Felix Böhm
 esprima	4.x
 Copyright JS Foundation and other contributors, https://js.foundation/
-http-cache-semantics Copyright 2016-2018 Kornel Lesiński
-npm-install-checks  Copyright (c) Robert Kowalski and Isaac Z. Schlueter ("Authors")
+
 shimmer	1.x
 Copyright (c) 2013-2019, Forrest L Norvell. All rights reserved.
 uri-js  4.x
@@ -2312,10 +2315,9 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 3.0.x
+End of Notices for IBM Z Open Editor 3.1.x
 =====================================================================
 
-
-L/N: L-NTRM-98EW8H
-D/N: L-NTRM-98EW8H
-P/N: L-NTRM-98EW8H
+L/N: L-KTYN-9HCKZK
+D/N: L-KTYN-9HCKZK
+P/N: L-KTYN-9HCKZK

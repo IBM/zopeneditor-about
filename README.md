@@ -66,11 +66,12 @@ Such events are logged with the following information:
 - Operating system and version
 - Country or region
 - Anonymous user and session ID
-- The type of editor VS Code or Eclipse Theia
+- The type of editor used (VS Code, Eclipse Theia, Red Hat Dev Spaces)
 - Version numbers of Microsoft VS Code and IBM Z Open Editor
 - The major Java version and vendor used by the language servers
 - The name of the Z programming language used
 - The name of the operation performed
+- The type of z/OS protocol used (z/OSMF vs RSE API)
 
 ## Prerequisites
 

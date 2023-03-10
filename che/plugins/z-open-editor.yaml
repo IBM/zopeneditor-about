@@ -1,5 +1,5 @@
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corporation 2019, 2022. All Rights Reserved.
+# (C) Copyright IBM Corporation 2019, 2023. All Rights Reserved.
 #
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
@@ -7,10 +7,10 @@
 apiVersion: v2
 publisher: ibm
 name: wazi-developer
-version: 2.3.0
+version: 2.4.0
 type: VS Code extension
 displayName: IBM Z Open Editor
-title: COBOL, PL/I, HLASM, REXX stack for IBM Z Open Editor 2.3.0, Zowe Explorer 2.4.0, Zowe CLI 7.7.0, Ansible 5.3.0
+title: COBOL, PL/I, HLASM, REXX stack for IBM Z Open Editor 3.1.0, Zowe Explorer 2.6.1, Zowe CLI 7.7.0, Ansible 5.3.0
 description: Provides COBOL, PL/I, HLASM, and REXX language servers as well as tools for IBM Z development.
 icon: /v3/images/wazi-developer-icon.png
 repository: https://github.com/IBM/zopeneditor-about.git
@@ -32,6 +32,6 @@ spec:
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
-  - https://github.com/IBM/zopeneditor-about/releases/download/3.0.0/zopeneditor-3.0.0.vsix
-  - https://github.com/IBM/zopeneditor-about/releases/download/3.0.0/Zowe.vscode-extension-for-zowe-2.4.0.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/3.1.0/zopeneditor-3.1.0.vsix
+  - https://github.com/IBM/zopeneditor-about/releases/download/3.1.0/Zowe.vscode-extension-for-zowe-2.6.1.vsix
   - https://open-vsx.org/api/redhat/vscode-yaml/1.4.0/file/redhat.vscode-yaml-1.4.0.vsix

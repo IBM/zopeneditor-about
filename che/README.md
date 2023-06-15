@@ -14,14 +14,6 @@ Go to this article to learn in detail about how to use these files for running I
 8. Alternatively use the Extensions view to find the Recommended tab and install the listed extensions in this order: YAML, Zowe Explorer, Z Open Editor.
 9. Switch back to the File Explorer view.
 
-## Quick Start using Red Hat CodeReady Workspaces 2.14 or 2.15
-
-1. If you have a Red Hat CodeReady Workspaces 2.14 or 2.15 deployment available then go to your dashboard and click on "Get Started" in the menu on the left.
-2. Select the "Custom Workspace" tab.
-3. In the form you see then just paste this URL into the field labelled "URL of devfile": <https://raw.githubusercontent.com/IBM/zopeneditor-about/master/che/ibm-z-devfile.yaml> and click the "Load devfile" button.
-4. Review the contents of the yaml file and make changes if needed.
-5. Scroll down and click the "Create & Open" button.
-
 ## Explore the editor
 
 1. Che will start with the Z Open Editor workspace and sample files.

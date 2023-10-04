@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V3.2
+IBM Z Open Editor V3.3
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-Start of Notices for IBM Z Open Editor 3.2.x
+Start of Notices for IBM Z Open Editor 3.3.x
 
 =====================================================================
 
@@ -46,7 +46,7 @@ see http://www.apache.org.
 
 
 @carbon/icon-helpers  10.x
-@carbon/icons-react   10.x
+@carbon/icons-react   11.x
 apache.commons.io	2.x
 apache.commons.logging	1.x
 apache.batik.css	1.x
@@ -75,6 +75,26 @@ tunnel-agent
 @carbon/telemetry 0.x
 detect-libc  2.x
 org.eclipse.equinox.executable v3.8.0
+
+ecdsa-sig-formatter   1.x
+retry-axios.          2.x
+telemetry             0.x
+log4js                6.x
+
+remapping            2.x
+icon-helpers.  10.x
+feature-flags 0.x
+colors 11.x
+motion11.x
+layout 11.x
+react 1.x
+carbon-components-react 8.x
+themes 11.x
+Grid-11.x
+type 11.x
+ibm-cloud-sdk-core-4.1.1.tgz
+styles 1.x
+icons-react-11.x
 
 
 
@@ -410,7 +430,7 @@ Victor Homyakov
 Vladislav Tupikin
 Wexpo Lyu
 zsjforcn
-
+龙腾道
 
 agent-base 6.x
  Copyright (c) 2013 Nathan Rajlich
@@ -429,7 +449,7 @@ ansi-styles v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 array-timsort 1.x
 applicationinsights v1.x
-Copyright © Microsoft Corporation
+Copyright Â© Microsoft Corporation
 argparse v1.x
 Copyright (C) 2012 by Vitaly Puzrin
 asn1 v0.x
@@ -616,7 +636,7 @@ number-is-nan  Copyright (c) Sindre Sorhus <sindresorhus@gmail.com> (sindresorhu
 object-assign v4.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
 opener v1.x
-Copyright © 2012-2018 Domenic Denicola <d@domenic.me>
+Copyright © 2012–2018 Domenic Denicola <d@domenic.me>
 parse-srcset   Copyright (c) 2014 Alex Bell
 path-exists v3.x
 Copyright (c) Sindre Sorhus (sindresorhus@gmail.com) (sindresorhus.com)
@@ -693,7 +713,7 @@ sshpk  Copyright Joyent, Inc. All rights reserved.
 stack-chain v1.x
 Copyright (c) 2012 Andreas Madsen
 stack-trace v0.x
-Copyright (c) 2011 Felix Geisendörfer (felix@debuggable.com)
+Copyright (c) 2011 Felix GeisendÃ¶rfer (felix@debuggable.com)
 streamroller v3.x
 Copyright (c) 2013 Gareth Jones
 streamsearch v0.x
@@ -1717,6 +1737,7 @@ Copyright 2011 Gary Court. All rights reserved.
 winreg	1.x
 Copyright (c) 2016, Paul Bottin All rights reserved.
 configstore. 5.x
+dotenv 6.x
 
 
 
@@ -1781,6 +1802,14 @@ Copyright (c) 2013-2015, Facebook, Inc. All rights reserved.
 ieee754 1.x
 Copyright 2008 Fair Oaks Labs, Inc.
 
+npm-install-checks 4.x
+
+buffer-equal-constant-time.  1.x
+
+wontache   0.x
+
+highlight.js     11.x
+
 BSD-3 License
 
 
@@ -1798,7 +1827,7 @@ are permitted provided that the following conditions are met:
     endorse or promote products derived from this software without specific
     prior written permission.
 
-THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND
 ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
 WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
 DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
@@ -1861,7 +1890,7 @@ isexe  Copyright (c) Isaac Z. Schlueter and Contributors
 json-stringify-safe  Copyright (c) Isaac Z. Schlueter and Contributors
 lru-cache   Copyright (c) Isaac Z. Schlueter and Contributors
 make-fetch-happen  Copyright (c) npm, Inc.
-minimatch	3.x
+minimatch	6.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 minipass   Copyright (c) npm, Inc. and Contributors
 minipass-collect  Copyright (c) Isaac Z. Schlueter and Contributors
@@ -1941,6 +1970,9 @@ read	1.x
 Copyright (c) Isaac Z. Schlueter and Contributors
 write-file-atomic	3.x
 semver	7.x
+electron-to-chromium  1.x
+anymatch      3.x
+picocolors   1.x
 
 
 
@@ -2314,10 +2346,10 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 3.2.x
+End of Notices for IBM Z Open Editor 3.3.x
 =====================================================================
 
 
-L/N: L-CJFM-QAYRPE
-D/N: L-CJFM-QAYRPE
-P/N: L-CJFM-QAYRPE
+L/N: L-SPPL-F832JD
+D/N: L-SPPL-F832JD
+P/N: L-SPPL-F832JD

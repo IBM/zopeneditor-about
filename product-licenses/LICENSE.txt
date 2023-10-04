@@ -7,6 +7,13 @@ IBM Z Open Editor V3.3 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
+Limited Use Program
+
+This Program is supplied only for use with Named Program(s) and/or Service(s) identified below or their successors. Licensee is prohibited from using this Program in connection with any other software or service.
+
+Named Program(s) and/or Service(s):
+IBM watsonx Code Assistant for Z 1.0
+
 Modifiable Third Party Code
 
 To the extent, if any, in the NOTICES file IBM identifies third party code as "Modifiable Third Party Code," IBM authorizes Licensee to 1) modify the Modifiable Third Party Code and 2) reverse engineer the Program modules that directly interface with the Modifiable Third Party Code provided that it is only for the purpose of debugging Licensee's modifications to such third party code. IBM's service and support obligations, if any, apply only to the unmodified Program.

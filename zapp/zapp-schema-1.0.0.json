@@ -84,7 +84,7 @@
           "minItems": 1
         },
         "propertyGroups": {
-          "description": "A list properties defining path names for resolving dependencies.",
+          "description": "A list of properties defining path names for resolving dependencies.",
           "type": "array",
           "items": {
             "$ref": "#/definitions/propertyGroupItem"
@@ -109,7 +109,7 @@
         "name": {
           "type": "string",
           "description": "The name of the property group, which is used in hovers and error messages.",
-          "examples": ["sample-local"]
+          "examples": ["sample-local", "sample-remote"]
         },
         "language": {
           "type": "string",
@@ -137,7 +137,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "Name of the library. The default name should be `syslib` if using unamed libraries.",
+          "description": "Name of the library. The default name should be `syslib` if using unnamed libraries.",
           "default": "syslib",
           "examples": ["syslib", "currencylib"]
         },
@@ -150,7 +150,7 @@
         },
         "locations": {
           "type": "array",
-          "description": "An array of include file locations. For 'local' libraries values can be absolute and relative filename paths using GLOB patterns. For 'mvs' libraries value can be data set names. GLOB patterns for dat sets are currently not supported.",
+          "description": "An array of include file locations. For 'local' libraries values can be absolute and relative filename paths using GLOB patterns. For 'mvs' libraries value can be data set names. GLOB patterns for data sets are currently not supported.",
           "items": {
             "type": "string"
           },

@@ -1,6 +1,33 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V3.3
+IBM Z Open Editor V4.0
+
+The IBM license agreement and any applicable information on the web
+download page for IBM products refers Licensee to this file for details
+concerning notices applicable to code included in the products listed
+above ("the Program").
+
+Notwithstanding the terms and conditions of any other agreement Licensee
+may have with IBM or any of its related or affiliated entities
+(collectively "IBM"), the third party code identified below is subject
+to the terms and conditions of the IBM license agreement for the Program
+and not the license terms that may be contained in the notices below.
+The notices are provided for informational purposes.
+
+Please note: This Notices file may identify information that is not used
+by, or that was not shipped with, the Program as Licensee installed it.
+
+IMPORTANT: IBM does not represent or warrant that the information in this
+NOTICES file is accurate. Third party websites are independent of IBM and
+IBM does not represent or warrant that the information on any third party
+website referenced in this NOTICES file is accurate. IBM disclaims any
+and all liability for errors and omissions or for any damages accruing
+from the use of this NOTICES file or its contents, including without
+limitation URLs or references to any third party websites.
+
+NOTICES AND INFORMATION
+
+IBM Z Open Editor V4.0
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +55,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-The following are Notices for Z Open Editor V3.3
+The following are Notices for Z Open Editor V4.0
 
 =====================================================================
 START OF APACHE LICENSE 2.0 NOTICES AND INFORMATION
@@ -42,6 +69,7 @@ software may be components of other included software packages noted later
 in this file.  For more information on the Apache Software Foundation, please
 see http://www.apache.org.
 
+guava-32.0.1
 ecdsa-sig-formatter-1.0.11.tgz
 retry-axios-2.6.0.tgz
 remapping-2.2.1.tgz
@@ -2450,6 +2478,7 @@ org.eclipse.equinox.launcher 1.x   http://www.eclipse.org
 org.eclipse.equinox.security 1.x http://www.eclipse.org
 org.eclipse.osgi.compatibility.state 1.x http://www.eclipse.org
 org.eclipse.text 3.x http://www.eclipse.org
+org.jacoco.core
 
 
 
@@ -2558,6 +2587,7 @@ npm-install-checks
 webidl-conversions
 uglify-js
 http-cache-semantics
+qs
 
 
 
@@ -2628,6 +2658,8 @@ antlr4-runtime
 buffer-equal-constant-time
 ieee754
 tough-cookie
+qs
+org.eclipse.jgit.ant
 
 
 
@@ -3268,10 +3300,13 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 3.3
+End of Notices for IBM Z Open Editor 4.0
 
 =====================================================================
 
-L/N: L-SPPL-F832JD
-D/N: L-SPPL-F832JD
-P/N: L-SPPL-F832JD
+
+
+
+L/N: L-GBDM-EZQ34W
+D/N: L-GBDM-EZQ34W
+P/N: L-GBDM-EZQ34W

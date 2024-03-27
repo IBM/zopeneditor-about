@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V4.0
+IBM Z Open Editor V4.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -27,7 +27,7 @@ limitation URLs or references to any third party websites.
 
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V4.0
+IBM Z Open Editor V4.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -55,7 +55,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-The following are Notices for Z Open Editor V4.0
+The following are Notices for Z Open Editor V4.1
 
 =====================================================================
 START OF APACHE LICENSE 2.0 NOTICES AND INFORMATION
@@ -3300,13 +3300,13 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 4.0
+End of Notices for IBM Z Open Editor 4.1
 
 =====================================================================
 
 
 
 
-L/N: L-GBDM-EZQ34W
-D/N: L-GBDM-EZQ34W
-P/N: L-GBDM-EZQ34W
+L/N: L-LEYT-2LK79N
+D/N: L-LEYT-2LK79N
+P/N: L-LEYT-2LK79N

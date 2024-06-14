@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Zapp Core Library V1.1
+IBM Zapp Core Library V1.2
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -25,7 +25,7 @@ and all liability for errors and omissions or for any damages accruing
 from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
 
-Start of Notices for IBM Zapp Core Library 1.1.0
+Start of Notices for IBM Zapp Core Library 1.2.0
 =====================================================================
 
 =====================================================================
@@ -663,7 +663,7 @@ For more information, please refer to <http://unlicense.org/>
 END OF UNLICENSE NOTICES AND INFORMATION
 =====================================================================
 
-End of Notices for IBM Zapp Core Library 1.1.0
+End of Notices for IBM Zapp Core Library 1.2.0
 
 
 L/N: L-KTSR-8RJLXL

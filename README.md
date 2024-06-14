@@ -5,15 +5,15 @@
 
 # IBM Z® Open Editor
 
-**IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, HLASM, REXX, and JCL languages.**
+**IBM Z Open Editor is an extension for Visual Studio Code that provides language support for the IBM® Enterprise COBOL, PL/I, HLASM, REXX, and (all new!) JCL languages.**
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html?utm_source=vscode&utm_medium=referral&utm_campaign=vscode_marketplace) online.
 
-**New**: IBM Z Open Editor v4.0.0 introduced advanced capabilities that go beyond program editing. These are at the moment local preprocessor support for COBOL, a new Web view built on top of Zowe Explorer that displays z/OS resources such as data sets and jobs in a sortable table, and a new DBB user build VS Code Problems view integration. All users get a 60-day evaluation trial for these advanced capabilities. After that they are licensed via the IBM Developer for z/OS Enterprise Edition offering. The language editing capabilities are still free and will be maintained and enhanced as always. See the [IBM Documentation](https://ibm.biz/code-whatsnew) with details.
+**New**: IBM Z Open Editor v4.0.0 introduced advanced capabilities that go beyond program editing. These are at the moment preprocessor support for COBOL, a new Web view built on top of Zowe Explorer that displays z/OS resources such as data sets and jobs in a sortable table, a new DBB user build VS Code Problems view integration, HLASM custom macros support. All users get a 60-day evaluation trial for these advanced capabilities. After that they are licensed via the IBM Developer for z/OS Enterprise Edition offering. The language editing capabilities are still free and will be maintained and enhanced as always. See the [IBM Documentation](https://ibm.biz/code-whatsnew) with details.
 
-**New**: IBM Z Open Editor v3.3.0 introduced AI assistance for Java developers with [IBM watsonx Code Assistant for Z](https://www.ibm.com/products/watsonx-code-assistant-z), which supports AI-assisted transformation of COBOL to Java for modernizing applications.
+**Note**: Import update for the release of version 4.3.0 of IBM Z Open Editor: [IBM watsonx Code Assistant for Z](https://www.ibm.com/products/watsonx-code-assistant-z), which supports AI-assisted transformation of COBOL to Java for modernizing applications, has now been moved into it's own VS Code extension IBM watsonx Code Assistant for Z version 2.0.0. All functionality has been migrated into this dedicated extension. Receive your copy of the Z Code Assistant via your Passport Advantage Online. See the [Documentation](https://www.ibm.com/docs/en/watsonx-code-assistant-4z) for more details.
 
-The core extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, and High Level Assembler for z/OS 3.1 and TSO/E REXX. This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.1 (6.2 Beta), IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
+The core extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, High Level Assembler for z/OS 3.1, TSO/E REXX, and z/OS MVS Job Control Language (JCL). This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.1 (6.2 Beta), IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as:
 
 - Real-time syntax checking and highlighting while you type
 - Problems view with all syntax errors and (in COBOL) unreachable code
@@ -31,7 +31,12 @@ The core extension provides language support for the IBM Enterprise programming 
 - Custom code snippet support and more than 200 high value code snippets for COBOL, PL/I, and JCL out of the box
 - Search and replace refactoring across multiple program files
 
-Note, that for Job Control Language (JCL), the extension only provides syntax highlighting.
+Note, that for Job Control Language (JCL), the extension only provides below mentioned features:
+
+- Real-time syntax checking and highlighting while you type
+- Problems view with all syntax errors
+- Outline view and outline search
+- Code and variable completion
 
 To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
@@ -42,7 +47,6 @@ To interact with z/OS, this extension also automatically co-installs the [Zowe E
 - [Privacy notice](#privacy-notice-for-feedback)
 - [Prerequisites](#prerequisites)
 - [Configuring Java](#configuring-java)
-- [IBM watsonx Code Assistant for Z](#generate-java-from-cobol-using-ibm-watsonx-code-assistant-for-z)
 - [COBOL and PL/I Language Server Protocol capability examples](#language-server-protocol-capability-examples)
 - [Advanced Capabilities](#advanced-capabilities)
 
@@ -61,7 +65,6 @@ This current release of IBM Z Open Editor will collect anonymous data for the fo
 - Using common language server operations such as code completion, references, definition, rename
 - Starting a user build
 - Responding to the feedback dialog
-- Using IBM watsonx Code Assistant for Z operations
 - Activating trial or full unlock licenses
 
 Such events are logged with the following information:
@@ -89,9 +92,9 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
   - You can use versions 11, or 17 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
   - You can use [Oracle Java 11](https://www.oracle.com/java/technologies/downloads/#java11) or the LTS versions 17 of Oracle Java.
   - You can also use version 11, or 17 of the [OpenJDK](https://adoptium.net/index.html).
-  - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 11.
+  - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 11 and 17.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 7.21.3 or newer and the Zowe Explorer VS Code extension v2.14.1 or newer: To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
+- Zowe CLI 7.24.1 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v2.16.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
@@ -126,13 +129,13 @@ To define a user setting use the Preferences > Settings menu and either locate t
 On Mac:
 
 ```json
-"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk11.0.15+10.jdk/Contents/Home"
+"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk11.0.23+9.jdk/Contents/Home"
 ```
 
 On Windows:
 
 ```json
-"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk11.0.15+10"
+"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk11.0.23+9"
 ```
 
 ### Configuring the Java memory allocation
@@ -143,13 +146,9 @@ By default, the language server clients that start the language servers for COBO
 "zopeneditor.server.memoryAllocation": 640
 ```
 
-## Generate Java from COBOL using IBM watsonx Code Assistant for Z
-
-Enable IBM watsonx Code Assistant and upload a COBOL service that is prepared for transformation. Use AI-assistance to generate Java classes and object-oriented Java business logic that is semantically equivalent to existing COBOL to help you quickly get started modernizing your applications. To learn more, visit the [IBM watsonx Code Assistant Product guide](https://www.ibm.com/products/watsonx-code-assistant-z).
-
 ## Language Server Protocol capability examples
 
-The following animations just give you glimpse of the capabilities available in IBM Z Open Editor. We are showing you different examples using different programming languages, but most of the features shown here are available for all four languages: COBOL, PL/I, HLASM, as well as REXX.
+The following animations just give you glimpse of the capabilities available in IBM Z Open Editor. We are showing you different examples using different programming languages, but most of the features shown here are available for all four languages: COBOL, PL/I, HLASM, JCL, as well as REXX.
 
 ### Outline view explorer
 

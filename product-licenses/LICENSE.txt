@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM Z Open Editor V4.3 (Plug-in)
+IBM Z Open Editor V4.4 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -12,9 +12,9 @@ Modifiable Third Party Code
 To the extent, if any, in the NOTICES file IBM identifies third party code as "Modifiable Third Party Code," IBM authorizes Licensee to 1) modify the Modifiable Third Party Code and 2) reverse engineer the Program modules that directly interface with the Modifiable Third Party Code provided that it is only for the purpose of debugging Licensee's modifications to such third party code. IBM's service and support obligations, if any, apply only to the unmodified Program.
 
 
-L/N: L-MZTN-W7GQBK
-D/N: L-MZTN-W7GQBK
-P/N: L-MZTN-W7GQBK
+L/N: L-EEGZ-WZF39K
+D/N: L-EEGZ-WZF39K
+P/N: L-EEGZ-WZF39K
 
 International License Agreement for Non-Warranted Programs
 
@@ -503,3 +503,4 @@ In Czech Republic: Licensee expressly accepts the terms of this agreement which 
 In Romania: The Licensee expressly accepts, the following standard clauses that may be deemed 'unusual clauses' as per the provisions of article 1203 Romanian Civil Code: clauses 2, 4, 5, 8j. The Licensee hereby acknowledges that it was sufficiently informed of all the provisions of this Agreement, including the clauses mentioned above, it properly analyzed and understood such provisions and had the opportunity to negotiate the terms of each clause.
 
 i125-5589-06 (10-2021)
+

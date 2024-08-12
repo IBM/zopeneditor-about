@@ -61,7 +61,7 @@ This current release of IBM Z Open Editor will collect anonymous data for the fo
 - Activation of this VS Code extension
 - Deactivation of this VS Code extension
 - Opening, closing and saving files of a specific language such as COBOL, PL/I, HLASM, REXX, JCL
-- Resolving of include files and assembler macros: success or failure
+- Resolving of include files and assembler macros: number of successes or failures
 - Using common language server operations such as code completion, references, definition, rename
 - Starting a user build
 - Responding to the feedback dialog
@@ -94,7 +94,7 @@ Here are the prerequisites for installing this extension in Visual Studio Code:
   - You can also use version 11, or 17 of the [OpenJDK](https://adoptium.net/index.html).
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 11 and 17.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 7.24.1 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v2.16.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
+- Zowe CLI 7.26.1 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v2.17.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 

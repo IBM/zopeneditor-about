@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM RSE API Plug-in for Zowe CLI V4.4
+IBM RSE API Plug-in for Zowe CLI V4.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -26,7 +26,7 @@ from the use of this NOTICES file or its contents, including without
 limitation URLs or references to any third party websites.
 
 =====================================================================
-Start of Notices for IBM RSE API Plug-in for Zowe CLI 4.4.x
+Start of Notices for IBM RSE API Plug-in for Zowe CLI 4.5.x
 =====================================================================
 
 =====================================================================
@@ -785,7 +785,7 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 
 =====================================================================
-End of Notices for IBM RSE API Plug-in for Zowe CLI 4.4.x
+End of Notices for IBM RSE API Plug-in for Zowe CLI 4.5.x
 =====================================================================
 
 
@@ -793,6 +793,6 @@ End of Notices for IBM RSE API Plug-in for Zowe CLI 4.4.x
 
 
 
-L/N: L-DNTT-BBQFDK
-D/N: L-DNTT-BBQFDK
-P/N: L-DNTT-BBQFDK
+L/N: L-AWJY-HBZ5GK
+D/N: L-AWJY-HBZ5GK
+P/N: L-AWJY-HBZ5GK

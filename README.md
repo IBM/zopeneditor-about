@@ -9,7 +9,7 @@
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html?utm_source=vscode&utm_medium=referral&utm_campaign=vscode_marketplace) online.
 
-This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, High Level Assembler for z/OS 3.1, TSO/E REXX, and z/OS MVS Job Control Language (JCL). This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.1 (6.2 Beta), IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as
+This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, High Level Assembler for z/OS 3.1, TSO/E REXX, and z/OS MVS Job Control Language (JCL). This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.2, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as
 
 - Real-time syntax checking and highlighting while you type
 - Problems view with all syntax errors and (in COBOL) unreachable code
@@ -38,12 +38,7 @@ To learn more about the IBM Z Open Editor extension's capabilities, we suggest t
 
 To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, REXX, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
-**New**: IBM Z Open Editor v4.0.0 introduced advanced capabilities that go beyond program editing. These are at the moment preprocessor support for COBOL, a new Web view built on top of Zowe Explorer that displays z/OS resources such as data sets and jobs in a sortable table, a new DBB user build VS Code Problems view integration, HLASM custom macros support. All users get a 60-day evaluation trial for these advanced capabilities. After that they are licensed via the IBM Developer for z/OS Enterprise Edition offering. The language editing capabilities are still free and will be maintained and enhanced as always. See the [IBM Documentation](https://ibm.biz/code-whatsnew) with details.
-
-**Warning**: This is the v4.5.0 release, but we are announcing for the upcoming Z Open Editor v5.0.0 that there will be two major changes that might impact how you deploy Z Open Editor in your organization:
-
-- Support for a Java 11 runtime will be removed: Users running Z Open Editor on their local systems will require a Java 17 or newer runtime. The editor will not work with Java 11 anymore. We recommend IBM's Semeru Runtime or JDK. Distributions from Oracle and OpenJDK will also work. Switching to Java 17 is long overdue for us and it will allow us to finally adopt newer versions of LSP4J and work with some of the exciting features that it provides.
-- Zowe v3 will be required: When installing Z Open Editor v5 it will downloads and installs Zowe Explorer v3. Zowe Explorer v2 will not work anymore. For IBM RSE API Plugin for Zowe CLI the requirement will be Zowe CLI v8. Zowe v3 is announced for September 30, 2024. See the zowe.org/vnext page with all of the changes announced for this Zowe release. Note, that users need to wait to upgrade to Zowe Explorer v3 until Z Open Editor 5.0 is available. We recommend disabling Zowe Explorer's auto update shortly before the Zowe v3 release. See the VS Code documentation for how to easily do this in the VS Code Extensions view.
+IBM Z Open Editor v4.0.0 introduced advanced capabilities that go beyond program editing. These are at the moment preprocessor support for COBOL, a new Web view built on top of Zowe Explorer that displays z/OS resources such as data sets and jobs in a sortable table, a new DBB user build VS Code Problems view integration, HLASM custom macros support. All users get a 60-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. However, the language editing capabilities are still free and will be maintained and enhanced as always. See the [IBM Documentation](https://ibm.biz/code-whatsnew) with details.
 
 ## Table of contents
 
@@ -89,15 +84,15 @@ Review the [IBM Z Open Editor License Agreement](https://github.com/IBM/zopenedi
 
 Here are the prerequisites for installing this extension in Visual Studio Code:
 
-- Microsoft VS Code version 1.81.0 or later: We recommend using always the latest VS Code version available. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
+- Microsoft VS Code version 1.91.0 or later: We recommend using always the latest VS Code version available. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
 
-- Java SDK or JRE version 11 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
-  - You can use versions 11, or 17 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
-  - You can use [Oracle Java 11](https://www.oracle.com/java/technologies/downloads/#java11) or the LTS versions 17 of Oracle Java.
-  - You can also use version 11, or 17 of the [OpenJDK](https://adoptium.net/index.html).
-  - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 11 and 17.
+- Java SDK or JRE version 17 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
+  - You can use versions 17 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
+  - You can use [Oracle Java 17](https://www.oracle.com/java/technologies/downloads/#java17).
+  - You can also use the [OpenJDK](https://adoptium.net/index.html).
+  - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 17.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 7.29.1 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v2.18.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
+- Zowe CLI 8.0.0 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v3.0.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 
@@ -115,7 +110,7 @@ The COBOL, PL/I, HLASM, and REXX language servers utilized by IBM Z Open Editor 
 
 ### Selecting the Java installation to use
 
-Before starting a language server the language server clients in the IBM Z Open Editor VS Code extension try looking in different places to find a matching Java installation. They will look in the following places in this specific order and pick the first Java installation they can find that is at least Version 11 and 64-Bit. If it finds a Java that fails the test against these criteria it will continue searching:
+Before starting a language server the language server clients in the IBM Z Open Editor VS Code extension try looking in different places to find a matching Java installation. They will look in the following places in this specific order and pick the first Java installation they can find that is at least Version 17 and 64-Bit. If it finds a Java that fails the test against these criteria it will continue searching:
 
 1. The `zopeneditor.JAVA_HOME` VS Code user setting.
 1. The `java.home` VS Code user setting.
@@ -132,13 +127,13 @@ To define a user setting use the Preferences > Settings menu and either locate t
 On Mac:
 
 ```json
-"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk11.0.23+9.jdk/Contents/Home"
+"zopeneditor.JAVA_HOME": "/Library/Java/JavaVirtualMachines/jdk17/Contents/Home"
 ```
 
 On Windows:
 
 ```json
-"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk11.0.23+9"
+"zopeneditor.JAVA_HOME": "C:\\Program Files\\Java\\jdk17"
 ```
 
 ### Configuring the Java memory allocation

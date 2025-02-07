@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.1
+IBM Z Open Editor V5.2
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -27,7 +27,7 @@ limitation URLs or references to any third party websites.
 
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.1
+IBM Z Open Editor V5.2
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -55,7 +55,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-The following are Notices for Z Open Editor V5.1
+The following are Notices for Z Open Editor V5.2
 
 =====================================================================
 START OF APACHE LICENSE 2.0 NOTICES AND INFORMATION
@@ -74,6 +74,7 @@ see http://www.apache.org.
 @sigstore/core
 ecdsa-sig-formatter
 exponential-backoff
+
 @carbon/feature-flags
 @carbon/feature-flags
 @carbon/grid
@@ -91,6 +92,7 @@ log4js
 @carbon/react
 @ampproject/remapping
 retry-axios
+sass
 @sigstore/sign
 sigstore
 spdx-correct
@@ -836,14 +838,17 @@ brace-expansion
 braces
 browserslist
 builtins
+cacache
 camelcase
 @tufjs/canonical-json
 chalk
 chalk
 chokidar
+chownr
 classnames
 clean-stack
 cli-table3
+cliui
 @babel/code-frame
 color
 color-convert
@@ -876,13 +881,18 @@ diff2html
 @floating-ui/dom
 downshift
 eastasianwidth
+ecdsa-sig-formatter
+electron-to-chromium
 emoji-regex
 emojis-list
 encoding
+entities
 env-paths
 err-code
 escalade
 escape-string-regexp
+esprima
+exponential-backoff
 extend
 fast-deep-equal
 fast-glob
@@ -894,14 +904,15 @@ find-cache-dir
 find-up
 flatpickr
 follow-redirects
+foreground-child
 form-data
 fs-extra
 @nodelib/fs.scandir
 @nodelib/fs.stat
 @nodelib/fs.walk
 fsevents
-@jridgewell/gen-mapping
-@babel/generator
+gen-mapping
+generator
 gensync
 get-stdin
 globals
@@ -924,6 +935,7 @@ http-proxy-agent
 iconv-lite
 ignore
 immutable
+imperative
 imurmurhash
 indent-string
 invariant
@@ -3640,44 +3652,18 @@ START OF BSD-3-CLAUSE LICENSE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the BSD-3-Clause License:
 
-bArtifact
 buffer-equal-constant-time-1.0.1.tgz
 diff-5.1.0.tgz
 diff-5.2.0.tgz
 highlight.js-11.6.0.tgz
 ieee754-1.2.1.tgz
+sass
 source-map-js-1.0.2.tgz
 sprintf-js-1.0.3.tgz
 sprintf-js-1.1.3.tgz
 tough-cookie-4.1.3.tgz
 wontache-0.1.0.tgz
 
-
-
-
-org.antlr.antlr4-runtime 4.x
-Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
-
-qs Copyright (c) 2014 Nathan LaFreniere and other contributors.
-
-
-Rexx grammar   1.0.0-SNAPSHOT
-Copyright (c) 2012-2017 The ANTLR Project. All rights reserved.
-
-source-map Copyright (c) 2009-2011, Mozilla Foundation and contributors
-
-
-
-sprintf-js	1.0.3
-Copyright (c) 2007-2014, Alexandru Marasteanu <hello [at) alexei (dot] ro>. All rights reserved.
-
-tough-cookie  Copyright (c) 2015, Salesforce.com, Inc.
-
-warning 3.x
-Copyright (c) 2013-2015, Facebook, Inc. All rights reserved.
-
-ieee754 1.x
-Copyright 2008 Fair Oaks Labs, Inc.
 
 BSD-3 License
 
@@ -3715,7 +3701,7 @@ END OF BSD-3-CLAUSE LICENSE NOTICES AND INFORMATION
 START OF BSD ZERO LICENSE NOTICES AND INFORMATION
 =====================================================================
 
-tslib-2.6.2.tgz
+
 
 =====================================================================
 END OF BSD ZERO LICENSE NOTICES AND INFORMATION
@@ -3727,8 +3713,10 @@ START OF ISC LICENSE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the ISC License:
 
+abbrev
 agent-2.2.1.tgz
 anymatch-3.1.3.tgz
+bcrypt
 cacache-18.0.2.tgz
 cacache-18.0.4.tgz
 chownr-2.0.0.tgz
@@ -3793,6 +3781,7 @@ promise-spawn-7.0.1.tgz
 read-1.0.7.tgz
 rimraf-5.0.10.tgz
 run-script-8.1.0.tgz
+sax
 semver-7.6.0.tgz
 signal-exit-4.1.0.tgz
 ssri-10.0.5.tgz
@@ -4199,6 +4188,9 @@ under the WTFPL License:
 yaml-js
 Copyright (C) 2004 Sam Hocevar <sam@hocevar.net>
 
+opener
+Copyright 2004 Sam Hocevar <sam@hocevar.net>
+
 
 
 WTFPL LICENSE
@@ -4265,13 +4257,13 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 5.1
+End of Notices for IBM Z Open Editor 5.2
 
 =====================================================================
 
 
 
 
-L/N: L-HTHH-R3QSCH
-D/N: L-HTHH-R3QSCH
-P/N: L-HTHH-R3QSCH
+L/N: L-XWFC-RREJWU
+D/N: L-XWFC-RREJWU
+P/N: L-XWFC-RREJWU

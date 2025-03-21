@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.2
+IBM Z Open Editor V5.3
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -27,7 +27,7 @@ limitation URLs or references to any third party websites.
 
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.2
+IBM Z Open Editor V5.3
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -55,7 +55,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-The following are Notices for Z Open Editor V5.2
+The following are Notices for Z Open Editor V5.3
 
 =====================================================================
 START OF APACHE LICENSE 2.0 NOTICES AND INFORMATION
@@ -4257,13 +4257,13 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 5.2
+End of Notices for IBM Z Open Editor 5.3
 
 =====================================================================
 
 
 
 
-L/N: L-XWFC-RREJWU
-D/N: L-XWFC-RREJWU
-P/N: L-XWFC-RREJWU
+L/N: L-HWZV-7668CJ
+D/N: L-HWZV-7668CJ
+P/N: L-HWZV-7668CJ

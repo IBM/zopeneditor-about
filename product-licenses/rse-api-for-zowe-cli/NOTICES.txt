@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM RSE API Plug-in for Zowe CLI V5.2
+IBM RSE API Plug-in for Zowe CLI V5.3
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -4245,6 +4245,6 @@ End of Notices for IBM RSE API PLUG IN for ZOWE CLI 5.x
 
 
 
-L/N: L-VVXA-65CAZ7
-D/N: L-VVXA-65CAZ7
-P/N: L-VVXA-65CAZ7
+L/N: L-FKAS-54ZEWT
+D/N: L-FKAS-54ZEWT
+P/N: L-FKAS-54ZEWT

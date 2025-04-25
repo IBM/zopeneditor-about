@@ -27,18 +27,11 @@ This extension provides language support for the IBM Enterprise programming lang
 - Custom code snippet support and more than 200 high value code snippets for COBOL, PL/I, and JCL out of the box
 - Search and replace refactoring across multiple program files
 
-Note, that for Job Control Language (JCL), the extension currently only provides
-
-- Real-time syntax checking and highlighting while you type
-- Problems view with all syntax errors
-- Outline view and outline search
-- Code and variable completion
-
 To learn more about the IBM Z Open Editor extension's capabilities, we suggest that you walk through our [documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html) and try it with the [example repository](https://github.com/IBM/zopeneditor-sample) provided on GitHub.
 
 To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, REXX, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
-IBM Z Open Editor v4.0.0 introduced advanced capabilities that go beyond program editing. These are at the moment preprocessor support for COBOL, a new Web view built on top of Zowe Explorer that displays z/OS resources such as data sets and jobs in a sortable table, a new DBB user build VS Code Problems view integration, HLASM custom macros support. All users get a 60-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. However, the language editing capabilities are still free and will be maintained and enhanced as always. See the [IBM Documentation](https://ibm.biz/code-whatsnew) with details.
+IBM Z Open Editor v4 and beyond introduced advanced capabilities that go beyond program editing! While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, and HLASM for free, this release adds capabilities for enterprise-level development use cases that go beyond program editing. These are at the moment the Remote Connection Emulator providing green screen access to z/OS, preprocessor support for COBOL and PL/I, custom macros support for HLASM, the z/OS Resources Table which is a new Web view built on top of Zowe Explorer that displays data sets, UNIX files and jobs in a sortable table, and a new DBB user build VS Code Problems view integration. All users get a 60-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. IDzEE customers can unlock the features by using RSE API or separately distributed activation kits. For more information, see our [Documentation](https://ibm.github.io/zopeneditor-about/Docs/advanced_overview.html).
 
 ## Table of contents
 
@@ -221,11 +214,11 @@ To learn more see the [IBM Documentation](https://www.ibm.com/docs/en/developer-
 
 ## Advanced Capabilities
 
-IBM Z Open Editor v4.0.0 is the first release to introduce a set of all-new enterprise-level advanced capabilities. While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, and HLASM for free, this release adds capabilities for enterprise-level development use cases that go beyond program editing. They cover capabilities that you would typically only find in our commercial editing solutions such as IBM Developer for z/OS Enterprise Edition (IDzEE). With this release, we started adding these capabilities to Z Open Editor under the same licensing terms as IDzEE and a 60-day evaluation license. IDzEE customers can unlock the features by using RSE API or separately distributed activation kits. For more information, see [IBM Documentation](https://ibm.biz/code-whatsnew).
+Here are some example of the advanced capabilities.
 
-### Local preprocessor support for COBOL
+### Preprocessor support for COBOL and PL/I
 
-Run a preprocessor on your local workstation driven by a new ZAPP profile type and then continue editing with full syntax checking (except for the preprocessor statements) and automatically rerunning the preprocessor at save. Compare the preprocessor generated code with your code side-by-side. Support for running the preprocessor on z/OS will be added in a future release.
+Run a preprocessor on your local workstation or your z/OS system driven by a new ZAPP profile type and then continue editing with full syntax checking (except for the preprocessor statements) and automatically rerunning the preprocessor at save. Compare the preprocessor generated code with your code side-by-side.
 
 ![ ](readme/preprocessor.gif)
 
@@ -238,3 +231,7 @@ An all new feature rich Web view that extends Zowe Explorer with a sortable tabl
 ### Advanced Dependency-Based user build error reporting
 
 User build logs are automatically downloaded, parsed, and presented in the editor's Problems view showing descriptions and error codes. Navigate to errors in your code with a mouse click in the Problems view to review and fix your issue and then rerun your build.
+
+### Launching a 3270 emulator from Zowe Explorer
+
+Remote Connection Emulator (RCE) integrates traditional 3270 tools and practices into Z Open Editor via Zowe Explorer. It provides access to the mainframe for viewing unique information and mainframe tools and processes that are not available in Zowe Explorer. By using Remote Connection Emulator, you can connect to the remote system and open a full-screen emulator. Z Open Editor's RCE client is based on the same technology as the RCE client built into the IBM Developer for z/OS Eclipse client.

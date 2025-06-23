@@ -1,0 +1,337 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IBM ZCodeScan Rules Document",
+  "description": "JSON schema for zcodescan-rules.yaml and zcodescan-rules.yaml files. Version 1.0.0 -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2022, 2025. All Rights Reserved.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "rules": {
+      "description": "The list of rules to apply.",
+      "type": "array",
+      "items": {
+        "$ref": "#/definitions/ruleItem"
+      },
+      "minItems": 1
+    }
+  },
+  "definitions": {
+    "ruleItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "description": "The id of the rule to apply.",
+          "oneOf": [
+            {
+              "const": "zcodescan.cobol.rules.AcceptDateTimeRule",
+              "description": "Use CURRENT-DATE rather than ACCEPT DATE or ACCEPT TIME"
+            },
+            {
+              "const": "zcodescan.cobol.rules.AcceptRule",
+              "description": "Insecure use of ACCEPT"
+            },
+            {
+              "const": "zcodescan.cobol.rules.BufferOverflowRule",
+              "description": "Improper restriction of operations within the bounds of a memory buffer"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CallSyntaxRule",
+              "description": "Avoid CALL statements with a literal program name"
+            },
+            {
+              "const": "zcodescan.cobol.rules.GotoParagraphRule",
+              "description": "Avoid GO TO statements, except those that reference an EXIT paragraph"
+            },
+            {
+              "const": "zcodescan.cobol.rules.GotoRule",
+              "description": "Avoid GO TO statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ProgramIdRule",
+              "description": "Use a program name that matches the source file name"
+            },
+            {
+              "const": "zcodescan.cobol.rules.RequireEndClauseRule",
+              "description": "End Clause is Required "
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlInjectionRule",
+              "description": "Improper neutralization of special elements used in an SQL command (SQL Injection)"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlWhereRule",
+              "description": "Use a WHERE clause in SQL statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.StopRunRule",
+              "description": "Avoid STOP RUN and STOP literal statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.UninitialzedVariablesRule",
+              "description": "Use of uninitialized variables."
+            },
+            {
+              "const": "zcodescan.cobol.rules.UnprotectedAuthCredentialRule",
+              "description": "Unprotected Authentication Credentials"
+            }
+          ]
+        },
+        "severity": {
+          "enum": ["BLOCKER", "HIGH", "MEDIUM", "LOW", "INFO"]
+        },
+        "statements": {}
+      },
+      "required": ["id"],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.AcceptDateTimeRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.AcceptRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.BufferOverflowRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.CallSyntaxRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.GotoParagraphRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.GotoRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.ProgramIdRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.RequireEndClauseRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "statements": {
+                "description": "The list of statements for this rule.",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/zcodescan.cobol.rules.RequireEndClauseRuleStatementItem"
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["id", "statements"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.SqlInjectionRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.SqlWhereRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "statements": {
+                "description": "The list of statements for this rule.",
+                "type": "array",
+                "items": {
+                  "$ref": "#/definitions/zcodescan.cobol.rules.SqlWhereRuleStatementItem"
+                },
+                "minItems": 1
+              }
+            },
+            "required": ["id", "statements"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.StopRunRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.UninitialzedVariablesRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "id": {
+                "const": "zcodescan.cobol.rules.UnprotectedAuthCredentialRule",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "not": {
+              "required": ["statements"]
+            },
+            "required": ["id"]
+          }
+        }
+      ]
+    },
+    "zcodescan.cobol.rules.RequireEndClauseRuleStatementItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "enum": ["Call", "Evaluate", "If", "Read", "Search"]
+        },
+        "value": {
+          "type": "boolean",
+          "description": "Perform statement"
+        }
+      }
+    },
+    "zcodescan.cobol.rules.SqlWhereRuleStatementItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "enum": ["Delete", "Select", "Update"]
+        },
+        "value": {
+          "type": "boolean",
+          "description": "Perform statement"
+        }
+      }
+    }
+  }
+}

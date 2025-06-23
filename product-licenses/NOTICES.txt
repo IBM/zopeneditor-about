@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.4
+IBM Z Open Editor V5.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -27,7 +27,7 @@ limitation URLs or references to any third party websites.
 
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.4
+IBM Z Open Editor V5.x
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -55,7 +55,7 @@ limitation URLs or references to any third party websites.
 
 =====================================================================
 
-The following are Notices for Z Open Editor V5.4
+The following are Notices for Z Open Editor V5.x
 
 =====================================================================
 START OF APACHE LICENSE 2.0 NOTICES AND INFORMATION
@@ -814,6 +814,7 @@ START OF MIT LICENSE NOTICES AND INFORMATION
 MIT LICENSE CODE.  The Program includes all or portions of the following
 software which is available under the MIT License.
 
+seti-ui
 adm-zip
 agent-base
 agent-base
@@ -4257,13 +4258,13 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 =====================================================================
 
-End of Notices for IBM Z Open Editor 5.4
+End of Notices for IBM Z Open Editor 5.x
 
 =====================================================================
 
 
 
 
-L/N: L-UPGF-NKH59U
-D/N: L-UPGF-NKH59U
-P/N: L-UPGF-NKH59U
+L/N: L-VFEV-24MJY9
+D/N: L-VFEV-24MJY9
+P/N: L-VFEV-24MJY9

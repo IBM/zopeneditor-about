@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM RSE API Plug-in for Zowe CLI V5.4
+IBM RSE API Plug-in for Zowe CLI V5.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -785,6 +785,7 @@ START OF MIT LICENSE NOTICES AND INFORMATION
 MIT LICENSE CODE.  The Program includes all or portions of the following
 software which is available under the MIT License.
 
+seti-ui
 adm-zip
 agent-base
 agent-base
@@ -4245,6 +4246,6 @@ End of Notices for IBM RSE API PLUG IN for ZOWE CLI 5.x
 
 
 
-L/N: L-WSXR-A66S38
-D/N: L-WSXR-A66S38
-P/N: L-WSXR-A66S38
+L/N: L-DGNC-77JD9G
+D/N: L-DGNC-77JD9G
+P/N: L-DGNC-77JD9G

@@ -9,7 +9,9 @@
 
 > Go here for the full [Documentation](https://ibm.github.io/zopeneditor-about/Docs/introduction.html?utm_source=vscode&utm_medium=referral&utm_campaign=vscode_marketplace) online.
 
-This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.4, PL/I v6.1, High Level Assembler for z/OS 3.1, TSO/E REXX, and z/OS MVS Job Control Language (JCL). This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.2, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as
+Simplify your installation experience by using newly bundled extension packs that contain Z Open Editor as well as other extensions available for [IDzEE](https://marketplace.visualstudio.com/items?itemName=IBM.developer-for-zos-on-vscode-extension-pack) and [ADFz](https://marketplace.visualstudio.com/items?itemName=IBM.application-delivery-foundation-for-zos-vscode-extension-pack) customers.
+
+This extension provides language support for the IBM Enterprise programming languages for z/OS®. It supports COBOL v6.5, PL/I v6.2, High Level Assembler for z/OS 3.1, TSO/E REXX, and z/OS MVS Job Control Language (JCL). This also includes capabilities for embedded statements in COBOL and PL/I for CICS 6.2, IMS 15.1.0 and SQL DB2 for z/OS 12.1. Earlier versions of any of these components will also work. IBM Z Open Editor realizes its language support by implementing fully functional [language servers](https://langserver.org/) together with additional editor enhancements that enable IBM Z developers to utilize features such as
 
 - Real-time syntax checking and highlighting while you type
 - Problems view with all syntax errors and (in COBOL) unreachable code
@@ -31,7 +33,17 @@ To learn more about the IBM Z Open Editor extension's capabilities, we suggest t
 
 To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, REXX, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
-IBM Z Open Editor v4 and beyond introduced advanced capabilities that go beyond program editing! While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, and HLASM for free, this release adds capabilities for enterprise-level development use cases that go beyond program editing. These are at the moment the Remote Connection Emulator providing green screen access to z/OS, preprocessor support for COBOL and PL/I, custom macros support for HLASM, the z/OS Resources Table which is a new Web view built on top of Zowe Explorer that displays data sets, UNIX files and jobs in a sortable table, and a new DBB user build VS Code Problems view integration. All users get a 60-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. IDzEE customers can unlock the features by using RSE API or separately distributed activation kits. For more information, see our [Documentation](https://ibm.github.io/zopeneditor-about/Docs/advanced_overview.html).
+IBM Z Open Editor v4 and beyond introduced advanced capabilities that go beyond program editing! While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, and HLASM for free, this release adds capabilities for enterprise-level development use cases that go beyond program editing. These are at the moment
+
+1. the 3270 Remote Connection Emulator,
+2. IBM ZCodeScan COBOL linting,
+3. the z/OS Resources Table, which is a Web view built on top of Zowe Explorer that displays data sets, UNIX files and jobs in a sortable table,
+4. the Data Elements view, which is another sortable table for COBOL or PL/I program symbols,
+5. preprocessor support for COBOL and PL/I,
+6. custom macros support for HLASM, as well as
+7. the IBM Dependency-Based Build user build VS Code Problems view integration.
+
+All users get a 90-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. IDzEE customers can unlock the features by using RSE API or separately distributed activation kits. For more information, see our [Documentation](https://ibm.github.io/zopeneditor-about/Docs/advanced_overview.html).
 
 ## Table of contents
 

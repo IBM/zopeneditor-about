@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V5.5
+IBM Z Open Editor V5.6
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -104,6 +104,11 @@ spdx-correct
 @carbon/type
 validate-npm-package-license
 @sigstore/verify
+readdir-glob
+text-decoder
+bare-events
+b4a
+crc
 
 ------------------------------------------------
 ------------------------------------------------
@@ -1120,6 +1125,38 @@ xmlbuilder
 yargs
 @types/yargs-parser
 yawn-yaml
+node-addon-api
+node-gyp-build-4.8.4.tgz
+tree-sitter-java-0.23.5.tgz
+zip-stream-6.0.1.tgz
+is-stream-2.0.1.tgz
+lazystream-1.0.1.tgz
+isarray-1.0.0.tgz
+abort-controller-3.0.0.tgz
+readable-stream-2.3.8.tgz
+readable-stream-4.7.0.tgz
+process-nextick-args-2.0.1.tgz
+readdir-glob-1.1.5.tgz
+streamx-2.22.1.tgz
+tar-stream-3.1.7.tgz
+tree-sitter-0.21.1.tgz
+archiver-6.0.3.tgz
+archiver-utils-5.0.2.tgz
+archiver-7.0.1.tgz
+async-3.2.6.tgz
+base64-js-1.5.1.tgz
+buffer-6.0.3.tgz
+crc32-stream-6.0.0.tgz
+brace-expansion-2.0.2.tgz
+buffer-crc32-1.0.0.tgz
+compress-commons-6.0.2.tgz
+debug-4.4.1.tgz
+events-3.3.0.tgz
+fast-fifo-1.3.2.tgz
+event-target-shim-5.0.1.tgz
+fast-glob-3.3.3.tgz
+
+
 yocto-queue
 @babel/compat-data
 @babel/runtime    v7.x
@@ -4265,6 +4302,6 @@ End of Notices for IBM Z Open Editor 5.x
 
 
 
-L/N: L-VFEV-24MJY9
-D/N: L-VFEV-24MJY9
-P/N: L-VFEV-24MJY9
+L/N: L-KYKT-ATP42A
+D/N: L-KYKT-ATP42A
+P/N: L-KYKT-ATP42A

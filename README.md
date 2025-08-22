@@ -87,14 +87,14 @@ Such events are logged with the following information:
 
 Review the [IBM Z Open Editor License Agreement](https://github.com/IBM/zopeneditor-about/raw/main/product-licenses/LICENSE.txt) and [Third Party Notices](https://github.com/IBM/zopeneditor-about/raw/main/product-licenses/NOTICES.txt) before downloading.
 
-Here are the prerequisites for installing this extension in Visual Studio Code:
+Here are the prerequisites for installing this extension in Visual Studio Code. Also check our [community forum](https://github.com/IBM/zopeneditor-about/discussions) for announcements for upcoming changes.
 
 - Microsoft VS Code version 1.91.0 or later: We recommend using always the latest VS Code version available. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
 
 - Java SDK or JRE version 17 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
   - You can use versions 17 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
   - You can use [Oracle Java 17](https://www.oracle.com/java/technologies/downloads/#java17).
-  - You can also use the [OpenJDK](https://adoptium.net/index.html).
+  - You can also use the [OpenJDK](https://adoptium.net/temurin/releases?version=17&os=any&arch=any).
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 17.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
 - Zowe CLI 8.0.0 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v3.0.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.

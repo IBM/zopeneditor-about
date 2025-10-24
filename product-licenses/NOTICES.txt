@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor V6.0
+IBM Z Open Editor V6.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -828,6 +828,7 @@ software which is available under the MIT License.
 jszip
 seti-ui
 adm-zip
+archiver 7.x
 agent-base
 agent-base
 agent-base
@@ -4536,6 +4537,6 @@ End of Notices for IBM Z Open Editor 6.x
 
 
 
-L/N: L-WPYK-LPWY3X
-D/N: L-WPYK-LPWY3X
-P/N: L-WPYK-LPWY3X
+L/N: L-FEWP-VY7D3B
+D/N: L-FEWP-VY7D3B
+P/N: L-FEWP-VY7D3B

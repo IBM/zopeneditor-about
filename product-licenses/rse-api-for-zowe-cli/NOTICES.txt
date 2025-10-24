@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM RSE API Plug-in for Zowe CLI V6.0
+IBM RSE API Plug-in for Zowe CLI V6.1
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -801,6 +801,7 @@ software which is available under the MIT License.
 jszip
 seti-ui
 adm-zip
+advisor 7.x
 agent-base
 agent-base
 agent-base
@@ -4504,6 +4505,6 @@ END OF UNLICENSE NOTICES AND INFORMATION
 
 End of Notices for IBM RSE API Plug-in for Zowe CLI v6.x
 
-L/N: L-NWRE-QF3WMX
-D/N: L-NWRE-QF3WMX
-P/N: L-NWRE-QF3WMX
+L/N: L-VMWH-SU39VN
+D/N: L-VMWH-SU39VN
+P/N: L-VMWH-SU39VN

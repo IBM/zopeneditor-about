@@ -33,20 +33,28 @@ To learn more about the IBM Z Open Editor extension's capabilities, we suggest t
 
 To interact with z/OS, this extension also automatically co-installs the [Zowe Explorer](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe) VS Code Extension. This extension can be used to edit COBOL, PL/I, HLASM, REXX, and JCL files opened on z/OS MVS™ and USS using the Zowe extension's Data Sets and USS views. It can even run JCL jobs via right-click and let's you download and browse job spool files.
 
-IBM Z Open Editor v4 and beyond introduced advanced capabilities that go beyond program editing! While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, and HLASM for free, this release adds capabilities for enterprise-level development use cases that go beyond program editing. These are at the moment
+IBM Z Open Editor v4 and beyond introduced advanced features that go beyond program editing! While the core Z Open Editor continues to provide full language support for COBOL, PL/I, REXX, JCL and HLASM for free, the advanced features add enterprise-level development capabilities that go beyond program editing.
 
-1. the 3270 Remote Connection Emulator,
-2. IBM ZCodeScan COBOL linting,
-3. the z/OS Resources Table, which is a Web view built on top of Zowe Explorer that displays data sets, UNIX files and jobs in a sortable table,
-4. the Data Elements view, which is another sortable table for COBOL or PL/I program symbols,
-5. preprocessor support for COBOL and PL/I,
-6. custom macros support for HLASM,
-7. the IBM Dependency-Based Build user build VS Code Problems view integration,
-8. Language detection for data set members,
-9. Control flow diagrams for COBOL,
-10. Z Open Editor agent mode Model Context Protocol server.
+You can purchase the required licenses through [IBM Developer for z/OS Enterprise Edition](https://www.ibm.com/products/developer-for-zos), [IBM Developer for z/OS Select](https://www.ibm.com/support/pages/ibm-developer-zos-select100), or [IBM Application Delivery Foundation for z/OS](https://www.ibm.com/products/app-delivery-foundation-for-zos).
 
-All users get a 90-day evaluation trial for these advanced capabilities. After that, the advanced capabilities will require an IBM Developer for z/OS Enterprise Edition license. IDzEE customers can unlock the features by using RSE API or separately distributed activation kits. For more information, see our [Documentation](https://ibm.github.io/zopeneditor-about/Docs/advanced_overview.html).
+All new users of Z Open Editor receive a 90-day evaluation trial for all the advanced capabilities. After the trial period, these capabilities require activation through either an RSE API server connection or imported activation kits, as described in [Activating advanced capabilities](./advanced_activation.md). Only the following features documented in this section require such a license.
+
+For IBM Developer for z/OS Select customers the advanced features available are
+
+1. [Remote Connection Emulator](./advanced_rce.md): Open a 3270 emulator hosted on the RSE API server by right-clicking a Zowe Explorer RSE API profile. The emulator opens in either a VS Code panel or an external browser, depending on your preference.
+1. [z/OS Resources table](./advanced_resource_table.md): An all-new, feature-rich view that extends Zowe Explorer with a sortable table. Gain insights into your jobs, data sets, and UNIX files by listing, filtering, and sorting on many available properties.
+1. [Data Elements view](./advanced_data_elements_view.md): Use this view to display information about the data elements in a COBOL or PL/I program, including those from copybooks and include files, in a table that can be sorted and filtered.
+1. [Program Control Flow Browser](./advanced_control_flow.md): Use this view to display the control flow of a COBOL or PL/I program in an interactive graph.
+1. Data flow graph browser for COBOL: Display the data flow of a data element in a COBOL program in an interactive graph. You can use this feature to examine how a data element is populated, modified, or written elsewhere.
+1. [Preprocessor support for COBOL and PL/I](./advanced_preprocessor.md): Run a preprocessor either on a local workstation or remotely on z/OS, driven by a new ZAPP profile type. Continue to edit with full syntax checks except for the preprocessor statements, and automatically rerun the preprocessor each time you save. Compare the preprocessor generated code with the code side-by-side.
+1. [HLASM macros support](./advanced_custom_macros.md): Use custom macro resolution in HLASM programs with references to macros in local files. The HLASM editor provides hovers, document links, go to definition, and code completion for macros. This feature supports one or more macro declarations per include file by pre-scanning macro files, provided they are found in local ZAPP property groups.
+1. [Language Detection for data set members](./advanced_language_detection.md): Use Zowe Explorer with RSE API profiles to detect the programming language of a data set member opened in the editor.
+
+IBM Developer for z/OS Enterprise Edition or IBM Application Delivery Foundation for z/OS customers can use in addition to the features above also
+
+1. [IBM ZCodeScan](./advanced_zcodescan.md): Helps developers scan COBOL program files for best practice violations and security vulnerabilities, and it presents the results in a linter-like format.
+1. [Dependency Based user build and advanced error reporting](./advanced_problems_view.md): Run a build of COBOL, PL/I, HLASM programs on a remote z/OS system through a right-click in Z Open Editor. Review informational, warning, or error messages issued by the compiler directly in the VS Code Problems view. Z Open Editor automatically downloads the build logs, parses them, and presents the messages in the Problems view with descriptions and error codes. Then navigate to warnings and errors in the code using a mouse, click in the Problems view to identify and resolve issues, and then rerun the build.
+1. [Agent Mode](./advanced_agent_mode.md): Utilize Z Open Editor's MCP (Model Context Protocol) server in an Agent-based AI Chat panel in VS Code, providing it with context and data from your z/OS data sets, files, and jobs through Zowe APIs, as well as Z Open Editor configuration files for troubleshooting your setup.
 
 ## Table of contents
 
@@ -67,8 +75,9 @@ This current release of IBM Z Open Editor will collect anonymous data for the fo
 - Activation of this VS Code extension
 - Deactivation of this VS Code extension
 - Opening, closing and saving files of a specific language such as COBOL, PL/I, HLASM, REXX, JCL
-- Resolving of include files and assembler macros: number of successes or failures
+- Resolution of include files and assembler macros: number of successes or failures
 - Using common language server operations such as code completion, references, definition, rename
+- Using advanced features such as resource tables, data elements view, graph browsers, and MCP tools
 - Starting a user build
 - Responding to the feedback dialog
 - Activating trial or full unlock licenses
@@ -92,7 +101,7 @@ Review the [IBM Z Open Editor License Agreement](https://github.com/IBM/zopenedi
 
 Here are the prerequisites for installing this extension in Visual Studio Code. Also check our [community forum](https://github.com/IBM/zopeneditor-about/discussions) for announcements for upcoming changes.
 
-- Microsoft VS Code version 1.91.0 or later: We recommend using always the latest VS Code version available. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
+- Microsoft VS Code version 1.102.3 or later (recommended version: 1.105.1): We recommend using always the latest VS Code version available. If you do not have VS Code installed we recommend using the [Visual Studio Code for Java Installer](https://code.visualstudio.com/docs/languages/java#_install-visual-studio-code-for-java) provided by Microsoft as it automatically downloads and installs a Java SDK together with VS Code. (See, but skip the next bullet for the Java dependency, if you use this option.)
 
 - Java SDK or JRE version 21 or later - 64 bit: The language servers included in this extension are implemented in Java. Therefore, you need to install and configure a 64-bit Java SDK or Runtime in order to start it successfully. We recommend installing VS Code for Java as described above, but if you already have VS Code or want to install Java yourself then you can choose from the following options:
   - You can use versions 21 of [IBM's Semeru Runtime](https://developer.ibm.com/languages/java/semeru-runtimes/) that can be [downloaded here](https://developer.ibm.com/languages/java/semeru-runtimes/downloads).
@@ -100,7 +109,7 @@ Here are the prerequisites for installing this extension in Visual Studio Code. 
   - You can also use the [OpenJDK](https://adoptium.net/temurin/releases?version=21&os=any&arch=any).
   - Newer versions of Java should also work, but are not as rigorously tested for Z Open Editor as Java 21.
   - Various settings are provided to configure how the extension uses Java. See the [Configuring Java](#configuring-java) section below for more details.
-- Zowe CLI 8.0.0 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v3.0.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed.
+- Zowe CLI 8.0.0 or newer (optional, but recommended) and the Zowe Explorer VS Code extension v3.0.0 or newer (required): To make use of [Zowe](https://zowe.org) to open and edit files directly from z/OS MVS or USS, you need Zowe client software and either IBM RSE API or z/OSMF configured. For more information, see [Installing Zowe CLI](https://docs.zowe.org/stable/user-guide/cli-installcli) and [VS Code Extension for Zowe](https://marketplace.visualstudio.com/items?itemName=Zowe.vscode-extension-for-zowe#user-content-prerequisites). Once installed, you must [create a Zowe CLI team configuration file](https://ibm.github.io/zopeneditor-about/Docs/interact_zos_overview.html) so that data sets can be found and accessed. The installation of Zowe CLI is entirely optional. Z Open Editor and Zowe Explorer can operate completely independently of it.
 
 - (Optional) Git: To use the features that involve Git, you must install Git and have it available in your system path so that VS Code can display it. On Macs, Git comes out of the box. On Linux, you can install Git with your distribution's package manager. On Windows, you can get Git from <https://git-scm.com>.
 

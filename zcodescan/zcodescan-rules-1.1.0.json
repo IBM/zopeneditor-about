@@ -28,17 +28,17 @@
         "statements": {},
         "parameters": {
           "type": "array",
-          "description": "Param\u00e8tres de configuration optionnels pour la r\u00e8gle",
+          "description": "Optional parameters for the rule.",
           "items": {
             "type": "object",
             "properties": {
               "name": {
                 "type": "string",
-                "description": "Nom du param\u00e8tre (ex: Select, Threshold, etc.)",
+                "description": "Name of the parameter.",
                 "minLength": 1
               },
               "value": {
-                "description": "Valeur du param\u00e8tre (peut \u00eatre string, nombre ou bool\u00e9en)",
+                "description": "Parameter value.",
                 "oneOf": [
                   {
                     "type": "string"

@@ -20,7 +20,246 @@
       "additionalProperties": false,
       "properties": {
         "id": {
-          "description": "The id of the rule to apply."
+          "description": "The id of the rule to apply.",
+          "oneOf": [
+            {
+              "type": "string",
+              "description": "Custom rule following the pattern custom.*Rule",
+              "pattern": "^custom.*Rule$"
+            },
+            {
+              "const": "zcodescan.cobol.rules.AcceptDateTimeRule",
+              "description": "Use CURRENT-DATE rather than ACCEPT DATE or ACCEPT TIME"
+            },
+            {
+              "const": "zcodescan.cobol.rules.AcceptFromConsoleRule",
+              "description": "Avoid ACCEPT statements containing FROM CONSOLE or FROM SYSIN"
+            },
+            {
+              "const": "zcodescan.cobol.rules.AcceptRule",
+              "description": "Insecure use of ACCEPT"
+            },
+            {
+              "const": "zcodescan.cobol.rules.AlterRule",
+              "description": "Avoid use of ALTER for control flow."
+            },
+            {
+              "const": "zcodescan.cobol.rules.AvoidSectionInProcedureDivisionRule",
+              "description": "Avoid using SECTION in the procedure division"
+            },
+            {
+              "const": "zcodescan.cobol.rules.BinarySubscriptRule",
+              "description": "Use binary subscripts"
+            },
+            {
+              "const": "zcodescan.cobol.rules.BlockContainsRule",
+              "description": "Specify 0 RECORDS for BLOCK CONTAINS clauses in file description entries"
+            },
+            {
+              "const": "zcodescan.cobol.rules.BufferOverflowRule",
+              "description": "Improper restriction of operations within the bounds of a memory buffer"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CallSyntaxRule",
+              "description": "Avoid CALL statements with a literal program name"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CancelRule",
+              "description": "Avoid CANCEL statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CheckSqlcodeAfterExecSqlRule",
+              "description": "EXEC SQL: Check the value of SQLCODE after an EXEC SQL statement"
+            },
+            {
+              "const": "zcodescan.cobol.rules.Comp3PictureClauseRule",
+              "description": "Use an odd number of digits in a COMP-3 or PACKED-DECIMAL data definition"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CompilerDirectivesRule",
+              "description": "Avoid using the compiler directive"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ConditionNamePrefixRule",
+              "description": "Use the specified prefix with condition names"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CopySuppressRule",
+              "description": "Avoid COPY SUPPRESS statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CopybookRule",
+              "description": "Avoid including the specified copy book"
+            },
+            {
+              "const": "zcodescan.cobol.rules.CorrespondingRule",
+              "description": "Avoid CORRESPONDING phrases"
+            },
+            {
+              "const": "zcodescan.cobol.rules.DisplayUponConsoleRule",
+              "description": "Avoid DISPLAY statements containing UPON CONSOLE"
+            },
+            {
+              "const": "zcodescan.cobol.rules.EntryRule",
+              "description": "Avoid ENTRY statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.EvaluateNotIfRule",
+              "description": "Use an EVALUATE statement rather than a nested IF statement"
+            },
+            {
+              "const": "zcodescan.cobol.rules.EvaluateWhenOtherRule",
+              "description": "Use a WHEN OTHER phrase with an EVALUATE statement"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ExitParagraphRule",
+              "description": "Use an EXIT paragraph in each section"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ExitProgramRule",
+              "description": "Avoid EXIT PROGRAM statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.FileNameConventionRule",
+              "description": "Follow the specified naming convention for COBOL file names"
+            },
+            {
+              "const": "zcodescan.cobol.rules.FiveBasedLevelNumbersRule",
+              "description": "Use level numbers in the sequence 01, 05, 10, 15..."
+            },
+            {
+              "const": "zcodescan.cobol.rules.GotoParagraphRule",
+              "description": "Avoid GO TO statements, except those that reference an EXIT paragraph"
+            },
+            {
+              "const": "zcodescan.cobol.rules.GotoRule",
+              "description": "Avoid GO TO statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.IfElseRule",
+              "description": "Avoid IF without ELSE"
+            },
+            {
+              "const": "zcodescan.cobol.rules.IndexSubscriptRule",
+              "description": "Avoid using subscripts to access a table. Use indexes."
+            },
+            {
+              "const": "zcodescan.cobol.rules.InitializeRule",
+              "description": "Avoid INITIALIZE statements. Use elementary MOVE statements or VALUE clauses."
+            },
+            {
+              "const": "zcodescan.cobol.rules.InlinePerformLineLimitRule",
+              "description": "An inline PERFORM statement cannot exceed the specified line number limit"
+            },
+            {
+              "const": "zcodescan.cobol.rules.Level88Rule",
+              "description": "Avoid using level-88 entries in data descriptions"
+            },
+            {
+              "const": "zcodescan.cobol.rules.MultipleExitsRule",
+              "description": "Avoid using more than one EXIT statement per section"
+            },
+            {
+              "const": "zcodescan.cobol.rules.NestedIfLimitRule",
+              "description": "Avoid nesting IF statements deeper than the specified number of levels"
+            },
+            {
+              "const": "zcodescan.cobol.rules.NextSentenceInScopedRangeRule",
+              "description": "Use CONTINUE rather than NEXT SENTENCE inside a scoped range."
+            },
+            {
+              "const": "zcodescan.cobol.rules.NextSentenceRule",
+              "description": "Avoid NEXT SENTENCE phrases."
+            },
+            {
+              "const": "zcodescan.cobol.rules.OccursDependingOnRule",
+              "description": "Avoid OCCURS DEPENDING ON phrases"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ParagraphCommentRule",
+              "description": "Use comments to describe all paragraphs"
+            },
+            {
+              "const": "zcodescan.cobol.rules.PerformExceptPerformSectionRule",
+              "description": "Avoid PERFORM, except PERFORM section"
+            },
+            {
+              "const": "zcodescan.cobol.rules.PerformWithThroughRule",
+              "description": "Use THRU phrases in PERFORM statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.PerformWithoutThroughRule",
+              "description": "Avoid THRU phrases in PERFORM statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ProcedureRule",
+              "description": "Procedure division statements cannot exceed the specified line number limit"
+            },
+            {
+              "const": "zcodescan.cobol.rules.ProgramIdRule",
+              "description": "Use a program name that matches the source file name"
+            },
+            {
+              "const": "zcodescan.cobol.rules.RequireEndClauseRule",
+              "description": "End Clause is Required "
+            },
+            {
+              "const": "zcodescan.cobol.rules.ReserveRule",
+              "description": "Avoid RESERVE clauses in FILE-CONTROL paragraphs"
+            },
+            {
+              "const": "zcodescan.cobol.rules.RespOptionRule",
+              "description": "EXEC CICS: Use the RESP option"
+            },
+            {
+              "const": "zcodescan.cobol.rules.RestrictedRoutineRule",
+              "description": "Avoid calling the specified routine"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SearchAllRule",
+              "description": "Use SEARCH ALL rather than SEARCH to search a table"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SectionCommentRule",
+              "description": "Use comments to describe all sections"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlAvoidSelectStarRule",
+              "description": "EXEC SQL: Avoid SELECT *"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlDeclareCursorOrderByRule",
+              "description": "EXEC SQL: Use an ORDER BY clause when declaring a cursor"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlInjectionRule",
+              "description": "Improper neutralization of special elements used in an SQL command (SQL Injection)"
+            },
+            {
+              "const": "zcodescan.cobol.rules.SqlWhereRule",
+              "description": "Use a WHERE clause in SQL statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.StaticCallNameRule",
+              "description": "Avoid static calls except for the specified program name"
+            },
+            {
+              "const": "zcodescan.cobol.rules.StopRunRule",
+              "description": "Avoid STOP RUN and STOP literal statements"
+            },
+            {
+              "const": "zcodescan.cobol.rules.UninitialzedVariablesRule",
+              "description": "Use of uninitialized variables."
+            },
+            {
+              "const": "zcodescan.cobol.rules.UnprotectedAuthCredentialRule",
+              "description": "Unprotected Authentication Credentials"
+            },
+            {
+              "const": "zcodescan.cobol.rules.XMLParseRule",
+              "description": "Avoid XML PARSE statements"
+            }
+          ]
         },
         "severity": {
           "enum": ["BLOCKER", "HIGH", "MEDIUM", "LOW", "INFO", "OFF"]

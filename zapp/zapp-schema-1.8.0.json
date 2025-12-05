@@ -1,0 +1,1301 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IBM Zapp Document",
+  "description": "JSON schema for zapp.json and zapp.yaml files. Version 1.8.0 -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2022, 2025. All Rights Reserved.",
+  "type": "object",
+  "definitions": {
+    "coreProperties": {
+      "type": "object",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "description": "The name of the Z Project.",
+          "type": "string",
+          "maxLength": 214,
+          "minLength": 1
+        },
+        "description": {
+          "description": "This helps people understand your project as it would be used by tools.",
+          "type": "string"
+        },
+        "version": {
+          "description": "Version is a string and it must be parsable for managing dependencies.",
+          "type": "string",
+          "default": "1.0.0"
+        },
+        "groupId": {
+          "description": "Defines a group name that is shared for each application part in case of applications composed of multiple parts. Allows to uniquely identify the parts by concatenating with the artifact id. For example a groupId `com.ibm.wazi` with an artifactId `service` would create the unique application identifier `com.ibm.wazi.service`.",
+          "type": "string",
+          "examples": ["com.ibm.wazi", "payments"]
+        },
+        "artifactId": {
+          "description": "Define id of the application artifact. Use it in combination with a groupId for multi-part applications.",
+          "type": "string",
+          "default": "",
+          "examples": ["sam"]
+        },
+        "parentId": {
+          "description": "In case of a multi-part application defines the name of the parent application part. This zapp will inherit properties such as propertyGroups defined in the parent.",
+          "type": "string",
+          "default": "",
+          "examples": ["com.ibm.wazi.parent"]
+        },
+        "keywords": {
+          "description": "This helps people discover your project.",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "homepage": {
+          "description": "The url to the project homepage.",
+          "type": "string",
+          "oneOf": [
+            {
+              "format": "uri"
+            },
+            {
+              "enum": ["."]
+            }
+          ]
+        },
+        "license": {
+          "type": "string",
+          "description": "You should specify a license for your package so that people know how they are permitted to use it and any restrictions you're placing on it."
+        },
+        "author": {
+          "$ref": "#/definitions/person"
+        },
+        "contributors": {
+          "description": "A list of people who contributed to this package.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/person"
+          },
+          "minItems": 1
+        },
+        "maintainers": {
+          "description": "A list of people who maintain this package.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/person"
+          },
+          "minItems": 1
+        },
+        "propertyGroups": {
+          "description": "A list of properties defining path names for resolving dependencies.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/propertyGroupItem"
+          },
+          "minItems": 1
+        },
+        "profiles": {
+          "description": "Profiles are additional groups of properties that should only become valid under specific conditions such as running in a build job or as part of a debug session.",
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/profile"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "propertyGroupItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the property group, which is used in hovers and error messages.",
+          "examples": ["sample-local", "sample-remote"]
+        },
+        "language": {
+          "type": "string",
+          "enum": ["cobol", "pl1", "hlasm", "rexx", "jcl"],
+          "description": "Limits the property group to one specific language."
+        },
+        "compilerOptions": {
+          "type": "string",
+          "description": "Global compiler options separated by a comma that impact the parsing of the programs for the editor. Requires that you specify a language. If there are multiple Property Groups for a language with compiler option then they will be concatenated."
+        },
+        "libraries": {
+          "type": "array",
+          "description": "An array of potential library locations defining the search order for include files. Libraries with the name 'syslib' will be handled as default include locations. The list can contain many entries of the type 'local' or 'mvs'. It can contain items of the same type twice in case, for example, you want to search in remote locations first, then some local location, and if still not found more remote locations.",
+          "items": {
+            "$ref": "#/definitions/libraryItem"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "libraryItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of the library. The default name should be `syslib` if using unnamed libraries.",
+          "default": "syslib",
+          "examples": ["syslib", "jcllib", "proclib", "maclib", "currencylib"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["mvs", "local"],
+          "description": "The type of the property group defining where dependencies should be located. Allowed values are 'local' for using a local workspace and 'mvs' for dependencies located in MVS data sets.",
+          "default": "local",
+          "examples": ["local", "mvs"]
+        },
+        "locations": {
+          "type": "array",
+          "description": "An array of include file locations. For 'local' libraries values can be absolute and relative filename paths using GLOB patterns. For 'mvs' libraries value can be data set names. GLOB patterns for data sets are currently not supported.",
+          "items": {
+            "type": "string"
+          },
+          "examples": ["**/copybook", "USER1.SAMPLE.COBCOPY"]
+        }
+      },
+      "if": {
+        "properties": {
+          "name": {
+            "enum": ["jcllib", "proclib"],
+            "type": "string"
+          },
+          "type": {
+            "const": "mvs",
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "required": ["name", "type"]
+      },
+      "else": {
+        "required": ["name", "type", "locations"]
+      }
+    },
+    "person": {
+      "description": "A person who has been involved in creating or maintaining this package",
+      "type": ["object", "string"],
+      "required": ["name"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "email": {
+          "type": "string",
+          "format": "email"
+        }
+      }
+    },
+    "profile": {
+      "type": "object",
+      "description": "Profiles are additional groups of properties that should only become valid under specific conditions such as running in a build job or as part of a debug session.",
+      "additionalProperties": false,
+      "required": ["name", "type"],
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The name of the profile.",
+          "examples": ["dbb-build"]
+        },
+        "language": {
+          "type": "string",
+          "enum": ["cobol", "pl1"],
+          "description": "If the profile type supports it then it defines a scope for the profile to one specific programming language. For example, a profile that defines preprocessor commands for COBOL."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["dbb", "rseapi", "debug", "preprocessor", "test", "galasa", "zcodescan"],
+          "description": "The type of the profile.",
+          "default": "dbb"
+        },
+        "location": {
+          "type": "string",
+          "enum": ["mvs", "local"],
+          "description": "If the profile type supports it then it defines a scope for the profile to a specific location for resources. For example, a profile that defines preprocessor commands to be executed on MVS or local files.",
+          "default": "local"
+        },
+        "settings": {
+          "description": "Settings objects specific to the type specified for the profile.",
+          "type": "object"
+        }
+      },
+      "oneOf": [
+        {
+          "title": "Dependency-Based Build profile",
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "dbb",
+              "type": "string"
+            },
+            "settings": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/dbbBuilderSettings"
+                },
+                {
+                  "$ref": "#/definitions/dbbGroovySettings"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "title": "RSE API profile",
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "rseapi",
+              "type": "string"
+            },
+            "settings": {
+              "$ref": "#/definitions/rseapiSettingsItem"
+            }
+          }
+        },
+        {
+          "title": "Preprocessor profile",
+          "required": ["name", "type", "settings", "location", "language"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "language": {
+              "type": "string"
+            },
+            "type": {
+              "const": "preprocessor",
+              "type": "string"
+            },
+            "location": {
+              "type": "string"
+            },
+            "settings": {
+              "oneOf": [
+                {
+                  "$ref": "#/definitions/localPreprocessorSettingsItem"
+                },
+                {
+                  "$ref": "#/definitions/mvsPreprocessorSettingsItem"
+                }
+              ]
+            }
+          },
+          "if": {
+            "properties": {
+              "location": {
+                "const": "local",
+                "type": "string"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "settings": {
+                "$ref": "#/definitions/localPreprocessorSettingsItem"
+              }
+            }
+          },
+          "else": {
+            "properties": {
+              "settings": {
+                "$ref": "#/definitions/mvsPreprocessorSettingsItem"
+              }
+            }
+          }
+        },
+        {
+          "title": "Test profile",
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "test",
+              "type": "string"
+            },
+            "settings": {
+              "$ref": "#/definitions/testSettingsItem"
+            }
+          }
+        },
+        {
+          "title": "Galasa Properties profile",
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "galasa",
+              "type": "string"
+            },
+            "settings": {
+              "$ref": "#/definitions/galasaSettingsItem"
+            }
+          }
+        },
+        {
+          "title": "ZCodeScan profile",
+          "required": ["name", "type", "settings"],
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "type": {
+              "const": "zcodescan",
+              "type": "string"
+            },
+            "settings": {
+              "$ref": "#/definitions/ZCodeScanSettings"
+            }
+          }
+        }
+      ]
+    },
+    "dbbGroovySettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["application", "command"],
+      "description": "Groovyz user build script properties for running user build on remote host.",
+      "properties": {
+        "application": {
+          "type": "string",
+          "description": "Defines the name of the application to build. Will be used to create a folder on USS to upload all files to."
+        },
+        "command": {
+          "type": "string",
+          "description": "Command that the build script is executed with such as the path to groovyz and it's parameters."
+        },
+        "buildScriptPath": {
+          "type": "string",
+          "description": "The full path of build script on the remote host that should be used with the command."
+        },
+        "buildScriptArgs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "A list of strings that are the parameters for the build script. Check the documentation for built-in variables, such as the name of the program to build, that can be used here."
+        },
+        "additionalDependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Lists of GLOB patterns that define the files that should be uploaded to USS for a build. Relative path names are interpreted relative to the location of the ZAPP file that is being used for the build, which is a ZAPP file in the same workspace as the program to be build."
+        },
+        "logFilePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Lists of GLOB patterns that define the files that should be downloaded from USS after the build. Relative path names are interpreted relative to the DBB log directory user setting. If not provided then all files of the user setting location will be downloaded."
+        }
+      }
+    },
+    "dbbBuilderSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["command", "lifecycle", "lifecycleArgs"],
+      "description": "zBuilder user build properties for running user build on remote host.",
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "Command that the build script is executed with such as the path to groovyz and it's parameters."
+        },
+        "lifecycle": {
+          "type": "string",
+          "description": "Defines named build lifecycles that represent different build scenarios the customer needs to perform and can be executed from the DBB CLI."
+        },
+        "lifecycleArgs": {
+          "type": "array",
+          "description": "Additional arguments and options for the lifecycle.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "additionalDependencies": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Lists of GLOB patterns that define the files that should be uploaded to USS for a build. Relative path names are interpreted relative to the location of the ZAPP file that is being used for the build, which is a ZAPP file in the same workspace as the program to be build."
+        },
+        "logFilePatterns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Lists of GLOB patterns that define the files that should be downloaded from USS after the build. Relative path names are interpreted relative to the DBB log directory user setting. If not provided then all files of the user setting location will be downloaded."
+        }
+      }
+    },
+    "rseapiSettingsItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "RSE API client settings for interactions with a z/OS remote host running an RSE API server.",
+      "required": ["mappings", "default.encoding"],
+      "properties": {
+        "mappings": {
+          "type": "array",
+          "description": "A list of mapping objects that map local file extensions to transfer modes and encodings to MVS data sets that can be specified using wildcards.",
+          "items": {
+            "$ref": "#/definitions/rseapiSettingsItemMapping"
+          }
+        },
+        "default.encoding": {
+          "type": "string",
+          "description": "The encoding to be used when no mapping can be found. If not provided then either the user or server default will be used."
+        }
+      }
+    },
+    "rseapiSettingsItemMapping": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "One mapping that contains at least transfer and resource values.",
+      "properties": {
+        "extension": {
+          "type": "string",
+          "description": "A local file extension such as cbl or pl1."
+        },
+        "transfer": {
+          "type": "string",
+          "enum": ["text", "binary"],
+          "description": "The transfer mode to be used. Can be 'text' or 'binary'."
+        },
+        "resource": {
+          "type": "string",
+          "description": "The data set name to be mapped to. Can use a wildcard such as '**CPY'."
+        },
+        "encoding": {
+          "type": "string",
+          "description": "The encoding to be used for text transfer. See the RSE API documentation for the values allowed."
+        },
+        "memberMappings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "description": "One member mapping that contains at least transfer and resource values.",
+            "properties": {
+              "extension": {
+                "type": "string",
+                "description": "A local file extension such as cbl or pl1."
+              },
+              "transfer": {
+                "type": "string",
+                "enum": ["text", "binary"],
+                "description": "The transfer mode to be used. Can be 'text' or 'binary'."
+              },
+              "encoding": {
+                "type": "string",
+                "description": "The encoding to be used for text transfer. See the RSE API documentation for the values allowed."
+              },
+              "resource": {
+                "type": "string",
+                "description": "The data set member name to be mapped to. Can use a wildcard such as '**CPY'."
+              }
+            }
+          },
+          "description": "A nested mappings array with resource mappings to members of the data sets that were mapped by the parent mapping."
+        }
+      }
+    },
+    "localPreprocessorSettingsItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Preprocessor properties for preprocessing COBOL/PL/I files.",
+      "required": ["command", "outputPath", "fileExtension"],
+      "properties": {
+        "command": {
+          "type": "string",
+          "description": "The command to run to execute the preprocessor executable."
+        },
+        "outputPath": {
+          "type": "string",
+          "description": "Path where preprocessor produces its build output."
+        },
+        "fileExtension": {
+          "type": "string",
+          "description": "The desired file extension for the post-processed file."
+        },
+        "environmentVariables": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Specifies any user defined environment variables to be passed to the preprocessor.",
+          "patternProperties": {
+            "[a-zA-Z_][a-zA-Z0-9_]*": {
+              "anyOf": [
+                {
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "mvsPreprocessorSettingsItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Preprocessor properties for preprocessing COBOL/PL/I files.",
+      "required": ["commandDataSet", "outputDataSet", "tempDataHLQ"],
+      "properties": {
+        "commandDataSet": {
+          "type": "string",
+          "description": "Specifies an input listing sequential data set."
+        },
+        "commandParameters": {
+          "type": "string",
+          "description": "The parameters for the command being run."
+        },
+        "outputDataSet": {
+          "type": "string",
+          "description": "Specifies an output listing sequential data set."
+        },
+        "tempDataHLQ": {
+          "type": "string",
+          "description": "Specifies the high-level qualifier used for data sets created by plug-in requests to export observation files."
+        },
+        "programDataSet": {
+          "type": "string",
+          "description": "Specifies the data set where local programs will be uploaded for preprocessing."
+        }
+      }
+    },
+    "testApplicationToCapture": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify what to capture in an application.",
+      "properties": {
+        "recordingType": {
+          "type": "string",
+          "enum": ["CICS", "Batch", "IMS"],
+          "description": "Type of application that will be recorded."
+        },
+        "jclSteps": {
+          "type": "string",
+          "description": "Provide a path to a JCL file that runs the application to be recorded."
+        },
+        "programs": {
+          "type": "array",
+          "description": "Provide name of the program to capture.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "transactionId": {
+          "type": "string",
+          "description": "Provide a transaction id to capture in the recording."
+        }
+      },
+      "if": {
+        "properties": {
+          "recordingType": {
+            "enum": ["CICS", "IMS"]
+          }
+        }
+      },
+      "then": {
+        "required": ["transactionId"],
+        "not": {
+          "required": ["jclSteps"]
+        }
+      },
+      "else": {
+        "not": {
+          "required": ["transactionId"]
+        },
+        "required": ["jclSteps"]
+      }
+    },
+    "testSourceMap": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "type": "string",
+          "description": "The workspace-relative path to an application source file."
+        },
+        "module": {
+          "type": "string",
+          "description": "The z/OS load module name that corresponds to the specified source file."
+        }
+      }
+    },
+    "testSourceMaps": {
+      "type": "array",
+      "description": "Specify which application load modules correspond to application source files.",
+      "items": {
+        "$ref": "#/definitions/testSourceMap"
+      }
+    },
+    "testHostRecordingSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify host settings for the recording tool.",
+      "properties": {
+        "applicationDbrmLibrary": {
+          "type": "string",
+          "description": "Required if recording and replaying DB2 statements."
+        },
+        "cicsRegion": {
+          "type": "string",
+          "description": "If recording a CICS application, specify a CICS region where the application is running."
+        },
+        "dteEngineLocation": {
+          "type": "string",
+          "description": "If recording a batch application, specify the data set where Debug Test Engine load library is located."
+        },
+        "imsSubsystemId": {
+          "type": "string",
+          "description": "If recording an IMS application, specify the subsystem id."
+        }
+      }
+    },
+    "testRecordingSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify settings for the recording application tool.",
+      "properties": {
+        "applicationToCapture": {
+          "$ref": "#/definitions/testApplicationToCapture"
+        },
+        "hostRecordingSettings": {
+          "$ref": "#/definitions/testHostRecordingSettings"
+        },
+        "sourceMaps": {
+          "$ref": "#/definitions/testSourceMaps"
+        }
+      }
+    },
+    "testSettingsItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Test properties for a test case.",
+      "properties": {
+        "recording": {
+          "$ref": "#/definitions/testRecordingSettings"
+        },
+        "unitTest": {
+          "$ref": "#/definitions/unitTestSettings"
+        },
+        "functionalTest": {
+          "$ref": "#/definitions/functionalTestSettings"
+        }
+      }
+    },
+    "unitTestSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Properties to run a unit test case.",
+      "required": ["procLib"],
+      "properties": {
+        "procLib": {
+          "type": "array",
+          "description": "Specifies the list of Procedure libraries.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "allocateWorkingDs": {
+          "type": "boolean",
+          "description": "If this option is selected, the data set for the working file is allocated automatically with the allocation options."
+        },
+        "ioDataSetAllocation": {
+          "type": "object",
+          "description": "Options to allocate a working file.",
+          "properties": {
+            "ioSpaceUnit": {
+              "type": "string",
+              "enum": ["TRACKS", "BLOCKS", "CYLINDERS"],
+              "description": "The unit of primary and secondary space to be allocated."
+            },
+            "ioQuant1": {
+              "type": "integer",
+              "description": "The amount of DASD space to be used for primary space allocation (PRIMARY)."
+            },
+            "ioQuant2": {
+              "type": "integer",
+              "description": "The amount of DASD space to be used for secondary space allocation (SECONDARY)."
+            },
+            "ioHLQ": {
+              "type": "string",
+              "description": "The high-level qualifier for the VSAM or QSAM data files for file I/O simulation. These files are allocated when running a Unit test case."
+            }
+          }
+        },
+        "configDS": {
+          "type": "string",
+          "description": "Runner configuration destination container."
+        },
+        "resultDS": {
+          "type": "string",
+          "description": "Runner result destination container."
+        },
+        "userLibraries": {
+          "type": "array",
+          "description": "The datat set of the application under test.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "defaultTestCaseFolder": {
+          "type": "string",
+          "description": "The default local folder to create the test case artifacts."
+        },
+        "jobcard": {
+          "type": "string",
+          "description": "The job card to run a unit test."
+        }
+      }
+    },
+    "substitutionMapSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify settings for the functional test substitution map.",
+      "properties": {
+        "cicsTag": {
+          "type": "string",
+          "description": "If recording a CICS application, specify the cicsts.dse.tag from the .galasa/cps.properties file."
+        },
+        "imageTag": {
+          "type": "string",
+          "description": "If recording a CICS or IMS application, specify the zos.dse.tag from the .galasa/cps.properties file."
+        },
+        "dbPrefix": {
+          "type": "string",
+          "description": "If recording a CICS application, specify the Db2 DB ID that was established when the Db2 instance was created."
+        },
+        "dbSchema": {
+          "type": "string",
+          "description": "If recording a CICS application, specify the db2.dse.schema.PRIMARY.name from the .galasa/cps.properties."
+        },
+        "loginCredentialsTag": {
+          "type": "string",
+          "description": "If recording a CICS or IMS application, specify the zos.image.x.credentials value from the .galasa/cps.properties."
+        },
+        "imsTag": {
+          "type": "string",
+          "description": "If recording an IMS application, specify the imstm.dse.tag from the .galasa/cps.properties."
+        },
+        "dliTag": {
+          "type": "string",
+          "description": "If recording an IMS application, specify the dli.database.tag.{imsTag}.datastore value from the .galasa/cps.properties."
+        }
+      }
+    },
+    "galasaSettingsItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Galasa properties for executing a functional test galasa test file",
+      "properties": {
+        "galasaHome": {
+          "type": "string",
+          "description": "Specify the galasa home directory on local machine"
+        },
+        "zos": {
+          "$ref": "#/definitions/zosGalasaSettings"
+        },
+        "cicsts": {
+          "$ref": "#/definitions/cicstsGalasaSettings"
+        },
+        "db2": {
+          "$ref": "#/definitions/db2GalasaSettings"
+        },
+        "imstmDseTags": {
+          "type": "array",
+          "description": "Configuration properties used by the IMS TM manager for the DSE provisioner for a specific tag",
+          "items": {
+            "$ref": "#/definitions/imstmDseTagItemsGalasaSettings"
+          }
+        },
+        "dli": {
+          "$ref": "#/definitions/dliGalasaSettings"
+        },
+        "totpMfas": {
+          "type": "array",
+          "description": "Configuration properties used by the TOTP Manager for MFA",
+          "items": {
+            "$ref": "#/definitions/totpMfaItemsGalasaSettings"
+          }
+        },
+        "dpsServer": {
+          "$ref": "#/definitions/dpsServerGalasaSettings"
+        },
+        "additionalProperties": {
+          "type": "array",
+          "description": "Specify additional properties to be added to the cps.properties file",
+          "items": {
+            "$ref": "#/definitions/additionalPropertiesItemsGalasaSettings"
+          }
+        }
+      }
+    },
+    "zosGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The configuration for a z/OS system",
+      "properties": {
+        "dseTags": {
+          "type": "array",
+          "description": "The configuration for a z/OS DSE tag",
+          "items": {
+            "$ref": "#/definitions/zosDseTagItemsGalasaSettings"
+          }
+        },
+        "images": {
+          "type": "array",
+          "description": "The configuration for a z/OS image",
+          "items": {
+            "$ref": "#/definitions/zosImageItemsGalasaSettings"
+          }
+        }
+      }
+    },
+    "zosDseTagItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The configuration for a z/OS DSE tag",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the z/OS DSE tag"
+        },
+        "imageid": {
+          "type": "string",
+          "description": "The z/OS Image ID"
+        }
+      }
+    },
+    "zosImageItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify the characteristics of a particular z/OS environment that your Galasa tests will target",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the z/OS Image tag"
+        },
+        "ipv4Hostname": {
+          "type": "string",
+          "description": "Hostname of the target z/OS system"
+        },
+        "telnet": {
+          "$ref": "#/definitions/zosImageTelnetGalasaSettings"
+        },
+        "credentials": {
+          "type": "string",
+          "description": "Credentials tag for logging onto a z/OS system"
+        },
+        "vtamLogon": {
+          "type": "string",
+          "description": "A string representing the VTAM logon command"
+        },
+        "logonInitialText": {
+          "type": "string",
+          "description": "This property defines the first input that will be provided to the z/OS system after a connection is established"
+        }
+      }
+    },
+    "zosImageTelnetGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "The telnet details for the target z/OS system",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "description": "Specify the telnet port for the target z/OS system"
+        },
+        "tls": {
+          "type": "boolean",
+          "description": "Specify if TLS is enabled on the target z/OS system"
+        }
+      }
+    },
+    "cicstsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa CICS TS Manager",
+      "properties": {
+        "dseTags": {
+          "type": "array",
+          "description": "User-defined identifier for the CICS tag",
+          "items": {
+            "$ref": "#/definitions/cicstsDseTagItemsGalasaSettings"
+          }
+        },
+        "defaultLogonGmText": {
+          "type": "string",
+          "description": "Property specifying text used for testing a specific CICS login good morning screen"
+        },
+        "provisionType": {
+          "type": "string",
+          "description": "Provides the type of the CICS TS region for the DSE provisioner"
+        }
+      }
+    },
+    "cicstsDseTagItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa CICS TS Manager for the specific tag",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the CICS tag"
+        },
+        "imageid": {
+          "type": "string",
+          "description": "User-defined identifier for the z/OS Image tag"
+        },
+        "applid": {
+          "type": "string",
+          "description": "Application Identifier of a CICS TS region for the DSE provisioner"
+        }
+      }
+    },
+    "db2GalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa Db2 Manager",
+      "properties": {
+        "dseInstances": {
+          "type": "array",
+          "description": "Db2 DSE Instance configuration properties used by the Galasa Db2 Manager",
+          "items": {
+            "$ref": "#/definitions/db2DseInstanceItemsGalasaSettings"
+          }
+        },
+        "schemas": {
+          "type": "array",
+          "description": "Db2 Schema configuration properties used by the Galasa Db2 Manager",
+          "items": {
+            "$ref": "#/definitions/db2SchemaItemsGalasaSettings"
+          }
+        },
+        "instances": {
+          "type": "array",
+          "description": "Db2 Instance configuration properties used by the Galasa Db2 Manager",
+          "items": {
+            "$ref": "#/definitions/db2InstanceItemsGalasaSettings"
+          }
+        }
+      }
+    },
+    "db2DseInstanceItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Db2 DSE Instance configuration properties used by the Galasa Db2 Manager",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the z/OS Image tag"
+        },
+        "name": {
+          "type": "string",
+          "description": "User-defined identifier for the Db2 tag"
+        }
+      }
+    },
+    "db2SchemaItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "This property specifies the name of the primary Db2 schema that Galasa will use when interacting with a Db2 database",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the primary Db2 Schema"
+        },
+        "name": {
+          "type": "string",
+          "description": "User-defined identifier for the Db2 schema tag"
+        }
+      }
+    },
+    "db2InstanceItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties for the Db2 instance for use within Galasa tests",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the Db2 tag"
+        },
+        "url": {
+          "type": "string",
+          "description": "Specify the JDBC connection URL for a Db2 database instance"
+        },
+        "credentials": {
+          "type": "string",
+          "description": "User-defined identifier for the Db2 credentials tag"
+        }
+      }
+    },
+    "imstmDseTagItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the IMS TM manager for the DSE provisioner for a specific tag",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the IMS tag"
+        },
+        "applid": {
+          "type": "string",
+          "description": "Application Identifier of an IMS TM region for the DSE provisioner"
+        }
+      }
+    },
+    "dliGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa DLI Manager",
+      "properties": {
+        "datastoreTags": {
+          "type": "array",
+          "description": "User-defined identifier for the DLI Datastore tag",
+          "items": {
+            "$ref": "#/definitions/dliDatastoreTagItemsGalasaSettings"
+          }
+        },
+        "databaseTags": {
+          "type": "array",
+          "description": "User-defined identifier for the DLI Database tag",
+          "items": {
+            "$ref": "#/definitions/dliDatabaseTagItemsGalasaSettings"
+          }
+        }
+      }
+    },
+    "dliDatastoreTagItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa DLI Manager for datastore access for a specific tag",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the DLI Datastore tag"
+        },
+        "name": {
+          "type": "string",
+          "description": "Specify the Datastore name"
+        },
+        "server": {
+          "type": "string",
+          "description": "Specify the hostname or IP address of the Datastore"
+        },
+        "port": {
+          "type": "integer",
+          "description": "Specify the port of the Datastore"
+        },
+        "ssl": {
+          "type": "boolean",
+          "description": "Specify if SSL is enabled on the Datastore"
+        }
+      }
+    },
+    "dliDatabaseTagItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the Galasa DLI Manager for database access for a specific tag",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the DLI Database tag"
+        },
+        "datastore": {
+          "type": "string",
+          "description": "User-defined identifier for the DLI datastore tag"
+        },
+        "name": {
+          "type": "string",
+          "description": "Provide the name of the database"
+        }
+      }
+    },
+    "totpMfaItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used by the TOTP Manager for MFA",
+      "properties": {
+        "tag": {
+          "type": "string",
+          "description": "User-defined identifier for the TOTP MFA tag"
+        },
+        "digits": {
+          "type": "integer",
+          "description": "The number of digits required in each generated one time password"
+        },
+        "digest": {
+          "type": "string",
+          "description": "The hash algorithm used when generating each one time password"
+        },
+        "interval": {
+          "type": "integer",
+          "description": "The number of seconds that each generated one time password will be valid for"
+        }
+      }
+    },
+    "dpsServerGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Configuration properties used to connect to Debug Profile Service",
+      "properties": {
+        "port": {
+          "type": "integer",
+          "description": "Specify the port of the Debug Profile Service on the remote z/OS system"
+        },
+        "secured": {
+          "type": "boolean",
+          "description": "Enable a secure connection"
+        },
+        "host": {
+          "type": "string",
+          "description": "Specify the hostname of the remote z/OS system"
+        },
+        "credentials": {
+          "type": "string",
+          "description": "User-defined identifier for the credentials tag"
+        }
+      }
+    },
+    "additionalPropertiesItemsGalasaSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Additional properties to be used",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "The key of the additional property"
+        },
+        "value": {
+          "type": "string",
+          "description": "The value of the additional property"
+        }
+      }
+    },
+    "functionalTestSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Specify settings for the functional test.",
+      "properties": {
+        "defaultTestCaseFolder": {
+          "type": "string",
+          "description": "Specify the path to the default test case folder."
+        },
+        "codePages": {
+          "type": "string",
+          "description": "Specify the code pages to be used."
+        },
+        "localBmsMapNames": {
+          "type": "array",
+          "description": "Specify an array of local BMS files.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "localMfsFiles": {
+          "type": "array",
+          "description": "Specify an array of local MFS files from the mfs-maps directory to be used for generating accurate test files. Ex: sample.mfs.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "localImsDbdFiles": {
+          "type": "array",
+          "description": "Specify an array of local IMS DBD files from the config-files directory to be used for generating accurate test files. Ex: imsDbd.txt.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "localDb2Config": {
+          "type": "array",
+          "description": "Specify an array of local Db2 Config files.",
+          "items": {
+            "type": "string"
+          }
+        },
+        "substitutionMap": {
+          "$ref": "#/definitions/substitutionMapSettings"
+        }
+      }
+    },
+    "ZCodeScanRuleItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["local"],
+          "description": "The storage type.",
+          "default": "local",
+          "examples": ["local"]
+        },
+        "locations": {
+          "type": "array",
+          "description": "An array of file locations. For 'local' values can be absolute and relative filename paths using GLOB patterns.",
+          "items": {
+            "type": "string"
+          },
+          "examples": ["**/*.yaml", "${git-rule-repo}/rule-model/**/*.yaml"]
+        }
+      },
+      "required": ["type", "locations"]
+    },
+    "ZCodeScanSettings": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "IBM ZCodeScan settings.",
+      "properties": {
+        "rules": {
+          "type": "array",
+          "description": "The IBM ZCodeScan rule files are YAML files that contains a list of rules that needs to be applied on codebase.",
+          "items": {
+            "$ref": "#/definitions/ZCodeScanRuleItem"
+          }
+        },
+        "customRuleModels": {
+          "type": "array",
+          "description": "The IBM ZCodeScan custom rule model defines custom rule domains for IBM ZCodeScan code analysis. It structures the code quality rules that can be used in a static analysis.",
+          "items": {
+            "$ref": "#/definitions/ZCodeScanRuleItem"
+          }
+        },
+        "customRuleJars": {
+          "type": "array",
+          "description": "The IBM ZCodeScan custom rule Java JAR files. The Java code needs to be packaged into a Java jar file so that it can be consumed by IBM ZCodeScan.",
+          "items": {
+            "$ref": "#/definitions/ZCodeScanRuleItem"
+          }
+        }
+      }
+    }
+  },
+  "anyOf": [
+    {
+      "$ref": "#/definitions/coreProperties"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "IBM ZCodeScan Rules Document",
-  "description": "JSON schema for zcodescan-rules-models.yaml files. Version @version@ -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2025. All Rights Reserved.",
+  "description": "JSON schema for zcodescan-rules-models.yaml files. Version 1.2.0 -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2025, 2026. All Rights Reserved.",
   "type": "object",
   "properties": {
     "domains": {

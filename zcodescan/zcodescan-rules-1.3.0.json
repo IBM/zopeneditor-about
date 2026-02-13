@@ -1,0 +1,2703 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "IBM ZCodeScan Rules Document",
+    "description": "JSON schema for zcodescan-rules.yaml files. Version @version@ -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2022, 2025. All Rights Reserved.",
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+        "rules": {
+            "description": "The list of rules to apply.",
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/ruleItem"
+            },
+            "minItems": 1
+        }
+    },
+    "definitions": {
+        "ruleItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "description": "The id of the rule to apply.",
+                    "anyOf": [
+                        {
+                            "type": "string",
+                            "description": "Custom rule following the pattern custom.*Rule$",
+                            "pattern": "^custom.*Rule"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AcceptDateTimeRule",
+                            "description": "Use CURRENT-DATE rather than ACCEPT DATE or ACCEPT TIME"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AcceptFromConsoleRule",
+                            "description": "Avoid ACCEPT statements containing FROM CONSOLE or FROM SYSIN"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AcceptRule",
+                            "description": "Insecure use of ACCEPT"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AlphaToNumericMoveRule",
+                            "description": "Do not move alphanumeric values to numeric fields."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AlterRule",
+                            "description": "Avoid use of ALTER for control flow."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.AvoidSectionInProcedureDivisionRule",
+                            "description": "Avoid using SECTION in the procedure division"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.BinarySubscriptRule",
+                            "description": "Use binary subscripts"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.BlockContainsRule",
+                            "description": "Specify 0 RECORDS for BLOCK CONTAINS clauses in file description entries"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.BufferOverflowRule",
+                            "description": "Improper restriction of operations within the bounds of a memory buffer"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CallSyntaxRule",
+                            "description": "Avoid CALL statements with a literal program name"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CancelRule",
+                            "description": "Avoid CANCEL statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CheckSqlcodeAfterExecSqlRule",
+                            "description": "EXEC SQL: Check the value of SQLCODE after an EXEC SQL statement"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CheckSqlstateAfterExecSqlRule",
+                            "description": "Test SQLSTATE after every SQL statement."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CicsCommareaLengthRule",
+                            "description": "Specify COMMAREA length in CICS LINK and CICS XCTL commands."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CicsNoHandleRule",
+                            "description": "Use NOHANDLE with CICS commands."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.Comp3PictureClauseRule",
+                            "description": "Use an odd number of digits in a COMP-3 or PACKED-DECIMAL data definition"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CompilerDirectivesRule",
+                            "description": "Avoid using the compiler directive"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ConditionNamePrefixRule",
+                            "description": "Use the specified prefix with condition names"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CopySuppressRule",
+                            "description": "Avoid COPY SUPPRESS statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CopybookRule",
+                            "description": "Avoid including the specified copy book"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CorrespondingRule",
+                            "description": "Avoid CORRESPONDING phrases"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorCloseExplicitRule",
+                            "description": "Explicitly close all explicitly opened cursors."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorCloseInLoopRule",
+                            "description": "Do not close cursors inside loops."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorDeclarationScopeRule",
+                            "description": "Do not declare cursors inside the Procedure Division."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorDeclareInLoopRule",
+                            "description": "Do not declare cursors inside loops."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorGroupByRule",
+                            "description": "Avoid GROUP BY in SQL cursors."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorOpenInLoopRule",
+                            "description": "Avoid opening cursors inside loops."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.CursorReadUpdateRule",
+                            "description": "FOR READ ONLY or FOR UPDATE should be specified for DB2 cursors."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.DebugFeaturesInProdRule",
+                            "description": "Do not deliver code to production with debug features enabled (security-sensitive)."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.DisplayUponConsoleRule",
+                            "description": "Avoid DISPLAY statements containing UPON CONSOLE"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.EntryRule",
+                            "description": "Avoid ENTRY statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.EvaluateNotIfRule",
+                            "description": "Use an EVALUATE statement rather than a nested IF statement"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.EvaluateWhenOtherRule",
+                            "description": "Use a WHEN OTHER phrase with an EVALUATE statement"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ExitParagraphRule",
+                            "description": "Use an EXIT paragraph in each section"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ExitProgramRule",
+                            "description": "Avoid EXIT PROGRAM statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileCloseExplicitRule",
+                            "description": "Explicitly close all open files."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileMergeAvoidRule",
+                            "description": "Avoid using MERGE statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileNameConventionRule",
+                            "description": "Follow the specified naming convention for COBOL file names"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileOpenInLoopRule",
+                            "description": "Do not use OPEN statements inside loops."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileSortAvoidRule",
+                            "description": "Avoid using SORT statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FileStatusCheckRule",
+                            "description": "Check FILE STATUS after I/O operations when available."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.FiveBasedLevelNumbersRule",
+                            "description": "Use level numbers in the sequence 01, 05, 10, 15..."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.GotoDependingOnRule",
+                            "description": "Avoid using GO TO DEPENDING ON."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.GotoParagraphRule",
+                            "description": "Avoid GO TO statements, except those that reference an EXIT paragraph"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.GotoRule",
+                            "description": "Avoid GO TO statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.IfElseRule",
+                            "description": "Avoid IF without ELSE"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.IndexSubscriptRule",
+                            "description": "Avoid using subscripts to access a table. Use indexes."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.InitializeRule",
+                            "description": "Avoid INITIALIZE statements. Use elementary MOVE statements or VALUE clauses."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.InlinePerformLineLimitRule",
+                            "description": "An inline PERFORM statement cannot exceed the specified line number limit"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.Level88Rule",
+                            "description": "Avoid using level-88 entries in data descriptions"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.MultipleExitsRule",
+                            "description": "Avoid using more than one EXIT statement per section"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.NestedIfLimitRule",
+                            "description": "Avoid nesting IF statements deeper than the specified number of levels"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.NextSentenceInScopedRangeRule",
+                            "description": "Use CONTINUE rather than NEXT SENTENCE inside a scoped range."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.NextSentenceRule",
+                            "description": "Avoid NEXT SENTENCE phrases."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.NoDisplayRule",
+                            "description": "Avoid using DISPLAY statements in production programs."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.OccursDependingOnRule",
+                            "description": "Avoid OCCURS DEPENDING ON phrases"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ParagraphCommentRule",
+                            "description": "Use comments to describe all paragraphs"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ParagraphRedefinitionRule",
+                            "description": "Do not redefine paragraphs."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.PerformExceptPerformSectionRule",
+                            "description": "Avoid PERFORM, except PERFORM section"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.PerformParagraphRule",
+                            "description": "PERFORM PARAGRAPH should not be used."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.PerformWithThroughRule",
+                            "description": "Use THRU phrases in PERFORM statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.PerformWithoutThroughRule",
+                            "description": "Avoid THRU phrases in PERFORM statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ProcedureRule",
+                            "description": "Procedure division statements cannot exceed the specified line number limit"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ProgramIdRule",
+                            "description": "Use a program name that matches the source file name"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.RedefinesAvoidRule",
+                            "description": "Do not use REDEFINES."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.RequireEndClauseRule",
+                            "description": "End Clause is Required"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.ReserveRule",
+                            "description": "Avoid RESERVE clauses in FILE-CONTROL paragraphs"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.RespOptionRule",
+                            "description": "EXEC CICS: Use the RESP option"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.RestrictedRoutineRule",
+                            "description": "Avoid calling the specified routine"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SearchAllRule",
+                            "description": "Use SEARCH ALL rather than SEARCH to search a table"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SectionCommentRule",
+                            "description": "Use comments to describe all sections"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlAvoidSelectStarRule",
+                            "description": "EXEC SQL: Avoid SELECT *"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlDeclareCursorOrderByRule",
+                            "description": "EXEC SQL: Use an ORDER BY clause when declaring a cursor"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlFetchFirstOrderByRule",
+                            "description": "Queries using FETCH FIRST must include an ORDER BY clause."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlInjectionRule",
+                            "description": "Improper neutralization of special elements used in an SQL command (SQL Injection)"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlNoCastToCharRule",
+                            "description": "Do not use CAST(... AS CHAR/VARCHAR) in SQL statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlNoDdlInAppRule",
+                            "description": "Do not use DDL statements in programs."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlNoLockTableRule",
+                            "description": "Do not use LOCK TABLE statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlNoNestedSelectRule",
+                            "description": "Avoid nested SQL SELECT statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlNoUnionRule",
+                            "description": "Do not use UNION in SQL SELECT statements."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.SqlWhereRule",
+                            "description": "Use a WHERE clause in SQL statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.StaticCallNameRule",
+                            "description": "Avoid static calls except for the specified program name"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.StopRunRule",
+                            "description": "Avoid STOP RUN and STOP literal statements"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.StringNoTruncationRule",
+                            "description": "Move strings only to variables large enough to prevent truncation."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.TypedInitializationRule",
+                            "description": "Initialize data items with values of the correct type."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.UninitialzedVariablesRule",
+                            "description": "Use of uninitialized variables."
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.UnprotectedAuthCredentialRule",
+                            "description": "Unprotected Authentication Credentials"
+                        },
+                        {
+                            "const": "zcodescan.cobol.rules.XMLParseRule",
+                            "description": "Avoid XML PARSE statements"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.ArithmeticExprWithoutBitTypeRule",
+                            "description": "Avoid using data elements of type BIT in arithmetic operations"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.ArithmeticExprWithoutCharacterTypeRule",
+                            "description": "Avoid using data elements of type CHARACTER in arithmetic operations"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.AvoidProcessDirectiveRule",
+                            "description": "Avoid using the PROCESS directive"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.DotQualRefsRule",
+                            "description": "Use dot qualified references to structure members that are not level 1"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.FactorAttribRule",
+                            "description": "Avoid declaring multiple data items by factoring attributes"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.FixedDecimalPrecisionRule",
+                            "description": "Avoid FIXED DECIMAL declarations with even precision"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.GoToRule",
+                            "description": "Avoid most Go To Statements"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.ImplicitDeclarationRule",
+                            "description": "Avoid implicit declarations"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.LoopControlRule",
+                            "description": "Use a loop control variable that is FIXED BINARY, FLOAT, ORDINAL, HANDLE, POINTER, or OFFSET."
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.ProcedureFilenameMatchRule",
+                            "description": "Use a program name that matches the procedure file name"
+                        },
+                        {
+                            "const": "zcodescan.pli.rules.SingleVariableRule",
+                            "description": "Declare a single variable in an IF, WHILE, UNTIL, or WHEN clause as BIT(1) NONVARYING"
+                        }
+                    ]
+                },
+                "severity": {
+                    "enum": [
+                        "BLOCKER",
+                        "HIGH",
+                        "MEDIUM",
+                        "LOW",
+                        "INFO",
+                        "OFF"
+                    ]
+                },
+                "statements": {},
+                "parameters": {}
+            },
+            "required": [
+                "id"
+            ],
+            "allOf": [
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AcceptDateTimeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AcceptFromConsoleRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AcceptRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AlphaToNumericMoveRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AlterRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.AvoidSectionInProcedureDivisionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.BinarySubscriptRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.BlockContainsRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.BufferOverflowRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CallSyntaxRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CancelRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CheckSqlcodeAfterExecSqlRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CheckSqlstateAfterExecSqlRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CicsCommareaLengthRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CicsNoHandleRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.Comp3PictureClauseRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CompilerDirectivesRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "statements": {
+                                "description": "The list of statements for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.CompilerDirectivesRuleStatementItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "statements"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ConditionNamePrefixRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.ConditionNamePrefixRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CopySuppressRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CopybookRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.CopybookRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CorrespondingRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorCloseExplicitRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorCloseInLoopRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorDeclarationScopeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorDeclareInLoopRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorGroupByRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorOpenInLoopRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.CursorReadUpdateRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.DebugFeaturesInProdRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.DisplayUponConsoleRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.EntryRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.EvaluateNotIfRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.EvaluateWhenOtherRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ExitParagraphRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ExitProgramRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileCloseExplicitRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileMergeAvoidRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileNameConventionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.FileNameConventionRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileOpenInLoopRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileSortAvoidRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FileStatusCheckRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.FiveBasedLevelNumbersRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.GotoDependingOnRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.GotoParagraphRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.GotoRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.IfElseRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.IndexSubscriptRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.InitializeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.InlinePerformLineLimitRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.InlinePerformLineLimitRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.Level88Rule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.MultipleExitsRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.NestedIfLimitRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.NestedIfLimitRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.NextSentenceInScopedRangeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.NextSentenceRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.NoDisplayRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.OccursDependingOnRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ParagraphCommentRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.ParagraphCommentRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ParagraphRedefinitionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.PerformExceptPerformSectionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.PerformParagraphRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.PerformWithThroughRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.PerformWithoutThroughRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ProcedureRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.ProcedureRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ProgramIdRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.RedefinesAvoidRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.RequireEndClauseRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "statements": {
+                                "description": "The list of statements for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.RequireEndClauseRuleStatementItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "statements"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.ReserveRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.RespOptionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.RestrictedRoutineRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.RestrictedRoutineRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SearchAllRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SectionCommentRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.SectionCommentRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlAvoidSelectStarRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlDeclareCursorOrderByRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlFetchFirstOrderByRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlInjectionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlNoCastToCharRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlNoDdlInAppRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlNoLockTableRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlNoNestedSelectRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlNoUnionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.SqlWhereRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "statements": {
+                                "description": "The list of statements for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.SqlWhereRuleStatementItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "statements"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.StaticCallNameRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "properties": {
+                            "parameters": {
+                                "description": "The list of parameters for this rule.",
+                                "type": "array",
+                                "items": {
+                                    "$ref": "#/definitions/zcodescan.cobol.rules.StaticCallNameRuleParameterItem"
+                                },
+                                "minItems": 1
+                            }
+                        },
+                        "required": [
+                            "id",
+                            "parameters"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.StopRunRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.StringNoTruncationRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.TypedInitializationRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.UninitialzedVariablesRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.UnprotectedAuthCredentialRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.cobol.rules.XMLParseRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.ArithmeticExprWithoutBitTypeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.ArithmeticExprWithoutCharacterTypeRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.AvoidProcessDirectiveRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.DotQualRefsRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.FactorAttribRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.FixedDecimalPrecisionRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.GoToRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.ImplicitDeclarationRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.LoopControlRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.ProcedureFilenameMatchRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                },
+                {
+                    "if": {
+                        "properties": {
+                            "id": {
+                                "const": "zcodescan.pli.rules.SingleVariableRule",
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "then": {
+                        "not": {
+                            "required": [
+                                "statements"
+                            ]
+                        },
+                        "required": [
+                            "id"
+                        ]
+                    }
+                }
+            ]
+        },
+        "zcodescan.cobol.rules.CompilerDirectivesRuleStatementItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "enum": [
+                        "BasisDirective",
+                        "CopyDirective",
+                        "ProcessDirective",
+                        "ReplaceDirective",
+                        "ServicelabelDirective",
+                        "ServiceloadDirective",
+                        "TitleDirective"
+                    ]
+                },
+                "value": {
+                    "type": "boolean",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.RequireEndClauseRuleStatementItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "enum": [
+                        "Call",
+                        "Evaluate",
+                        "If",
+                        "Read",
+                        "Search"
+                    ]
+                },
+                "value": {
+                    "type": "boolean",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.SqlWhereRuleStatementItem": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "name": {
+                    "enum": [
+                        "Delete",
+                        "Select",
+                        "Update"
+                    ]
+                },
+                "value": {
+                    "type": "boolean",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.ConditionNamePrefixRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "CONDITION_NAME_PREFIX"
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.CopybookRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "CopybookName"
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.FileNameConventionRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "ConventionMask"
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.InlinePerformLineLimitRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "LineLimit"
+                    ]
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.NestedIfLimitRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "NestingLimit"
+                    ]
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.ParagraphCommentRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "LOCATION"
+                    ]
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.ProcedureRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "LineLimit"
+                    ]
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.RestrictedRoutineRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "RoutineName"
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.SectionCommentRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "LOCATION"
+                    ]
+                },
+                "value": {
+                    "type": "number",
+                    "description": "Perform statement"
+                }
+            }
+        },
+        "zcodescan.cobol.rules.StaticCallNameRuleParameterItem": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "enum": [
+                        "PROGRAM_NAME"
+                    ]
+                },
+                "value": {
+                    "type": "string",
+                    "description": "Perform statement"
+                }
+            }
+        }
+    }
+}

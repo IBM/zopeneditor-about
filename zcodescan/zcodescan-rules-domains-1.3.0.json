@@ -1,0 +1,235 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "IBM ZCodeScan Rules Document",
+    "description": "JSON schema for zcodescan-rules-models.yaml files. Version 1.3.0 -- Licensed Materials - Property of IBM - (c) Copyright IBM Corporation 2026. All Rights Reserved.",
+    "type": "object",
+    "properties": {
+        "domains": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "description": "Name of the domain"
+                    },
+                    "categories": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name of the category"
+                                },
+                                "rules": {
+                                    "type": "array",
+                                    "items": {
+                                        "type": "object",
+                                        "properties": {
+                                            "id": {
+                                                "type": "string",
+                                                "description": "Unique identifier for the rule"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "Display name of the rule"
+                                            },
+                                            "description": {
+                                                "type": "string",
+                                                "description": "Detailed description of the rule"
+                                            },
+                                            "severity": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "BLOCKER",
+                                                    "HIGH",
+                                                    "MEDIUM",
+                                                    "LOW",
+                                                    "INFO",
+                                                    "OFF"
+                                                ],
+                                                "description": "Severity level of the rule"
+                                            },
+                                            "software_quality": {
+                                                "type": "string",
+                                                "enum": [
+                                                    "MAINTAINABILITY",
+                                                    "RELIABILITY",
+                                                    "SECURITY"
+                                                ],
+                                                "description": "Software quality attribute"
+                                            },
+                                            "cleancode_attribute": {
+                                                "enum": [
+                                                    "FORMATTED, CONVENTIONAL",
+                                                    "IDENTIFIABLE",
+                                                    "CLEAR",
+                                                    "LOGICAL",
+                                                    "COMPLETE",
+                                                    "EFFICIENT",
+                                                    "FOCUSED",
+                                                    "DISTINCT",
+                                                    "MODULAR",
+                                                    "TESTED",
+                                                    "LAWFUL",
+                                                    "TRUSTWORTHY",
+                                                    "RESPECTFUL"
+                                                ],
+                                                "description": "Clean code attribute"
+                                            },
+                                            "parameters": {
+                                                "type": "array",
+                                                "items": {
+                                                    "type": "object",
+                                                    "properties": {
+                                                        "name": {
+                                                            "type": "string",
+                                                            "description": "Parameter name"
+                                                        },
+                                                        "value": {
+                                                            "oneOf": [
+                                                                {
+                                                                    "type": "string"
+                                                                },
+                                                                {
+                                                                    "type": "number"
+                                                                },
+                                                                {
+                                                                    "type": "boolean"
+                                                                }
+                                                            ],
+                                                            "description": "Parameter value"
+                                                        },
+                                                        "description": {
+                                                            "type": "string",
+                                                            "description": "Parameter description"
+                                                        }
+                                                    },
+                                                    "required": [
+                                                        "name",
+                                                        "value"
+                                                    ],
+                                                    "additionalProperties": false
+                                                }
+                                            },
+                                            "implementation": {
+                                                "type": "object",
+                                                "properties": {
+                                                    "language": {
+                                                        "type": "string",
+                                                        "enum": [
+                                                            "JAR",
+                                                            "REGEX"
+                                                        ],
+                                                        "description": "Implementation language type"
+                                                    },
+                                                    "path": {
+                                                        "type": "string",
+                                                        "description": "Path to the JAR file (for JAR language type)"
+                                                    },
+                                                    "class_name": {
+                                                        "type": "string",
+                                                        "description": "Class name (for JAR language type)"
+                                                    },
+                                                    "extensions": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "type": "string"
+                                                        },
+                                                        "description": "File extensions to apply the rule"
+                                                    },
+                                                    "regex": {
+                                                        "type": "object",
+                                                        "properties": {
+                                                            "line": {
+                                                                "type": "boolean",
+                                                                "description": "Whether to apply regex line by line"
+                                                            },
+                                                            "excludes": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "string"
+                                                                },
+                                                                "description": "Regex patterns to exclude"
+                                                            },
+                                                            "includes": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "string"
+                                                                },
+                                                                "description": "Regex patterns to include"
+                                                            },
+                                                            "patterns": {
+                                                                "type": "array",
+                                                                "items": {
+                                                                    "type": "object",
+                                                                    "properties": {
+			                                                            "line": {
+			                                                                "type": "boolean",
+			                                                                "description": "Whether to apply regex line by line"
+			                                                            },
+                                                                        "pattern": {
+                                                                            "type": "string",
+                                                                            "description": "Regex pattern"
+                                                                        },
+                                                                        "include": {
+                                                                            "type": "boolean",
+                                                                            "description": "Whether to include matches"
+                                                                        },
+                                                                        "anchor": {
+                                                                            "type": "string",
+                                                                            "description": "Anchor pattern for context"
+                                                                        }
+                                                                    },
+                                                                    "required": [
+                                                                        "pattern",
+                                                                        "include"
+                                                                    ],
+                                                                    "additionalProperties": false
+                                                                }
+                                                            }
+                                                        },
+                                                        "additionalProperties": false
+                                                    }
+                                                },
+                                                "required": [
+                                                    "language"
+                                                ],
+                                                "additionalProperties": false
+                                            }
+                                        },
+                                        "required": [
+                                            "id",
+                                            "name",
+                                            "description",
+                                            "severity",
+                                            "software_quality",
+                                            "cleancode_attribute",
+                                            "implementation"
+                                        ],
+                                        "additionalProperties": false
+                                    }
+                                }
+                            },
+                            "required": [
+                                "name",
+                                "rules"
+                            ],
+                            "additionalProperties": false
+                        }
+                    }
+                },
+                "required": [
+                    "name",
+                    "categories"
+                ],
+                "additionalProperties": false
+            }
+        }
+    },
+    "required": [
+        "domains"
+    ],
+    "additionalProperties": false
+}

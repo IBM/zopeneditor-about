@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor v6.3
+IBM Z Open Editor v6.4
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 NOTICES AND INFORMATION
 
 =====================================================================
-START of Notices for IBM Z Open Editor 6.3
+START of Notices for IBM Z Open Editor 6.4
 =====================================================================
 
 The IBM license agreement and any applicable information on the web download page
@@ -456,6 +456,7 @@ START OF BSD-3-CLAUSE CODE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the following terms:
 
+antlr4-runtime, Copyright (c) 2012–2024 Terence Parr
 bcrypt-pbkdf-1.0.2.tgz, Copyright © Joyent, Inc. and other Node contributors, 2014
 buffer-equal-constant-time-1.0.1.tgz, Copyright © Fedor Indutny, 2013
 diff-8.0.3.tgz, Copyright © Kevin Decker and contributors, 2011–2024
@@ -513,17 +514,20 @@ The Program includes some or all of the following that IBM obtained under the fo
 
 cics-for-zowe-explorer-api-6.11.0.tgz, Copyright © Broadcom Inc. and contributors, 2020–2024
 cics-for-zowe-sdk-6.17.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-core-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+core-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 elkjs-0.11.0.tgz, Copyright © Konrad Vlasin and contributors, 2018–2021
-imperative-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+imperative-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+org.jacoco.agent, Copyright (c) 2009–2024 JaCoCo Contributors
+org.jacoco.ant, Copyright (c) 2009–2024 JaCoCo Contributors
+org.jacoco.report, Copyright (c) 2009–2024 JaCoCo Contributors
 secrets-for-zowe-sdk-8.29.4.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-console-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-files-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-jobs-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-tso-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-uss-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zosmf-for-zowe-sdk-8.29.8.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zowe-explorer-api-3.4.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-console-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-files-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-jobs-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-tso-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-uss-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zosmf-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zowe-explorer-api-3.4.1.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 
 
 Copyright (c) <YEAR> <COPYRIGHT HOLDER>
@@ -1012,7 +1016,7 @@ events-3.3.0.tgz, Copyright © Node.js contributors, 2019–2022
 eventsource-3.0.7.tgz, Copyright © Yaffle and contributors, 2012–2024
 eventsource-parser-3.0.6.tgz, Copyright © Remy Sharp and contributors, 2020–2024
 express-5.2.1.tgz, Copyright © TJ Holowaychuk and contributors, 2010–2024
-express-rate-limit-7.5.1.tgz, Copyright © Evan Hahn and contributors, 2014–2024
+express-rate-limit-8.2.1.tgz, Copyright © Evan Hahn and contributors, 2014–2024
 extend-3.0.2.tgz, Copyright © Stefan Thomas, 2011–2018
 fast-deep-equal-3.1.3.tgz, Copyright © Epoberezkin and contributors, 2017–2022
 fast-fifo-1.3.2.tgz, Copyright © Matteo Collina, 2020–2022
@@ -1075,7 +1079,7 @@ helper-wasm-section-1.14.1.tgz, Copyright © IBM Corporation, 2020–2024
 helpers-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
 hey-listen-1.0.8.tgz, Copyright © Matt Perry, 2018–2020
 hoist-non-react-statics-3.3.7.tgz, Copyright © Redux contributors, 2016–2023
-hono-4.11.4.tgz, Copyright © Yusuke Wada, 2021–2024
+hono-4.11.7.tgz, Copyright © Yusuke Wada, 2021–2024
 html-parse-stringify-3.0.1.tgz, Copyright © Jaroslaw Holubek, 2017–2020
 html-to-image-1.11.13.tgz, Copyright © Tsuyoshi Yamamoto, 2018–2024
 html2canvas-1.4.1.tgz, Copyright © Niklas von Hertzen, 2014–2021
@@ -1125,6 +1129,7 @@ json-parse-even-better-errors-3.0.2.tgz, Copyright © Kat Marchán, 2019–2023
 json-schema-7.0.15.tgz, Copyright © Julian Berman, 2013–2023
 json-schema-traverse-0.4.1.tgz, Copyright © Evgeny Poberezkin, 2016–2019
 json-schema-traverse-1.0.0.tgz, Copyright © Evgeny Poberezkin, 2019–2023
+json-xml-parse-1.3.0.tgz, Copyright (c) 2016–2020 Tasos Latsas
 json5-2.2.3.tgz, Copyright © Aseem Kishore, 2012–2023
 jsonc-parser-3.2.0.tgz, Copyright © Microsoft Corporation, 2017–2023
 jsonfile-4.0.0.tgz, Copyright © JP Richardson, 2015–2017
@@ -1132,7 +1137,7 @@ jsonfile-6.2.0.tgz, Copyright © JP Richardson, 2015–2024
 jsonparse-1.3.1.tgz, Copyright © Tim Caswell, 2011–2014
 jsonschema-1.5.0.tgz, Copyright © Julian Berman, 2012–2021
 jsonwebtoken-9.0.3.tgz, Copyright © Auth0, Inc., 2015–2024
-jspdf-4.0.0.tgz, Copyright © James Hall and contributors, 2010–2024
+jspdf-4.1.0.tgz, Copyright © James Hall and contributors, 2010–2024
 jspdf-autotable-5.0.7.tgz, Copyright © Simon Bengtsson, 2016–2024
 jwa-2.0.1.tgz, Copyright © Filip Skokan, 2018–2023
 jws-4.0.1.tgz, Copyright © Filip Skokan, 2018–2024
@@ -1145,7 +1150,7 @@ loader-runner-4.3.1.tgz, Copyright © Tobias Koppers, 2012–2024
 loader-utils-2.0.4.tgz, Copyright © Tobias Koppers, 2012–2022
 locate-path-5.0.0.tgz, Copyright © Sindre Sorhus, 2016–2019
 locate-path-6.0.0.tgz, Copyright © Sindre Sorhus, 2019–2021
-lodash-4.17.21.tgz, Copyright © John-David Dalton and contributors, 2012–2021
+lodash-4.17.23.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash-deep-2.0.0.tgz, Copyright © Alexander Solovyov, 2014–2018
 lodash.includes-4.3.0.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash.isboolean-3.0.3.tgz, Copyright © John-David Dalton and contributors, 2012–2021
@@ -1156,6 +1161,7 @@ lodash.isplainobject-4.0.6.tgz, Copyright © John-David Dalton and contributors,
 lodash.isstring-4.0.1.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash.once-4.1.1.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 logform-2.7.0.tgz, Copyright © WinstonJS contributors, 2015–2024
+lombok, Copyright (C) 2009–2024 The Project Lombok Authors
 loose-envify-1.4.0.tgz, Copyright © Facebook, Inc., 2014–2019
 make-dir-3.1.0.tgz, Copyright © Sindre Sorhus, 2015–2020
 markdown-it-14.1.0.tgz, Copyright © Vitaly Puzrin, 2014–2024
@@ -1281,7 +1287,7 @@ scheduler-0.23.2.tgz, Copyright © Meta Platforms, Inc., 2019–2023
 schema-utils-2.7.1.tgz, Copyright © Webpack contributors, 2017–2020
 schema-utils-4.3.3.tgz, Copyright © Webpack contributors, 2017–2024
 schemas-29.6.3.tgz, Copyright © Jest contributors, 2017–2024
-sdk-1.25.2.tgz, Copyright © IBM Corporation, 2020–2024
+sdk-1.26.0.tgz, Copyright (c) 2019–2024 Zowe Contributors
 send-1.2.1.tgz, Copyright © TJ Holowaychuk, 2012–2014
 serve-static-2.2.1.tgz, Copyright © Douglas Christopher Wilson, 2014–2024
 setimmediate-1.0.5.tgz, Copyright © YuzuJS contributors, 2014–2016
@@ -1370,6 +1376,7 @@ vscode-jsonrpc-8.2.0.tgz, Copyright © Microsoft Corporation, 2016–2024
 vscode-languageclient-9.0.1.tgz, Copyright © Microsoft Corporation, 2016–2024
 vscode-languageserver-protocol-3.17.5.tgz, Copyright © Microsoft Corporation, 2016–2023
 vscode-languageserver-types-3.17.5.tgz, Copyright © Microsoft Corporation, 2016–2023
+watcher-linux-x64-glibc-2.5.6.tgz, Copyright (c) 2017–2024 Parcel Contributors
 wasm-edit-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
 wasm-gen-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
 wasm-opt-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
@@ -1731,17 +1738,17 @@ END OF Unlicense LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 =====================================================================
-END of Notices for IBM Z Open Editor 6.3
+END of Notices for IBM Z Open Editor 6.4
 =====================================================================
 
 
-L/N: L-UPDK-DWX5C9
-D/N: L-UPDK-DWX5C9
-P/N: L-UPDK-DWX5C9
+L/N: L-YYLE-8KM8D3
+D/N: L-YYLE-8KM8D3
+P/N: L-YYLE-8KM8D3
 
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM Z Open Editor v6.3
+IBM Z Open Editor v6.4
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -1889,7 +1896,6 @@ END OF OFL-1.0 CODE NOTICES AND INFORMATION
 END OF NOTICES FOR z Open Editor_6.x non-IBM License
 --------------------------------------------------------------------------------
 
-
-L/N: L-UPDK-DWX5C9
-D/N: L-UPDK-DWX5C9
-P/N: L-UPDK-DWX5C9
+L/N: L-YYLE-8KM8D3
+D/N: L-YYLE-8KM8D3
+P/N: L-YYLE-8KM8D3

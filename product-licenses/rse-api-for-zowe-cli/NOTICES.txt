@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM RSE API Plug-in for Zowe CLI v6.4
+IBM RSE API Plug-in for Zowe CLI v6.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -28,7 +28,7 @@ limitation URLs or references to any third party websites.
 NOTICES AND INFORMATION
 
 =====================================================================
-START of Notices for IBM RSE API Plug-in for Zowe CLI v6.4
+START of Notices for IBM RSE API Plug-in for Zowe CLI v6.5
 =====================================================================
 
 The IBM license agreement and any applicable information on the web download page
@@ -84,7 +84,7 @@ bundle-2.3.2.tgz
 colors-11.45.0.tgz
 core-1.1.0.tgz
 crc-32-1.2.2.tgz
-dompurify-3.3.1.tgz
+dompurify-3.3.2.tgz
 ecdsa-sig-formatter-1.0.11.tgz
 events-universal-1.0.1.tgz
 exponential-backoff-3.1.3.tgz
@@ -95,6 +95,12 @@ hogan-3.0.4.tgz
 ibm-cloud-sdk-core-5.4.5.tgz
 icon-helpers-10.70.0.tgz
 icons-react-11.73.0.tgz
+jackson-annotations
+jackson-bom
+jackson-core
+jackson-databind
+jackson-dataformat-yaml
+jspdf-4.2.1.tgz
 layout-11.46.0.tgz
 leb128-1.13.2.tgz
 log4js-6.9.1.tgz
@@ -108,6 +114,7 @@ retry-axios-2.6.0.tgz
 sass-1.63.0.tgz
 sign-2.3.2.tgz
 sigstore-2.3.1.tgz
+snakeyaml-2.3.tgz
 spdx-correct-3.2.0.tgz
 styles-1.98.0.tgz
 telemetry-js-1.10.2.tgz
@@ -315,8 +322,10 @@ jackspeak-3.4.3.tgz
 package-json-from-dist-1.0.1.tgz
 path-scurry-1.11.1.tgz
 sax-1.4.4.tgz
-tar-7.5.4.tgz
+tar-7.5.11.tgz
 yallist-5.0.0.tgz
+minimatch-10.2.4.tgz,
+minipass-7.1.3.tgz,
 
 
 # Blue Oak Model License
@@ -456,15 +465,19 @@ START OF BSD-3-CLAUSE CODE NOTICES AND INFORMATION
 
 The Program includes some or all of the following that IBM obtained under the following terms:
 
-antlr4-runtime, Copyright (c) 2012–2024 Terence Parr
+asm 9.9, Copyright (c) 2000-2024 OW2 ASM Team
+asm-commons 9.9, Copyright (c) 2000-2024 OW2 ASM Team
+asm-tree 9.9, Copyright (c) 2000-2024 OW2 ASM Team
+antlr4-runtime, Copyright (c) 2012–2024 Terence P
+asm-tree 9.9, arr
 bcrypt-pbkdf-1.0.2.tgz, Copyright © Joyent, Inc. and other Node contributors, 2014
 buffer-equal-constant-time-1.0.1.tgz, Copyright © Fedor Indutny, 2013
-diff-8.0.3.tgz, Copyright © Kevin Decker and contributors, 2011–2024
+diff-8.0.4.tgz, Copyright © Kevin Decker and contributors, 2011–2024
 fast-uri-3.1.0.tgz, Copyright © Tomasz Ruciński and contributors, 2021–2024
-highlight.js-11.9.0.tgz, Copyright © Ivan Sagalaev and contributors, 2006–2024
+highlight.js-11.11.1.tgz, Copyright © Ivan Sagalaev and contributors, 2006–2024
 ieee754-1.2.0.tgz, Copyright © Feross Aboukhadijeh, 2014
 ieee754-1.2.1.tgz, Copyright © Feross Aboukhadijeh, 2014–2016
-qs-6.14.1.tgz, Copyright © TJ Holowaychuk, Roman Shtylman, and contributors, 2014–2023
+qs-6.14.2.tgz, Copyright © TJ Holowaychuk, Roman Shtylman, and contributors, 2014–2023
 serialize-javascript-6.0.2.tgz, Copyright © Yahoo Inc. and contributors, 2014–2022
 source-map-0.6.1.tgz, Copyright © Mozilla Foundation and contributors, 2011–2017
 source-map-js-1.2.1.tgz, Copyright © Mozilla Foundation and contributors, 2011–2023
@@ -514,16 +527,17 @@ The Program includes some or all of the following that IBM obtained under the fo
 
 cics-for-zowe-explorer-api-6.11.0.tgz, Copyright © Broadcom Inc. and contributors, 2020–2024
 cics-for-zowe-sdk-6.17.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-core-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+core-for-zowe-sdk-8.31.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 elkjs-0.11.0.tgz, Copyright © Konrad Vlasin and contributors, 2018–2021
-imperative-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-org.jacoco.agent, Copyright (c) 2009–2024 JaCoCo Contributors
-org.jacoco.ant, Copyright (c) 2009–2024 JaCoCo Contributors
-org.jacoco.report, Copyright (c) 2009–2024 JaCoCo Contributors
+imperative-8.31.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+org.jacoco.agent 0.8.14, Copyright (c) 2009–2024 JaCoCo Contributors
+org.jacoco.ant 0.8.14, Copyright (c) 2009–2024 JaCoCo Contributors
+org.jacoco.core 0.8.14, Copyright (c) 2009–2024 JaCoCo Contributors
+org.jacoco.report 0.8.14, Copyright (c) 2009–2024 JaCoCo Contributors
 secrets-for-zowe-sdk-8.29.4.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-console-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-files-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
-zos-jobs-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-console-for-zowe-sdk-8.31.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-files-for-zowe-sdk-8.31.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
+zos-jobs-for-zowe-sdk-8.31.0.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 zos-tso-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 zos-uss-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
 zosmf-for-zowe-sdk-8.29.9.tgz, Copyright © Broadcom Inc. and contributors, 2019–2024
@@ -777,7 +791,7 @@ cliui-8.0.2.tgz, Copyright © Yargs contributors, 2015–2023
 css-color-keywords-1.0.0.tgz, Copyright © Lea Verou, 2014
 electron-to-chromium-1.5.267.tgz, Copyright © Electron contributors, 2017–2024
 fastq-1.20.1.tgz, Copyright © Matteo Collina and contributors, 2016–2024
-flatted-3.3.3.tgz, Copyright © Andrea Giammarchi, 2018–2024
+flatted-3.4.2.tgz, Copyright © Andrea Giammarchi, 2018–2024
 foreground-child-3.3.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2021–2024
 fs-3.1.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–2016
 fs-minipass-3.0.3.tgz, Copyright © Isaac Z. Schlueter and contributors, 2018–2021
@@ -799,9 +813,7 @@ lru-cache-5.1.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–20
 make-fetch-happen-13.0.1.tgz, Copyright © npm, Inc. and contributors, 2018–2024
 minimatch-5.1.6.tgz, Copyright © Isaac Z. Schlueter and contributors, 2011–2022
 minimatch-6.1.6.tgz, Copyright © Isaac Z. Schlueter and contributors, 2011–2023
-minimatch-9.0.5.tgz, Copyright © Isaac Z. Schlueter and contributors, 2011–2024
 minipass-3.3.6.tgz, Copyright © Isaac Z. Schlueter and contributors, 2018–2021
-minipass-7.1.2.tgz, Copyright © Isaac Z. Schlueter and contributors, 2018–2024
 minipass-collect-2.0.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2019–2021
 minipass-flush-1.0.5.tgz, Copyright © Isaac Z. Schlueter and contributors, 2019–2021
 minipass-pipeline-1.2.4.tgz, Copyright © Isaac Z. Schlueter and contributors, 2019–2022
@@ -824,7 +836,6 @@ promise-inflight-1.0.1.tgz, Copyright © Isaac Z. Schlueter, 2015
 promise-spawn-7.0.2.tgz, Copyright © npm, Inc. and contributors, 2018–2023
 read-3.0.1.tgz, Copyright © Isaac Z. Schlueter, 2011–2016
 run-script-8.1.0.tgz, Copyright © npm, Inc. and contributors, 2017–2024
-semver-6.3.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–2019
 semver-7.7.2.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–2024
 setprototypeof-1.2.0.tgz, Copyright © Jonathan Ong, 2015
 signal-exit-4.1.0.tgz, Copyright © Isaac Z. Schlueter and contributors, 2015–2023
@@ -838,8 +849,9 @@ wrappy-1.0.2.tgz, Copyright © Isaac Z. Schlueter, 2014
 y18n-5.0.8.tgz, Copyright © Yargs contributors, 2015–2020
 yallist-3.1.1.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–2018
 yallist-4.0.0.tgz, Copyright © Isaac Z. Schlueter and contributors, 2010–2021
-yaml-2.8.2.tgz, Copyright © Eemeli Aro and contributors, 2018–2024
+yaml-2.8.3.tgz, Copyright © Eemeli Aro and contributors, 2018–2024
 yargs-parser-21.1.1.tgz, Copyright © Yargs contributors, 2016–2023
+yauzl-3.3.0.tgz, Copyright (c) 2014 Josh Wolfe
 zod-to-json-schema-3.25.1.tgz, Copyright © Stepan Parunashvili and contributors, 2021–2024
 
 
@@ -875,13 +887,13 @@ The Program includes some or all of the following that IBM obtained under the fo
 
 abort-controller-3.0.0.tgz, Copyright © Jake Archibald and contributors, 2017–2021
 accepts-2.0.0.tgz, Copyright © Douglas Christopher Wilson, 2014–2023
-acorn-8.15.0.tgz, Copyright © Marijn Haverbeke and contributors, 2012–2024
+acorn-8.16.0.tgz, Copyright © Marijn Haverbeke and contributors, 2012–2024
 acorn-import-phases-1.0.4.tgz, Copyright © Marijn Haverbeke and contributors, 2023–2024
 agent-base-7.1.4.tgz, Copyright © Nathan Rajlich and contributors, 2013–2024
 aggregate-error-3.1.0.tgz, Copyright © Sindre Sorhus, 2019–2022
 ajv-6.12.6.tgz, Copyright © Evgeny Poberezkin, 2015–2020
 ajv-8.12.0.tgz, Copyright © Evgeny Poberezkin and contributors, 2020–2023
-ajv-8.17.1.tgz, Copyright © Evgeny Poberezkin and contributors, 2020–2024
+ajv-8.18.0.tgz, Copyright © Evgeny Poberezkin and contributors, 2020–2024
 ajv-formats-2.1.1.tgz, Copyright © Evgeny Poberezkin and contributors, 2020–2022
 ajv-formats-3.0.1.tgz, Copyright © Evgeny Poberezkin and contributors, 2022–2024
 ajv-keywords-3.5.2.tgz, Copyright © Evgeny Poberezkin, 2015–2020
@@ -901,21 +913,21 @@ ast-1.14.1.tgz, Copyright © Various contributors, 2014–2016
 async-3.2.6.tgz, Copyright © Caolan McMahon and contributors, 2010–2024
 async-mutex-0.5.0.tgz, Copyright © Dirty Hairy and contributors, 2018–2023
 asynckit-0.4.0.tgz, Copyright © Mathias Buus Madsen, 2016
-axios-1.13.2.tgz, Copyright © Matt Zabriskie and contributors, 2014–2024
-babel-loader-8.4.1.tgz, Copyright © Sebastian McKenzie and contributors, 2014–2024
+axios-1.13.5.tgz, Copyright © Matt Zabriskie and contributors, 2014–2024
+babel-loader-10.0.0.tgz, Copyright © Sebastian McKenzie and contributors, 2014–2024
 babel-plugin-styled-components-2.1.4.tgz, Copyright © Glen Maddern and contributors, 2016–2024
-balanced-match-1.0.2.tgz, Copyright © Julian Gruber, 2013–2017
+balanced-match-4.0.3.tgz, Copyright © Julian Gruber, 2013–2017
 base64-arraybuffer-1.0.2.tgz, Copyright © Niklas von Hertzen, 2014–2019
 base64-js-1.5.1.tgz, Copyright © Beat Gamper, 2014–2018
 big.js-5.2.2.tgz, Copyright © Michael Mclaughlin, 2012–2019
 binary-extensions-2.3.0.tgz, Copyright © Sindre Sorhus, 2013–2020
 body-parser-2.2.2.tgz, Copyright © Douglas Christopher Wilson and contributors, 2014–2024
-brace-expansion-2.0.2.tgz, Copyright © Julian Gruber, 2013–2017
+brace-expansion-5.0.5.tgz, Copyright © Julian Gruber, 2013–2017
 braces-3.0.3.tgz, Copyright © Jon Schlinkert and contributors, 2014–2023
 browserslist-4.28.1.tgz, Copyright © Andrey Sitnik and contributors, 2014–2024
 buffer-5.7.1.tgz, Copyright © Feross Aboukhadijeh, 2013–2020
 buffer-6.0.3.tgz, Copyright © Feross Aboukhadijeh, 2013–2022
-buffer-crc32-1.0.0.tgz, Copyright © Mathias Buus, 2015
+buffer-crc32-0.2.13.tgz, Copyright © Mathias Buus, 2015
 buffer-from-1.1.2.tgz, Copyright © Mathias Buus, 2014–2016
 buildcheck-0.0.7.tgz, Copyright © Rod Vagg, 2013–2016
 bytes-3.1.2.tgz, Copyright © Visionmedia and contributors, 2012–2017
@@ -983,7 +995,7 @@ delayed-stream-1.0.0.tgz, Copyright © Felix Geisendörfer, 2011–2016
 depd-2.0.0.tgz, Copyright © Douglas Christopher Wilson, 2014–2023
 diagnostics-2.0.8.tgz, Copyright © Tom Robinson, 2013–2021
 diff-sequences-29.6.3.tgz, Copyright © Facebook, Inc. and contributors, 2017–2023
-diff2html-3.4.55.tgz, Copyright © Rui Lopes, 2014–2024
+diff2html-3.4.56.tgz, Copyright © Rui Lopes, 2014–2024
 dnd-core-14.0.1.tgz, Copyright © Dan Abramov and contributors, 2015–2022
 dom-1.7.4.tgz, Copyright © substack and contributors, 2011–2014
 downshift-9.0.8.tgz, Copyright © PayPal and contributors, 2016–2024
@@ -996,7 +1008,7 @@ emojis-list-3.0.0.tgz, Copyright © Kavita Gaur, 2014–2017
 enabled-2.0.0.tgz, Copyright © Luke Edwards, 2019–2021
 encodeurl-2.0.0.tgz, Copyright © Douglas Christopher Wilson, 2016–2023
 encoding-0.1.13.tgz, Copyright © Feross Aboukhadijeh, 2013–2016
-enhanced-resolve-5.18.4.tgz, Copyright © Tobias Koppers and contributors, 2012–2024
+enhanced-resolve-5.19.0.tgz, Copyright © Tobias Koppers and contributors, 2012–2024
 env-paths-2.2.1.tgz, Copyright © Sindre Sorhus, 2016–2020
 err-code-2.0.3.tgz, Copyright © Jacob Gable, 2016–2019
 es-define-property-1.0.1.tgz, Copyright © Jordan Harband and contributors, 2023–2024
@@ -1016,7 +1028,7 @@ events-3.3.0.tgz, Copyright © Node.js contributors, 2019–2022
 eventsource-3.0.7.tgz, Copyright © Yaffle and contributors, 2012–2024
 eventsource-parser-3.0.6.tgz, Copyright © Remy Sharp and contributors, 2020–2024
 express-5.2.1.tgz, Copyright © TJ Holowaychuk and contributors, 2010–2024
-express-rate-limit-8.2.1.tgz, Copyright © Evan Hahn and contributors, 2014–2024
+express-rate-limit-8.3.1.tgz, Copyright © Evan Hahn and contributors, 2014–2024
 extend-3.0.2.tgz, Copyright © Stefan Thomas, 2011–2018
 fast-deep-equal-3.1.3.tgz, Copyright © Epoberezkin and contributors, 2017–2022
 fast-fifo-1.3.2.tgz, Copyright © Matteo Collina, 2020–2022
@@ -1027,7 +1039,7 @@ fastest-levenshtein-1.0.16.tgz, Copyright © Ka-Wei Li, 2016–2019
 fecha-4.2.3.tgz, Copyright © Samverschueren, 2013–2020
 fflate-0.8.2.tgz, Copyright © 101arrowz, 2020–2024
 file-saver-2.0.5.tgz, Copyright © Eli Grey, 2014–2021
-file-type-16.5.4.tgz, Copyright © Sindre Sorhus, 2015–2022
+file-type-21.3.2.tgz, Copyright © Sindre Sorhus, 2015–2022
 fill-range-7.1.1.tgz, Copyright © Jon Schlinkert, 2014–2021
 finalhandler-2.1.1.tgz, Copyright © Douglas Christopher Wilson, 2014–2024
 find-cache-dir-3.3.2.tgz, Copyright © Sindre Sorhus, 2016–2020
@@ -1079,7 +1091,7 @@ helper-wasm-section-1.14.1.tgz, Copyright © IBM Corporation, 2020–2024
 helpers-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
 hey-listen-1.0.8.tgz, Copyright © Matt Perry, 2018–2020
 hoist-non-react-statics-3.3.7.tgz, Copyright © Redux contributors, 2016–2023
-hono-4.11.7.tgz, Copyright © Yusuke Wada, 2021–2024
+hono-4.12.7.tgz, Copyright © Yusuke Wada, 2021–2024
 html-parse-stringify-3.0.1.tgz, Copyright © Jaroslaw Holubek, 2017–2020
 html-to-image-1.11.13.tgz, Copyright © Tsuyoshi Yamamoto, 2018–2024
 html2canvas-1.4.1.tgz, Copyright © Niklas von Hertzen, 2014–2021
@@ -1094,8 +1106,9 @@ ieee754-1.13.2.tgz, Copyright © Feross Aboukhadijeh, 2014–2018
 ignore-5.2.4.tgz, Copyright © Sindre Sorhus, 2016–2021
 immediate-3.0.6.tgz, Copyright © Ajax.org, 2012–2014
 immer-11.1.3.tgz, Copyright © Michel Weststrate, 2017–2024
-immutable-4.3.7.tgz, Copyright © Lee Byron, 2014–2024
+immutable-4.3.8.tgz, Copyright © Lee Byron, 2014–2024
 imurmurhash-0.1.4.tgz, Copyright © Gary Court, 2012–2014
+inflate-0.4.1.tgz, Copyright (c) 2012 Devon Govett
 indent-string-4.0.0.tgz, Copyright © Sindre Sorhus, 2015–2017
 invariant-2.0.0.tgz, Copyright © Facebook, Inc., 2013–2014
 invariant-2.2.4.tgz, Copyright © Facebook, Inc., 2014–2018
@@ -1141,6 +1154,7 @@ jspdf-4.1.0.tgz, Copyright © James Hall and contributors, 2010–2024
 jspdf-autotable-5.0.7.tgz, Copyright © Simon Bengtsson, 2016–2024
 jwa-2.0.1.tgz, Copyright © Filip Skokan, 2018–2023
 jws-4.0.1.tgz, Copyright © Filip Skokan, 2018–2024
+jszip-3.10.x, Copyright (c) 2009-2016 Stuart Knightley
 kuler-2.0.0.tgz, Copyright © Sindre Sorhus, 2013–2018
 l10n-0.0.18.tgz, Copyright © Wladimir Palant, 2014–2016
 lazystream-1.0.1.tgz, Copyright © GitHub, Inc., 2013–2015
@@ -1150,7 +1164,7 @@ loader-runner-4.3.1.tgz, Copyright © Tobias Koppers, 2012–2024
 loader-utils-2.0.4.tgz, Copyright © Tobias Koppers, 2012–2022
 locate-path-5.0.0.tgz, Copyright © Sindre Sorhus, 2016–2019
 locate-path-6.0.0.tgz, Copyright © Sindre Sorhus, 2019–2021
-lodash-4.17.23.tgz, Copyright © John-David Dalton and contributors, 2012–2021
+lodash-4.18.1.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash-deep-2.0.0.tgz, Copyright © Alexander Solovyov, 2014–2018
 lodash.includes-4.3.0.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash.isboolean-3.0.3.tgz, Copyright © John-David Dalton and contributors, 2012–2021
@@ -1161,10 +1175,10 @@ lodash.isplainobject-4.0.6.tgz, Copyright © John-David Dalton and contributors,
 lodash.isstring-4.0.1.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 lodash.once-4.1.1.tgz, Copyright © John-David Dalton and contributors, 2012–2021
 logform-2.7.0.tgz, Copyright © WinstonJS contributors, 2015–2024
-lombok, Copyright (C) 2009–2024 The Project Lombok Authors
+lombok 1.18.36, Copyright (C) 2009–2024 The Project Lombok Authors
 loose-envify-1.4.0.tgz, Copyright © Facebook, Inc., 2014–2019
 make-dir-3.1.0.tgz, Copyright © Sindre Sorhus, 2015–2020
-markdown-it-14.1.0.tgz, Copyright © Vitaly Puzrin, 2014–2024
+markdown-it-14.1.1.tgz, Copyright © Vitaly Puzrin, 2014–2024
 math-intrinsics-1.1.0.tgz, Copyright © Jordan Harband and contributors, 2022–2024
 mdurl-2.0.0.tgz, Copyright © Vitaly Puzrin, 2015–2021
 media-typer-1.1.0.tgz, Copyright © Douglas Christopher Wilson, 2014–2023
@@ -1194,7 +1208,7 @@ node-18.19.130.tgz, Copyright © OpenJS Foundation, 2009–2024
 node-22.19.7.tgz, Copyright © OpenJS Foundation, 2009–2025
 node-gyp-10.3.1.tgz, Copyright © Node.js contributors, 2013–2024
 node-releases-2.0.27.tgz, Copyright © Sindre Sorhus, 2016–2024
-node-server-1.19.9.tgz, Copyright © IBM Corporation, 2020–2024
+node-server-1.19.11.tgz, Copyright © IBM Corporation, 2020–2024
 nopt-1.0.10.tgz, Copyright © Isaac Z. Schlueter, 2010–2014
 normalize-path-3.0.0.tgz, Copyright © Jon Schlinkert, 2014–2018
 object-assign-4.1.1.tgz, Copyright © Sindre Sorhus, 2014–2017
@@ -1215,8 +1229,9 @@ parser-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
 parseurl-1.3.3.tgz, Copyright © Jonathan Ong, 2014–2017
 path-exists-4.0.0.tgz, Copyright © Sindre Sorhus, 2016–2019
 path-key-3.1.1.tgz, Copyright © Sindre Sorhus, 2016–2018
-path-to-regexp-8.3.0.tgz, Copyright © PillarJS contributors, 2014–2024
+path-to-regexp-8.4.0.tgz, Copyright © PillarJS contributors, 2014–2024
 peek-readable-4.1.0.tgz, Copyright © Sam Verschueren, 2017–2020
+pend-1.2.0.tgz, Copyright (c) 2013 Raynos
 performance-now-2.1.0.tgz, Copyright © Bram Stein, 2014–2016
 picomatch-2.3.1.tgz, Copyright © Jon Schlinkert, 2017–2022
 pkce-challenge-5.0.1.tgz, Copyright © Filip Skokan, 2020–2024
@@ -1320,7 +1335,7 @@ string_decoder-1.1.1.tgz, Copyright © Node.js contributors, 2012–2018
 string_decoder-1.3.0.tgz, Copyright © Node.js contributors, 2012–2020
 strip-ansi-6.0.1.tgz, Copyright © Sindre Sorhus, 2014–2019
 strip-ansi-7.1.2.tgz, Copyright © Sindre Sorhus, 2014–2023
-strtok3-6.3.0.tgz, Copyright © Sam Verschueren, 2018–2023
+strtok3-10.3.4.tgz, Copyright © Sam Verschueren, 2018–2023
 style-value-types-4.1.4.tgz, Copyright © Matt Perry, 2018–2022
 styled-components-5.3.11.tgz, Copyright © Glen Maddern and contributors, 2016–2023
 stylis-0.8.5.tgz, Copyright © Thomas Reiter, 2016–2019
@@ -1332,7 +1347,8 @@ tabbable-6.4.0.tgz, Copyright © David Clark, 2016–2023
 tapable-2.3.0.tgz, Copyright © Tobias Koppers, 2015–2024
 tar-stream-3.1.7.tgz, Copyright © Mathias Buus, 2014–2023
 template-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
-terser-webpack-plugin-5.3.16.tgz, Copyright © Webpack contributors, 2018–2024
+terser-webpack-plugin-5.4.0.tgz, Copyright © Webpack contributors, 2018–2024
+text-codec-0.2.2.tgz, Copyright (c) 2014 Yaffle
 text-hex-1.0.0.tgz, Copyright © Michael Ficarra, 2015–2016
 text-segmentation-1.0.3.tgz, Copyright © Simon Lydell, 2022–2023
 tmp-0.2.4.tgz, Copyright © Ben Noordhuis, 2011–2023
@@ -1340,7 +1356,7 @@ to-regex-range-5.0.1.tgz, Copyright © Jon Schlinkert, 2015–2020
 toggle-selection-1.0.6.tgz, Copyright © Jed Watson, 2015–2018
 toidentifier-1.0.1.tgz, Copyright © Douglas Christopher Wilson, 2016–2018
 token-0.3.0.tgz, Copyright © Auth0, Inc., 2014–2016
-token-types-4.2.1.tgz, Copyright © Sam Verschueren, 2018–2021
+token-types-6.1.2.tgz, Copyright © Sam Verschueren, 2018–2021
 tough-cookie-4.0.5.tgz, Copyright © Salesforce.com, Inc., 2015–2023
 trace-mapping-0.3.31.tgz, Copyright © Rich Harris, 2020–2024
 traverse-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
@@ -1352,6 +1368,7 @@ type-is-2.0.1.tgz, Copyright © Douglas Christopher Wilson, 2014–2023
 typebox-0.27.8.tgz, Copyright © Sinclair Target, 2020–2023
 types-7.28.6.tgz, Copyright © Babel contributors, 2014–2024
 uc.micro-2.1.0.tgz, Copyright © Vitaly Puzrin, 2016–2019
+uint8array-extras-1.5.0.tgz,
 undici-types-5.26.5.tgz, Copyright © Matteo Collina, 2022–2024
 undici-types-6.21.0.tgz, Copyright © Matteo Collina, 2023–2025
 unitless-0.7.5.tgz, Copyright © Scott Lewis, 2015–2019
@@ -1367,7 +1384,7 @@ utf8-1.13.2.tgz, Copyright © Mathias Bynens, 2008–2018
 util-deprecate-1.0.2.tgz, Copyright © Nathan Rajlich, 2014–2016
 utils-0.2.10.tgz, Copyright © Ryan Florence, 2014–2016
 utrie-1.0.2.tgz, Copyright © Mathias Bynens, 2017–2019
-uuid-9.0.1.tgz, Copyright © Robert Kieffer and contributors, 2010–2023
+uuid-10.0.0.tgz, Copyright © Robert Kieffer and contributors, 2010–2023
 vary-1.1.2.tgz, Copyright © Douglas Christopher Wilson, 2014–2016
 void-elements-3.1.0.tgz, Copyright © Mathias Bynens, 2012–2016
 vscode-1.102.0.tgz, Copyright © Microsoft Corporation, 2015–2025
@@ -1383,8 +1400,8 @@ wasm-opt-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
 wasm-parser-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
 wast-printer-1.14.1.tgz, Copyright © WebAssembly contributors, 2019–2023
 watchpack-2.5.1.tgz, Copyright © Tobias Koppers, 2017–2024
-webpack-5.104.1.tgz, Copyright © Tobias Koppers and contributors, 2012–2024
-webpack-sources-3.3.3.tgz, Copyright © Tobias Koppers, 2014–2024
+webpack-5.105.3.tgz, Copyright © Tobias Koppers and contributors, 2012–2024
+webpack-sources-3.3.4.tgz, Copyright © Tobias Koppers, 2014–2024
 window-or-global-1.0.1.tgz, Copyright © Feross Aboukhadijeh, 2014–2016
 winston-3.19.0.tgz, Copyright © WinstonJS contributors, 2013–2024
 winston-transport-4.9.0.tgz, Copyright © WinstonJS contributors, 2013–2024
@@ -1738,17 +1755,18 @@ END OF Unlicense LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 =====================================================================
-END of Notices for IBM RSE API Plug-in for Zowe CLI v6.4
+END of Notices for IBM RSE API Plug-in for Zowe CLI v6.5
 =====================================================================
 
 
-L/N: L-WUHZ-ZS3J74
-D/N: L-WUHZ-ZS3J74
-P/N: L-WUHZ-ZS3J74
+
+L/N: L-PRMN-A2FF7N
+D/N: L-PRMN-A2FF7N
+P/N: L-PRMN-A2FF7N
 
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM RSE API Plug-in for Zowe CLI v6.4
+IBM RSE API Plug-in for Zowe CLI v6.5
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -1770,10 +1788,9 @@ The following are Separately Licensed Code:
 
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-
-===========================================================================
-START OF NOTICES FOR IBM RSE API Plug-in for Zowe CLI 6.x non-IBM License
-===========================================================================
+=============================================================
+START OF NOTICES FOR IBM RSE API for Zowe CLI 6.x non-IBM License
+=============================================================
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -1805,9 +1822,15 @@ The following are Separately Licensed Code:
 
 OFL-1.0 CODE NOTICES AND INFORMATION
 
-plex-6.0.0-next.6.tgz, plex-mono-1.1.0.tgz, plex-sans-0.0.3-alpha.0.tgz, plex-sans-arabic-1.1.0.tgz,
-plex-sans-devanagari-0.0.3-alpha.0.tgz, plex-sans-hebrew-0.0.3-alpha.0.tgz, plex-sans-
-thai-0.0.3-alpha.0.tgz, plex-sans-thai-looped-0.0.3-alpha.0.tgz, plex-serif-0.0.3-alpha.0.tgz
+plex-6.0.0-next.6.tgz
+plex-mono-1.1.0.tgz
+plex-sans-0.0.3-alpha.0.tgz
+plex-sans-arabic-1.1.0.tgz
+plex-sans-devanagari-0.0.3-alpha.0.tgz
+plex-sans-hebrew-0.0.3-alpha.0.tgz
+plex-sans-thai-0.0.3-alpha.0.tgz
+plex-sans-thai-looped-0.0.3-alpha.0.tgz
+plex-serif-0.0.3-alpha.0.tgz
 
 SIL OPEN FONT LICENSE
 
@@ -1886,11 +1909,11 @@ FONT SOFTWARE.
 
 END OF OFL-1.0 CODE NOTICES AND INFORMATION
 
-===========================================================================
-END OF NOTICES FOR IBM RSE API Plug-in for Zowe CLI 6.x non-IBM License
-===========================================================================
+--------------------------------------------------------------------------------
 
+END OF NOTICES FOR IBM RSE API for Zowe CLI 6.x non-IBM License
+--------------------------------------------------------------------------------
 
-L/N: L-WUHZ-ZS3J74
-D/N: L-WUHZ-ZS3J74
-P/N: L-WUHZ-ZS3J74
+L/N: L-PRMN-A2FF7N
+D/N: L-PRMN-A2FF7N
+P/N: L-PRMN-A2FF7N

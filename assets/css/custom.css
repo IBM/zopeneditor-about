@@ -1,3 +1,188 @@
+/* Override VuePress theme dark mode background color to match live site */
+[data-theme="dark"],
+html.dark {
+  --vp-c-bg: #22272e;
+  --vp-c-bg-soft: #2b313a;
+  --vp-c-bg-alt: #262c34;
+  --vp-c-bg-mute: #34404c;
+  --vp-c-bg-elv: #2b313a;
+}
+
+/* Section heading anchor icon parity with live */
+.vp-page [vp-content] .header-anchor {
+  position: relative !important;
+  display: inline !important;
+}
+
+.vp-page [vp-content] .header-anchor::before {
+  content: "#" !important;
+  position: absolute !important;
+  left: -1em !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+  line-height: 1 !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 120ms ease !important;
+}
+
+.vp-page [vp-content] .header-anchor:hover::before,
+.vp-page [vp-content] .header-anchor:focus-visible::before,
+.vp-page [vp-content] h1:hover .header-anchor::before,
+.vp-page [vp-content] h2:hover .header-anchor::before,
+.vp-page [vp-content] h3:hover .header-anchor::before,
+.vp-page [vp-content] h4:hover .header-anchor::before,
+.vp-page [vp-content] h5:hover .header-anchor::before,
+.vp-page [vp-content] h6:hover .header-anchor::before,
+.vp-page [vp-content] h1:focus-within .header-anchor::before,
+.vp-page [vp-content] h2:focus-within .header-anchor::before,
+.vp-page [vp-content] h3:focus-within .header-anchor::before,
+.vp-page [vp-content] h4:focus-within .header-anchor::before,
+.vp-page [vp-content] h5:focus-within .header-anchor::before,
+.vp-page [vp-content] h6:focus-within .header-anchor::before {
+  opacity: 1 !important;
+}
+
+/* Footer / Page Meta styling - match live site */
+.vp-page-meta {
+  display: flex !important;
+  flex-direction: column !important;
+  padding: 16px 40px !important;
+  margin: 0 auto !important;
+  max-width: 48rem !important;
+  width: 100% !important;
+  font-size: 1.1rem !important;
+}
+
+/* Grey text color in dark mode */
+[data-theme="dark"] .vp-page-meta,
+html.dark .vp-page-meta {
+  color: #8b949e !important;
+}
+
+.vp-page-meta .vp-meta-item.git-info {
+  display: block !important;
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.vp-page-meta .vp-meta-item.last-updated {
+  display: inline !important;
+  margin: 0 !important;
+  margin-right: 2rem !important;
+  white-space: nowrap !important;
+  text-align: left !important;
+}
+
+.vp-page-meta .vp-meta-item.last-updated > span:first-of-type,
+.vp-page-meta .vp-meta-item.last-updated > .meta-item-label {
+  font-weight: 700 !important;
+}
+
+.vp-page-meta .vp-meta-item.contributors {
+  display: inline !important;
+  padding-top: 0 !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+/* Make Contributors: label bold */
+.vp-page-meta .vp-meta-item.contributors > span:first-of-type,
+.vp-page-meta .vp-meta-item.contributors > .meta-item-label {
+  font-weight: 700 !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .vp-page-meta {
+    max-width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .vp-page-meta {
+    max-width: 100% !important;
+  }
+}
+
+/* Page navigation styling - match live site single-line layout */
+.vp-page-nav {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+  flex-wrap: wrap !important;
+  gap: 1rem !important;
+  padding: 0px 40px 16px 40px !important;
+  margin: 0 auto !important;
+  margin-top: 32px !important;
+  width: 100% !important;
+  max-width: 48rem !important;
+  align-items: center !important;
+  position: relative !important;
+  padding-top: 32px !important;
+}
+
+.vp-page-nav::before {
+  content: '' !important;
+  position: absolute !important;
+  top: 0 !important;
+  left: 40px !important;
+  right: 40px !important;
+  height: 1px !important;
+  background: rgb(62, 76, 90) !important;
+}
+
+.vp-page-nav a {
+  display: inline !important;
+  flex: 0 1 auto !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: normal !important;
+  max-width: 100% !important;
+  overflow-wrap: break-word !important;
+}
+
+.vp-page-nav a.prev {
+  flex: 0 1 auto !important;
+  text-align: left !important;
+}
+
+.vp-page-nav a.next {
+  flex: 0 1 auto !important;
+  margin-left: auto !important;
+  text-align: right !important;
+}
+
+.vp-page-nav .hint {
+  display: none !important;
+}
+
+.vp-page-nav a.prev::before {
+  content: '← ' !important;
+  margin-right: 0.25rem !important;
+}
+
+.vp-page-nav a.next::after {
+  content: ' →' !important;
+  margin-left: 0.25rem !important;
+}
+
+.vp-page-nav .link {
+  display: inline !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .vp-page-nav {
+    max-width: 85% !important;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .vp-page-nav {
+    max-width: 100% !important;
+  }
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif !important;
   margin: 0 !important;
@@ -20,9 +205,64 @@ body {
   max-width: 70% !important;
 }
 
+/* Keep docs markdown tables a single uniform shade (header + body). */
+.theme-default-content table thead tr,
+.theme-default-content table tbody tr,
+.vp-page [vp-content] table thead tr,
+.vp-page [vp-content] table tbody tr,
+.theme-default-content table tbody tr:nth-child(odd),
+.theme-default-content table tbody tr:nth-child(even),
+.vp-page [vp-content] table tbody tr:nth-child(odd),
+.vp-page [vp-content] table tbody tr:nth-child(even) {
+  background: transparent !important;
+}
+
+.theme-default-content table th,
+.theme-default-content table td,
+.vp-page [vp-content] table th,
+.vp-page [vp-content] table td {
+  background: inherit !important;
+  color: #2c3e50 !important;
+}
+
+/* Dark mode table styling */
+[data-theme="dark"] .theme-default-content table thead tr,
+[data-theme="dark"] .theme-default-content table tbody tr,
+[data-theme="dark"] .vp-page [vp-content] table thead tr,
+[data-theme="dark"] .vp-page [vp-content] table tbody tr,
+[data-theme="dark"] .theme-default-content table tbody tr:nth-child(odd),
+[data-theme="dark"] .theme-default-content table tbody tr:nth-child(even),
+[data-theme="dark"] .vp-page [vp-content] table tbody tr:nth-child(odd),
+[data-theme="dark"] .vp-page [vp-content] table tbody tr:nth-child(even) {
+  background: transparent !important;
+}
+
+[data-theme="dark"] .theme-default-content table th,
+[data-theme="dark"] .theme-default-content table td,
+[data-theme="dark"] .vp-page [vp-content] table th,
+[data-theme="dark"] .vp-page [vp-content] table td {
+  background: inherit !important;
+  color: rgb(204, 213, 222) !important;
+  border-color: rgb(52, 64, 76) !important;
+}
+
+[data-theme="dark"] .theme-default-content table,
+[data-theme="dark"] .vp-page [vp-content] table {
+  border-color: rgb(52, 64, 76) !important;
+}
+
+/* VuePress 2 rc layout compatibility */
+.vp-page [vp-content] {
+  max-width: 70% !important;
+}
+
 @media only screen and (max-width: 1100px) {
   .theme-default-content:not(.custom) {
     margin: 0 auto;
+    max-width: 85% !important;
+  }
+
+  .vp-page [vp-content] {
     max-width: 85% !important;
   }
 }
@@ -30,6 +270,11 @@ body {
 @media only screen and (max-width: 900px) {
   .theme-default-content:not(.custom) {
     margin: 0 auto;
+    max-width: 100% !important;
+  }
+
+  .vp-page [vp-content],
+  .vp-page-nav {
     max-width: 100% !important;
   }
 }
@@ -43,6 +288,22 @@ body {
 
 .theme-default-content:not(.custom) > .homepage-container #header {
   padding: 0rem !important;
+}
+
+.vp-home {
+  max-width: 100% !important;
+  padding: var(--navbar-height) 0 0 0 !important;
+  margin: 0 !important;
+}
+
+.vp-home .vp-hero {
+  display: none;
+}
+
+.vp-home [vp-content] {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 .page {
@@ -509,6 +770,18 @@ a:focus {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.12);
   border-bottom: 1px solid var(--c-border) !important;
 }
+
+[data-theme="dark"] .vp-navbar .vp-navbar-item > .auto-link,
+[data-theme="dark"] .vp-navbar .vp-navbar-item > .route-link {
+  color: var(--vp-c-accent) !important;
+}
+
+[data-theme="dark"] .vp-navbar .vp-navbar-item > .auto-link:hover,
+[data-theme="dark"] .vp-navbar .vp-navbar-item > .route-link:hover,
+[data-theme="dark"] .vp-navbar .vp-navbar-item > .route-link.route-link-active {
+  color: var(--vp-c-accent-hover) !important;
+  border-bottom-color: var(--vp-c-accent-hover) !important;
+}
 /* About Section Start */
 
 #about .screengrab {
@@ -912,6 +1185,19 @@ a.button:hover {
   display: block;
 }
 
+/* Prevent duplicate external-link arrows on feedback cards. */
+#feedback a.feedback-link::before,
+#feedback a.feedback-link::after {
+  content: none !important;
+  display: none !important;
+}
+
+#feedback a.external-link::before,
+#feedback a.external-link::after {
+  content: none !important;
+  display: none !important;
+}
+
 #feedback .link-label {
   text-decoration: none;
 }
@@ -962,6 +1248,13 @@ a.button:hover {
   color: #fff;
 }
 
+/* Keep brand links in the bottom footer icon-only, matching live site. */
+#full-bar-footer a::before,
+#full-bar-footer a::after {
+  content: none !important;
+  display: none !important;
+}
+
 .copyright img,
 .vscode img {
   max-width: 275px !important;
@@ -1002,6 +1295,159 @@ a.button:hover {
   color: #2c3e50;
 }
 
+[data-theme="dark"] .vp-sidebar .sidebar-item-children .sidebar-item:not(.sidebar-heading),
+.dark .vp-sidebar .sidebar-item-children .sidebar-item:not(.sidebar-heading) {
+  color: #78a9ff;
+}
+
+[data-theme="dark"] .vp-sidebar-items > li > .vp-sidebar-children > li > .vp-sidebar-item,
+.dark .vp-sidebar-items > li > .vp-sidebar-children > li > .vp-sidebar-item {
+  color: #78a9ff !important;
+}
+
+[data-theme="dark"]
+  .vp-sidebar
+  .sidebar-item-children
+  .sidebar-item:not(.sidebar-heading):hover,
+[data-theme="dark"]
+  .vp-sidebar
+  .sidebar-item-children
+  .sidebar-item:not(.sidebar-heading).active,
+.dark .vp-sidebar .sidebar-item-children .sidebar-item:not(.sidebar-heading):hover,
+.dark .vp-sidebar .sidebar-item-children .sidebar-item:not(.sidebar-heading).active {
+  color: #a6c8ff;
+}
+
+[data-theme="dark"] .vp-sidebar-items > li > .vp-sidebar-children > li > .vp-sidebar-item:hover,
+[data-theme="dark"]
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.route-link-active,
+.dark .vp-sidebar-items > li > .vp-sidebar-children > li > .vp-sidebar-item:hover,
+.dark
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.route-link-active {
+  color: #a6c8ff !important;
+}
+
+.vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item {
+  color: #9da7b1 !important;
+}
+
+.vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.route-link-active,
+.vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.active {
+  color: #2c3e50 !important;
+}
+
+[data-theme="dark"]
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item,
+.dark
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item {
+  color: #9da7b1 !important;
+}
+
+[data-theme="dark"]
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.route-link-active,
+[data-theme="dark"]
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.active,
+.dark
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.route-link-active,
+.dark
+  .vp-sidebar-items
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-children
+  > li
+  > .vp-sidebar-item.active {
+  color: #e3eefa !important;
+}
+
+.sidebar-heading,
+.vp-sidebar-heading {
+  line-height: 1.7 !important;
+}
+
+/* Match live docs sidebar expand/collapse triangle arrows. */
+.vp-sidebar .arrow {
+  display: inline-block;
+  background-image: none !important;
+  margin-left: 4px;
+}
+
+.vp-sidebar .arrow.right {
+  width: 6px;
+  height: 8px;
+  border-top: 4px solid transparent;
+  border-left: 6px solid #ccc;
+  border-bottom: 4px solid transparent;
+  border-right: 0;
+  transform: none;
+}
+
+.vp-sidebar .arrow.down {
+  width: 8px;
+  height: 6px;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #ccc;
+  border-bottom: 0;
+  transform: none;
+}
+
 /** dark themes **/
 
 .dark .section-title h3 {
@@ -1015,6 +1461,9 @@ a.button:hover {
 .dark .blue6 {
   background: #515151;
 }
+[data-theme="dark"] .blue6 {
+  background: #515151;
+}
 .dark
   .sidebar-item-children
   .sidebar-item-children
@@ -1022,15 +1471,115 @@ a.button:hover {
   color: #e3eefa;
 }
 .dark .DocSearch {
-  --docsearch-searchbox-focus-background: #fff;
+  --docsearch-searchbox-focus-background: rgb(38, 44, 52);
+  --docsearch-searchbox-background: rgb(38, 44, 52);
+  --docsearch-key-color: rgb(153, 153, 153);
+  --docsearch-key-background: transparent;
+  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
+    inset 0 0 1px 1px rgb(81, 87, 125),
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+}
+[data-theme="dark"] .DocSearch {
+  --docsearch-searchbox-focus-background: rgb(38, 44, 52);
+  --docsearch-searchbox-background: rgb(38, 44, 52);
+  --docsearch-key-color: rgb(153, 153, 153);
+  --docsearch-key-background: transparent;
+  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
+    inset 0 0 1px 1px rgb(81, 87, 125),
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+}
+.dark .DocSearch-Button,
+[data-theme="dark"] .DocSearch-Button {
+  background: rgb(38, 44, 52) !important;
+  background-color: rgb(38, 44, 52) !important;
+  color: rgb(153, 153, 153);
+  box-shadow: none;
 }
 .dark .DocSearch-Button:active,
 .dark .DocSearch-Button:focus,
 .dark .DocSearch-Button:hover {
-  background: #515151;
+  --docsearch-key-color: rgb(153, 153, 153);
+  --docsearch-key-background: transparent;
+  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
+    inset 0 0 1px 1px rgb(81, 87, 125),
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+  background: #515151 !important;
+  background-color: #515151 !important;
+  color: rgb(204, 213, 222);
+  box-shadow: rgb(83, 129, 226) 0 0 0 2px inset;
+}
+[data-theme="dark"] .DocSearch-Button:active,
+[data-theme="dark"] .DocSearch-Button:focus,
+[data-theme="dark"] .DocSearch-Button:hover {
+  --docsearch-key-color: rgb(153, 153, 153);
+  --docsearch-key-background: transparent;
+  --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
+    inset 0 0 1px 1px rgb(81, 87, 125),
+    0 2px 2px 0 rgba(3, 4, 9, 0.3);
+  background: #515151 !important;
+  background-color: #515151 !important;
+  color: rgb(204, 213, 222);
+  box-shadow: rgb(83, 129, 226) 0 0 0 2px inset;
+}
+
+.dark .DocSearch-Button-Key,
+[data-theme="dark"] .DocSearch-Button-Key {
+  color: rgb(153, 153, 153) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: rgb(40, 45, 85) 0 -2px 0 0 inset,
+    rgb(81, 87, 125) 0 0 1px 1px inset,
+    rgba(3, 4, 9, 0.3) 0 2px 2px 0 !important;
+}
+
+html[data-theme="dark"] .vp-navbar .DocSearch-Button .DocSearch-Button-Key {
+  color: rgb(153, 153, 153) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: rgb(40, 45, 85) 0 -2px 0 0 inset,
+    rgb(81, 87, 125) 0 0 1px 1px inset,
+    rgba(3, 4, 9, 0.3) 0 2px 2px 0 !important;
 }
 .dark code {
-  background-color: #1b1f24;
+  background-color: rgb(27, 31, 36) !important;
+  color: rgb(154, 173, 191) !important;
+  padding: 4px 8px !important;
+  border-radius: 3px !important;
+}
+
+[data-theme="dark"] code {
+  background-color: rgb(27, 31, 36) !important;
+  color: rgb(154, 173, 191) !important;
+  padding: 4px 8px !important;
+  border-radius: 3px !important;
+}
+
+html[data-theme="dark"] .DocSearch.DocSearch-Button .DocSearch-Button-Key {
+  color: rgb(153, 153, 153) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: 0 !important;
+  box-shadow: rgb(40, 45, 85) 0 -2px 0 0 inset,
+    rgb(81, 87, 125) 0 0 1px 1px inset,
+    rgba(3, 4, 9, 0.3) 0 2px 2px 0 !important;
+}
+
+html[data-theme="dark"] .vp-navbar .DocSearch-Button:hover .DocSearch-Button-Key,
+html[data-theme="dark"] .vp-navbar .DocSearch-Button:focus .DocSearch-Button-Key,
+html[data-theme="dark"] .vp-navbar .DocSearch-Button:active .DocSearch-Button-Key,
+.dark .vp-navbar .DocSearch-Button:hover .DocSearch-Button-Key,
+.dark .vp-navbar .DocSearch-Button:focus .DocSearch-Button-Key,
+.dark .vp-navbar .DocSearch-Button:active .DocSearch-Button-Key {
+  color: rgb(153, 153, 153) !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  opacity: 1 !important;
+  border: 0 !important;
+  box-shadow: rgb(40, 45, 85) 0 -2px 0 0 inset,
+    rgb(81, 87, 125) 0 0 1px 1px inset,
+    rgba(3, 4, 9, 0.3) 0 2px 2px 0 !important;
 }
 .dark a {
   color: #78a9ff;
@@ -1040,4 +1589,91 @@ a.button:hover {
 }
 .dark a.button {
   color: #fff;
+}
+
+/* Match VuePress code-block and line-number alignment to production site. */
+.vp-page #content {
+  --code-c-bg: #282c34;
+  --code-bg-color: #282c34;
+}
+
+.vp-page #content div[class*="language-"] .line-numbers {
+  width: 56px !important;
+  padding-top: 20px !important;
+  font-size: 14px !important;
+  line-height: 22.4px !important;
+}
+
+.vp-page #content div[class*="language-"] pre {
+  margin-left: 56px !important;
+  padding: 20.8px 24px 20.8px 16px !important;
+}
+
+.vp-page #content div[class*="language-"] pre code {
+  padding: 0 !important;
+  color: rgb(204, 204, 204) !important;
+}
+
+.vp-page #content div[class*="language-"] .line-numbers .line-number {
+  height: 22.4px !important;
+  line-height: 22.4px !important;
+  font-size: 14px !important;
+  color: rgb(158, 158, 158) !important;
+}
+
+.vp-page #content div[class*="language-"] .line-numbers .line-number::before {
+  font-size: 14px !important;
+  line-height: 22.4px !important;
+  color: rgb(158, 158, 158) !important;
+}
+
+/* Match production Prism colors for common token types. */
+.vp-page #content div[class*="language-"] .line,
+.vp-page #content div[class*="language-"] .token.punctuation {
+  color: rgb(204, 204, 204) !important;
+}
+
+/* Keep YAML values default unless they are scalar-string content lines. */
+.vp-page #content div.language-yaml .token.scalar.string + .line,
+.vp-page #content div.ext-yml .token.scalar.string + .line {
+  color: rgb(126, 198, 153) !important;
+}
+
+.vp-page #content div[class*="language-"] .token.key.atrule {
+  color: rgb(204, 153, 205) !important;
+}
+
+.vp-page #content div[class*="language-"] .token.string,
+.vp-page #content div[class*="language-"] .token.scalar.string {
+  color: rgb(126, 198, 153) !important;
+}
+
+/* Match production JSON syntax colors for code snippets. */
+.vp-page #content div[class*="language-json"] pre {
+  color: rgb(204, 204, 204) !important;
+}
+
+.vp-page #content div[class*="language-json"] pre code {
+  color: rgb(255, 255, 255) !important;
+}
+
+.vp-page #content div[class*="language-json"] .token.property {
+  color: rgb(248, 197, 85) !important;
+}
+
+.vp-page #content div[class*="language-json"] .token.operator {
+  color: rgb(103, 205, 204) !important;
+}
+
+.vp-page #content div[class*="language-json"] .token.string {
+  color: rgb(126, 198, 153) !important;
+}
+
+.vp-page #content div[class*="language-json"] .token.number,
+.vp-page #content div[class*="language-json"] .token.boolean {
+  color: rgb(240, 141, 73) !important;
+}
+
+.vp-page #content div[class*="language-json"] .token.punctuation {
+  color: rgb(204, 204, 204) !important;
 }

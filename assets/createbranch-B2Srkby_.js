@@ -1,0 +1,1 @@
+var e=`/zopeneditor-about/assets/createbranch-D52zfM5t.jpg`;export{e as t};

@@ -1,0 +1,1 @@
+var e=`/zopeneditor-about/assets/rse-help-web-CEedtjH-.png`;export{e as t};

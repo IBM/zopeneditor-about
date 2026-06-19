@@ -529,7 +529,7 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.DataItemNameLengthRule",
-                            "description": "DataItemNameLengthRule - name"
+                            "description": "Avoid data item names longer than the specified number of characters"
                         },
                         {
                             "const": "zcodescan.pli.rules.DfhrespRule",
@@ -537,7 +537,7 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.DoEndRule",
-                            "description": "DoEndRule - name"
+                            "description": "Use DO-END within a THEN, ELSE, WHEN, or OTHERWISE unit"
                         },
                         {
                             "const": "zcodescan.pli.rules.DotQualRefsRule",
@@ -553,7 +553,7 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.FilenameConventionRule",
-                            "description": "FilenameConventionRule - name"
+                            "description": "Follow the specified convention for PL/I file names"
                         },
                         {
                             "const": "zcodescan.pli.rules.FixedDecimalPrecisionRule",
@@ -601,7 +601,7 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.ProcedureLinesRule",
-                            "description": "ProcedureLinesRule - name"
+                            "description": "Procedure statements cannot exceed the specified line number limit"
                         },
                         {
                             "const": "zcodescan.pli.rules.RespRule",
@@ -613,11 +613,11 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.SelectWithoutOtherwiseRule",
-                            "description": "SelectWithoutOtherwiseRule"
+                            "description": "Avoid SELECT statements without OTHERWISE branch"
                         },
                         {
                             "const": "zcodescan.pli.rules.SequenceNumbersOnlyAfterCol72Rule",
-                            "description": "SequenceNumbersOnlyAfterCol72Rule"
+                            "description": "Avoid using characters except for sequence numbers after column 72"
                         },
                         {
                             "const": "zcodescan.pli.rules.SingleVariableRule",
@@ -625,19 +625,19 @@
                         },
                         {
                             "const": "zcodescan.pli.rules.SpecifiedIncludeRule",
-                            "description": "SpecifiedIncludeRule - name"
+                            "description": "Avoid using the specified include file"
                         },
                         {
                             "const": "zcodescan.pli.rules.SqlSelectRule",
-                            "description": "SqlSelectRule"
+                            "description": "EXEC SQL: Avoid SELECT *"
                         },
                         {
                             "const": "zcodescan.pli.rules.StopRule",
-                            "description": "StopRule"
+                            "description": "Avoid STOP statements"
                         },
                         {
                             "const": "zcodescan.pli.rules.UnqualifiedTablenamesRule",
-                            "description": "UnqualifiedTablenamesRule"
+                            "description": "EXEC SQL: Use unqualified table names"
                         }
                     ]
                 },
@@ -3907,7 +3907,8 @@
                         "Evaluate",
                         "If",
                         "Read",
-                        "Search"
+                        "Search",
+                        "String"
                     ]
                 },
                 "value": {

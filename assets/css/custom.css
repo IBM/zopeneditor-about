@@ -1473,6 +1473,8 @@ a.button:hover {
 .dark .DocSearch {
   --docsearch-searchbox-focus-background: rgb(38, 44, 52);
   --docsearch-searchbox-background: rgb(38, 44, 52);
+  --docsearch-text-color: rgb(204, 213, 222);
+  --docsearch-muted-color: rgb(153, 153, 153);
   --docsearch-key-color: rgb(153, 153, 153);
   --docsearch-key-background: transparent;
   --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
@@ -1482,11 +1484,35 @@ a.button:hover {
 [data-theme="dark"] .DocSearch {
   --docsearch-searchbox-focus-background: rgb(38, 44, 52);
   --docsearch-searchbox-background: rgb(38, 44, 52);
+  --docsearch-text-color: rgb(204, 213, 222);
+  --docsearch-muted-color: rgb(153, 153, 153);
   --docsearch-key-color: rgb(153, 153, 153);
   --docsearch-key-background: transparent;
   --docsearch-key-shadow: inset 0 -2px 0 0 rgb(40, 45, 85),
     inset 0 0 1px 1px rgb(81, 87, 125),
     0 2px 2px 0 rgba(3, 4, 9, 0.3);
+}
+
+html[data-theme="dark"],
+[data-theme="dark"] {
+  --docsearch-searchbox-focus-background: rgb(38, 44, 52);
+  --docsearch-searchbox-background: rgb(38, 44, 52);
+  --docsearch-text-color: rgb(204, 213, 222);
+  --docsearch-muted-color: rgb(153, 153, 153);
+}
+
+[data-theme="dark"] .DocSearch-Form,
+html[data-theme="dark"] .DocSearch-Form,
+[data-theme="dark"] .DocSearch-Modal .DocSearch-Form,
+html[data-theme="dark"] .DocSearch-Modal .DocSearch-Form {
+  background: rgb(38, 44, 52) !important;
+  background-color: rgb(38, 44, 52) !important;
+}
+
+[data-theme="dark"] .DocSearch-Modal .DocSearch-Input,
+html[data-theme="dark"] .DocSearch-Modal .DocSearch-Input {
+  background: transparent !important;
+  background-color: transparent !important;
 }
 .dark .DocSearch-Button,
 [data-theme="dark"] .DocSearch-Button {
@@ -1495,6 +1521,27 @@ a.button:hover {
   color: rgb(153, 153, 153);
   box-shadow: none;
 }
+
+.dark .DocSearch-Input,
+[data-theme="dark"] .DocSearch-Input {
+  color: rgb(204, 213, 222) !important;
+  -webkit-text-fill-color: rgb(204, 213, 222) !important;
+  caret-color: rgb(204, 213, 222) !important;
+}
+
+.dark .DocSearch-Form .DocSearch-Input,
+[data-theme="dark"] .DocSearch-Form .DocSearch-Input,
+.dark .DocSearch-Modal .DocSearch-Input,
+[data-theme="dark"] .DocSearch-Modal .DocSearch-Input {
+  color: rgb(204, 213, 222) !important;
+  -webkit-text-fill-color: rgb(204, 213, 222) !important;
+}
+
+.dark .DocSearch-Input::placeholder,
+[data-theme="dark"] .DocSearch-Input::placeholder {
+  color: rgb(153, 153, 153) !important;
+}
+
 .dark .DocSearch-Button:active,
 .dark .DocSearch-Button:focus,
 .dark .DocSearch-Button:hover {

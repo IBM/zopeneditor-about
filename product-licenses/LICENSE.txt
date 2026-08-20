@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM Z Open Editor v6.6 (Plug-in)
+IBM Z Open Editor v6.7 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -19,15 +19,19 @@ Note: Notwithstanding any of the terms in the third party license agreement, the
 (a) IBM provides it to Licensee WITHOUT WARRANTIES OF ANY KIND AND DISCLAIMS ANY AND ALL EXPRESS AND IMPLIED WARRANTIES AND CONDITIONS INCLUDING, BUT NOT LIMITED TO, THE WARRANTY OF TITLE, NON-INFRINGEMENT OR NON-INTERFERENCE, AND THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE;
 (b) IBM is not liable for any direct, indirect, incidental, special, exemplary, punitive or consequential damages including, but not limited to, lost data, lost savings, and lost profits.
 
+Source Components and Sample Materials
+
+The Program includes components in source code form ("Source Components"), or other materials identified as Sample Materials or both. Licensee may copy and modify Source Components and Sample Materials for internal use only within the limits of the license rights under this Agreement; provided, however, that Licensee may not alter or delete any copyright information or notices contained in the Source Components or Sample Materials. IBM provides the Source Components and Sample Materials without obligation of support and "AS IS", WITH NO WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING THE WARRANTY OF TITLE, NON-INFRINGEMENT OR NON-INTERFERENCE AND THE IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
 In addition to the above, the following terms apply to Licensee's use of the Program.
 
 The Program includes trial license for certain advanced features in IBM Z Open Editor. The trial license period is 90 days from the date the Program is installed. After the trial period ends the advanced features are automatically disabled and Licensee will no longer be licensed to access or use the features. Appropriate entitlement must be purchased to activate these features after the trial period ends.
 
 
 
-L/N: L-HDSU-K9KLW7
-D/N: L-HDSU-K9KLW7
-P/N: L-HDSU-K9KLW7
+L/N: L-RGXB-GQSRWQ
+D/N: L-RGXB-GQSRWQ
+P/N: L-RGXB-GQSRWQ
 
 International License Agreement for Non-Warranted Programs
 

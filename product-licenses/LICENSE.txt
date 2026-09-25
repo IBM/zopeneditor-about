@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM Z Open Editor v6.7 (Plug-in)
+IBM Z Open Editor v6.8 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -29,9 +29,9 @@ The Program includes trial license for certain advanced features in IBM Z Op
 
 
 
-L/N: L-RGXB-GQSRWQ
-D/N: L-RGXB-GQSRWQ
-P/N: L-RGXB-GQSRWQ
+L/N: L-QDNX-ZBTCEJ
+D/N: L-QDNX-ZBTCEJ
+P/N: L-QDNX-ZBTCEJ
 
 International License Agreement for Non-Warranted Programs
 

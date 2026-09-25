@@ -3,7 +3,7 @@ LICENSE INFORMATION
 The Programs listed below are licensed under the following License Information terms and conditions in addition to the Program license terms previously agreed to by Client and IBM. If Client does not have previously agreed to license terms in effect for the Program, the International License Agreement for Non-Warranted Programs (i125-5589-06) applies.
 
 Program Name (Program Number):
-IBM RSE API Plug-in for Zowe CLI v6.7 (Plug-in)
+IBM RSE API Plug-in for Zowe CLI v6.8 (Plug-in)
 
 The following standard terms apply to Licensee's use of the Program.
 
@@ -20,9 +20,9 @@ Note: Notwithstanding any of the terms in the third party license agreement, the
 (b) IBM is not liable for any direct, indirect, incidental, special, exemplary, punitive or consequential damages including, but not limited to, lost data, lost savings, and lost profits.
 
 
-L/N: L-WYKN-JHMRLE
-D/N: L-WYKN-JHMRLE
-P/N: L-WYKN-JHMRLE
+L/N: L-GAWF-HHYCJQ
+D/N: L-GAWF-HHYCJQ
+P/N: L-GAWF-HHYCJQ
 
 International License Agreement for Non-Warranted Programs
 
@@ -156,7 +156,7 @@ In Mexico: In the third sentence, delete the words "to an account specified by I
 
 In Mexico: Add the following new sentence after the third sentence:
 
-Payments will be made through electronic transfer of funds to an account specified by IBM or in IBM´s domicile which is located in Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
+Payments will be made through electronic transfer of funds to an account specified by IBM or in IBM's domicile which is located in Alfonso Napoles Gandara 3111, Santa Fe Peña Blanca, Alvaro Obregon, Mexico City, Zip Code 01210.
 
 Add at the end of paragraph c the following sentence:
 

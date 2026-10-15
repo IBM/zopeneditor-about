@@ -1,6 +1,6 @@
 NOTICES AND INFORMATION
 
-IBM Z Open Editor v6.8
+IBM Z Open Editor v6.9
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -27,7 +27,7 @@ limitation URLs or references to any third party websites.
 NOTICES AND INFORMATION
 
 =====================================================================
-START of Notices for IBM Z Open Editor 6.8
+START of Notices for IBM Z Open Editor 6.9
 =====================================================================
 
 The IBM license agreement and any applicable information on the web download page
@@ -83,6 +83,7 @@ bundle.tgz
 colors.tgz
 core.tgz
 crc-32.tgz
+detect-libc
 dompurify.tgz
 ecdsa-sig-formatter.tgz
 events-universal.tgz
@@ -480,7 +481,7 @@ antlr4-runtime, Copyright (c) 2012–2024 Terence P
 asm-tree, arr
 bcrypt-pbkdf.tgz, Copyright © Joyent, Inc. and other Node contributors, 2014
 buffer-equal-constant-time.tgz, Copyright © Fedor Indutny, 2013
-db db-6.2.23, Copyright © Eclipse Foundation contributors, 2018–2024
+db, Copyright © Eclipse Foundation contributors, 2018–2024
 diff.tgz, Copyright © Kevin Decker and contributors, 2011–2024
 fast-uri.tgz, Copyright © Tomasz Ruciński and contributors, 2021–2024
 fast-uri.tgz, Copyright © Tomasz Ruciński and contributors, 2021–2024
@@ -1316,6 +1317,7 @@ rgbcolor.tgz, Copyright © Stoyan Stefanov, 2010–2012
 router.tgz, Copyright © PillarJS contributors, 2014–2024
 run-parallel.tgz, Copyright © Feross Aboukhadijeh, 2014–2018
 runtime.tgz, Copyright © Babel contributors, 2014–2024
+sass.tgz, Copyright (c) 2019, Google LLC
 safe-buffer.tgz, Copyright © Feross Aboukhadijeh, 2016–2018
 safe-buffer.tgz, Copyright © Feross Aboukhadijeh, 2016–2021
 safe-stable-stringify.tgz, Copyright © BridgeAR contributors, 2019–2024
@@ -1418,6 +1420,17 @@ vscode-jsonrpc.tgz, Copyright © Microsoft Corporation, 2016–2024
 vscode-languageclient.tgz, Copyright © Microsoft Corporation, 2016–2024
 vscode-languageserver-protocol.tgz, Copyright © Microsoft Corporation, 2016–2023
 vscode-languageserver-types.tgz, Copyright © Microsoft Corporation, 2016–2023
+watcher, Copyright © Fabio Spampinato, 2017–2024
+watcher-android-arm64.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-darwin-arm64.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-darwin-x64.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-freebsd-x64.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-arm-glibc.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-arm-musl.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-arm64-glibc.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-arm64-musl.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-x64-glibc.tgz, Copyright © Parcel contributors, 2017–2024
+watcher-linux-x64-musl.tgz, Copyright © Parcel contributors, 2017–2024
 watcher-linux-x64-glibc.tgz, Copyright (c) 2017–2024 Parcel Contributors
 wasm-edit.tgz, Copyright © WebAssembly contributors, 2019–2023
 wasm-gen.tgz, Copyright © WebAssembly contributors, 2019–2023
@@ -1781,17 +1794,17 @@ END OF Unlicense LICENSE NOTICES AND INFORMATION
 =====================================================================
 
 =====================================================================
-END of Notices for IBM Z Open Editor 6.8
+END of Notices for IBM Z Open Editor 6.9
 =====================================================================
 
 
-L/N: L-QDNX-ZBTCEJ
-D/N: L-QDNX-ZBTCEJ
-P/N: L-QDNX-ZBTCEJ
+L/N: L-FZTV-8Q8RKL
+D/N: L-FZTV-8Q8RKL
+P/N: L-FZTV-8Q8RKL
 
 TERMS AND CONDITIONS FOR SEPARATELY LICENSED CODE
 
-IBM Z Open Editor v6.8
+IBM Z Open Editor v6.9
 
 The IBM license agreement and any applicable information on the web
 download page for IBM products refers Licensee to this file for details
@@ -1847,15 +1860,15 @@ The following are Separately Licensed Code:
 
 OFL-1.0 CODE NOTICES AND INFORMATION
 
-plex-6.4.1-next.6.tgz
-plex-mono-2.5.0.tgz
-plex-sans-0.0.3-alpha.0.tgz
-plex-sans-arabic-1.1.0.tgz
-plex-sans-devanagari-0.0.3-alpha.0.tgz
-plex-sans-hebrew-0.0.3-alpha.0.tgz
-plex-sans-thai-0.0.3-alpha.0.tgz
-plex-sans-thai-looped-0.0.3-alpha.0.tgz
-plex-serif-2.0.0-alpha.0.tgz
+plex.6.tgz
+plex-mono.tgz
+plex-sans-alpha.0.tgz
+plex-sans-arabic.tgz
+plex-sans-devanagari-alpha.tgz
+plex-sans-hebrew-alpha.tgz
+plex-sans-thai-alpha.tgz
+plex-sans-thai-looped-alpha.tgz
+plex-serif-alpha.tgz
 
 SIL OPEN FONT LICENSE
 
@@ -1939,6 +1952,6 @@ END OF OFL-1.0 CODE NOTICES AND INFORMATION
 END OF NOTICES FOR z Open Editor_6.x non-IBM License
 --------------------------------------------------------------------------------
 
-L/N: L-QDNX-ZBTCEJ
-D/N: L-QDNX-ZBTCEJ
-P/N: L-QDNX-ZBTCEJ
+L/N: L-FZTV-8Q8RKL
+D/N: L-FZTV-8Q8RKL
+P/N: L-FZTV-8Q8RKL
